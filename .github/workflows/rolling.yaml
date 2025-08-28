@@ -3,8 +3,7 @@ name: ROS2 CI
 on: [push, pull_request]
 
 jobs:
-  build_and_test:
-    name: Build/Test
+  build-and-test:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -17,6 +16,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup ROS 2
+        uses: ros-tooling/setup-ros@0.7.15
+        with:
+          required-ros-distributions: ${{ matrix.ros-distro }}
       - name: Build and Test
         run: .github/actions/build-and-test.sh
         env:
