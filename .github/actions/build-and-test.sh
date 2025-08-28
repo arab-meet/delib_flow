@@ -17,7 +17,6 @@ apt-get update -qq
 apt-get install -y python3-colcon-common-extensions \
                    python3-rosdep
 
-rosdep init
 rosdep update
 rosdep install --from-paths ./ -i -y -r --rosdistro $ROS_DISTRO $ROSDEP_ARGS
 

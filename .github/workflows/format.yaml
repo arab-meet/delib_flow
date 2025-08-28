@@ -1,11 +1,9 @@
-name: format
+name: Format
 
 on:
-  # Run action on certain pull request events
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
 
-  # Whenever certain branches are pushed
   push:
     branches: [main]
 
