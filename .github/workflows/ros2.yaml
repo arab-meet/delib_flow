@@ -1,14 +1,13 @@
-name: ROS2
+name: ROS2 CI
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-
   push:
     branches: [main]
 
 jobs:
   build-and-test:
+    name: build-and-test-against-${{ matrix.ros-distro }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -20,8 +19,6 @@ jobs:
             ros-distro: "kilted"
           - docker-image: "ubuntu:24.04"
             ros-distro: "jazzy"
-          - docker-image: "ubuntu:22.04"
-            ros-distro: "humble"
     container:
       image: ${{ matrix.docker-image }}
     steps:
@@ -31,6 +28,8 @@ jobs:
         uses: ros-tooling/setup-ros@0.7.15
         with:
           required-ros-distributions: ${{ matrix.ros-distro }}
+      - name: Import third-party packages
+        run: vcs import < dependencies.repos ./
       - name: Build and Test
         run: .github/actions/build-and-test.sh
         env:
