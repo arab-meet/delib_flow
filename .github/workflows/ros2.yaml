@@ -19,8 +19,6 @@ jobs:
             ros-distro: "kilted"
           - docker-image: "ubuntu:24.04"
             ros-distro: "jazzy"
-          - docker-image: "ubuntu:22.04"
-            ros-distro: "humble"
     container:
       image: ${{ matrix.docker-image }}
     steps:
