@@ -36,9 +36,3 @@ jobs:
           import-token: ${{ secrets.GITHUB_TOKEN }}
           vcs-repo-file-url: ${GITHUB_WORKSPACE}/ThirdParty.repos
           skip-tests: true
-          colcon-defaults: |
-            {
-              "test": {
-                "parallel-workers" : 1
-              }
-            }
