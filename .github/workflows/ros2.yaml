@@ -28,10 +28,16 @@ jobs:
         uses: ros-tooling/setup-ros@0.7.15
         with:
           required-ros-distributions: ${{ matrix.ros-distro }}
-      - name: Import third-party packages
-        run: vcs import < dependencies.repos ./
       - name: Build and Test
-        run: .github/actions/build-and-test.sh
-        env:
-          DOCKER_IMAGE: ${{ matrix.docker-image }}
-          ROS_DISTRO: ${{ matrix.ros-distro }}
+        uses: ros-tooling/action-ros-ci@0.4.5
+        with:
+          package-name: "*"
+          target-ros2-distro: ${{ matrix.ros-distro }}
+          vcs-repo-file-url: ${GITHUB_WORKSPACE}/ThirdParty.repos
+          skip-tests: true
+          colcon-defaults: |
+            {
+              "test": {
+                "parallel-workers" : 1
+              }
+            }
