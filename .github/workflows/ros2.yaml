@@ -31,7 +31,6 @@ jobs:
       - name: Build and Test
         uses: ros-tooling/action-ros-ci@0.4.5
         with:
-          package-name: "*"
           target-ros2-distro: ${{ matrix.ros-distro }}
           import-token: ${{ secrets.GITHUB_TOKEN }}
           vcs-repo-file-url: ${GITHUB_WORKSPACE}/ThirdParty.repos
