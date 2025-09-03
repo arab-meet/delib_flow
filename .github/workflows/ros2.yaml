@@ -24,14 +24,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup ROS 2
         uses: ros-tooling/setup-ros@0.7.15
         with:
           required-ros-distributions: ${{ matrix.ros-distro }}
+
+      - name: Prepare third-party dependencies
+        run: sed "s/\$ROS_DISTRO/${ROS_DISTRO}/g" ThirdParty.template.repos > dependencies.repos
+        env:
+          ROS_DISTRO: ${{ matrix.ros-distro }}
+
       - name: Build and Test
         uses: ros-tooling/action-ros-ci@0.4.5
         with:
           target-ros2-distro: ${{ matrix.ros-distro }}
           import-token: ${{ secrets.GITHUB_TOKEN }}
-          vcs-repo-file-url: ${GITHUB_WORKSPACE}/ThirdParty.repos
+          vcs-repo-file-url: ${GITHUB_WORKSPACE}/dependencies.repos
           skip-tests: true
