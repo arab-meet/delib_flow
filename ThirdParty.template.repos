@@ -12,10 +12,6 @@ repositories:
     type: git
     url: https://github.com/Tiago-Harmonic/launch_pal.git
     version: master
-  ThirdParty/br2_gazebo_worlds:
-    type: git
-    url: https://github.com/Tiago-Harmonic/br2_gazebo_worlds.git
-    version: main
   ThirdParty/pal_maps:
     type: git
     url: https://github.com/pal-robotics/pal_maps
