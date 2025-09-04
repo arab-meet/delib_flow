@@ -33,7 +33,7 @@ def generate_launch_description():
         description='World name')
 
     tiago_sim_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(tiago_gazebo_dir, 'launch', 'tiago_gazebo.launch.py')),
+        PythonLaunchDescriptionSource(os.path.join(tiago_gazebo_dir, 'launch', 'tiago_sim.launch.py')),
         launch_arguments={
           'world_name': world,
           'is_public_sim': 'True',
