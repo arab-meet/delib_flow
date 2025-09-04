@@ -17,3 +17,10 @@ vcs import . < ThirdParty.repos
 cd ~/bt_ws
 rosdep install --from-paths src --ignore-src -r -y
 ```
+
+3. running simulation
+
+```bash
+ros2 launch tiago_sim sim.launch.py
+```
+
