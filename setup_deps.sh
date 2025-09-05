@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Create ThirdParty.repos for the current ROS2 distribtution
+# Create ThirdParty.repos for the current ROS2 distributions
 if [ "$ROS_DISTRO" = "humble" ]; then
   cp ThirdParty.humble.repos ThirdParty.repos
 else

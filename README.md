@@ -29,4 +29,3 @@ colcon build --symlink-install
 ```bash
 ros2 launch tiago_sim sim.launch.py
 ```
-
