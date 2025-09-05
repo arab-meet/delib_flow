@@ -2,11 +2,11 @@
 set -e
 
 # Create ThirdParty.repos for the current ROS2 distribtution
-DISTRO=$ROS_DISTRO
-if [ "$DISTRO" = "humble" ]; then
-  DISTRO="humble-devel"
+if [ "$ROS_DISTRO" = "humble" ]; then
+  cp ThirdParty.humble.repos ThirdParty.repos
+else
+  sed "s/\$ROS_DISTRO/$ROS_DISTRO/g" ThirdParty.template.repos > ThirdParty.repos
 fi
-sed "s/\$ROS_DISTRO/$DISTRO/g" ThirdParty.template.repos > ThirdParty.repos
 
 # Import ThirdParty repos
 vcs import . < ThirdParty.repos
