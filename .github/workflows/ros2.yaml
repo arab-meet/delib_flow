@@ -31,9 +31,15 @@ jobs:
           required-ros-distributions: ${{ matrix.ros-distro }}
 
       - name: Prepare third-party dependencies
-        run: sed "s/\$ROS_DISTRO/${ROS_DISTRO}/g" ThirdParty.template.repos > dependencies.repos
-        env:
-          ROS_DISTRO: ${{ matrix.ros-distro }}
+        run: |
+          DISTRO=${{ matrix.ros-distro }}
+          if [ "$DISTRO" = "humble" ]; then
+            VERSION="humble-devel"
+          else
+            VERSION="$DISTRO"
+          fi
+
+          sed "s/\$ROS_DISTRO/$VERSION/g" ThirdParty.template.repos > dependencies.repos
 
       - name: Build and Test
         uses: ros-tooling/action-ros-ci@0.4.5
