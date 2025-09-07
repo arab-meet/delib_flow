@@ -34,12 +34,10 @@ jobs:
         run: |
           DISTRO=${{ matrix.ros-distro }}
           if [ "$DISTRO" = "humble" ]; then
-            VERSION="humble-devel"
+            cp ThirdParty.humble.repos dependencies.repos
           else
-            VERSION="$DISTRO"
+            sed "s/\$ROS_DISTRO/$DISTRO/g" ThirdParty.template.repos > dependencies.repos
           fi
-
-          sed "s/\$ROS_DISTRO/$VERSION/g" ThirdParty.template.repos > dependencies.repos
 
       - name: Build and Test
         uses: ros-tooling/action-ros-ci@0.4.5

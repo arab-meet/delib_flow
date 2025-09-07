@@ -4,16 +4,28 @@
 
 ## Tiago simulation Setup
 
-1. Download the repos with the tiago simulated
+1. Create a workspace
 
 ```bash
-cd ~/bt_ws/src/Bt
-vcs import . < ThirdParty.repos
+mkdir ~/bt_ws/src
 ```
 
-2. Try to install from packages as much dependencies as possible
+2. Setup dependencies
+
+```bash
+cd ~/bt_ws/src
+./setup_deps.sh
+```
+
+3. Build workspace
 
 ```bash
 cd ~/bt_ws
-rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+```
+
+3. running simulation
+
+```bash
+ros2 launch tiago_sim sim.launch.py
 ```
