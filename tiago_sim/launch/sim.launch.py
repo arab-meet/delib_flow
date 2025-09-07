@@ -17,11 +17,10 @@ import os
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
-from launch.actions import (DeclareLaunchArgument, GroupAction,
-                            IncludeLaunchDescription, SetEnvironmentVariable)
-from launch.conditions import IfCondition
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PythonExpression
+from launch.substitutions import LaunchConfiguration
+
 
 def generate_launch_description():
     tiago_gazebo_dir = get_package_share_directory('tiago_sim')
@@ -30,17 +29,20 @@ def generate_launch_description():
     declare_world_cmd = DeclareLaunchArgument(
         'worlds',
         default_value='test_world',
-        description='World name')
+        description='World name',
+    )
 
     tiago_sim_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(tiago_gazebo_dir, 'launch', 'tiago_sim.launch.py')),
+        PythonLaunchDescriptionSource(
+            os.path.join(tiago_gazebo_dir, 'launch', 'tiago_sim.launch.py')
+        ),
         launch_arguments={
-          'world_name': world,
-          'is_public_sim': 'True',
-        }.items())
+            'world_name': world,
+            'is_public_sim': 'True',
+        }.items(),
+    )
 
     ld = LaunchDescription()
-
     ld.add_action(tiago_sim_cmd)
     ld.add_action(declare_world_cmd)
 
