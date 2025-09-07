@@ -1,4 +1,5 @@
 **/__pycache__/
 .hypothesis/*
-ThirdParty/
-ThirdParty.repos
+ThirdParty/*
+!ThirdParty/ThirdParty.humble.repos
+!ThirdParty/ThirdParty.template.repos
