@@ -34,9 +34,9 @@ jobs:
         run: |
           DISTRO=${{ matrix.ros-distro }}
           if [ "$DISTRO" = "humble" ]; then
-            cp ThirdParty.humble.repos dependencies.repos
+            cp ThirdParty/ThirdParty.humble.repos dependencies.repos
           else
-            sed "s/\$ROS_DISTRO/$DISTRO/g" ThirdParty.template.repos > dependencies.repos
+            sed "s/\$ROS_DISTRO/$DISTRO/g" ThirdParty/ThirdParty.template.repos > dependencies.repos
           fi
 
       - name: Build and Test

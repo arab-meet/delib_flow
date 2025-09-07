@@ -3,13 +3,13 @@ set -e
 
 # Create ThirdParty.repos for the current ROS2 distributions
 if [ "$ROS_DISTRO" = "humble" ]; then
-  cp ThirdParty.humble.repos ThirdParty.repos
+  cp ThirdParty/ThirdParty.humble.repos ThirdParty/ThirdParty.repos
 else
-  sed "s/\$ROS_DISTRO/$ROS_DISTRO/g" ThirdParty.template.repos > ThirdParty.repos
+  sed "s/\$ROS_DISTRO/$ROS_DISTRO/g" ThirdParty/ThirdParty.template.repos > ThirdParty/ThirdParty.repos
 fi
 
 # Import ThirdParty repos
-vcs import . < ThirdParty.repos
+vcs import . < ThirdParty/ThirdParty.repos
 
 # Install dependencies
 sudo apt-get update
