@@ -18,7 +18,11 @@ from os import environ, pathsep
 
 from ament_index_python.packages import get_package_prefix
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable, SetLaunchConfiguration
+from launch.actions import (
+    DeclareLaunchArgument,
+    SetEnvironmentVariable,
+    SetLaunchConfiguration,
+)
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration
 from launch_pal.actions import CheckPublicSim
@@ -58,7 +62,9 @@ def generate_launch_description():
     return ld
 
 
-def declare_actions(launch_description: LaunchDescription, launch_args: LaunchArguments):
+def declare_actions(
+    launch_description: LaunchDescription, launch_args: LaunchArguments
+):
     # Set use_sim_time to True
     set_sim_time = SetLaunchConfiguration('use_sim_time', 'True')
     launch_description.add_action(set_sim_time)
