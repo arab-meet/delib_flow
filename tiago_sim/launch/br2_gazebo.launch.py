@@ -39,9 +39,14 @@ def start_gzserver(context, *args, **kwargs):
     # Start the server under the gdb framework.
     debug = LaunchConfiguration('debug').perform(context)
     if debug == 'True':
-        gazebo_server_cmd_line = (
-            ['xterm', '-e', 'gdb', '-ex', 'run', '--args'] + gazebo_server_cmd_line
-        )
+        gazebo_server_cmd_line = [
+            'xterm',
+            '-e',
+            'gdb',
+            '-ex',
+            'run',
+            '--args',
+        ] + gazebo_server_cmd_line
 
     start_gazebo_server_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
