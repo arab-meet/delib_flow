@@ -6,26 +6,26 @@
 
 1. Create a workspace
 
-```bash
-mkdir ~/bt_ws/src
-```
+    ```bash
+    mkdir ~/bt_ws/src
+    ```
 
 2. Setup dependencies
 
-```bash
-cd ~/bt_ws/src
-./setup_deps.sh
-```
+    ```bash
+    cd ~/bt_ws/src
+    ./setup_third_party_pkgs.sh
+    ```
 
 3. Build workspace
 
-```bash
-cd ~/bt_ws
-colcon build --symlink-install
-```
+    ```bash
+    cd ~/bt_ws
+    colcon build --symlink-install
+    ```
 
-3. running simulation
+4. Running simulation
 
-```bash
-ros2 launch tiago_sim sim.launch.py
-```
+    ```bash
+    ros2 launch tiago_sim sim.launch.py
+    ```
