@@ -109,12 +109,12 @@
       </include>
     </model>
 
-    <model name='charger'>
+    <!-- <model name='charger'>
       <include>
         <uri>model://charger</uri>
         <pose>0.0 -2.5 0.0 0.0 0.0 1.5707963267948966</pose>
       </include>
-    </model>
+    </model> -->
 
     <model name='table0'>
       <include>
