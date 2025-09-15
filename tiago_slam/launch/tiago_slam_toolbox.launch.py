@@ -18,48 +18,48 @@ from lifecycle_msgs.msg import Transition
 
 
 def generate_launch_description():
-    autostart = LaunchConfiguration("autostart")
-    use_lifecycle_manager = LaunchConfiguration("use_lifecycle_manager")
-    use_sim_time = LaunchConfiguration("use_sim_time")
-    slam_params_file = LaunchConfiguration("slam_params_file")
+    autostart = LaunchConfiguration('autostart')
+    use_lifecycle_manager = LaunchConfiguration('use_lifecycle_manager')
+    use_sim_time = LaunchConfiguration('use_sim_time')
+    slam_params_file = LaunchConfiguration('slam_params_file')
 
     declare_autostart_cmd = DeclareLaunchArgument(
-        "autostart",
-        default_value="true",
-        description="Automatically startup the slamtoolbox. "
-        "Ignored when use_lifecycle_manager is true.",
+        'autostart',
+        default_value='true',
+        description='Automatically startup the slamtoolbox. '
+        'Ignored when use_lifecycle_manager is true.',
     )
     declare_use_lifecycle_manager = DeclareLaunchArgument(
-        "use_lifecycle_manager",
-        default_value="false",
-        description="Enable bond connection during node activation",
+        'use_lifecycle_manager',
+        default_value='false',
+        description='Enable bond connection during node activation',
     )
     declare_use_sim_time_argument = DeclareLaunchArgument(
-        "use_sim_time", default_value="true", description="Use simulation/Gazebo clock"
+        'use_sim_time', default_value='true', description='Use simulation/Gazebo clock'
     )
     declare_slam_params_file_cmd = DeclareLaunchArgument(
-        "slam_params_file",
+        'slam_params_file',
         default_value=os.path.join(
-            get_package_share_directory("tiago_slam"),
-            "config",
-            "tiago_online_sync.yaml",
+            get_package_share_directory('tiago_slam'),
+            'config',
+            'tiago_online_sync.yaml',
         ),
-        description="Full path to the ROS2 parameters file to use for the slam_toolbox node",
+        description='Full path to the ROS2 parameters file to use for the slam_toolbox node',
     )
 
     start_sync_slam_toolbox_node = LifecycleNode(
         parameters=[
             slam_params_file,
             {
-                "use_lifecycle_manager": use_lifecycle_manager,
-                "use_sim_time": use_sim_time,
+                'use_lifecycle_manager': use_lifecycle_manager,
+                'use_sim_time': use_sim_time,
             },
         ],
-        package="slam_toolbox",
-        executable="sync_slam_toolbox_node",
-        name="slam_toolbox",
-        output="screen",
-        namespace="",
+        package='slam_toolbox',
+        executable='sync_slam_toolbox_node',
+        name='slam_toolbox',
+        output='screen',
+        namespace='',
     )
 
     configure_event = EmitEvent(
@@ -75,10 +75,10 @@ def generate_launch_description():
     activate_event = RegisterEventHandler(
         OnStateTransition(
             target_lifecycle_node=start_sync_slam_toolbox_node,
-            start_state="configuring",
-            goal_state="inactive",
+            start_state='configuring',
+            goal_state='inactive',
             entities=[
-                LogInfo(msg="[LifecycleLaunch] Slamtoolbox node is activating."),
+                LogInfo(msg='[LifecycleLaunch] Slamtoolbox node is activating.'),
                 EmitEvent(
                     event=ChangeState(
                         lifecycle_node_matcher=matches_action(

@@ -2,55 +2,97 @@
   <world name='world_template'>
 
     <!-- General world properties -->
-    <physics name="5ms" type="ignored">
-      <max_step_size>0.005</max_step_size>
+    <physics type="ode">
+      <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
     </physics>
-    <plugin
-        filename="gz-sim-physics-system"
-        name="gz::sim::systems::Physics">
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics">
     </plugin>
-    <plugin
-        filename="gz-sim-user-commands-system"
-        name="gz::sim::systems::UserCommands">
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands">
     </plugin>
-    <plugin
-        filename="gz-sim-scene-broadcaster-system"
-        name="gz::sim::systems::SceneBroadcaster">
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster">
     </plugin>
-    <plugin
-      filename="gz-sim-sensors-system"
-      name="gz::sim::systems::Sensors">
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
       <render_engine>ogre2</render_engine>
     </plugin>
-    <plugin
-      filename="gz-sim-imu-system"
-      name="gz::sim::systems::Imu">
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu">
     </plugin>
     <!-- To add realistic gravity, do: 0.0 0.0 -9.8, otherwise do 0.0 0.0 0.0 -->
     <gravity>0.0 0.0 -9.8</gravity>
 
     <scene>
-        <ambient>0.4 0.4 0.4 1</ambient>
-        <background>0.7 0.7 0.7 1</background>
-        <shadows>false</shadows>
-        <grid>false</grid>
-        <origin_visual>false</origin_visual>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>false</shadows>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
     </scene>
-    <light name='sun'
-      type='directional'>
+    <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose>0 0 10 0 -0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.2 0.2 0.2 1</specular>
       <attenuation>
-          <range>1000</range>
-          <constant>0.9</constant>
-          <linear>0.01</linear>
-          <quadratic>0.001</quadratic>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
       </attenuation>
       <direction>-0.5 0.1 -0.9</direction>
     </light>
+    <gui fullscreen='false'>
+      <plugin name='3D View' filename='GzScene3D'>
+        <gz-gui>
+          <title>3D View</title>
+          <property type='bool' key='showTitleBar'>0</property>
+          <property type='string' key='state'>docked</property>
+        </gz-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.5984631152222222 0.5984631152222222 0.5984631152222222</ambient_light>
+        <background_color>0.8984631152222222 0.8984631152222222 0.8984631152222222</background_color>
+        <camera_pose>-6 0 6 0 0.5 0</camera_pose>
+      </plugin>
+      <plugin name='World control' filename='WorldControl'>
+        <gz-gui>
+          <title>World control</title>
+          <property type='bool' key='showTitleBar'>0</property>
+          <property type='bool' key='resizable'>0</property>
+          <property type='double' key='height'>72</property>
+          <property type='double' key='width'>121</property>
+          <property type='double' key='z'>1</property>
+          <property type='string' key='state'>floating</property>
+          <anchors target='3D View'>
+            <line own='left' target='left'/>
+            <line own='bottom' target='bottom'/>
+          </anchors>
+        </gz-gui>
+        <play_pause>1</play_pause>
+        <step>1</step>
+        <start_paused>1</start_paused>
+      </plugin>
+      <plugin name='World stats' filename='WorldStats'>
+        <gz-gui>
+          <title>World stats</title>
+          <property type='bool' key='showTitleBar'>0</property>
+          <property type='bool' key='resizable'>0</property>
+          <property type='double' key='height'>110</property>
+          <property type='double' key='width'>290</property>
+          <property type='double' key='z'>1</property>
+          <property type='string' key='state'>floating</property>
+          <anchors target='3D View'>
+            <line own='right' target='right'/>
+            <line own='bottom' target='bottom'/>
+          </anchors>
+        </gz-gui>
+        <sim_time>1</sim_time>
+        <real_time>1</real_time>
+        <real_time_factor>1</real_time_factor>
+        <iterations>1</iterations>
+      </plugin>
+      <plugin name='Entity tree' filename='EntityTree'/>
+    </gui>
     <!-- Ground -->
     <model name='ground_plane'>
       <static>true</static>
@@ -105,7 +147,7 @@
     <!-- Models -->
     <model name='walls'>
       <include>
-          <uri>model://walls</uri>
+        <uri>model://walls</uri>
       </include>
     </model>
 
@@ -133,7 +175,7 @@
     <model name='counter'>
       <include>
         <uri>model://counter</uri>
-        <pose>7.0 0 0.0 0.0 0.0 0.0</pose>
+        <pose>9.6 0 0.0 0.0 0.0 0.0</pose>
       </include>
     </model>
 
@@ -182,7 +224,7 @@
     <model name='counter_study'>
       <include>
         <uri>model://counter</uri>
-        <pose>-7.0 0 0.0 0.0 0.0 0.0</pose>
+        <pose>-9.6 0 0.0 0.0 0.0 0.0</pose>
       </include>
     </model>
 
@@ -217,14 +259,14 @@
     <model name='water_dining'>
       <include>
         <uri>model://water</uri>
-        <pose>-6.62108389754287 0.09644465122301005 0.75 0.0 0.0 -0.5967956090713757</pose>
+        <pose>-9.52108389754287 0.09644465122301005 0.75 0.0 0.0 -0.5967956090713757</pose>
       </include>
     </model>
 
     <model name='banana_dining'>
       <include>
         <uri>model://banana</uri>
-        <pose>-6.700826769067729 -0.11089002787823932 0.75 0.0 0.0 1.2274084027837127</pose>
+        <pose>9.500826769067729 -0.11089002787823932 0.75 0.0 0.0 1.2274084027837127</pose>
       </include>
     </model>
 
