@@ -11,7 +11,7 @@ from launch.actions import (
 from launch.conditions import IfCondition
 from launch.events import matches_action
 from launch.substitutions import AndSubstitution, LaunchConfiguration, NotSubstitution
-from launch_ros.actions import LifecycleNode
+from launch_ros.actions import LifecycleNode, Node
 from launch_ros.event_handlers import OnStateTransition
 from launch_ros.events.lifecycle import ChangeState
 from lifecycle_msgs.msg import Transition
@@ -22,6 +22,10 @@ def generate_launch_description():
     use_lifecycle_manager = LaunchConfiguration('use_lifecycle_manager')
     use_sim_time = LaunchConfiguration('use_sim_time')
     slam_params_file = LaunchConfiguration('slam_params_file')
+
+    rviz_file = os.path.join(
+        get_package_share_directory('tiago_slam'), 'rviz', 'slam.rviz'
+    )
 
     declare_autostart_cmd = DeclareLaunchArgument(
         'autostart',
@@ -94,6 +98,15 @@ def generate_launch_description():
         ),
     )
 
+    rviz2_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_file],
+        parameters=[{'use_sim_time': True}],
+        output='screen',
+    )
+
     ld = LaunchDescription()
 
     ld.add_action(declare_autostart_cmd)
@@ -103,5 +116,6 @@ def generate_launch_description():
     ld.add_action(start_sync_slam_toolbox_node)
     ld.add_action(configure_event)
     ld.add_action(activate_event)
+    ld.add_action(rviz2_node)
 
     return ld
