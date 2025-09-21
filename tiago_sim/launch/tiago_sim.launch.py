@@ -15,6 +15,8 @@
 from dataclasses import dataclass
 import os
 from os import environ, pathsep
+from launch_ros.actions import Node
+from launch.actions import TimerAction
 
 from ament_index_python.packages import get_package_prefix
 from launch import LaunchDescription
@@ -167,6 +169,29 @@ def declare_actions(
     )
     launch_description.add_action(tiago_bringup)
 
+    # Tuck arm after 10 seconds to ensure every controllers are loaded
+    tuck_arm = TimerAction(
+        period=10.0,
+        actions=[
+            Node(
+                package='tiago_gazebo',
+                executable='tuck_arm.py',
+                name='tuck_arm',
+                output='screen',
+                parameters=[{'use_sim_time': True}]
+            )
+        ],
+    )
+    launch_description.add_action(tuck_arm)
+
+
+    '''tuck_arm = Node(
+        package='tiago_gazebo',
+        executable='tuck_arm.py',
+        name='tuck_arm',
+        output='screen',
+    )'''
+
 
 def get_model_paths(packages_names):
     model_paths = ''
@@ -180,5 +205,7 @@ def get_model_paths(packages_names):
 
     if 'GZ_SIM_RESOURCE_PATH' in environ:
         model_paths += pathsep + environ['GZ_SIM_RESOURCE_PATH']
+
+        
 
     return model_paths
