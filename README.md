@@ -29,3 +29,14 @@
     ```bash
     ros2 launch tiago_sim sim.launch.py
     ```
+
+5. Create a map
+
+    ```sh
+    ros2 launch tiago_slam tiago_slam_toolbox.launch.py
+    ```
+
+6. Start navigation (Nav2)
+
+    ```sh
+    ros2 launch tiago_nav tiago_nav2.launch.py
