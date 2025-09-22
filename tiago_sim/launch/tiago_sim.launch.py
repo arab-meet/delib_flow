@@ -68,144 +68,134 @@ def declare_actions(
     launch_description: LaunchDescription, launch_args: LaunchArguments
 ):
     # Set use_sim_time to True
-    set_sim_time = SetLaunchConfiguration('use_sim_time', 'True')
+    set_sim_time = SetLaunchConfiguration("use_sim_time", "True")
     launch_description.add_action(set_sim_time)
 
     # Shows error if is_public_sim is not set to True when using public simulation
     public_sim_check = CheckPublicSim()
     launch_description.add_action(public_sim_check)
 
-    robot_name = 'tiago'
+    robot_name = "tiago"
     packages = [
-        'tiago_description',
-        'pmb2_description',
-        'pal_hey5_description',
-        'pal_gripper_description',
-        'pal_robotiq_description',
-        'omni_base_description',
-        'tiago_sim',
+        "tiago_description",
+        "pmb2_description",
+        "pal_hey5_description",
+        "pal_gripper_description",
+        "pal_robotiq_description",
+        "omni_base_description",
+        "tiago_sim",
     ]
 
     model_path = get_model_paths(packages)
 
-    gz_model_path_env_var = SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', model_path)
+    gz_model_path_env_var = SetEnvironmentVariable("GZ_SIM_RESOURCE_PATH", model_path)
     launch_description.add_action(gz_model_path_env_var)
 
     gazebo = include_scoped_launch_py_description(
-        pkg_name='tiago_sim',
-        paths=['launch', 'br2_gazebo.launch.py'],
+        pkg_name="tiago_sim",
+        paths=["launch", "br2_gazebo.launch.py"],
         env_vars=[gz_model_path_env_var],
         launch_arguments={
-            'world_name': launch_args.world_name,
-            'model_paths': packages,
-            'resource_paths': packages,
+            "world_name": launch_args.world_name,
+            "model_paths": packages,
+            "resource_paths": packages,
         },
     )
     launch_description.add_action(gazebo)
 
     navigation = include_scoped_launch_py_description(
-        pkg_name='tiago_2dnav',
-        paths=['launch', 'tiago_nav_bringup.launch.py'],
+        pkg_name="tiago_2dnav",
+        paths=["launch", "tiago_nav_bringup.launch.py"],
         launch_arguments={
-            'robot_name': robot_name,
-            'is_public_sim': launch_args.is_public_sim,
-            'laser': launch_args.laser_model,
-            'base_type': launch_args.base_type,
-            'world_name': launch_args.world_name,
-            'slam': launch_args.slam,
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            "robot_name": robot_name,
+            "is_public_sim": launch_args.is_public_sim,
+            "laser": launch_args.laser_model,
+            "base_type": launch_args.base_type,
+            "world_name": launch_args.world_name,
+            "slam": launch_args.slam,
+            "use_sim_time": LaunchConfiguration("use_sim_time"),
         },
-        condition=IfCondition(LaunchConfiguration('navigation')),
+        condition=IfCondition(LaunchConfiguration("navigation")),
     )
     launch_description.add_action(navigation)
 
     advanced_navigation = include_scoped_launch_py_description(
-        pkg_name='tiago_advanced_2dnav',
-        paths=['launch', 'tiago_advanced_nav_bringup.launch.py'],
-        launch_arguments={'base_type': launch_args.base_type},
-        condition=IfCondition(LaunchConfiguration('advanced_navigation')),
+        pkg_name="tiago_advanced_2dnav",
+        paths=["launch", "tiago_advanced_nav_bringup.launch.py"],
+        launch_arguments={"base_type": launch_args.base_type},
+        condition=IfCondition(LaunchConfiguration("advanced_navigation")),
     )
     launch_description.add_action(advanced_navigation)
 
     move_group = include_scoped_launch_py_description(
-        pkg_name='tiago_moveit_config',
-        paths=['launch', 'move_group.launch.py'],
+        pkg_name="tiago_moveit_config",
+        paths=["launch", "move_group.launch.py"],
         launch_arguments={
-            'robot_name': robot_name,
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
-            'namespace': launch_args.namespace,
-            'base_type': launch_args.base_type,
-            'arm_type': launch_args.arm_type,
-            'end_effector': launch_args.end_effector,
-            'ft_sensor': launch_args.ft_sensor,
+            "robot_name": robot_name,
+            "use_sim_time": LaunchConfiguration("use_sim_time"),
+            "namespace": launch_args.namespace,
+            "base_type": launch_args.base_type,
+            "arm_type": launch_args.arm_type,
+            "end_effector": launch_args.end_effector,
+            "ft_sensor": launch_args.ft_sensor,
         },
-        condition=IfCondition(LaunchConfiguration('moveit')),
+        condition=IfCondition(LaunchConfiguration("moveit")),
     )
     launch_description.add_action(move_group)
 
     robot_spawn = include_scoped_launch_py_description(
-        pkg_name='tiago_gazebo',
+        pkg_name="tiago_gazebo",
         env_vars=[gz_model_path_env_var],
-        paths=['launch', 'robot_spawn.launch.py'],
-        launch_arguments={'robot_name': robot_name, 'base_type': launch_args.base_type},
+        paths=["launch", "robot_spawn.launch.py"],
+        launch_arguments={"robot_name": robot_name, "base_type": launch_args.base_type},
     )
     launch_description.add_action(robot_spawn)
 
     tiago_bringup = include_scoped_launch_py_description(
-        pkg_name='tiago_bringup',
-        paths=['launch', 'tiago_bringup.launch.py'],
+        pkg_name="tiago_bringup",
+        paths=["launch", "tiago_bringup.launch.py"],
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
-            'arm_type': launch_args.arm_type,
-            'laser_model': launch_args.laser_model,
-            'camera_model': launch_args.camera_model,
-            'base_type': launch_args.base_type,
-            'wrist_model': launch_args.wrist_model,
-            'ft_sensor': launch_args.ft_sensor,
-            'end_effector': launch_args.end_effector,
-            'has_screen': launch_args.has_screen,
-            'is_public_sim': launch_args.is_public_sim,
+            "use_sim_time": LaunchConfiguration("use_sim_time"),
+            "arm_type": launch_args.arm_type,
+            "laser_model": launch_args.laser_model,
+            "camera_model": launch_args.camera_model,
+            "base_type": launch_args.base_type,
+            "wrist_model": launch_args.wrist_model,
+            "ft_sensor": launch_args.ft_sensor,
+            "end_effector": launch_args.end_effector,
+            "has_screen": launch_args.has_screen,
+            "is_public_sim": launch_args.is_public_sim,
         },
     )
     launch_description.add_action(tiago_bringup)
 
     # Tuck arm after 10 seconds to ensure every controllers are loaded
     tuck_arm = TimerAction(
-        period=10.0,
+        period=15.0,
         actions=[
             Node(
-                package='tiago_gazebo',
-                executable='tuck_arm.py',
-                name='tuck_arm',
-                output='screen',
-                parameters=[{'use_sim_time': True}]
+                package="tiago_gazebo",
+                executable="tuck_arm.py",
+                name="tuck_arm",
+                output="screen",
+                parameters=[{"use_sim_time": True}],
             )
         ],
     )
     launch_description.add_action(tuck_arm)
 
 
-    '''tuck_arm = Node(
-        package='tiago_gazebo',
-        executable='tuck_arm.py',
-        name='tuck_arm',
-        output='screen',
-    )'''
-
-
 def get_model_paths(packages_names):
-    model_paths = ''
+    model_paths = ""
     for package_name in packages_names:
-        if model_paths != '':
+        if model_paths != "":
             model_paths += pathsep
 
         package_path = get_package_prefix(package_name)
-        model_path = os.path.join(package_path, 'share')
+        model_path = os.path.join(package_path, "share")
         model_paths += model_path
 
-    if 'GZ_SIM_RESOURCE_PATH' in environ:
-        model_paths += pathsep + environ['GZ_SIM_RESOURCE_PATH']
-
-        
+    if "GZ_SIM_RESOURCE_PATH" in environ:
+        model_paths += pathsep + environ["GZ_SIM_RESOURCE_PATH"]
 
     return model_paths
