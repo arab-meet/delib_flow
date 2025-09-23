@@ -1,13 +1,13 @@
 # Copyright (c) 2024 PAL Robotics S.L. All rights reserved.
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
+# Licensed under the Apache License, Version 2.0 (the 'License');
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
+# distributed under the License is distributed on an 'AS IS' BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
@@ -22,6 +22,7 @@ from launch.actions import (
     DeclareLaunchArgument,
     SetEnvironmentVariable,
     SetLaunchConfiguration,
+    TimerAction,
 )
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration
@@ -29,6 +30,7 @@ from launch_pal.actions import CheckPublicSim
 from launch_pal.arg_utils import LaunchArgumentsBase
 from launch_pal.include_utils import include_scoped_launch_py_description
 from launch_pal.robot_arguments import CommonArgs
+from launch_ros.actions import Node
 from tiago_description.launch_arguments import TiagoArgs
 
 
@@ -69,7 +71,8 @@ def declare_actions(
     set_sim_time = SetLaunchConfiguration('use_sim_time', 'True')
     launch_description.add_action(set_sim_time)
 
-    # Shows error if is_public_sim is not set to True when using public simulation
+    # Shows error if is_public_sim is not set to True when using public
+    # simulation
     public_sim_check = CheckPublicSim()
     launch_description.add_action(public_sim_check)
 
@@ -166,6 +169,21 @@ def declare_actions(
         },
     )
     launch_description.add_action(tiago_bringup)
+
+    # Tuck arm after 10 seconds to ensure every controllers are loaded
+    tuck_arm = TimerAction(
+        period=15.0,
+        actions=[
+            Node(
+                package='tiago_gazebo',
+                executable='tuck_arm.py',
+                name='tuck_arm',
+                output='screen',
+                parameters=[{'use_sim_time': True}],
+            )
+        ],
+    )
+    launch_description.add_action(tuck_arm)
 
 
 def get_model_paths(packages_names):
