@@ -2,6 +2,10 @@
 
 [![ROS2](https://github.com/arab-meet/Bt/actions/workflows/ros2.yaml/badge.svg)](https://github.com/arab-meet/Bt/actions/workflows/ros2.yaml)
 
+## Documentation
+
+Check `docs/README.md` for instructions
+
 ## Tiago simulation Setup
 
 1. Create a workspace
