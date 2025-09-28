@@ -15,3 +15,6 @@ vcs import . < ThirdParty/ThirdParty.repos
 sudo apt-get update
 rosdep update --rosdistro=$ROS_DISTRO
 rosdep install --from-paths . --ignore-src -r -y --rosdistro=$ROS_DISTRO
+
+# Install Python requirements for YOLO
+pip3 install -r src/yolo_ros/requirements.txt
