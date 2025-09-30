@@ -47,11 +47,7 @@ def generate_launch_description():
     # YOLOv11
     yolo_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            [
-                PathJoinSubstitution(
-                    [FindPackageShare('yolo_bringup'), 'launch/yolov11.launch.py']
-                )
-            ]
+            os.path.join(tiago_gazebo_dir, 'launch', 'yolo_tiago.laucnh.py')
         ),
         launch_arguments={
             'model': os.path.join(tiago_gazebo_dir, 'models', 'yolo11m.pt'),
