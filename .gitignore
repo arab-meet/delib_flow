@@ -3,8 +3,13 @@
 
 # Third party packages
 ThirdParty/*
-!ThirdParty/ThirdParty.humble.repos
+!ThirdParty/ThirdParty.humble.gazebo_classic.repos
+!ThirdParty/ThirdParty.humble.gz_sim.repos
 !ThirdParty/ThirdParty.template.repos
+
+log/
+.*
+!.gitignore/
 
 # Sphinx documentation
 docs/build/
