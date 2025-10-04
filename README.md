@@ -34,11 +34,12 @@ Check `docs/README.md` for instructions
     ros2 launch tiago_sim sim.launch.py
     ```
 
-5. Create a map
+5. Running Aruco detector
 
     ```sh
-    ros2 launch tiago_slam tiago_slam_toolbox.launch.py
+    ros2 launch ros2_aruco aruco_recognition.launch.py
     ```
+    change marker size in config to be 0.4 also image topic and info
 
 6. Start navigation (Nav2)
 
