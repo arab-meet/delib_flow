@@ -11,7 +11,7 @@ Check `docs/README.md` for instructions
 1. Create a workspace
 
     ```bash
-    mkdir ~/bt_ws/src
+    mkdir -p ~/bt_ws/src
     ```
 
 2. Setup dependencies
@@ -39,9 +39,9 @@ Check `docs/README.md` for instructions
     ```sh
     ros2 launch ros2_aruco aruco_recognition.launch.py
     ```
-    change marker size in config to be 0.4 also image topic and info
+    Change marker size from config ( 0.4 according to the current generated tag ) also change image topic and camera info topic
 
-6. Start navigation (Nav2)
+6. Running camera broadcaster node
 
     ```sh
-    ros2 launch tiago_nav tiago_nav2.launch.py
+    ros2 run camera_broadcast camera_broadcast 
