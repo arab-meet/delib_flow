@@ -47,3 +47,11 @@ repositories:
     type: git
     url: https://github.com/BehaviorTree/Groot.git
     version: master
+  ThirdParty/ros2_aruco:
+    type: git
+    url: https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco.git
+    version: humble
+  ThirdParty/gazebo_models:
+    type: git
+    url: https://github.com/mikaelarguedas/gazebo_models.git
+    version: master
