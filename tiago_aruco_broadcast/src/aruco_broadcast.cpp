@@ -34,9 +34,8 @@ class camera : public rclcpp::Node
     geometry_msgs::msg::TransformStamped transform_stamped;
 
     transform_stamped.header.stamp = aruco.header.stamp;
-    transform_stamped.header.frame_id = "head_front_camera_link";
-    transform_stamped.child_frame_id = "Aruco_marker";
-   //  marker_id[0] = aruco.marker_ids[0];
+    transform_stamped.header.frame_id = "head_front_camera_color_optical_frame";  // Color camera optical frame
+    transform_stamped.child_frame_id = "Aruco_marker_frame";                      // Detected marker frame
 
     transform_stamped.transform.translation.x = aruco.poses[0].position.x;
     transform_stamped.transform.translation.y = aruco.poses[0].position.y;
@@ -51,7 +50,6 @@ class camera : public rclcpp::Node
 
    }
 
-   // int marker_id[1];
    rclcpp::Subscription<ros2_aruco_interfaces::msg::ArucoMarkers>::SharedPtr subscription_;
    std::unique_ptr<tf2_ros::TransformBroadcaster> tf2_broadcaster_;
    geometry_msgs::msg::Transform transform;

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(camera_broadcast)
+project(tiago_aruco_broadcast)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -13,9 +13,9 @@ find_package(tf2_ros REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(ros2_aruco_interfaces REQUIRED)
 
-add_executable(camera_broadcast src/camera_broadcast.cpp)
+add_executable(aruco_broadcast src/aruco_broadcast.cpp)
 ament_target_dependencies(
-    camera_broadcast
+    aruco_broadcast
     ros2_aruco_interfaces
     geometry_msgs
     rclcpp
@@ -24,7 +24,7 @@ ament_target_dependencies(
 )
 
 install(TARGETS
-    camera_broadcast
+    aruco_broadcast
     DESTINATION lib/${PROJECT_NAME})
 
 
