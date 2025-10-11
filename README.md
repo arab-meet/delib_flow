@@ -39,9 +39,11 @@ Check `docs/README.md` for instructions
     ```sh
     ros2 launch ros2_aruco aruco_recognition.launch.py
     ```
+    
     Change marker size from config ( 0.4 according to the current generated tag ) also change image topic and camera info topic
 
 6. Running camera broadcaster node
 
     ```sh
     ros2 run camera_broadcast camera_broadcast
+   
