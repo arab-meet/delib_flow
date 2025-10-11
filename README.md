@@ -44,4 +44,4 @@ Check `docs/README.md` for instructions
 6. Running camera broadcaster node
 
     ```sh
-    ros2 run camera_broadcast camera_broadcast 
+    ros2 run camera_broadcast camera_broadcast
