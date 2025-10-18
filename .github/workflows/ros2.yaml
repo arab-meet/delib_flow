@@ -44,5 +44,5 @@ jobs:
         with:
           target-ros2-distro: ${{ matrix.ros-distro }}
           import-token: ${{ secrets.GITHUB_TOKEN }}
-          vcs-repo-file-url: ""
+          vcs-repo-file-url: ${GITHUB_WORKSPACE}/dependencies.repos
           skip-tests: true

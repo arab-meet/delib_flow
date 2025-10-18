@@ -71,4 +71,4 @@ repositories:
   ThirdParty/gazebo_models:
     type: git
     url: https://github.com/mikaelarguedas/gazebo_models.git
-    version: master
+    version: $ROS_DISTRO
