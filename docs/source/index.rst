@@ -16,3 +16,6 @@ DelibFlow documentation
    use_sphinx
    tutorials/index
    usage/index
+   theory/index
+   user-guide/index
+   dev-guide/index
