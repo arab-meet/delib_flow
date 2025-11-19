@@ -47,3 +47,11 @@ repositories:
     type: git
     url: https://github.com/BehaviorTree/Groot.git
     version: master
+  ThirdParty/BehaviorTree.ROS2:
+    type: git
+    url: https://github.com/BehaviorTree/BehaviorTree.ROS2.git
+    version: humble
+  ThirdParty/grab2:
+    type: git
+    url: https://github.com/elsayedelsheikh/grab2.git
+    version: main
