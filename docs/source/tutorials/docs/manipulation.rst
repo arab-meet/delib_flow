@@ -1,12 +1,12 @@
 .. _manipulation:
 
 Manipulation
-###########
+############
 
 Controllers
 -----------
 
-Tiago provides the following ROS2 action servers for joints control of type `FollowJointTrajectory`_:
+Tiago provides the following ``ros2_control`` controllers for joints control of type `FollowJointTrajectory`:
 
 +-----------+---------------------------------------------+
 | Component | ROS2 Action Name                            |
@@ -20,7 +20,7 @@ Tiago provides the following ROS2 action servers for joints control of type `Fol
 | Torso     | /torso_controller/follow_joint_trajectory   |
 +-----------+---------------------------------------------+
 
-while publishing the following topics for joints state feedback of type `JointTrajectory`_:
+while publishing the following topics for joints state feedback of type `JointTrajectory`:
 
 +-----------+--------------------------------------+
 | Component | ROS2 Topic Name                      |
@@ -34,7 +34,22 @@ while publishing the following topics for joints state feedback of type `JointTr
 | Torso     | /torso_controller/controller_state   |
 +-----------+--------------------------------------+
 
-.. note:: head_controller is not available in move_group, so you have to control it directly using its action server.
+Moveit2 move_group
+==================
+
+Tiago provides the following planning groups
+
++-----+----------------+
+| #   | Planning Group |
++-----+----------------+
+| 1   | arm            |
++-----+----------------+
+| 2   | arm_torso      |
++-----+----------------+
+| 3   | gripper        |
++-----+----------------+
+
+.. note:: head_controller is not available in `move_group`, so you have to control it directly using its action server.
 
 Getting Started
 ---------------
