@@ -19,6 +19,12 @@ def generate_launch_description():
     recovery_yaml = os.path.join(
         get_package_share_directory('tiago_nav'), 'config', 'recovery.yaml'
     )
+    docking_yaml = os.path.join(
+        get_package_share_directory('tiago_nav'), 'config', 'nova_carter_docking.yaml'
+    )
+    dock_database = os.path.join(
+        get_package_share_directory('tiago_nav'), 'config', 'dock_database.yaml'
+    )
     amcl_yaml = os.path.join(
         get_package_share_directory('tiago_nav'), 'config', 'tiago_amcl.yaml'
     )
@@ -74,6 +80,16 @@ def generate_launch_description():
                 parameters=[bt_navigator_yaml],
             ),
             Node(
+                package='opennav_docking',
+                executable='opennav_docking',
+                name='docking_server',
+                output='screen',
+                parameters=[
+                    docking_yaml,
+                    {'use_sim_time': True, 'dock_database': dock_database},
+                ],
+            ),
+            Node(
                 package='nav2_lifecycle_manager',
                 executable='lifecycle_manager',
                 name='lifecycle_manager_navigation',
@@ -88,6 +104,7 @@ def generate_launch_description():
                             'controller_server',
                             'recoveries_server',
                             'bt_navigator',
+                            'docking_server',
                         ]
                     },
                 ],

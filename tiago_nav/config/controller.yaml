@@ -75,7 +75,7 @@ local_costmap:
   local_costmap:
     ros__parameters:
       use_sim_time: True
-      footprint: "[[0.38, 0.26], [0.38, -0.26], [-0.38, -0.26], [-0.38, 0.26]]"
+      footprint: "[[0.36, 0.26], [0.36, -0.26], [-0.36, -0.26], [-0.36, 0.26]]"
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
