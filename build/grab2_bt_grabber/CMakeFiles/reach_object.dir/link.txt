@@ -1,2 +1,0 @@
-/usr/bin/ar qc libreach_object.a CMakeFiles/reach_object.dir/src/grabbers/reach_object.cpp.o
-/usr/bin/ranlib libreach_object.a

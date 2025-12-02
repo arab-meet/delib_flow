@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpick_and_navigate.a CMakeFiles/pick_and_navigate.dir/src/testing_scenarios/pick_and_navigate.cpp.o
-/usr/bin/ranlib libpick_and_navigate.a

@@ -1,9 +1,0 @@
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/uninstall.dir
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/tiago_sim_uninstall.dir
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/test.dir
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/edit_cache.dir
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/rebuild_cache.dir
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/list_install_components.dir
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/install.dir
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/install/local.dir
-/home/zaynap/Projects/Bt/build/tiago_sim/CMakeFiles/install/strip.dir

@@ -1,5 +1,0 @@
-
-#### Result ####
-
-# Ids of the available trees
-string[] tree_ids

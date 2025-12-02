@@ -1,8 +1,0 @@
-source;share/tiago_slam/hook/cmake_prefix_path.ps1
-source;share/tiago_slam/hook/cmake_prefix_path.dsv
-source;share/tiago_slam/hook/cmake_prefix_path.sh
-source;share/tiago_slam/local_setup.bash
-source;share/tiago_slam/local_setup.dsv
-source;share/tiago_slam/local_setup.ps1
-source;share/tiago_slam/local_setup.sh
-source;share/tiago_slam/local_setup.zsh
