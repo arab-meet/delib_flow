@@ -13,7 +13,7 @@ find_package(grab2_planner REQUIRED)
 find_package(grab2_msgs REQUIRED)
 
 install(DIRECTORY
-  launch
+  # launch
   config
   DESTINATION share/${PROJECT_NAME}
 )

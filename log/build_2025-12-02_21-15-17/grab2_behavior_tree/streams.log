@@ -1,0 +1,118 @@
+[0.054s] Invoking command in '/home/zaynap/Projects/Bt/build/grab2_behavior_tree': CMAKE_PREFIX_PATH=/home/zaynap/Projects/Bt/install/grab2_msgs:/home/zaynap/Projects/Bt/install/behaviortree_ros2:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces:/home/zaynap/Projects/Bt/install/tiago_slam:/home/zaynap/Projects/Bt/install/tiago_sim:/home/zaynap/Projects/Bt/install/tiago_nav:/home/zaynap/Projects/Bt/install/tiago_grab:/home/zaynap/Projects/Bt/install/grab2_planner:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg:/home/zaynap/Projects/Bt/install/grab2_bt_grabber:/home/zaynap/Projects/Bt/install/grab2_ros_common:/home/zaynap/Projects/Bt/install/grab2_behavior_tree:/home/zaynap/Projects/Bt/install/btcpp_ros2_samples:/opt/ros/humble LD_LIBRARY_PATH=/home/zaynap/Projects/Bt/install/grab2_msgs/lib:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces/lib:/home/zaynap/Projects/Bt/install/grab2_planner/lib:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg/lib:/home/zaynap/Projects/Bt/install/grab2_bt_grabber/lib:/home/zaynap/Projects/Bt/install/grab2_behavior_tree/lib:/home/zaynap/Projects/Bt/install/behaviortree_ros2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/zaynap/Projects/Bt/grab2_behavior_tree -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/grab2_behavior_tree
+[0.242s] -- The C compiler identification is GNU 11.4.0
+[0.439s] -- The CXX compiler identification is GNU 11.4.0
+[0.461s] -- Detecting C compiler ABI info
+[0.697s] -- Detecting C compiler ABI info - done
+[0.727s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.728s] -- Detecting C compile features
+[0.734s] -- Detecting C compile features - done
+[0.737s] -- Detecting CXX compiler ABI info
+[0.977s] -- Detecting CXX compiler ABI info - done
+[1.007s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.009s] -- Detecting CXX compile features
+[1.010s] -- Detecting CXX compile features - done
+[1.017s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.102s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.303s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.401s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.406s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.425s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.451s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.491s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.601s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.612s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.791s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.850s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.927s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.947s] -- Looking for pthread.h
+[3.109s] -- Looking for pthread.h - found
+[3.110s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.308s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.310s] -- Found Threads: TRUE  
+[3.545s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[3.681s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.732s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.788s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.791s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.791s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.047s] -- Found vision_msgs: 4.1.1 (/opt/ros/humble/share/vision_msgs/cmake)
+[4.081s] -- Found vision_msgs_rviz_plugins: 4.1.1 (/opt/ros/humble/share/vision_msgs_rviz_plugins/cmake)
+[4.120s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[4.140s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[4.140s] -- Found OGRE
+[4.140s] --   static     : OFF
+[4.140s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[4.140s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[4.141s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[4.141s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[4.141s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[4.141s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[4.141s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[4.141s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[4.141s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[4.141s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[4.141s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[4.186s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[4.200s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[4.497s] -- Found X11: /usr/include   
+[4.497s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[4.733s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[4.733s] -- Looking for gethostbyname
+[4.940s] -- Looking for gethostbyname - found
+[4.940s] -- Looking for connect
+[5.155s] -- Looking for connect - found
+[5.156s] -- Looking for remove
+[5.377s] -- Looking for remove - found
+[5.378s] -- Looking for shmat
+[5.588s] -- Looking for shmat - found
+[5.588s] -- Looking for IceConnectionNumber in ICE
+[5.822s] -- Looking for IceConnectionNumber in ICE - found
+[6.089s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[6.231s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[6.339s] -- Found grab2_msgs: 0.0.0 (/home/zaynap/Projects/Bt/install/grab2_msgs/share/grab2_msgs/cmake)
+[6.735s] -- Found behaviortree_cpp: 4.7.1 (/opt/ros/humble/share/behaviortree_cpp/cmake)
+[6.740s] -- Found behaviortree_ros2: 0.3.0 (/home/zaynap/Projects/Bt/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+[6.857s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.212s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.213s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/zaynap/Projects/Bt/grab2_behavior_tree/include>
+[7.213s] -- Configured cppcheck exclude dirs and/or files: 
+[7.222s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.222s] -- Configured cpplint exclude dirs and/or files: 
+[7.223s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.231s] -- Added test 'lint_cmake' to check CMake code style
+[7.231s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.238s] -- Added test 'uncrustify' to check C / C++ code style
+[7.238s] -- Configured uncrustify additional arguments: 
+[7.244s] -- Added test 'xmllint' to check XML markup files
+[7.250s] -- Configuring done
+[7.488s] -- Generating done
+[7.605s] -- Build files have been written to: /home/zaynap/Projects/Bt/build/grab2_behavior_tree
+[7.678s] Invoked command in '/home/zaynap/Projects/Bt/build/grab2_behavior_tree' returned '0': CMAKE_PREFIX_PATH=/home/zaynap/Projects/Bt/install/grab2_msgs:/home/zaynap/Projects/Bt/install/behaviortree_ros2:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces:/home/zaynap/Projects/Bt/install/tiago_slam:/home/zaynap/Projects/Bt/install/tiago_sim:/home/zaynap/Projects/Bt/install/tiago_nav:/home/zaynap/Projects/Bt/install/tiago_grab:/home/zaynap/Projects/Bt/install/grab2_planner:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg:/home/zaynap/Projects/Bt/install/grab2_bt_grabber:/home/zaynap/Projects/Bt/install/grab2_ros_common:/home/zaynap/Projects/Bt/install/grab2_behavior_tree:/home/zaynap/Projects/Bt/install/btcpp_ros2_samples:/opt/ros/humble LD_LIBRARY_PATH=/home/zaynap/Projects/Bt/install/grab2_msgs/lib:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces/lib:/home/zaynap/Projects/Bt/install/grab2_planner/lib:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg/lib:/home/zaynap/Projects/Bt/install/grab2_bt_grabber/lib:/home/zaynap/Projects/Bt/install/grab2_behavior_tree/lib:/home/zaynap/Projects/Bt/install/behaviortree_ros2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/zaynap/Projects/Bt/grab2_behavior_tree -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/grab2_behavior_tree
+[7.680s] Invoking command in '/home/zaynap/Projects/Bt/build/grab2_behavior_tree': CMAKE_PREFIX_PATH=/home/zaynap/Projects/Bt/install/grab2_msgs:/home/zaynap/Projects/Bt/install/behaviortree_ros2:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces:/home/zaynap/Projects/Bt/install/tiago_slam:/home/zaynap/Projects/Bt/install/tiago_sim:/home/zaynap/Projects/Bt/install/tiago_nav:/home/zaynap/Projects/Bt/install/tiago_grab:/home/zaynap/Projects/Bt/install/grab2_planner:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg:/home/zaynap/Projects/Bt/install/grab2_bt_grabber:/home/zaynap/Projects/Bt/install/grab2_ros_common:/home/zaynap/Projects/Bt/install/grab2_behavior_tree:/home/zaynap/Projects/Bt/install/btcpp_ros2_samples:/opt/ros/humble LD_LIBRARY_PATH=/home/zaynap/Projects/Bt/install/grab2_msgs/lib:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces/lib:/home/zaynap/Projects/Bt/install/grab2_planner/lib:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg/lib:/home/zaynap/Projects/Bt/install/grab2_bt_grabber/lib:/home/zaynap/Projects/Bt/install/grab2_behavior_tree/lib:/home/zaynap/Projects/Bt/install/behaviortree_ros2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zaynap/Projects/Bt/build/grab2_behavior_tree -- -j8 -l8
+[7.860s] [  5%] [32mBuilding CXX object CMakeFiles/grab2_detect_object_bt_node.dir/plugins/action/detect_object.cpp.o[0m
+[7.883s] [ 16%] [32mBuilding CXX object CMakeFiles/grab2_get_trajectory_from_yaml_bt_node.dir/plugins/action/get_trajectory_from_yaml.cpp.o[0m
+[7.883s] [ 22%] [32mBuilding CXX object CMakeFiles/grab2_compute_top_down_grasp_bt_node.dir/plugins/action/compute_top_down_grasp.cpp.o[0m
+[7.883s] [ 11%] [32mBuilding CXX object CMakeFiles/grab2_get_grasp_hardcoded_bt_node.dir/plugins/action/get_grasp_hardcoded.cpp.o[0m
+[7.891s] [ 27%] [32mBuilding CXX object CMakeFiles/grab2_compute_plan_to_target_ik_bt_node.dir/plugins/action/compute_plan_to_target_ik.cpp.o[0m
+[7.891s] [ 33%] [32mBuilding CXX object CMakeFiles/grab2_move_bt_node.dir/plugins/action/move.cpp.o[0m
+[7.908s] [ 38%] [32mBuilding CXX object CMakeFiles/grab2_grip_bt_node.dir/plugins/action/grip.cpp.o[0m
+[8.974s] [ 44%] [32mBuilding CXX object CMakeFiles/grab2_reach_object_bt_node.dir/plugins/action/reach_object.cpp.o[0m
+[21.567s] [ 50%] [32m[1mLinking CXX shared library libgrab2_get_grasp_hardcoded_bt_node.so[0m
+[22.140s] [ 50%] Built target grab2_get_grasp_hardcoded_bt_node
+[25.564s] [ 55%] [32m[1mLinking CXX shared library libgrab2_compute_top_down_grasp_bt_node.so[0m
+[25.976s] [ 55%] Built target grab2_compute_top_down_grasp_bt_node
+[26.573s] [ 61%] [32m[1mLinking CXX shared library libgrab2_get_trajectory_from_yaml_bt_node.so[0m
+[27.341s] [ 61%] Built target grab2_get_trajectory_from_yaml_bt_node
+[28.138s] [ 66%] [32m[1mLinking CXX shared library libgrab2_move_bt_node.so[0m
+[28.546s] [ 72%] [32m[1mLinking CXX shared library libgrab2_grip_bt_node.so[0m
+[28.724s] [ 72%] Built target grab2_move_bt_node
+[28.822s] [ 77%] [32m[1mLinking CXX shared library libgrab2_reach_object_bt_node.so[0m
+[29.049s] [ 77%] Built target grab2_grip_bt_node
+[29.326s] [ 77%] Built target grab2_reach_object_bt_node
+[30.087s] [ 83%] [32m[1mLinking CXX shared library libgrab2_compute_plan_to_target_ik_bt_node.so[0m
+[30.484s] [ 83%] Built target grab2_compute_plan_to_target_ik_bt_node
+[34.966s] [ 88%] [32m[1mLinking CXX shared library libgrab2_detect_object_bt_node.so[0m
+[35.593s] [ 88%] Built target grab2_detect_object_bt_node
+[35.612s] [ 94%] [32mBuilding CXX object CMakeFiles/grab2_engine.dir/src/main.cpp.o[0m
+[40.868s] [100%] [32m[1mLinking CXX executable grab2_engine[0m
+[41.138s] [100%] Built target grab2_engine

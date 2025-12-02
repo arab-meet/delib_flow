@@ -1,0 +1,63 @@
+[0.010s] Invoking command in '/home/zaynap/Projects/Bt/build/btcpp_ros2_samples': CMAKE_PREFIX_PATH=/home/zaynap/Projects/Bt/install/behaviortree_ros2:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces:/home/zaynap/Projects/Bt/install/tiago_slam:/home/zaynap/Projects/Bt/install/tiago_sim:/home/zaynap/Projects/Bt/install/tiago_nav:/home/zaynap/Projects/Bt/install/tiago_grab:/home/zaynap/Projects/Bt/install/grab2_planner:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg:/home/zaynap/Projects/Bt/install/grab2_bt_grabber:/home/zaynap/Projects/Bt/install/grab2_ros_common:/home/zaynap/Projects/Bt/install/grab2_behavior_tree:/home/zaynap/Projects/Bt/install/grab2_msgs:/home/zaynap/Projects/Bt/install/btcpp_ros2_samples:/opt/ros/humble LD_LIBRARY_PATH=/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces/lib:/home/zaynap/Projects/Bt/install/grab2_planner/lib:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg/lib:/home/zaynap/Projects/Bt/install/grab2_bt_grabber/lib:/home/zaynap/Projects/Bt/install/grab2_behavior_tree/lib:/home/zaynap/Projects/Bt/install/grab2_msgs/lib:/home/zaynap/Projects/Bt/install/behaviortree_ros2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/zaynap/Projects/Bt/BehaviorTree.ROS2/btcpp_ros2_samples -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/btcpp_ros2_samples
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.106s] -- The CXX compiler identification is GNU 11.4.0
+[0.113s] -- Detecting C compiler ABI info
+[0.171s] -- Detecting C compiler ABI info - done
+[0.179s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.179s] -- Detecting C compile features
+[0.180s] -- Detecting C compile features - done
+[0.182s] -- Detecting CXX compiler ABI info
+[0.253s] -- Detecting CXX compiler ABI info - done
+[0.259s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.259s] -- Detecting CXX compile features
+[0.260s] -- Detecting CXX compile features - done
+[0.263s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.608s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.700s] -- Found behaviortree_ros2: 0.3.0 (/home/zaynap/Projects/Bt/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+[0.752s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.758s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.767s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.780s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.797s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.845s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.848s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.930s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.957s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.997s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.006s] -- Looking for pthread.h
+[1.068s] -- Looking for pthread.h - found
+[1.068s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.163s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.164s] -- Found Threads: TRUE  
+[1.313s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.402s] -- Configuring done
+[1.438s] -- Generating done
+[1.454s] -- Build files have been written to: /home/zaynap/Projects/Bt/build/btcpp_ros2_samples
+[1.464s] Invoked command in '/home/zaynap/Projects/Bt/build/btcpp_ros2_samples' returned '0': CMAKE_PREFIX_PATH=/home/zaynap/Projects/Bt/install/behaviortree_ros2:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces:/home/zaynap/Projects/Bt/install/tiago_slam:/home/zaynap/Projects/Bt/install/tiago_sim:/home/zaynap/Projects/Bt/install/tiago_nav:/home/zaynap/Projects/Bt/install/tiago_grab:/home/zaynap/Projects/Bt/install/grab2_planner:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg:/home/zaynap/Projects/Bt/install/grab2_bt_grabber:/home/zaynap/Projects/Bt/install/grab2_ros_common:/home/zaynap/Projects/Bt/install/grab2_behavior_tree:/home/zaynap/Projects/Bt/install/grab2_msgs:/home/zaynap/Projects/Bt/install/btcpp_ros2_samples:/opt/ros/humble LD_LIBRARY_PATH=/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces/lib:/home/zaynap/Projects/Bt/install/grab2_planner/lib:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg/lib:/home/zaynap/Projects/Bt/install/grab2_bt_grabber/lib:/home/zaynap/Projects/Bt/install/grab2_behavior_tree/lib:/home/zaynap/Projects/Bt/install/grab2_msgs/lib:/home/zaynap/Projects/Bt/install/behaviortree_ros2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/zaynap/Projects/Bt/BehaviorTree.ROS2/btcpp_ros2_samples -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/btcpp_ros2_samples
+[1.466s] Invoking command in '/home/zaynap/Projects/Bt/build/btcpp_ros2_samples': CMAKE_PREFIX_PATH=/home/zaynap/Projects/Bt/install/behaviortree_ros2:/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces:/home/zaynap/Projects/Bt/install/tiago_slam:/home/zaynap/Projects/Bt/install/tiago_sim:/home/zaynap/Projects/Bt/install/tiago_nav:/home/zaynap/Projects/Bt/install/tiago_grab:/home/zaynap/Projects/Bt/install/grab2_planner:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg:/home/zaynap/Projects/Bt/install/grab2_bt_grabber:/home/zaynap/Projects/Bt/install/grab2_ros_common:/home/zaynap/Projects/Bt/install/grab2_behavior_tree:/home/zaynap/Projects/Bt/install/grab2_msgs:/home/zaynap/Projects/Bt/install/btcpp_ros2_samples:/opt/ros/humble LD_LIBRARY_PATH=/home/zaynap/Projects/Bt/install/btcpp_ros2_interfaces/lib:/home/zaynap/Projects/Bt/install/grab2_planner/lib:/home/zaynap/Projects/Bt/install/grab2_bt_testing_pkg/lib:/home/zaynap/Projects/Bt/install/grab2_bt_grabber/lib:/home/zaynap/Projects/Bt/install/grab2_behavior_tree/lib:/home/zaynap/Projects/Bt/install/grab2_msgs/lib:/home/zaynap/Projects/Bt/install/behaviortree_ros2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zaynap/Projects/Bt/build/btcpp_ros2_samples -- -j8 -l8
+[1.519s] [  5%] [32mBuilding CXX object CMakeFiles/sleep_plugin.dir/src/sleep_action.cpp.o[0m
+[1.522s] [ 11%] [32mBuilding CXX object CMakeFiles/bool_server.dir/src/bool_server.cpp.o[0m
+[1.522s] [ 16%] [32mBuilding CXX object CMakeFiles/sample_bt_executor.dir/src/sample_bt_executor.cpp.o[0m
+[1.524s] [ 22%] [32mBuilding CXX object CMakeFiles/bool_client.dir/src/set_bool_node.cpp.o[0m
+[1.525s] [ 27%] [32mBuilding CXX object CMakeFiles/sleep_server.dir/src/sleep_server.cpp.o[0m
+[1.525s] [ 33%] [32mBuilding CXX object CMakeFiles/subscriber_test.dir/src/subscriber_test.cpp.o[0m
+[1.527s] [ 38%] [32mBuilding CXX object CMakeFiles/bool_client.dir/src/bool_client.cpp.o[0m
+[1.531s] [ 44%] [32mBuilding CXX object CMakeFiles/sleep_client.dir/src/sleep_action.cpp.o[0m
+[8.352s] [ 50%] [32m[1mLinking CXX executable bool_server[0m
+[8.841s] [ 50%] Built target bool_server
+[8.871s] [ 55%] [32mBuilding CXX object CMakeFiles/sleep_client.dir/src/sleep_client.cpp.o[0m
+[20.034s] [ 61%] [32m[1mLinking CXX executable bool_client[0m
+[20.123s] [ 66%] [32m[1mLinking CXX executable sleep_server[0m
+[20.928s] [ 66%] Built target sleep_server
+[21.849s] [ 66%] Built target bool_client
+[21.859s] [ 72%] [32m[1mLinking CXX shared library libsleep_plugin.so[0m
+[22.989s] [ 72%] Built target sleep_plugin
+[30.422s] [ 77%] [32m[1mLinking CXX executable sleep_client[0m
+[31.330s] [ 77%] Built target sleep_client
+[31.711s] [ 83%] [32m[1mLinking CXX executable subscriber_test[0m
+[32.141s] [ 88%] [32m[1mLinking CXX executable sample_bt_executor[0m
+[33.213s] [ 88%] Built target subscriber_test
+[33.668s] [ 88%] Built target sample_bt_executor
+[33.700s] [ 94%] [32mBuilding CXX object CMakeFiles/sleep_client_dyn.dir/src/sleep_client.cpp.o[0m
+[39.755s] [100%] [32m[1mLinking CXX executable sleep_client_dyn[0m
+[39.923s] [100%] Built target sleep_client_dyn

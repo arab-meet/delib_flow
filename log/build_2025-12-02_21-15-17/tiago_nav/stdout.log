@@ -1,0 +1,51 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zaynap/Projects/Bt/build/tiago_nav
+-- Install configuration: ""
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/launch
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/launch/tiago_nav2.launch.py
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/config
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/config/bt_navigator.yaml
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/config/recovery.yaml
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/config/tiago_amcl.yaml
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/config/controller.yaml
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/config/planner_server.yaml
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/maps
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/maps/map.yaml
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/maps/map.pgm
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/rviz
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/rviz/tiago_nav.rviz
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/ament_index/resource_index/package_run_dependencies/tiago_nav
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/ament_index/resource_index/parent_prefix_path/tiago_nav
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/environment/ament_prefix_path.sh
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/environment/ament_prefix_path.dsv
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/environment/path.sh
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/environment/path.dsv
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/local_setup.bash
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/local_setup.sh
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/local_setup.zsh
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/local_setup.dsv
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/package.dsv
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/ament_index/resource_index/packages/tiago_nav
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/cmake/tiago_navConfig.cmake
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/cmake/tiago_navConfig-version.cmake
+-- Installing: /home/zaynap/Projects/Bt/install/tiago_nav/share/tiago_nav/package.xml

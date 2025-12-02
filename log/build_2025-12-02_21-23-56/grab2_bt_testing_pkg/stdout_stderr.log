@@ -1,0 +1,25 @@
+[ 50%] Built target pick_and_navigate
+[35m[1mConsolidate compiler generated dependencies of target pick_and_navigate_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/pick_and_navigate_node.dir/src/main.cpp.o[0m
+[01m[K/home/zaynap/Projects/Bt/grab2_bt_testing_pkg/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/zaynap/Projects/Bt/grab2_bt_testing_pkg/src/main.cpp:14:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin()[m[K’
+   14 |   [01;31m[Krclcpp::spin()[m[K;
+      |   [01;31m[K~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zaynap/Projects/Bt/install/behaviortree_ros2/include/behaviortree_ros2/ros_node_params.hpp:17[m[K,
+                 from [01m[K/home/zaynap/Projects/Bt/install/behaviortree_ros2/include/behaviortree_ros2/plugins.hpp:21[m[K,
+                 from [01m[K/home/zaynap/Projects/Bt/install/behaviortree_ros2/include/behaviortree_ros2/bt_utils.hpp:26[m[K,
+                 from [01m[K/home/zaynap/Projects/Bt/install/grab2_ros_common/include/grab2_ros_common/grab2_ros_common/bt_execution_server.hpp:16[m[K,
+                 from [01m[K/home/zaynap/Projects/Bt/grab2_bt_testing_pkg/include/grab2_bt_testing_pkg/pick_and_navigate.hpp:4[m[K,
+                 from [01m[K/home/zaynap/Projects/Bt/grab2_bt_testing_pkg/src/main.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+   45 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)[m[K’
+   49 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/pick_and_navigate_node.dir/build.make:76: CMakeFiles/pick_and_navigate_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pick_and_navigate_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

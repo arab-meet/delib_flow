@@ -1,0 +1,6 @@
+Invoking command in '/home/zaynap/Projects/Bt/build/tiago_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zaynap/Projects/Bt/tiago_sim -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/tiago_sim
+Invoked command in '/home/zaynap/Projects/Bt/build/tiago_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zaynap/Projects/Bt/tiago_sim -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/tiago_sim
+Invoking command in '/home/zaynap/Projects/Bt/build/tiago_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/Projects/Bt/build/tiago_sim -- -j8 -l8
+Invoked command in '/home/zaynap/Projects/Bt/build/tiago_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/Projects/Bt/build/tiago_sim -- -j8 -l8
+Invoking command in '/home/zaynap/Projects/Bt/build/tiago_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/Projects/Bt/build/tiago_sim
+Invoked command in '/home/zaynap/Projects/Bt/build/tiago_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/Projects/Bt/build/tiago_sim

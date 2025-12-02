@@ -1,0 +1,439 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ament_auto_package",
+			"ament_index_register_resource",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"include",
+			"ament_execute_extensions",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_environment_hooks",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_package.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 124,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 66,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 3,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 47,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 29,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 105,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 43,
+				"parent" : 13
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 105,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 7,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 20,
+				"parent" : 17
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 70,
+				"parent" : 18
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 87,
+				"parent" : 18
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 70,
+				"parent" : 18
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 87,
+				"parent" : 18
+			},
+			{
+				"command" : 9,
+				"file" : 7,
+				"line" : 26,
+				"parent" : 17
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 91,
+				"parent" : 23
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 91,
+				"parent" : 23
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 91,
+				"parent" : 23
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 107,
+				"parent" : 23
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 119,
+				"parent" : 23
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 10,
+				"parent" : 29
+			},
+			{
+				"command" : 10,
+				"file" : 10,
+				"line" : 16,
+				"parent" : 30
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 29,
+				"parent" : 31
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 105,
+				"parent" : 32
+			},
+			{
+				"command" : 11,
+				"file" : 5,
+				"line" : 68,
+				"parent" : 6
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 150,
+				"parent" : 34
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 157,
+				"parent" : 34
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"config"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"launch"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"models"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"worlds"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/tiago_sim"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/tiago_sim"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim/environment",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 21,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim/environment",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 25,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 26,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 28,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 33,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_index/share/ament_index/resource_index/packages/tiago_sim"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 35,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim/cmake",
+			"paths" : 
+			[
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_core/tiago_simConfig.cmake",
+				"/home/zaynap/Projects/Bt/build/tiago_sim/ament_cmake_core/tiago_simConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 36,
+			"component" : "Unspecified",
+			"destination" : "share/tiago_sim",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

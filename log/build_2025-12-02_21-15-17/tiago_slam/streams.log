@@ -1,0 +1,50 @@
+[0.015s] Invoking command in '/home/zaynap/Projects/Bt/build/tiago_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zaynap/Projects/Bt/tiago_slam -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/tiago_slam
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.144s] -- The CXX compiler identification is GNU 11.4.0
+[0.154s] -- Detecting C compiler ABI info
+[0.235s] -- Detecting C compiler ABI info - done
+[0.249s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.249s] -- Detecting C compile features
+[0.250s] -- Detecting C compile features - done
+[0.256s] -- Detecting CXX compiler ABI info
+[0.352s] -- Detecting CXX compiler ABI info - done
+[0.367s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.367s] -- Detecting CXX compile features
+[0.368s] -- Detecting CXX compile features - done
+[0.371s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.917s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.051s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.168s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.169s] -- Added test 'lint_cmake' to check CMake code style
+[1.169s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.170s] -- Added test 'xmllint' to check XML markup files
+[1.171s] -- Configuring done
+[1.174s] -- Generating done
+[1.175s] -- Build files have been written to: /home/zaynap/Projects/Bt/build/tiago_slam
+[1.179s] Invoked command in '/home/zaynap/Projects/Bt/build/tiago_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zaynap/Projects/Bt/tiago_slam -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/tiago_slam
+[1.181s] Invoking command in '/home/zaynap/Projects/Bt/build/tiago_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/Projects/Bt/build/tiago_slam -- -j8 -l8
+[1.214s] Invoked command in '/home/zaynap/Projects/Bt/build/tiago_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/Projects/Bt/build/tiago_slam -- -j8 -l8
+[1.215s] Invoking command in '/home/zaynap/Projects/Bt/build/tiago_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/Projects/Bt/build/tiago_slam
+[1.223s] -- Install configuration: ""
+[1.223s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/launch
+[1.223s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/launch/tiago_slam_toolbox.launch.py
+[1.223s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/config
+[1.223s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/config/tiago_online_sync.yaml
+[1.223s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/rviz
+[1.223s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/rviz/slam.rviz
+[1.223s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/ament_index/resource_index/package_run_dependencies/tiago_slam
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/ament_index/resource_index/parent_prefix_path/tiago_slam
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/environment/ament_prefix_path.sh
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/environment/ament_prefix_path.dsv
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/environment/path.sh
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/environment/path.dsv
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/local_setup.bash
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/local_setup.sh
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/local_setup.zsh
+[1.224s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/local_setup.dsv
+[1.225s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/package.dsv
+[1.225s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/ament_index/resource_index/packages/tiago_slam
+[1.225s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/cmake/tiago_slamConfig.cmake
+[1.225s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/cmake/tiago_slamConfig-version.cmake
+[1.225s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_slam/share/tiago_slam/package.xml
+[1.228s] Invoked command in '/home/zaynap/Projects/Bt/build/tiago_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/Projects/Bt/build/tiago_slam

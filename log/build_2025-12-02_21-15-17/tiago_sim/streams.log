@@ -1,0 +1,106 @@
+[0.016s] Invoking command in '/home/zaynap/Projects/Bt/build/tiago_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zaynap/Projects/Bt/tiago_sim -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/tiago_sim
+[0.079s] -- The C compiler identification is GNU 11.4.0
+[0.145s] -- The CXX compiler identification is GNU 11.4.0
+[0.152s] -- Detecting C compiler ABI info
+[0.235s] -- Detecting C compiler ABI info - done
+[0.251s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.251s] -- Detecting C compile features
+[0.251s] -- Detecting C compile features - done
+[0.254s] -- Detecting CXX compiler ABI info
+[0.352s] -- Detecting CXX compiler ABI info - done
+[0.363s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.363s] -- Detecting CXX compile features
+[0.364s] -- Detecting CXX compile features - done
+[0.367s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.800s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.902s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.022s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.030s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.034s] -- Added test 'lint_cmake' to check CMake code style
+[1.034s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.038s] -- Added test 'xmllint' to check XML markup files
+[1.040s] -- Configuring done
+[1.044s] -- Generating done
+[1.047s] -- Build files have been written to: /home/zaynap/Projects/Bt/build/tiago_sim
+[1.072s] Invoked command in '/home/zaynap/Projects/Bt/build/tiago_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zaynap/Projects/Bt/tiago_sim -DCMAKE_INSTALL_PREFIX=/home/zaynap/Projects/Bt/install/tiago_sim
+[1.072s] Invoking command in '/home/zaynap/Projects/Bt/build/tiago_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/Projects/Bt/build/tiago_sim -- -j8 -l8
+[1.105s] Invoked command in '/home/zaynap/Projects/Bt/build/tiago_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/Projects/Bt/build/tiago_sim -- -j8 -l8
+[1.106s] Invoking command in '/home/zaynap/Projects/Bt/build/tiago_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/Projects/Bt/build/tiago_sim
+[1.113s] -- Install configuration: ""
+[1.113s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/config
+[1.113s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/config/gazebo_params.yaml
+[1.113s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/launch
+[1.113s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/launch/br2_gazebo.launch.py
+[1.114s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/launch/tiago_sim.launch.py
+[1.114s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/launch/sim.launch.py
+[1.114s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models
+[1.114s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/desk
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/desk/model.config
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/desk/model.sdf
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/charger
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/charger/model.config
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/charger/model.sdf
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/model.config
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/3.png
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/5.png
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/4.png
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/2.png
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/1.png
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/meshes
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/meshes/trash_can.dae
+[1.115s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/model.sdf
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/walls
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/walls/model.config
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/walls/model.sdf
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/table
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/table/model.config
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/table/model.sdf
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/counter
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/counter/model.config
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/counter/model.sdf
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model.config
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model-1_4.sdf
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails
+[1.116s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/3.png
+[1.117s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/5.png
+[1.117s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/4.png
+[1.117s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/2.png
+[1.117s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/1.png
+[1.117s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/meshes
+[1.117s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/meshes/coke_can.dae
+[1.118s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model-1_2.sdf
+[1.118s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model.sdf
+[1.118s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/materials
+[1.118s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/materials/textures
+[1.118s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/materials/textures/coke_can.png
+[1.119s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model-1_3.sdf
+[1.119s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/water
+[1.119s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/water/model.config
+[1.120s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/water/model.sdf
+[1.120s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/apple
+[1.120s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/apple/model.config
+[1.120s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/apple/model.sdf
+[1.120s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/banana
+[1.120s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/banana/model.config
+[1.121s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/models/banana/model.sdf
+[1.121s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/worlds
+[1.121s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/worlds/test_world.sdf
+[1.121s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/ament_index/resource_index/package_run_dependencies/tiago_sim
+[1.121s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/ament_index/resource_index/parent_prefix_path/tiago_sim
+[1.121s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/environment/ament_prefix_path.sh
+[1.121s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/environment/ament_prefix_path.dsv
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/environment/path.sh
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/environment/path.dsv
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/local_setup.bash
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/local_setup.sh
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/local_setup.zsh
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/local_setup.dsv
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/package.dsv
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/ament_index/resource_index/packages/tiago_sim
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/cmake/tiago_simConfig.cmake
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/cmake/tiago_simConfig-version.cmake
+[1.122s] -- Installing: /home/zaynap/Projects/Bt/install/tiago_sim/share/tiago_sim/package.xml
+[1.125s] Invoked command in '/home/zaynap/Projects/Bt/build/tiago_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/Projects/Bt/build/tiago_sim

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from btcpp_ros2_interfaces/srv/GetTrees.srv
+// generated code does not contain a copyright notice
+
+
+module btcpp_ros2_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request ####" "\n"
+      "Empty")
+    struct GetTrees_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Result ####")
+    struct GetTrees_Response {
+      @verbatim (language="comment", text=
+        "Ids of the available trees")
+      sequence<string> tree_ids;
+    };
+  };
+};

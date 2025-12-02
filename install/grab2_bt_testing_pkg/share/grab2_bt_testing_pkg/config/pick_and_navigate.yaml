@@ -1,0 +1,12 @@
+pick_and_navigate:
+  ros__parameters:
+    arm_controller_action: arm_controller/follow_joint_trajectory
+    gripper_controller_action: hand_controller/gripper_cmd
+    navigation_action: navigate_to_pose
+    tick_frequency: 100
+    groot2_port: 1667
+    plugins:
+      - behaviortree_cpp/bt_plugins
+      - grab2_behavior_tree/bt_plugins
+    behavior_trees:
+      - grab2_bt_demo/behavior_trees

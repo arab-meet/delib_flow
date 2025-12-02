@@ -1,0 +1,22 @@
+<root BTCPP_format="4" main_tree_to_execute="PickAndNavigate">
+  <BehaviorTree ID="PickAndNavigate">
+    <Sequence>
+      <SaySomething message="Start pick and navigate scenario"/>
+
+      <!-- Pick object -->
+      <ComputeTopDownGrasp object_pose="{target_pose}" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
+      <ComputePlanToTargetIK name="" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
+      <Move action_name="{arm_controller_action}" trajectory="{trajectory_msg}"/>
+      <Grip action_name="{gripper_controller_action}" pose="0.04"/>
+      <ComputePlanToTargetIK name="plan to grasp pose" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/>
+      <Move action_name="{arm_controller_action}" trajectory="{trajectory_msg}"/>
+      <Grip action_name="{gripper_controller_action}" pose="0.00"/>
+
+      <!-- Navigate -->
+      <SaySomething message="Navigating to target location"/>
+      <Navigate action_name="{navigation_action}" goal_pose="{target_pose}"/>
+
+      <SaySomething message="Finished pick and navigate"/>
+    </Sequence>
+  </BehaviorTree>
+</root>
