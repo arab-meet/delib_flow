@@ -33,3 +33,4 @@ General Tutorials
 
     docs/navigation
     docs/manipulation
+    docs/behavior
