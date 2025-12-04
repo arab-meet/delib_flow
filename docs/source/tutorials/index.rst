@@ -32,3 +32,4 @@ General Tutorials
     :maxdepth: 1
 
     docs/navigation
+    docs/manipulation

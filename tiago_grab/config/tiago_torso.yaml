@@ -1,0 +1,15 @@
+trajectories:
+  upward:
+    frame_id: ""
+    joint_names:
+      - "torso_lift_joint"
+    points:
+      - positions: [0.3]
+        time_from_start: 5.0
+  downward:
+    frame_id: ""
+    joint_names:
+      - "torso_lift_joint"
+    points:
+      - positions: [0.0]
+        time_from_start: 5.0
