@@ -1,30 +1,16 @@
-# Copyright (c) 2022 PAL Robotics S.L. All rights reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
+from dataclasses import dataclass
 import os
+
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
-from launch_pal.arg_utils import read_launch_argument
-from launch_ros.actions import Node
-from tiago_description.tiago_launch_utils import get_tiago_hw_suffix
-from moveit_configs_utils import MoveItConfigsBuilder
 from launch_pal.arg_utils import LaunchArgumentsBase
-from tiago_description.launch_arguments import TiagoArgs
-from launch.substitutions import LaunchConfiguration
-from dataclasses import dataclass
+from launch_pal.arg_utils import read_launch_argument
 from launch_pal.robot_arguments import CommonArgs
-from ament_index_python.packages import get_package_share_directory
+from launch_ros.actions import Node
+from moveit_configs_utils import MoveItConfigsBuilder
+from tiago_description.launch_arguments import TiagoArgs
+from tiago_description.tiago_launch_utils import get_tiago_hw_suffix
 
 
 @dataclass(frozen=True)
@@ -64,11 +50,11 @@ def declare_actions(
 
 def start_move_group(context, *args, **kwargs):
 
-    base_type = (read_launch_argument("base_type", context),)
-    arm_type = read_launch_argument("arm_type", context)
-    end_effector = read_launch_argument("end_effector", context)
-    ft_sensor = read_launch_argument("ft_sensor", context)
-    use_sensor_manager = read_launch_argument("use_sensor_manager", context)
+    base_type = (read_launch_argument('base_type', context),)
+    arm_type = read_launch_argument('arm_type', context)
+    end_effector = read_launch_argument('end_effector', context)
+    ft_sensor = read_launch_argument('ft_sensor', context)
+    use_sensor_manager = read_launch_argument('use_sensor_manager', context)
 
     hw_suffix = get_tiago_hw_suffix(
         arm=arm_type,
@@ -77,56 +63,56 @@ def start_move_group(context, *args, **kwargs):
     )
 
     srdf_file_path = os.path.join(
-        get_package_share_directory("tiago_moveit_config"),
-        "config",
-        "srdf",
-        "tiago.srdf.xacro",
+        get_package_share_directory('tiago_moveit_config'),
+        'config',
+        'srdf',
+        'tiago.srdf.xacro',
     )
 
     srdf_input_args = {
-        "arm_type": arm_type,
-        "end_effector": end_effector,
-        "ft_sensor": ft_sensor,
-        "base_type": base_type,
+        'arm_type': arm_type,
+        'end_effector': end_effector,
+        'ft_sensor': ft_sensor,
+        'base_type': base_type,
     }
 
     # Trajectory Execution Functionality
-    moveit_simple_controllers_path = f"config/controllers/controllers{hw_suffix}.yaml"
+    moveit_simple_controllers_path = f'config/controllers/controllers{hw_suffix}.yaml'
 
-    robot_description_kinematics = "config/kinematics_kdl.yaml"
-    joint_limits = "config/joint_limits.yaml"
-    pilz_cartesian_limits = "config/pilz_cartesian_limits.yaml"
+    robot_description_kinematics = 'config/kinematics_kdl.yaml'
+    joint_limits = 'config/joint_limits.yaml'
+    pilz_cartesian_limits = 'config/pilz_cartesian_limits.yaml'
 
     planning_scene_monitor_parameters = {
-        "publish_planning_scene": True,
-        "publish_geometry_updates": True,
-        "publish_state_updates": True,
-        "publish_transforms_updates": True,
-        "publish_robot_description": True,
+        'publish_planning_scene': True,
+        'publish_geometry_updates': True,
+        'publish_state_updates': True,
+        'publish_transforms_updates': True,
+        'publish_robot_description': True,
     }
 
     # The robot description is read from the topic /robot_description if the parameter is empty
     moveit_config = (
-        MoveItConfigsBuilder("tiago")
+        MoveItConfigsBuilder('tiago')
         .robot_description_semantic(file_path=srdf_file_path, mappings=srdf_input_args)
         .robot_description_kinematics(file_path=robot_description_kinematics)
         .trajectory_execution(moveit_simple_controllers_path)
         .planning_scene_monitor(planning_scene_monitor_parameters)
         .joint_limits(file_path=joint_limits)
-        .planning_pipelines(pipelines=["ompl"], default_planning_pipeline="ompl")
+        .planning_pipelines(pipelines=['ompl'], default_planning_pipeline='ompl')
         .pilz_cartesian_limits(file_path=pilz_cartesian_limits)
     )
 
     if use_sensor_manager:
         # moveit_sensors path
-        moveit_sensors_path = "config/sensors_3d.yaml"
+        moveit_sensors_path = 'config/sensors_3d.yaml'
         moveit_config.sensors_3d(moveit_sensors_path)
 
     moveit_config.to_moveit_configs()
 
     move_group_configuration = {
-        "use_sim_time": True,
-        "publish_robot_description_semantic": True,
+        'use_sim_time': True,
+        'publish_robot_description_semantic': True,
     }
 
     move_group_params = [
@@ -136,9 +122,9 @@ def start_move_group(context, *args, **kwargs):
 
     # Start the actual move_group node/action server
     run_move_group_node = Node(
-        package="moveit_ros_move_group",
-        executable="move_group",
-        output="screen",
+        package='moveit_ros_move_group',
+        executable='move_group',
+        output='screen',
         emulate_tty=True,
         parameters=move_group_params,
     )
@@ -148,7 +134,7 @@ def start_move_group(context, *args, **kwargs):
         package='grab2_planner',
         executable='grab2_planner_server',
         output='screen',
-        parameters=move_group_params,
+        parameters=move_group_params + [{'planning_group': 'arm'}],
     )
 
     return [run_move_group_node, grab2_planner_server_node]
