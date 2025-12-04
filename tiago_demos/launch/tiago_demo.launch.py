@@ -8,7 +8,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     # Paths to configuration files
     behavior_tree_xml = os.path.join(
-        get_package_share_directory('tiago_demos'), 'trees', 'navigation_demo.xml'
+        get_package_share_directory('tiago_demos'), 'trees', 'our_map_example.xml'
     )
     locations_cfg = os.path.join(
         get_package_share_directory('tiago_demos'), 'config', 'our_map.yaml'
