@@ -28,23 +28,8 @@ def generate_launch_description():
         }.items(),
     )
 
-    # YOLOv11
-    yolo_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(tiago_gazebo_dir, 'launch', 'yolo_tiago.laucnh.py')
-        ),
-        launch_arguments={
-            'model': os.path.join(tiago_gazebo_dir, 'models', 'yolo11m.pt'),
-            'threshold': '0.5',
-            'input_image_topic': 'head_front_camera/image',
-            'device': 'cuda:0',
-            'namespace': '',
-        }.items(),
-    )
-
     ld = LaunchDescription()
     ld.add_action(tiago_sim_cmd)
     ld.add_action(declare_world_cmd)
-    ld.add_action(yolo_launch)
 
     return ld
