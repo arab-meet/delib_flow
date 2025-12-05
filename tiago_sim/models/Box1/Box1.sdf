@@ -1,0 +1,83 @@
+<?xml version="1.0" ?><sdf version="1.6">
+
+<model name="Box1">
+ 
+  <static>true</static>
+    <link name="cube_link">
+
+      <!-- Front face -->
+      <visual name="front">
+        <pose>0 0 0 0 0 -3.14</pose> <!-- shift +Y -->
+        <geometry>
+          <mesh>
+            <uri>meshes/Box1.dae</uri>
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Back face -->
+      <visual name="Back">
+        <pose>0.14 0 0 0 0 0</pose> <!-- shift +Y -->
+        <geometry>
+          <mesh>
+            <uri>meshes/Box1.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Top face -->
+      <visual name="Top">
+        <pose>0.0 0 0.14 0 1.57 0</pose> 
+        <geometry>
+          <mesh>
+            <uri>meshes/Box1.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- bottom face -->
+      <visual name="bottom">
+        <pose>0 0 0 0 1.57 0</pose> <!-- shift +Y -->
+        <geometry>
+          <mesh>
+            <uri>meshes/Box1.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Right face -->
+      <visual name="Right">
+        <pose>0.07 -0.07 0 0 0 4.71</pose> <!-- shift +Y -->
+        <geometry>
+          <mesh>
+            <uri>meshes/Box1.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Left face -->
+      <visual name="Left">
+        <pose>0.07 0.07 0 0 0 1.57</pose> <!-- shift +Y -->
+        <geometry>
+          <mesh>
+            <uri>meshes/Box1.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+
+  </link>
+  </model>
+  
+</sdf>
