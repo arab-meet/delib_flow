@@ -17,3 +17,4 @@ documentation for details.
 
    use_sphinx
    tutorials/index
+   usage/index

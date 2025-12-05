@@ -36,22 +36,33 @@ Check `docs/README.md` for instructions
 
 5. Create a map
 
-    ```sh
+    ```bash
     ros2 launch tiago_slam tiago_slam_toolbox.launch.py
     ```
 
 6. Start navigation (Nav2)
 
-    ```sh
+    ```bash
     ros2 launch tiago_nav tiago_nav2.launch.py
 
 7. Running aruco recognition
 
-    ```sh
+    ```bash
     ros2 launch ros2_aruco aruco_recognition.launch.py
     ```
 
 8. Broadcasting aruco_frame in tf
 
-    ```sh
+    ```bash
     ros2 run tiago_aruco_broadcast aruco_broadcast
+    ```
+
+9. YOLOv11 Test
+
+   ```bash
+   ros2 launch tiago_sim sim.launch.py
+   ```
+
+   ```bash
+   rviz2
+   ```

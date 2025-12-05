@@ -9,3 +9,8 @@ ThirdParty/*
 # Sphinx documentation
 docs/build/
 docs/venv/
+
+tiago_sim/models/yolo11m.pt
+tiago_sim/models/yolo11n.pt
+
+.vscode/
