@@ -33,8 +33,24 @@
     ros2 launch tiago_sim tiago_sim.launch.py
     ```
 
-5. Running aruco_detection ( and broadcasting )
+5. Create a map
+
+    ```sh
+    ros2 launch tiago_slam tiago_slam_toolbox.launch.py
+    ```
+
+6. Start navigation (Nav2)
+
+    ```sh
+    ros2 launch tiago_nav tiago_nav2.launch.py
+
+7. Running aruco recognition
 
     ```sh
     ros2 launch tiago_aruco_broadcast aruco.launch.py
     ```
+
+8. Broadcasting aruco_frame in tf
+
+    ```sh
+    ros2 run tiago_aruco_broadcast aruco_broadcast
