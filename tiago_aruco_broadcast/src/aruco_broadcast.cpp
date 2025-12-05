@@ -27,7 +27,7 @@ class camera : public rclcpp::Node
    }
 
    private:
-
+   
    void camera_callback( const ros2_aruco_interfaces::msg::ArucoMarkers &aruco )
    {
 
