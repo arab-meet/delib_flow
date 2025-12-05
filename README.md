@@ -35,13 +35,13 @@
 
 5. Create a map
 
-    ```bash
+    ```sh
     ros2 launch tiago_slam tiago_slam_toolbox.launch.py
     ```
 
 6. Start navigation (Nav2)
 
-    ```bash
+    ```sh
     ros2 launch tiago_nav tiago_nav2.launch.py
     ```
 
