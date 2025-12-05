@@ -122,4 +122,8 @@
   <scene>
     <instance_visual_scene url="#Scene"/>
   </scene>
+<<<<<<< HEAD
 </COLLADA>
+=======
+</COLLADA>
+>>>>>>> 2efb961 (updated aruco)
