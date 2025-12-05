@@ -157,7 +157,7 @@
         <pose>4 0.0 0.0 0.0 0.0 0.0</pose>
       </include>
     </model>
-   
+
     <!-- <model name='charger'>
       <include>
         <uri>model://charger</uri>
