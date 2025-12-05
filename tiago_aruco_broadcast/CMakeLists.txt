@@ -28,13 +28,10 @@ install(TARGETS
     aruco_broadcast
     DESTINATION lib/${PROJECT_NAME})
 
-<<<<<<< HEAD
 install(DIRECTORY config launch
   DESTINATION share/${PROJECT_NAME}/
 )
 
-=======
->>>>>>> 2efb961 (updated aruco)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

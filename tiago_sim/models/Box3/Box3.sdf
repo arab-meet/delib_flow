@@ -1,6 +1,10 @@
 <?xml version="1.0" ?><sdf version="1.6">
 
 <model name="Box3">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ccead3 (updated)
   <static>true</static>
     <link name="cube_link">
 
