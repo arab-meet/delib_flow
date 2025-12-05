@@ -31,7 +31,6 @@
       <visual name="Top">
         <pose>0.0 0 0.14 0 1.57 0</pose>
         <pose>0.0 0 0.14 0 1.57 0</pose>
-
         <geometry>
           <mesh>
             <uri>meshes/Box1.dae</uri>
