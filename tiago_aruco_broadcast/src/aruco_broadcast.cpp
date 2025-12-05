@@ -29,6 +29,7 @@ class camera : public rclcpp::Node
    private:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 
@@ -36,6 +37,9 @@ class camera : public rclcpp::Node
 =======
 
 >>>>>>> 4ccead3 (updated)
+=======
+   
+>>>>>>> 2efb961 (updated aruco)
    void camera_callback( const ros2_aruco_interfaces::msg::ArucoMarkers &aruco )
    {
 
