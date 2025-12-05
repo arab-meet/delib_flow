@@ -1,10 +1,6 @@
 <?xml version="1.0" ?><sdf version="1.6">
 
 <model name="Box2">
-<<<<<<< HEAD
-=======
-
->>>>>>> 4ccead3 (updated)
   <static>true</static>
     <link name="cube_link">
 
@@ -35,9 +31,14 @@
       <visual name="Top">
         <pose>0.0 0 0.14 0 1.57 0</pose>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4ccead3 (updated)
+=======
+
+        <pose>0.0 0 0.14 0 1.57 0</pose>
+>>>>>>> 5d180df (updated aruco)
         <geometry>
           <mesh>
             <uri>meshes/Box2.dae</uri>
@@ -86,5 +87,4 @@
 
   </link>
   </model>
-
 </sdf>

@@ -157,7 +157,11 @@
         <pose>4 0.0 0.0 0.0 0.0 0.0</pose>
       </include>
     </model>
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 2efb961 (updated aruco)
     <!-- <model name='charger'>
       <include>
         <uri>model://charger</uri>
