@@ -11,7 +11,7 @@ Check `docs/README.md` for instructions
 1. Create a workspace
 
     ```bash
-    mkdir ~/bt_ws/src
+    mkdir -p ~/bt_ws/src
     ```
 
 2. Setup dependencies
@@ -44,3 +44,14 @@ Check `docs/README.md` for instructions
 
     ```sh
     ros2 launch tiago_nav tiago_nav2.launch.py
+
+7. Running aruco recognition
+
+    ```sh
+    ros2 launch ros2_aruco aruco_recognition.launch.py
+    ```
+
+8. Broadcasting aruco_frame in tf
+
+    ```sh
+    ros2 run tiago_aruco_broadcast aruco_broadcast
