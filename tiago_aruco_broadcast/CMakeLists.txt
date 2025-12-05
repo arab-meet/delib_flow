@@ -28,10 +28,13 @@ install(TARGETS
     aruco_broadcast
     DESTINATION lib/${PROJECT_NAME})
 
+<<<<<<< HEAD
 install(DIRECTORY config launch
   DESTINATION share/${PROJECT_NAME}/
 )
 
+=======
+>>>>>>> 060c648 (Add ArUco marker detector (#36))
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
