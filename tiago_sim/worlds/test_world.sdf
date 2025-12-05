@@ -158,10 +158,14 @@
       </include>
     </model>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 
 >>>>>>> 2efb961 (updated aruco)
+=======
+
+>>>>>>> 4ccead3 (updated)
     <!-- <model name='charger'>
       <include>
         <uri>model://charger</uri>
