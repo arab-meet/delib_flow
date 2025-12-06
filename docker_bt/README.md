@@ -1,6 +1,7 @@
 # Docker Setup for ROS 2 Jazzy with Gazebo Harmonic
 
-This Docker setup provides a complete development environment for ROS 2 Jazzy with Gazebo Harmonic, pre-configured with the Bt workspace.
+This Docker setup provides a complete development environment for ROS 2 Jazzy
+with Gazebo Harmonic, pre-configured with the Bt workspace.
 
 ## Overview
 
@@ -25,6 +26,7 @@ make build
 ```
 
 This will:
+
 - Build the Docker image with ROS 2 Jazzy and Gazebo Harmonic
 - Clone the Bt repository
 - Install all dependencies
@@ -45,6 +47,7 @@ Or use the run script directly:
 ```
 
 This will:
+
 - Start an interactive container
 - Mount the workspace to `~/shared_bt/bt_ws` on your host
 - Set up X11 forwarding for Gazebo GUI
@@ -53,6 +56,7 @@ This will:
 ### 3. Access the Container
 
 Once inside the container, you'll have:
+
 - ROS 2 Jazzy environment sourced
 - Workspace at `/bt_ws`
 - Full access to edit files via `~/shared_bt/bt_ws` on your host
@@ -138,7 +142,8 @@ The container uses the following environment variables (set automatically):
 
 ## GitHub Credentials
 
-The Dockerfile uses GitHub credentials for cloning private repositories. These are set in the Makefile:
+The Dockerfile uses GitHub credentials for cloning private repositories.
+These are set in the Makefile:
 
 - `GIT_USER`: Your GitHub username
 - `GIT_TOKEN`: Your GitHub personal access token
@@ -202,7 +207,8 @@ sudo chown -R $(whoami):$(whoami) /bt_ws
 
 ### Graphics/Rendering Issues
 
-If you encounter MESA/Vulkan errors, the container is configured for software rendering. If issues persist:
+If you encounter MESA/Vulkan errors, the container is configured for software
+rendering. If issues persist:
 
 ```bash
 # Try running Gazebo in headless mode
@@ -212,7 +218,7 @@ gz sim <your_world>
 
 ## File Structure
 
-```
+```text
 docker_bt/
 ├── Dockerfile              # Main Docker image definition
 ├── Makefile                # Convenience commands
@@ -224,7 +230,7 @@ docker_bt/
 
 ## Workspace Structure
 
-```
+```text
 /bt_ws/
 ├── src/                   # Source packages
 │   └── Bt/                # Main repository
@@ -244,7 +250,7 @@ docker_bt/
 ## Support
 
 For issues or questions:
+
 1. Check the troubleshooting section above
 2. Review Docker logs: `docker logs bt_ros2_jazzy_container`
 3. Check container status: `docker ps -a`
-

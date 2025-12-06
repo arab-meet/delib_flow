@@ -66,6 +66,15 @@ RUN apt-get update && apt-get install -y \
 	&& rm -rf /var/lib/apt/lists/{apt,dpkg,cache,log} /tmp/* /var/tmp/*
 
 #
+# Install Navigation2
+#
+RUN apt-get update && apt-get install -y \
+		ros-jazzy-navigation2 \
+		ros-jazzy-nav2-bringup \
+	&& apt-get clean autoclean \
+	&& rm -rf /var/lib/apt/lists/{apt,dpkg,cache,log} /tmp/* /var/tmp/*
+
+#
 # Create workspace structure
 #
 RUN mkdir -p /bt_ws/src
@@ -181,4 +190,3 @@ RUN mkdir -p /shared_bt && \
 WORKDIR /bt_ws
 
 CMD ["/bin/bash"]
-

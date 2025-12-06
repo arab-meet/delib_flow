@@ -89,7 +89,7 @@ if [ "$(docker ps -aq -f name=${CONTAINER_NAME})" ]; then
     docker exec -it ${CONTAINER_NAME} env TERM=xterm-256color bash -c "${CMD}"
 else
     echo "Running new container ${CONTAINER_NAME}..."
-    
+
     docker run -it \
         --network host \
         --env="DISPLAY=${DISPLAY}" \
@@ -113,4 +113,3 @@ else
         ${DOCKER_REPO}:latest \
         bash -c "${CMD}"
 fi
-

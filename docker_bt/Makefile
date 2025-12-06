@@ -6,8 +6,8 @@ IMAGE_TAG=latest
 CONTAINER_NAME=bt_ros2_jazzy_container
 
 # GitHub credentials (can be overridden via environment variables)
-GIT_USER ?= 
-GIT_TOKEN ?= 
+GIT_USER ?=
+GIT_TOKEN ?=
 
 # Default target
 all: build
@@ -50,4 +50,3 @@ stop:
 clean: stop
 	docker rmi $(IMAGE_NAME):$(IMAGE_TAG) || true
 	docker system prune -f
-

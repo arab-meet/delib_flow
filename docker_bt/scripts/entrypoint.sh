@@ -76,4 +76,3 @@ fi
 
 # exec as the non-root user (gosu is already in the image)
 exec gosu "${RUNTIME_USER}" "$@"
-
