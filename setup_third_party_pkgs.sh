@@ -16,5 +16,14 @@ sudo apt-get update
 rosdep update --rosdistro=$ROS_DISTRO
 rosdep install --from-paths . --ignore-src -r -y --rosdistro=$ROS_DISTRO
 
-# Install Python requirements for YOLO
-pip3 install -r ThirdParty/yolo_ros/requirements.txt
+# Install Python requirements for YOLO into an isolated venv to avoid touching system packages
+YOLO_VENV="${YOLO_VENV:-ThirdParty/yolo_ros/.venv}"
+if [ ! -d "$YOLO_VENV" ]; then
+  python3 -m venv "$YOLO_VENV"
+fi
+# Install missing dependencies to resolve pip conflicts
+"${YOLO_VENV}/bin/pip" install typeguard pydot jinja2 pyyaml setuptools
+# Install YOLO requirements
+echo "Installing YOLO requirements into venv at: $YOLO_VENV"
+"${YOLO_VENV}/bin/pip" install -r ThirdParty/yolo_ros/requirements.txt
+echo "YOLO venv ready at: $YOLO_VENV"
