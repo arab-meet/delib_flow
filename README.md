@@ -33,13 +33,8 @@
     ros2 launch tiago_sim tiago_sim.launch.py
     ```
 
-5. Running aruco recognition
+5. Running aruco_detection ( and broadcasting )
 
     ```sh
-    ros2 launch ros2_aruco aruco_recognition.launch.py
+    ros2 launch tiago_aruco_broadcast aruco.launch.py
     ```
-
-6. Broadcasting aruco_frame in tf
-
-    ```sh
-    ros2 run tiago_aruco_broadcast aruco_broadcast
