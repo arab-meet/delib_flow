@@ -21,15 +21,15 @@
       <NavigateToPose name="ToOffice" goal="{Office}"/>
 
       <!-- Move your Head around-->
-      <GetTrajectoryFromYAML trajectory_name="sweeping" package_name="tiago_grab" config_file="tiago_head" trajectory="{trajectory_msg}"/>
+      <GetTrajectoryFromYAML trajectory_name="head_sweep" package_name="tiago_grab" config_file="tiago_positions" trajectory="{trajectory_msg}"/>
       <FollowJointTrajectory action_name="{head_action}" trajectory="{trajectory_msg}"/>
 
       <!-- Move your Torso Up -->
-      <GetTrajectoryFromYAML trajectory_name="upward" package_name="tiago_grab" config_file="tiago_torso" trajectory="{trajectory_msg}"/>
+      <GetTrajectoryFromYAML trajectory_name="torso_up" package_name="tiago_grab" config_file="tiago_positions" trajectory="{trajectory_msg}"/>
       <FollowJointTrajectory action_name="{torso_action}" trajectory="{trajectory_msg}"/>
 
       <!-- Move your Torso Down -->
-      <GetTrajectoryFromYAML trajectory_name="downward" package_name="tiago_grab" config_file="tiago_torso" trajectory="{trajectory_msg}"/>
+      <GetTrajectoryFromYAML trajectory_name="torso_down" package_name="tiago_grab" config_file="tiago_positions" trajectory="{trajectory_msg}"/>
       <FollowJointTrajectory action_name="{torso_action}" trajectory="{trajectory_msg}"/>
 
       <!-- Move your arm -->
