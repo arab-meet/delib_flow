@@ -11,7 +11,7 @@ Usage
 
 .. code:: bash
 
-   ros2 launch
+   ros2 launch tiago_sim tiago_yolo.launch.py
 
 Yolov11 Node
 ~~~~~~~~~~~~
