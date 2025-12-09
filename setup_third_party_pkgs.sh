@@ -17,4 +17,4 @@ rosdep update --rosdistro=$ROS_DISTRO
 rosdep install --from-paths . --ignore-src -r -y --rosdistro=$ROS_DISTRO
 
 # Install Python requirements for YOLO
-pip3 install -r ThirdParty/yolo_ros/requirements.txt --break-system-packages
+pip3 install -r ThirdParty/yolo_ros/requirements.txt

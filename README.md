@@ -43,8 +43,6 @@
 
     ```bash
     ros2 launch tiago_nav tiago_nav2.launch.py
-
-<<<<<<< HEAD
     ```
 
 7. Running aruco_detection ( and broadcasting )
@@ -62,18 +60,3 @@
    ```bash
    rviz2
    ```
-
-=======
-
-7. Running aruco recognition
-
-    ```sh
-    ros2 launch ros2_aruco aruco_recognition.launch.py
-    ```
-
-8. Broadcasting aruco_frame in tf
-
-    ```sh
-    ros2 run tiago_aruco_broadcast aruco_broadcast
-
->>>>>>> 060c648 (Add ArUco marker detector (#36))
