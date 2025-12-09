@@ -1,6 +1,8 @@
 #include <vector>
 #include <string>
 #include <filesystem>
+#include <yaml-cpp/yaml.h>
+
 
 #include "rclcpp/rclcpp.hpp"
 #include "ament_index_cpp/get_package_share_directory.hpp"
@@ -13,6 +15,10 @@
 #include "grab2_behavior_tree/plugins_list.hpp"
 #include "nav2_behavior_tree/plugins_list.hpp"
 #include "nav2_util/string_utils.hpp"
+#include <unordered_map>
+
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 
 #include "geometry_msgs/msg/pose_stamped.hpp"
 
@@ -24,12 +30,51 @@ int main(int argc, char ** argv)
   auto node = std::make_shared<rclcpp::Node>("btcpp_executor");
 
   node->declare_parameter("behavior_tree", "trees/navigation_demo.xml");
-  node->declare_parameter("target_locations", "config/our_map.yaml");
+  node->declare_parameter("target_locations", "config/map_locations.yaml");
+  // ------------------------------------------------------
+  // Load Target Locations from YAML
+  std::unordered_map<std::string, geometry_msgs::msg::PoseStamped> target_locations_map;
 
-  // TODO(Load Pre-defined Targets): Parse YAML file with target locations and store them in the blackboard with a
-  // HASHMAP to search for target_pose
-  // (unordered_map<string, geometry_msgs::msg::PoseStamped>)
-  // Hint: Check (grab2_behavior_tree, grab2_grasp_generator) pkgs for YAML parsing examples.
+  std::string target_locations_filename;
+  node->get_parameter("target_locations", target_locations_filename);
+  if (target_locations_filename.empty()) {
+    RCLCPP_WARN(node->get_logger(), "No target locations YAML provided, proceeding without predefined targets.");
+  return 1;
+    }
+    try {
+        const std::filesystem::path target_locations_path = GetFilePath(target_locations_filename);
+        YAML::Node locations = YAML::LoadFile(target_locations_path.string());
+
+        for (auto it = locations.begin(); it != locations.end(); ++it) {
+            std::string name = it->first.as<std::string>();
+            auto pose_node = it->second["pose"];
+            std::string frame_id = it->second["frame_id"].as<std::string>();
+
+            double x = pose_node["x"].as<double>();
+            double y = pose_node["y"].as<double>();
+            double z = pose_node["z"].as<double>();
+            double yaw_deg = pose_node["yaw_deg"].as<double>();
+
+            // yaw to quaternion
+            tf2::Quaternion q;
+            q.setRPY(0, 0, yaw_deg * M_PI / 180.0);
+
+            geometry_msgs::msg::PoseStamped pose;
+            pose.header.frame_id = frame_id;
+            pose.pose.position.x = x;
+            pose.pose.position.y = y;
+            pose.pose.position.z = z;
+            pose.pose.orientation = tf2::toMsg(q);
+
+            //addd the name and pose 
+            target_locations_map[name] = pose;
+
+            RCLCPP_INFO(node->get_logger(), "Loaded target location: %s (x=%.2f, y=%.2f, yaw=%.1f)",
+                        name.c_str(), x, y, yaw_deg);
+        }
+    } catch (const std::exception& e) {
+        RCLCPP_ERROR(node->get_logger(), "Failed to load target locations YAML: %s", e.what());
+    }
 
   std::string bt_filename;
   node->get_parameter("behavior_tree", bt_filename);
@@ -80,19 +125,8 @@ int main(int argc, char ** argv)
   global_blackboard->set<float>("battery_level", 100.0f);
   global_blackboard->set<bool>("holding_object", false);
 
-  // TODO(Load Pre-defined Targets): For each target location parsed from the YAML file,
-  // store it in the blackboard with the corresponding key.
-  // Example:
-  // geometry_msgs::msg::PoseStamped target_goal;
-  // target_goal.header.frame_id = "map";
-  // target_goal.pose.position.x = 0.4;
-  // target_goal.pose.position.y = -0.3;
-  // target_goal.pose.position.z = 0.0;
-  // target_goal.pose.orientation.x = 0.0;
-  // target_goal.pose.orientation.y = 0.0;
-  // target_goal.pose.orientation.z = 0.0;
-  // target_goal.pose.orientation.w = 1.0;
-  // global_blackboard->set<geometry_msgs::PoseStamped>("target_goal", target_goal);
+  global_blackboard->set("target_locations", target_locations_map);
+  RCLCPP_INFO(node->get_logger(), "All target locations loaded into blackboard."); // for debugging
 
   BT::Tree tree = factory.createTree("MainTree", global_blackboard);
 

@@ -1,0 +1,40 @@
+# The coordinates for all target locations were extracted directly from the PyRoboSim world layout to match the same map structure
+Dining:
+  frame_id: map
+  pose:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    yaw_deg: 0
+
+Kitchen:
+  frame_id: map
+  pose:
+    x: -2.94
+    y: -1.75
+    z: 0.0
+    yaw_deg: 0
+
+TrashRoom:
+  frame_id: map
+  pose:
+    x: -2.83
+    y: 1.75
+    z: 0.0
+    yaw_deg: 0
+
+Closet:
+  frame_id: map
+  pose:
+    x: 2.25
+    y: 2.25
+    z: 0.0
+    yaw_deg: 0
+
+Office:
+  frame_id: map
+  pose:
+    x: 2.25
+    y: -1.75
+    z: 0.0
+    yaw_deg: 0

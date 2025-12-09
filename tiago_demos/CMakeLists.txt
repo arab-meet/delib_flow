@@ -17,6 +17,8 @@ find_package(grab2_behavior_tree REQUIRED)
 find_package(ament_index_cpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
+find_package(yaml-cpp REQUIRED)
+
 
 add_executable(btcpp_engine src/btcpp_engine.cpp)
 target_include_directories(btcpp_engine PUBLIC
@@ -36,6 +38,9 @@ ament_target_dependencies(
   "geometry_msgs"
   "trajectory_msgs"
 )
+
+target_link_libraries(btcpp_engine yaml-cpp)
+
 
 install(TARGETS btcpp_engine
   DESTINATION lib/${PROJECT_NAME})
