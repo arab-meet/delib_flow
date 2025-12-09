@@ -30,22 +30,6 @@
       <!-- Top face -->
       <visual name="Top">
         <pose>0.0 0 0.14 0 1.57 0</pose>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 4ccead3 (updated)
-=======
-
-        <pose>0.0 0 0.14 0 1.57 0</pose>
->>>>>>> 5d180df (updated aruco)
-=======
-
-        <pose>0.0 0 0.14 0 1.57 0</pose>
-=======
->>>>>>> 4ccead3 (updated)
->>>>>>> f34852b (updated)
         <geometry>
           <mesh>
             <uri>meshes/Box2.dae</uri>
@@ -94,8 +78,4 @@
 
   </link>
   </model>
-<<<<<<< HEAD
-=======
-
->>>>>>> 4ccead3 (updated)
 </sdf>

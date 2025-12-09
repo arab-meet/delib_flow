@@ -30,10 +30,7 @@
       <!-- Top face -->
       <visual name="Top">
         <pose>0.0 0 0.14 0 1.57 0</pose>
-<<<<<<< HEAD
         <pose>0.0 0 0.14 0 1.57 0</pose>
-=======
->>>>>>> 4ccead3 (updated)
         <geometry>
           <mesh>
             <uri>meshes/Box3.dae</uri>
@@ -82,8 +79,4 @@
 
   </link>
   </model>
-<<<<<<< HEAD
-=======
-
->>>>>>> 4ccead3 (updated)
 </sdf>
