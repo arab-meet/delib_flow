@@ -2,9 +2,8 @@
 
 [![ROS2](https://github.com/arab-meet/Bt/actions/workflows/ros2.yaml/badge.svg)](https://github.com/arab-meet/Bt/actions/workflows/ros2.yaml)
 
-## Documentation
-
-Check `docs/README.md` for instructions
+> [!WARNING]
+> This is an experimental, work-in-progress repository!
 
 ## Tiago simulation Setup
 
@@ -31,7 +30,7 @@ Check `docs/README.md` for instructions
 4. Running simulation
 
     ```bash
-    ros2 launch tiago_sim sim.launch.py
+    ros2 launch tiago_sim tiago_sim.launch.py
     ```
 
 5. Create a map
