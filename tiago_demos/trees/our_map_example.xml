@@ -16,21 +16,20 @@
         Office:='0;map;-7.0;5.0;0.0;0.0;0.0;0.0;1.0';
         Kitchen:='0;map;6.0;5.0;0.0;0.0;0.0;0.0;1.0'"/>
 
+      <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
+
       <!-- Go to Office -->
       <!-- <NavigateToPose name="GetBackToTheCenter" goal="{Center}"/> -->
       <NavigateToPose name="ToOffice" goal="{Office}"/>
 
       <!-- Move your Head around-->
-      <GetTrajectoryFromYAML trajectory_name="head_sweep" package_name="tiago_grab" config_file="tiago_positions" trajectory="{trajectory_msg}"/>
-      <FollowJointTrajectory action_name="{head_action}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{head_action}" trajectory="{traj.head_sweep}"/>
 
       <!-- Move your Torso Up -->
-      <GetTrajectoryFromYAML trajectory_name="torso_up" package_name="tiago_grab" config_file="tiago_positions" trajectory="{trajectory_msg}"/>
-      <FollowJointTrajectory action_name="{torso_action}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{torso_action}" trajectory="{traj.torso_up}"/>
 
       <!-- Move your Torso Down -->
-      <GetTrajectoryFromYAML trajectory_name="torso_down" package_name="tiago_grab" config_file="tiago_positions" trajectory="{trajectory_msg}"/>
-      <FollowJointTrajectory action_name="{torso_action}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{torso_action}" trajectory="{traj.torso_down}"/>
 
       <!-- Move your arm -->
       <ComputePlanToTargetIK target_ik="{grab_goal_1}" trajectory="{trajectory_msg}"/>

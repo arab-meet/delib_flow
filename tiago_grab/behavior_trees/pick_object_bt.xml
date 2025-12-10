@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root BTCPP_format="4" main_tree_to_execute="Reach">
-  <BehaviorTree ID="Reach">
+<root BTCPP_format="4" main_tree_to_execute="PickObject">
+  <BehaviorTree ID="PickObject">
     <Sequence>
-      <GetTrajectoryFromYAML trajectory_name="grip_open" package_name="tiago_grab" config_file="tiago_positions" trajectory="{open_traj}"/>
-      <GetTrajectoryFromYAML trajectory_name="grip_close" package_name="tiago_grab" config_file="tiago_positions" trajectory="{close_traj}"/>
-      <GetTrajectoryFromYAML trajectory_name="arm_home" package_name="tiago_grab" config_file="tiago_positions" trajectory="{arm_home_traj}"/>
+      <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
 
       <SaySomething name="Print message" message="Reaching object..."/>
 
@@ -12,17 +10,17 @@
 
       <ComputePlanToTargetIK name="Plan to pre-grasp pose" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
       <FollowJointTrajectory action_name="{arm_controller_action}" name="Move to pre-grasp pose" trajectory="{trajectory_msg}"/>
-      <FollowJointTrajectory action_name="{gripper_controller_action}" name="Open Gripper" trajectory="{open_traj}"/>
+      <FollowJointTrajectory action_name="{gripper_controller_action}" name="Open Gripper" trajectory="{traj.grip_open}"/>
 
       <ComputePlanToTargetIK name="Plan to grasp pose" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/>
       <FollowJointTrajectory action_name="{arm_controller_action}" name="Move to grasp pose" trajectory="{trajectory_msg}"/>
-      <FollowJointTrajectory action_name="{gripper_controller_action}" name="Close Gripper" trajectory="{close_traj}"/>
+      <FollowJointTrajectory action_name="{gripper_controller_action}" name="Close Gripper" trajectory="{traj.grip_close}"/>
 
       <SaySomething name="Print message" message="Object Reached"/>
 
-      <!-- <SaySomething name="Print message" message="Retracting arm"/> -->
+      <SaySomething name="Print message" message="Retracting arm"/>
       <!-- TODO: We should set target joint configuration to the planner instead of interpolating directly -->
-      <!-- <FollowJointTrajectory action_name="{arm_controller_action}" name="Retract" trajectory="{arm_home_traj}"/> -->
+      <FollowJointTrajectory action_name="{arm_controller_action}" name="Retract" trajectory="{traj.arm_home}"/>
 
     </Sequence>
   </BehaviorTree>

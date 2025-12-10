@@ -40,7 +40,7 @@ def generate_launch_description():
             [
                 FindPackageShare('tiago_grab'),
                 'launch',
-                'grab2_reach_object.launch.py',
+                'grab2_grabbers.launch.py',
             ]
         )
     )
