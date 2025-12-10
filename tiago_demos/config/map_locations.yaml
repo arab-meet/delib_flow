@@ -1,4 +1,5 @@
 # The coordinates for all target locations were extracted directly from the PyRoboSim world layout to match the same map structure
+# locations:
 Dining:
   frame_id: map
   pose:

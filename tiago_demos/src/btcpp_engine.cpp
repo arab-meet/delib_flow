@@ -33,7 +33,7 @@ int main(int argc, char ** argv)
   node->declare_parameter("target_locations", "config/map_locations.yaml");
   // ------------------------------------------------------
   // Load Target Locations from YAML
-  std::unordered_map<std::string, geometry_msgs::msg::PoseStamped> target_locations_map;
+  auto global_blackboard = BT::Blackboard::create();
 
   std::string target_locations_filename;
   node->get_parameter("target_locations", target_locations_filename);
@@ -66,8 +66,8 @@ int main(int argc, char ** argv)
             pose.pose.position.z = z;
             pose.pose.orientation = tf2::toMsg(q);
 
-            //addd the name and pose 
-            target_locations_map[name] = pose;
+            //add the name and pose
+            global_blackboard->set<geometry_msgs::msg::PoseStamped>("loc." + name, pose);
 
             RCLCPP_INFO(node->get_logger(), "Loaded target location: %s (x=%.2f, y=%.2f, yaw=%.1f)",
                         name.c_str(), x, y, yaw_deg);
@@ -113,7 +113,6 @@ int main(int argc, char ** argv)
   const std::filesystem::path bt_xml_path = GetFilePath(bt_filename);
   factory.registerBehaviorTreeFromFile(bt_xml_path.string());
 
-  auto global_blackboard = BT::Blackboard::create();
 
   // Set common blackboard entries for Nav2 BT nodes
   global_blackboard->set("node", node);
@@ -125,7 +124,6 @@ int main(int argc, char ** argv)
   global_blackboard->set<float>("battery_level", 100.0f);
   global_blackboard->set<bool>("holding_object", false);
 
-  global_blackboard->set("target_locations", target_locations_map);
   RCLCPP_INFO(node->get_logger(), "All target locations loaded into blackboard."); // for debugging
 
   BT::Tree tree = factory.createTree("MainTree", global_blackboard);
