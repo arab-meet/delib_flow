@@ -16,7 +16,7 @@ from dataclasses import dataclass
 import os
 from os import environ, pathsep
 
-from ament_index_python.packages import get_package_prefix
+from ament_index_python.packages import get_package_prefix, get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import (
     DeclareLaunchArgument,
@@ -169,6 +169,19 @@ def declare_actions(
         },
     )
     launch_description.add_action(tiago_bringup)
+
+    # Battery bridge - bridges Gazebo battery topics to ROS 2
+    battery_bridge_config = os.path.join(
+        get_package_share_directory('tiago_sim'), 'config', 'battery_bridge.yaml'
+    )
+    battery_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        name='battery_bridge',
+        parameters=[{'config_file': battery_bridge_config}],
+        output='screen',
+    )
+    launch_description.add_action(battery_bridge)
 
     # Tuck arm after 10 seconds to ensure every controllers are loaded
     tuck_arm = TimerAction(
