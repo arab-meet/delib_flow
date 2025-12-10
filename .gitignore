@@ -2,9 +2,9 @@
 .hypothesis/*
 
 # Third party packages
-ThirdParty/*
-!ThirdParty/ThirdParty.humble.repos
-!ThirdParty/ThirdParty.template.repos
+# ThirdParty/*
+# !ThirdParty/ThirdParty.humble.repos
+# !ThirdParty/ThirdParty.template.repos
 
 # Sphinx documentation
 docs/build/

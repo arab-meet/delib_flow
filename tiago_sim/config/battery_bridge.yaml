@@ -1,6 +1,6 @@
 # Battery Bridge Configuration for ros_gz_bridge
 # This file bridges Gazebo battery topics directly to ROS 2 topics
-# 
+#
 # Usage: Add this to your ros_gz_bridge launch file or use:
 # ros2 run ros_gz_bridge parameter_bridge --ros-args -p config_file:=<path_to_this_file>
 
