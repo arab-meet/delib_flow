@@ -25,7 +25,7 @@ def generate_launch_description():
     pick_object_engine = Node(
         package='grab2_bt_grabber',
         executable='bt_engine',
-        name='pick_object_server',  ## This name must match the one in grabbers_config.yaml
+        name='pick_object_server',  # This name must match the one in grabbers_config.yaml
         output='screen',
         parameters=[param_config, {'tree_file': pick_tree_xml_file}],
     )
