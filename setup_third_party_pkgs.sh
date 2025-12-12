@@ -30,4 +30,3 @@ fi
 echo "Installing YOLO requirements into venv at: $YOLO_VENV"
 "${YOLO_VENV}/bin/pip" install -r ThirdParty/yolo_ros/requirements.txt
 echo "YOLO venv ready at: $YOLO_VENV"
-
