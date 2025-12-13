@@ -14,6 +14,7 @@
   <depend>sensor_msgs</depend>
   <depend>nav2_msgs</depend>
   <depend>behaviortree_cpp</depend>
+    <depend>nav2_util</depend>
   <build_depend>tf2</build_depend>
   <build_depend>action_msgs</build_depend>
   <test_depend>ament_lint_auto</test_depend>

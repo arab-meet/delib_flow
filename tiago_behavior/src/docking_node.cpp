@@ -1,105 +1,102 @@
-#include <behaviortree_cpp/bt_factory.h>
-#include <behaviortree_cpp/action_node.h>
+#include "tiago_behavior/DockAndRecharge.hpp"
 
-#include <rclcpp/rclcpp.hpp>
-#include <rclcpp_action/rclcpp_action.hpp>
-
-#include <nav2_msgs/action/dock_robot.hpp>
-#include <std_msgs/msg/bool.hpp>
-
-class DockAndRecharge : public BT::CoroActionNode
+DockAndRecharge::DockAndRecharge(const std::string& name,
+                                 const BT::NodeConfiguration& config)
+: BT::CoroActionNode(name, config)
 {
-public:
-    using DockRobot = nav2_msgs::action::DockRobot;
+  node_ = config.blackboard->get<rclcpp::Node::SharedPtr>("node");
 
-    DockAndRecharge(const std::string &name, const BT::NodeConfiguration &config)
-        : BT::CoroActionNode(name, config)
-    {
-        node_ = config.blackboard->get<rclcpp::Node::SharedPtr>("node");
+  client_ = rclcpp_action::create_client<DockRobot>(
+      node_, "/dock_robot");
 
-        client_ = rclcpp_action::create_client<DockRobot>(node_, "/dock_robot");
+  recharge_pub_ = node_->create_publisher<std_msgs::msg::Bool>(
+      "/battery/recharge/start", 10);
+}
 
-        recharge_pub_ = node_->create_publisher<std_msgs::msg::Bool>(
-            "/battery/recharge/start", 10);
-    }
+BT::PortsList DockAndRecharge::providedPorts()
+{
+  return {
+    BT::InputPort<std::string>("dock_id", "home_dock")
+  };
+}
 
-    static BT::PortsList providedPorts()
-    {
-        return {
-            BT::InputPort<std::string>("dock_id", "home_dock")
-        };
-    }
+BT::NodeStatus DockAndRecharge::tick()
+{
+  std::string dock_id = "home_dock";
+  getInput("dock_id", dock_id);
 
-    BT::NodeStatus tick() override
-    {
-        std::string dock_id = "home_dock";
-        getInput("dock_id", dock_id);
+  if (!client_->wait_for_action_server(std::chrono::seconds(5)))
+  {
+    RCLCPP_ERROR(node_->get_logger(),
+                 "Dock action server not available!");
+    return BT::NodeStatus::FAILURE;
+  }
 
-        // Wait for server
-        if (!client_->wait_for_action_server(std::chrono::seconds(5)))
-        {
-            RCLCPP_ERROR(node_->get_logger(), "Dock action server not available!");
-            return BT::NodeStatus::FAILURE;
-        }
+  auto goal_msg = DockRobot::Goal();
+  goal_msg.dock_id = dock_id;
 
-        auto goal_msg = DockRobot::Goal();
-        goal_msg.dock_id = dock_id;
+  RCLCPP_INFO(node_->get_logger(),
+              "Sending dock goal: [%s]", dock_id.c_str());
 
-        RCLCPP_INFO(node_->get_logger(), "Sending dock goal: [%s]", dock_id.c_str());
-        auto goal_handle_future = client_->async_send_goal(goal_msg);
+  auto goal_handle_future = client_->async_send_goal(goal_msg);
 
-        // Wait for goal handle
-        while (rclcpp::ok())
-        {
-            rclcpp::spin_some(node_);
-            if (goal_handle_future.wait_for(std::chrono::milliseconds(50)) == std::future_status::ready)
-                break;
+  // Wait for goal handle
+  while (rclcpp::ok())
+  {
+    rclcpp::spin_some(node_);
+    if (goal_handle_future.wait_for(
+          std::chrono::milliseconds(50)) ==
+        std::future_status::ready)
+      break;
 
-            setStatusRunningAndYield();
-        }
+    setStatusRunningAndYield();
+  }
 
-        auto goal_handle = goal_handle_future.get();
-        if (!goal_handle)
-        {
-            RCLCPP_ERROR(node_->get_logger(), "Dock goal rejected");
-            return BT::NodeStatus::FAILURE;
-        }
+  auto goal_handle = goal_handle_future.get();
+  if (!goal_handle)
+  {
+    RCLCPP_ERROR(node_->get_logger(), "Dock goal rejected");
+    return BT::NodeStatus::FAILURE;
+  }
 
-        // Wait for result
-        auto result_future = client_->async_get_result(goal_handle);
+  // Wait for result
+  auto result_future = client_->async_get_result(goal_handle);
 
-        RCLCPP_INFO(node_->get_logger(), "Waiting for docking result...");
-        while (rclcpp::ok())
-        {
-            rclcpp::spin_some(node_);
-            if (result_future.wait_for(std::chrono::milliseconds(100)) == std::future_status::ready)
-                break;
+  RCLCPP_INFO(node_->get_logger(),
+              "Waiting for docking result...");
 
-            setStatusRunningAndYield();
-        }
+  while (rclcpp::ok())
+  {
+    rclcpp::spin_some(node_);
+    if (result_future.wait_for(
+          std::chrono::milliseconds(100)) ==
+        std::future_status::ready)
+      break;
 
-        auto result = result_future.get();
+    setStatusRunningAndYield();
+  }
 
-        if (result.code == rclcpp_action::ResultCode::SUCCEEDED)
-        {
-            RCLCPP_INFO(node_->get_logger(), "Docking succeeded! Sending recharge signal...");
+  auto result = result_future.get();
 
-            std_msgs::msg::Bool msg;
-            msg.data = true;
-            recharge_pub_->publish(msg);
+  if (result.code == rclcpp_action::ResultCode::SUCCEEDED)
+  {
+    RCLCPP_INFO(node_->get_logger(),
+                "Docking succeeded! Sending recharge signal...");
 
-            RCLCPP_INFO(node_->get_logger(), "Recharge signal sent ✔");
-            return BT::NodeStatus::SUCCESS;
-        }
-        else
-        {
-            RCLCPP_WARN(node_->get_logger(), "Docking failed or aborted");
-            return BT::NodeStatus::FAILURE;
-        }
-    }
+    std_msgs::msg::Bool msg;
+    msg.data = true;
+    recharge_pub_->publish(msg);
 
-private:
-    rclcpp::Node::SharedPtr node_;
-    rclcpp_action::Client<DockRobot>::SharedPtr client_;
-    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr recharge_pub_;
-};
+    RCLCPP_INFO(node_->get_logger(), "Recharge signal sent ✔");
+    return BT::NodeStatus::SUCCESS;
+  }
+
+  RCLCPP_WARN(node_->get_logger(),
+              "Docking failed or aborted");
+  return BT::NodeStatus::FAILURE;
+}
+
+BT_REGISTER_NODES(factory)
+{
+  factory.registerNodeType<DockAndRecharge>("DockAndRecharge");
+}
