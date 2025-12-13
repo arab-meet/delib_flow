@@ -4,7 +4,8 @@ import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
-from launch_pal.arg_utils import LaunchArgumentsBase, read_launch_argument
+from launch_pal.arg_utils import LaunchArgumentsBase
+from launch_pal.arg_utils import read_launch_argument
 from launch_pal.robot_arguments import CommonArgs
 from launch_ros.actions import Node
 from moveit_configs_utils import MoveItConfigsBuilder
