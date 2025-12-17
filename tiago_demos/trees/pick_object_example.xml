@@ -2,12 +2,8 @@
   <BehaviorTree ID="MainTree">
     <Sequence>
       <Script code="
-        arm_action:='arm_controller/follow_joint_trajectory';
-        grip_action:='gripper_controller/follow_joint_trajectory';
         head_action:='head_controller/follow_joint_trajectory';
-        torso_action:='torso_controller/follow_joint_trajectory';
-
-      <Script code="grab_goal:='0;base_link;0.5;0.2;0.4;0.0;0.707;0.0;0.707'"/>
+        grab_goal:='0;base_link;0.5;0.2;0.4;0.0;0.707;0.0;0.707'"/>
 
       <!-- Move head -->
       <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
