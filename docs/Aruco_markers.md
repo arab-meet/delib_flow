@@ -5,7 +5,7 @@
 ## **Usage**
 
 ```bash
-ros2 launch tiago_aruco_broadcast aruco launch.py
+ros2 launch tiago_aruco_broadcast aruco.launch.py
 ```
 
 ## **Aruco Recognition Node**
