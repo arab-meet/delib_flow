@@ -1,0 +1,12 @@
+pick_object_server:
+  ros__parameters:
+    action_name: "pick_object"
+    arm_controller_action: arm_controller/follow_joint_trajectory
+    gripper_controller_action: gripper_controller/follow_joint_trajectory
+
+    plugins:
+      - behaviortree_cpp/bt_plugins
+      - grab2_behavior_tree/bt_plugins
+
+    behavior_trees:
+      - grab2_bt_grabber/behavior_trees
