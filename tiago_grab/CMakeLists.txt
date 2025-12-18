@@ -15,6 +15,7 @@ find_package(grab2_msgs REQUIRED)
 install(DIRECTORY
   launch
   config
+  behavior_trees
   DESTINATION share/${PROJECT_NAME}
 )
 
