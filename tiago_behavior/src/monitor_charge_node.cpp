@@ -1,80 +1,117 @@
+// MonitorCharge.cpp
 #include "tiago_behavior/MonitorCharge.hpp"
 
-#include <chrono>
-#include <thread>
-
 MonitorCharge::MonitorCharge(const std::string& name,
-                             const BT::NodeConfiguration& config)
-: BT::ConditionNode(name, config)
+                             const BT::NodeConfig& config,
+                             const BT::RosNodeParams& params)
+: BT::ActionNodeBase(name, config),
+  node_(params.nh),
+  battery_received_(false)
 {
-  node_ = config.blackboard->get<rclcpp::Node::SharedPtr>("node");
-  battery_received_ = false;
+    auto node = node_.lock();
+    if (!node)
+    {
+        throw BT::RuntimeError("ROS node expired");
+    }
 
-  battery_sub_ = node_->create_subscription<sensor_msgs::msg::BatteryState>(
-      "/battery/state", 10,
-      std::bind(&MonitorCharge::batteryCallback, this,
-                std::placeholders::_1));
+    callback_group_ = node->create_callback_group(
+        rclcpp::CallbackGroupType::MutuallyExclusive);
 
-  recharge_pub_ = node_->create_publisher<std_msgs::msg::Bool>(
-      "/battery/recharge/stop", 10);
+    executor_.add_callback_group(
+        callback_group_,
+        node->get_node_base_interface());
+
+    std::string topic_name;
+    getInput("topic_name", topic_name);
+
+    rclcpp::SubscriptionOptions sub_options;
+    sub_options.callback_group = callback_group_;
+
+    battery_sub_ = node->create_subscription<sensor_msgs::msg::BatteryState>(
+        topic_name,
+        10,
+        std::bind(&MonitorCharge::batteryCallback, this, std::placeholders::_1),
+        sub_options);
+
+    recharge_stop_pub_ = node->create_publisher<std_msgs::msg::Bool>(
+        "/battery/recharge/stop", 10);
 }
 
 BT::PortsList MonitorCharge::providedPorts()
 {
-  return { BT::InputPort<double>("threshold") };
+    return {
+        BT::InputPort<double>("threshold", 80.0, "Battery charge threshold percentage"),
+        BT::InputPort<std::string>("topic_name", "/battery/state", "Battery state topic")
+    };
 }
 
 BT::NodeStatus MonitorCharge::tick()
 {
-  rclcpp::spin_some(node_);
+    executor_.spin_some();
 
-  int attempts = 0;
-  while (rclcpp::ok() && !battery_received_ && attempts < 20)
-  {
-    RCLCPP_WARN(node_->get_logger(), "Waiting for battery data...");
-    rclcpp::spin_some(node_);
-    std::this_thread::sleep_for(std::chrono::milliseconds(200));
-    attempts++;
-  }
+    if (!battery_received_ || !last_msg_)
+    {
+        RCLCPP_WARN_THROTTLE(logger(),
+                              *node_.lock()->get_clock(),
+                              2000,
+                              "Waiting for battery data...");
+        return BT::NodeStatus::RUNNING;
+    }
 
-  if (!battery_received_)
-  {
-    RCLCPP_WARN(node_->get_logger(), "No battery data received yet!");
-    return BT::NodeStatus::FAILURE;
-  }
+    double threshold;
+    getInput("threshold", threshold);
 
-  double threshold = 80.0;
-  getInput("threshold", threshold);
+    double percentage = last_msg_->percentage ;
 
-  double percentage = last_msg_->percentage;
+    RCLCPP_INFO_THROTTLE(logger(),
+                          *node_.lock()->get_clock(),
+                          20,
+                          "Battery = %.2f%% (Target = %.2f%%)",
+                          percentage, threshold);
 
-  RCLCPP_INFO(node_->get_logger(),
-              "Battery = %.2f%% (Threshold = %.2f%%)",
-              percentage, threshold);
+    if (percentage >= threshold)
+    {
+        std_msgs::msg::Bool msg;
+        msg.data = true;
+        recharge_stop_pub_->publish(msg);
 
-  if (percentage >= threshold)
-  {
-    RCLCPP_INFO(node_->get_logger(),
-                "Battery sufficiently charged. Stopping recharge...");
+        RCLCPP_INFO(logger(), "Battery charged. Stopping recharge.");
+        return BT::NodeStatus::SUCCESS;
+    }
 
-    std_msgs::msg::Bool msg;
-    msg.data = true;
-    recharge_pub_->publish(msg);
-
-    return BT::NodeStatus::SUCCESS;
-  }
-
-  return BT::NodeStatus::RUNNING;
+    return BT::NodeStatus::RUNNING;
 }
 
-void MonitorCharge::batteryCallback(
-  const sensor_msgs::msg::BatteryState::SharedPtr msg)
+void MonitorCharge::halt()
 {
-  last_msg_ = msg;
-  battery_received_ = true;
 }
+
+void MonitorCharge::batteryCallback(const sensor_msgs::msg::BatteryState::SharedPtr msg)
+{
+    last_msg_ = msg;
+    battery_received_ = true;
+}
+
+rclcpp::Logger MonitorCharge::logger() const
+{
+    if (auto node = node_.lock())
+    {
+        return node->get_logger();
+    }
+    return rclcpp::get_logger("MonitorCharge");
+}
+
+#include "behaviortree_cpp/bt_factory.h"
 
 BT_REGISTER_NODES(factory)
 {
-  factory.registerNodeType<MonitorCharge>("MonitorCharge");
+    factory.registerBuilder<MonitorCharge>(
+        "MonitorCharge",
+        [](const std::string& name, const BT::NodeConfig& config) -> std::unique_ptr<BT::TreeNode>
+        {
+            BT::RosNodeParams params;
+            params.nh = config.blackboard->get<rclcpp::Node::SharedPtr>("node");
+            params.default_port_value = "battery_state";
+            return std::make_unique<MonitorCharge>(name, config, params);
+        });
 }

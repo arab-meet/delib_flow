@@ -1,81 +1,104 @@
 #include "tiago_behavior/CheckBattery.hpp"
-
-#include <chrono>
-#include <thread>
+#include "behaviortree_cpp/bt_factory.h"
+#include <rclcpp/rclcpp.hpp>
 
 CheckBattery::CheckBattery(const std::string& name,
-                           const BT::NodeConfiguration& config)
-: BT::ConditionNode(name, config)
+                           const BT::NodeConfig& config,
+                           const BT::RosNodeParams& params)
+: BT::StatefulActionNode(name, config),
+  node_(params.nh),
+  battery_received_(false)
 {
-  node_ = config.blackboard->get<rclcpp::Node::SharedPtr>("node");
-  battery_received_ = false;
+    auto node = node_.lock();
+    if (!node)
+    {
+        throw BT::RuntimeError("ROS node expired");
+    }
 
-  battery_sub_ = node_->create_subscription<sensor_msgs::msg::BatteryState>(
-      "/battery/state", 10,
-      std::bind(&CheckBattery::batteryCallback,
-                this, std::placeholders::_1));
+    std::string topic_name = "/battery/state";
+    getInput("topic_name", topic_name);
+
+    battery_sub_ = node->create_subscription<sensor_msgs::msg::BatteryState>(
+        topic_name,
+        10,
+        std::bind(&CheckBattery::batteryCallback, this, std::placeholders::_1));
+
+    RCLCPP_INFO(logger(), "Subscribed to battery topic: %s", topic_name.c_str());
 }
 
 BT::PortsList CheckBattery::providedPorts()
 {
-  return { BT::InputPort<double>("threshold") };
+    return {
+        BT::InputPort<double>("threshold", 30.0, "Battery threshold percentage"),
+        BT::InputPort<std::string>("topic_name", "/battery/state", "Battery topic name")
+    };
 }
 
-BT::NodeStatus CheckBattery::tick()
+BT::NodeStatus CheckBattery::onStart()
 {
-  rclcpp::spin_some(node_);
-
-  int attempts = 0;
-  while (rclcpp::ok() && !battery_received_ && attempts < 20)
-  {
-    RCLCPP_WARN(node_->get_logger(),
-                "Waiting for battery data...");
-    rclcpp::spin_some(node_);
-    std::this_thread::sleep_for(
-        std::chrono::milliseconds(200));
-    attempts++;
-  }
-
-  if (!battery_received_)
-  {
-    RCLCPP_WARN(node_->get_logger(),
-                "No battery data received yet!");
-    return BT::NodeStatus::FAILURE;
-  }
-
-  double threshold = 30.0;
-  if (!getInput("threshold", threshold))
-  {
-    RCLCPP_WARN(node_->get_logger(),
-                "No threshold input, using default = 30%%");
-  }
-
-  double percentage = last_msg_->percentage;
-
-  RCLCPP_INFO(node_->get_logger(),
-              "Battery = %.2f%% (Threshold = %.2f%%)",
-              percentage, threshold);
-
-  if (percentage < threshold)
-  {
-    RCLCPP_WARN(node_->get_logger(),
-                "Battery low!");
-    return BT::NodeStatus::FAILURE;
-  }
-
-  RCLCPP_INFO(node_->get_logger(),
-              "Battery sufficient.");
-  return BT::NodeStatus::SUCCESS;
+    battery_received_ = false;
+    RCLCPP_INFO(logger(), "CheckBattery started, waiting for data...");
+    return BT::NodeStatus::RUNNING;
 }
 
-void CheckBattery::batteryCallback(
-  const sensor_msgs::msg::BatteryState::SharedPtr msg)
+BT::NodeStatus CheckBattery::onRunning()
 {
-  last_msg_ = msg;
-  battery_received_ = true;
+    if (!battery_received_ || !last_msg_)
+    {
+        RCLCPP_WARN_THROTTLE(logger(),
+                             *node_.lock()->get_clock(),
+                             2000,
+                             "Waiting for battery data...");
+        return BT::NodeStatus::RUNNING;
+    }
+
+    double threshold = 30.0;
+    getInput("threshold", threshold);
+
+    double percentage = last_msg_->percentage ;
+
+    RCLCPP_INFO(logger(),
+                "Battery = %.2f%% (Threshold = %.2f%%)",
+                percentage, threshold);
+
+    if (percentage < threshold)
+    {
+        RCLCPP_WARN(logger(), "Battery low!");
+        return BT::NodeStatus::FAILURE;
+    }
+
+    RCLCPP_INFO(logger(), "Battery sufficient.");
+    return BT::NodeStatus::SUCCESS;
+}
+
+void CheckBattery::onHalted()
+{
+    RCLCPP_WARN(logger(), "CheckBattery halted");
+}
+
+void CheckBattery::batteryCallback(const sensor_msgs::msg::BatteryState::SharedPtr msg)
+{
+    last_msg_ = msg;
+    battery_received_ = true;
+}
+
+rclcpp::Logger CheckBattery::logger() const
+{
+    if (auto node = node_.lock())
+    {
+        return node->get_logger();
+    }
+    return rclcpp::get_logger("CheckBattery");
 }
 
 BT_REGISTER_NODES(factory)
 {
-  factory.registerNodeType<CheckBattery>("CheckBattery");
+    factory.registerBuilder<CheckBattery>(
+        "CheckBattery",
+        [](const std::string& name, const BT::NodeConfig& config) -> std::unique_ptr<BT::TreeNode>
+        {
+            BT::RosNodeParams params;
+            params.nh = config.blackboard->get<rclcpp::Node::SharedPtr>("node");
+            return std::make_unique<CheckBattery>(name, config, params);
+        });
 }

@@ -15,6 +15,7 @@ find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(nav2_util REQUIRED)
 find_package(behaviortree_cpp REQUIRED)
+find_package(behaviortree_ros2 REQUIRED)
 find_package(ament_index_cpp REQUIRED)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -47,21 +48,33 @@ foreach(bt_plugin ${plugin_libs})
     std_msgs
     nav2_util
     behaviortree_cpp
+    behaviortree_ros2
     tf2
     ament_index_cpp
   )
 endforeach()
 
+set(PLUGIN_LIST "")
+foreach(plugin ${plugin_libs})
+  if(PLUGIN_LIST)
+    string(APPEND PLUGIN_LIST ";${plugin}")
+  else()
+    set(PLUGIN_LIST "${plugin}")
+  endif()
+endforeach()
+
+# Generate plugins_list.hpp
 set(GENERATED_DIR ${CMAKE_CURRENT_BINARY_DIR}/gen/tiago_behavior)
 file(MAKE_DIRECTORY ${GENERATED_DIR})
-configure_file(plugins_list.hpp.in ${GENERATED_DIR}/plugins_list.hpp)
+configure_file(plugins_list.hpp.in ${GENERATED_DIR}/plugins_list.hpp @ONLY)
+
 
 install(
   TARGETS
     ${plugin_libs}
-  LIBRARY DESTINATION share/${PROJECT_NAME}/bt_plugins
-  ARCHIVE DESTINATION share/${PROJECT_NAME}/bt_plugins
-  RUNTIME DESTINATION share/${PROJECT_NAME}/bt_plugins
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+  RUNTIME DESTINATION bin
 )
 
 install(FILES ${GENERATED_DIR}/plugins_list.hpp
@@ -80,7 +93,21 @@ if(BUILD_TESTING)
 endif()
 
 ament_export_include_directories(
-  include/${PROJECT_NAME}
+  "include/${PROJECT_NAME}"
+)
+
+ament_export_dependencies(
+  rclcpp
+  rclcpp_action
+  nav2_msgs
+  sensor_msgs
+  std_msgs
+  behaviortree_cpp
+  behaviortree_ros2
+)
+
+ament_export_libraries(
+  ${plugin_libs}
 )
 
 ament_package()

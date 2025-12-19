@@ -1,27 +1,24 @@
+// UndockRobot.hpp
 #ifndef UNDOCK_ROBOT_HPP_
 #define UNDOCK_ROBOT_HPP_
 
-#include <behaviortree_cpp/bt_factory.h>
-
-#include <rclcpp/rclcpp.hpp>
-#include <rclcpp_action/rclcpp_action.hpp>
+#include <behaviortree_ros2/bt_action_node.hpp>
 #include <nav2_msgs/action/undock_robot.hpp>
 
-class UndockRobot : public BT::CoroActionNode
+class UndockRobot : public BT::RosActionNode<nav2_msgs::action::UndockRobot>
 {
 public:
-    using Undock = nav2_msgs::action::UndockRobot;
-
     UndockRobot(const std::string& name,
-                const BT::NodeConfiguration& config);
+                const BT::NodeConfig& config,
+                const BT::RosNodeParams& params);
 
     static BT::PortsList providedPorts();
 
-    BT::NodeStatus tick() override;
+    bool setGoal(Goal& goal) override;
 
-private:
-    rclcpp::Node::SharedPtr node_;
-    rclcpp_action::Client<Undock>::SharedPtr client_;
+    BT::NodeStatus onResultReceived(const WrappedResult& result) override;
+
+    virtual BT::NodeStatus onFailure(BT::ActionNodeErrorCode error) override;
 };
 
 #endif  // UNDOCK_ROBOT_HPP_
