@@ -2,6 +2,7 @@
 #include <string>
 #include <filesystem>
 #include <yaml-cpp/yaml.h>
+#include <chrono>
 
 
 #include "rclcpp/rclcpp.hpp"
@@ -94,15 +95,28 @@ int main(int argc, char ** argv)
   std::vector<std::string> nav2_plugins_list = nav2_util::split(nav2::details::BT_BUILTIN_PLUGINS, ';');
   for (const auto & plugin : nav2_plugins_list) {
     RCLCPP_DEBUG(node->get_logger(), "Registering Nav2 BT plugin: %s", plugin.c_str());
-    factory.registerFromPlugin(BT::SharedLibrary::getOSName(plugin));
-  }
+    try {
+  factory.registerFromPlugin(BT::SharedLibrary::getOSName(plugin));
+} catch (const std::exception& e) {
+  RCLCPP_WARN(
+    node->get_logger(),
+    "Failed to register Nav2 plugin '%s': %s",
+    plugin.c_str(),
+    e.what());
+} 
+  } 
 
   // Register Grab2 BT plugins
   RCLCPP_INFO_ONCE(node->get_logger(), "Registering Grab2 BT plugins");
   std::vector<std::string> grab2_plugins_list = nav2_util::split(grab2::details::BT_BUILTIN_PLUGINS, ';');
   for (const auto & plugin : grab2_plugins_list) {
     RCLCPP_DEBUG(node->get_logger(), "Registering Grab2 BT plugin: %s", plugin.c_str());
+    try {
     factory.registerFromPlugin(BT::SharedLibrary::getOSName(plugin));
+    } catch (const std::exception& e) {
+    RCLCPP_WARN(node->get_logger(), "Failed to register Grab2 plugin '%s': %s", 
+                plugin.c_str(), e.what());  
+  }
   }
 
   // ------------------------------------------------------
