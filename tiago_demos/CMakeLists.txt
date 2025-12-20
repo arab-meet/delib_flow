@@ -18,7 +18,8 @@ find_package(ament_index_cpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
 find_package(yaml-cpp REQUIRED)
-
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 
 add_executable(btcpp_engine src/btcpp_engine.cpp)
 target_include_directories(btcpp_engine PUBLIC
@@ -37,6 +38,8 @@ ament_target_dependencies(
   "ament_index_cpp"
   "geometry_msgs"
   "trajectory_msgs"
+  "tf2"       
+  "tf2_geometry_msgs"
 )
 
 target_link_libraries(btcpp_engine yaml-cpp)

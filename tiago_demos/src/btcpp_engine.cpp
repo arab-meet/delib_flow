@@ -74,6 +74,7 @@ int main(int argc, char ** argv)
         }
     } catch (const std::exception& e) {
         RCLCPP_ERROR(node->get_logger(), "Failed to load target locations YAML: %s", e.what());
+        return 1;
     }
 
   std::string bt_filename;
@@ -111,7 +112,13 @@ int main(int argc, char ** argv)
   // ------------------------------------------------------
   // Load and execute the tree
   const std::filesystem::path bt_xml_path = GetFilePath(bt_filename);
-  factory.registerBehaviorTreeFromFile(bt_xml_path.string());
+  try {
+    factory.registerBehaviorTreeFromFile(bt_xml_path.string());
+  } catch (const std::exception& e) {
+    RCLCPP_ERROR(node->get_logger(), "Failed to load behavior tree from '%s': %s", 
+                 bt_xml_path.string().c_str(), e.what());
+    return 1;
+  }
 
 
   // Set common blackboard entries for Nav2 BT nodes
