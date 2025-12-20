@@ -49,6 +49,7 @@ def generate_launch_description():
         ],
     )
 
+
     return LaunchDescription(
         [
             behavior_tree_declaration,
