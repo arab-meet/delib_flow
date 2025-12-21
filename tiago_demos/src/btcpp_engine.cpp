@@ -1,3 +1,4 @@
+// Copyright 2025 Arabian Robotics
 #include <vector>
 #include <string>
 
@@ -32,8 +33,10 @@ int main(int argc, char ** argv)
       node->get_logger(),
       "No target locations YAML provided, proceeding without predefined targets.");
   } else {
-    const std::filesystem::path target_locations_path = tiago_demos::getFilePath("tiago_demos", target_locations_filename);
-    tiago_demos::loadTargetLocationsFromYAML(node, target_locations_path.string(), global_blackboard);
+    const std::filesystem::path target_locations_path = tiago_demos::getFilePath("tiago_demos",
+      target_locations_filename);
+    tiago_demos::loadTargetLocationsFromYAML(node, target_locations_path.string(),
+      global_blackboard);
   }
 
   std::string bt_filename;
@@ -100,15 +103,15 @@ int main(int argc, char ** argv)
   global_blackboard->set<std::chrono::milliseconds>("bt_loop_duration",
     std::chrono::milliseconds(10));
   global_blackboard->set<std::chrono::milliseconds>("server_timeout",
-    std::chrono::milliseconds(2000));                                                                   // 2 seconds for goal acknowledgment
+    std::chrono::milliseconds(2000));  // 2 seconds for goal acknowledgment
   global_blackboard->set<std::chrono::milliseconds>("wait_for_service_timeout",
-    std::chrono::milliseconds(3000));                                                                             // 3 seconds to find server
+    std::chrono::milliseconds(3000));  // 3 seconds to find server
 
   // Set custom blackboard entries
   global_blackboard->set<float>("battery_level", 100.0f);
   global_blackboard->set<bool>("holding_object", false);
 
-  RCLCPP_INFO(node->get_logger(), "All target locations loaded into blackboard."); // for debugging
+  RCLCPP_INFO(node->get_logger(), "All target locations loaded into blackboard.");
 
   BT::Tree tree = factory.createTree("MainTree", global_blackboard);
 
