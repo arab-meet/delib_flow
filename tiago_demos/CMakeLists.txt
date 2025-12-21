@@ -44,6 +44,10 @@ ament_target_dependencies(
 
 target_link_libraries(btcpp_engine yaml-cpp)
 
+install(
+  DIRECTORY include/
+  DESTINATION include/${PROJECT_NAME}
+)
 
 install(TARGETS btcpp_engine
   DESTINATION lib/${PROJECT_NAME})
