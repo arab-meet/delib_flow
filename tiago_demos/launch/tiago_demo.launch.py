@@ -1,8 +1,9 @@
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
@@ -43,6 +44,20 @@ def generate_launch_description():
         ]
     )
 
+    # Include Nav2 navigation stack
+    nav2_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [
+                    FindPackageShare('tiago_nav'),
+                    'launch',
+                    'tiago_nav2.launch.py',
+                ]
+            )
+        ),
+        launch_arguments={'use_sim_time': use_sim_time}.items(),
+    )
+
     bt_executor_node = Node(
         package='tiago_demos',
         executable='btcpp_engine',
@@ -57,11 +72,18 @@ def generate_launch_description():
         ],
     )
 
+    # Delay the behavior tree executor to allow Nav2 to initialize
+    delayed_bt_executor = TimerAction(
+        period=5.0,  # Wait 5 seconds for Nav2 to be ready
+        actions=[bt_executor_node]
+    )
+
     return LaunchDescription(
         [
             use_sim_time_declaration,
             behavior_tree_declaration,
             locations_declaration,
-            bt_executor_node,
+            nav2_launch,
+            delayed_bt_executor,
         ]
     )
