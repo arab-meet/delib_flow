@@ -103,8 +103,8 @@ int main(int argc, char ** argv)
     "Failed to register Nav2 plugin '%s': %s",
     plugin.c_str(),
     e.what());
-} 
-  } 
+}
+  }
 
   // Register Grab2 BT plugins
   RCLCPP_INFO_ONCE(node->get_logger(), "Registering Grab2 BT plugins");
@@ -114,8 +114,8 @@ int main(int argc, char ** argv)
     try {
     factory.registerFromPlugin(BT::SharedLibrary::getOSName(plugin));
     } catch (const std::exception& e) {
-    RCLCPP_WARN(node->get_logger(), "Failed to register Grab2 plugin '%s': %s", 
-                plugin.c_str(), e.what());  
+    RCLCPP_WARN(node->get_logger(), "Failed to register Grab2 plugin '%s': %s",
+                plugin.c_str(), e.what());
   }
   }
 
@@ -129,7 +129,7 @@ int main(int argc, char ** argv)
   try {
     factory.registerBehaviorTreeFromFile(bt_xml_path.string());
   } catch (const std::exception& e) {
-    RCLCPP_ERROR(node->get_logger(), "Failed to load behavior tree from '%s': %s", 
+    RCLCPP_ERROR(node->get_logger(), "Failed to load behavior tree from '%s': %s",
                  bt_xml_path.string().c_str(), e.what());
     return 1;
   }

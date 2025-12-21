@@ -1,7 +1,0 @@
-<root BTCPP_format="4">
-  <BehaviorTree ID="MainTree">
-    <Sequence>
-      <NavigateToPose name="ToKitchen" goal="{loc.Kitchen}"/>
-    </Sequence>
-  </BehaviorTree>
-</root>

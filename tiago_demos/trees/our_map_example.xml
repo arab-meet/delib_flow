@@ -4,23 +4,16 @@
       <Script code="
         arm_action:='arm_controller/follow_joint_trajectory';
         head_action:='head_controller/follow_joint_trajectory';
-        torso_action:='torso_controller/follow_joint_trajectory';
-        head_action:='head_controller/follow_joint_trajectory';
         torso_action:='torso_controller/follow_joint_trajectory'"/>
 
-      <!-- TODO(Load Pre-defined Targets from a yaml file) -->
       <Script code="
         grab_goal_1:='0;base_link;0.5;0.0;0.7;0.0;0.707;0.0;0.707';
-        grab_goal_2:='0;base_link;0.4;-0.3;0.6;0.0;0.707;0.0;0.707';
-        Center:='0;map;0.2;0.0;0.0;0.0;0.0;0.0;1.0';
-        Office:='0;map;-7.0;5.0;0.0;0.0;0.0;0.0;1.0';
-        Kitchen:='0;map;6.0;5.0;0.0;0.0;0.0;0.0;1.0'"/>
+        grab_goal_2:='0;base_link;0.4;-0.3;0.6;0.0;0.707;0.0;0.707'"/>
 
       <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
 
       <!-- Go to Office -->
-      <!-- <NavigateToPose name="GetBackToTheCenter" goal="{Center}"/> -->
-      <NavigateToPose name="ToOffice" goal="{Office}"/>
+      <NavigateToPose name="ToOffice" goal="{loc.Office}"/>
 
       <!-- Move your Head around-->
       <FollowJointTrajectory action_name="{head_action}" trajectory="{traj.head_sweep}"/>
@@ -36,7 +29,7 @@
       <FollowJointTrajectory name="Arm controller" action_name="{arm_action}" trajectory="{trajectory_msg}"/>
 
       <!-- Move to another Spot -->
-      <!-- <NavigateToPose name="ToKitchen" goal="{Kitchen}"/> -->
+      <NavigateToPose name="ToKitchen" goal="{loc.Kitchen}"/>
       <ComputePlanToTargetIK target_ik="{grab_goal_2}" trajectory="{trajectory_msg}"/>
       <FollowJointTrajectory name="Arm controller" action_name="{arm_action}" trajectory="{trajectory_msg}"/>
 

@@ -38,7 +38,7 @@ ament_target_dependencies(
   "ament_index_cpp"
   "geometry_msgs"
   "trajectory_msgs"
-  "tf2"       
+  "tf2"
   "tf2_geometry_msgs"
 )
 
