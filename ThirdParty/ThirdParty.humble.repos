@@ -57,8 +57,8 @@ repositories:
     version: main
   ThirdParty/ros2_aruco:
     type: git
-    url: https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco.git
-    version: humble
+    url: https://github.com/khaledgabr77/ros2_aruco.git
+    version: main
   ThirdParty/yolo_ros:
     type: git
     url: https://github.com/mgonzs13/yolo_ros.git
