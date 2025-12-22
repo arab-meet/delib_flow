@@ -68,6 +68,29 @@ set(GENERATED_DIR ${CMAKE_CURRENT_BINARY_DIR}/gen/tiago_behavior)
 file(MAKE_DIRECTORY ${GENERATED_DIR})
 configure_file(plugins_list.hpp.in ${GENERATED_DIR}/plugins_list.hpp @ONLY)
 
+# ------------------- Executable -------------------
+add_executable(main_bt src/main_bt.cpp)
+ament_target_dependencies(main_bt
+  rclcpp
+  behaviortree_cpp
+  nav2_util
+  ament_index_cpp
+  tf2
+)
+target_include_directories(main_bt PUBLIC
+  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+  "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/gen>"
+)
+
+install(
+  TARGETS
+    ${plugin_libs}
+    main_bt
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION lib/${PROJECT_NAME}
+)
+
 
 install(
   TARGETS
@@ -84,6 +107,12 @@ install(
   DIRECTORY include/
   DESTINATION include/${PROJECT_NAME}
 )
+
+install(
+  DIRECTORY launch config
+  DESTINATION share/${PROJECT_NAME}
+)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
