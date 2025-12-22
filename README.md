@@ -2,16 +2,15 @@
 
 [![ROS2](https://github.com/arab-meet/Bt/actions/workflows/ros2.yaml/badge.svg)](https://github.com/arab-meet/Bt/actions/workflows/ros2.yaml)
 
-## Documentation
-
-Check `docs/README.md` for instructions
+> [!WARNING]
+> This is an experimental, work-in-progress repository!
 
 ## Tiago simulation Setup
 
 1. Create a workspace
 
     ```bash
-    mkdir ~/bt_ws/src
+    mkdir -p ~/bt_ws/src
     ```
 
 2. Setup dependencies
@@ -31,16 +30,38 @@ Check `docs/README.md` for instructions
 4. Running simulation
 
     ```bash
-    ros2 launch tiago_sim sim.launch.py
+    ros2 launch tiago_sim tiago_sim.launch.py
     ```
 
 5. Create a map
 
-    ```sh
+    ```bash
     ros2 launch tiago_slam tiago_slam_toolbox.launch.py
     ```
 
 6. Start navigation (Nav2)
 
-    ```sh
+    ```bash
     ros2 launch tiago_nav tiago_nav2.launch.py
+
+7. Running aruco recognition
+
+    ```bash
+    ros2 launch ros2_aruco aruco_recognition.launch.py
+    ```
+
+8. Broadcasting aruco_frame in tf
+
+    ```bash
+    ros2 run tiago_aruco_broadcast aruco_broadcast
+    ```
+
+9. YOLOv11 Test
+
+   ```bash
+   ros2 launch tiago_sim sim.launch.py
+   ```
+
+   ```bash
+   rviz2
+   ```

@@ -1,9 +1,9 @@
-.. _tutorials:
+.. _demos:
 
-Tutorials
-##########
+Demos
+#####
 
-We are happy to present deliberation tutorials.
+We are happy to present deliberation demos.
 
 We provide BehaviorTrees demos powered by `nav2 <https://github.com/ros-navigation/navigation2>`_  for navigation and `grab2 <https://github.com/elsayedelsheikh/grab2>`_ for manipulation.
 
@@ -32,3 +32,5 @@ General Tutorials
     :maxdepth: 1
 
     docs/navigation
+    docs/manipulation
+    docs/behavior

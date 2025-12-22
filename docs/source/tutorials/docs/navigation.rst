@@ -9,7 +9,7 @@ This is a navigation tutorial, you can get started with
 
   .. code-block:: bash
 
-    ros2 launch tiago_sim sim.launch.py
+    ros2 launch tiago_sim tiago_sim.launch.py
 
 2. Create a map
 

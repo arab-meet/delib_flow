@@ -6,10 +6,8 @@
 DelibFlow documentation
 =======================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+.. note::
+   **This is an experimental, work-in-progress repository!**
 
 .. toctree::
    :maxdepth: 2
@@ -17,3 +15,4 @@ documentation for details.
 
    use_sphinx
    tutorials/index
+   usage/index

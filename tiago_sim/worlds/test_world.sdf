@@ -151,6 +151,13 @@
       </include>
     </model>
 
+    <model name='Box1'>
+      <include>
+        <uri>model://Box1</uri>
+        <pose>4 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
     <!-- <model name='charger'>
       <include>
         <uri>model://charger</uri>
