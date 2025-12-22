@@ -1,0 +1,33 @@
+{
+    "ROS2.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/home/khaled/Bt/install/yolo_ros/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/yolo_msgs/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/tiago_description/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/ros2_aruco_interfaces/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/ros2_aruco/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/pmb2_description/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/play_motion2_msgs/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/omni_base_description/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/launch_pal/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/grab2_curobo_planner/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/grab2_msgs/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/khaled/Bt/install/yolo_ros/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/yolo_msgs/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/tiago_description/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/ros2_aruco_interfaces/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/ros2_aruco/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/pmb2_description/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/play_motion2_msgs/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/omni_base_description/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/launch_pal/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/grab2_curobo_planner/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/grab2_msgs/lib/python3.12/site-packages",
+        "/home/khaled/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
