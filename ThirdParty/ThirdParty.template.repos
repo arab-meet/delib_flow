@@ -30,7 +30,7 @@ repositories:
     version: humble-devel
   ThirdParty/tiago_robot:
     type: git
-    url: https://github.com/Tiago-Harmonic/tiago_robot.git
+    url: https://github.com/arab-meet/tiago_robot.git
     version: $ROS_DISTRO
   ThirdParty/tiago_navigation:
     type: git
