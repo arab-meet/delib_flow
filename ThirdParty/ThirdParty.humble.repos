@@ -21,7 +21,7 @@ repositories:
     version: humble-devel
   ThirdParty/tiago_robot:
     type: git
-    url: https://github.com/khaledgabr77/tiago_robot
+    url: https://github.com/arab-meet/tiago_robot_humble.git
     version: humble-devel
   ThirdParty/tiago_navigation:
     type: git
