@@ -44,19 +44,13 @@
     ```bash
     ros2 launch tiago_nav tiago_nav2.launch.py
 
-7. Running aruco recognition
+7. Running aruco_detection ( and broadcasting )
 
     ```bash
-    ros2 launch ros2_aruco aruco_recognition.launch.py
+    ros2 launch tiago_aruco_broadcast aruco.launch.py
     ```
 
-8. Broadcasting aruco_frame in tf
-
-    ```bash
-    ros2 run tiago_aruco_broadcast aruco_broadcast
-    ```
-
-9. YOLOv11 Test
+8. YOLOv11 Test
 
    ```bash
    ros2 launch tiago_sim sim.launch.py
