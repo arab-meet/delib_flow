@@ -16,5 +16,13 @@ help:
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+html:
+	@echo "Building Standard (source)..."
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@echo "Building Hybrid (source_hybrid)..."
+	@$(SPHINXBUILD) -M $@ "source_hybrid" "$(BUILDDIR)/hybrid" $(SPHINXOPTS) $(O)
+	@echo "Building Package (source_package)..."
+	@$(SPHINXBUILD) -M $@ "source_package" "$(BUILDDIR)/package" $(SPHINXOPTS) $(O)
+
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
