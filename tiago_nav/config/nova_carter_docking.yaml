@@ -18,10 +18,9 @@ docking_server:
     nova_carter_dock:
       plugin: "opennav_docking::SimpleChargingDock"
       docking_threshold: 0.05
-      staging_x_offset: 0.0
+      staging_x_offset: -0.8
       use_external_detection_pose: false
       use_battery_status: false
-      battery_topic: "/battery_state"
       use_stall_detection: false
 
       external_detection_timeout: 1.0
