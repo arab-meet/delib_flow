@@ -29,6 +29,16 @@
         </geometry>
       </collision>
 
+      <collision name="front_collision">
+        <pose>0 0 0 0 0 -3.14</pose> <!-- shift +Y -->
+        <geometry>
+          <mesh>
+            <uri>meshes/Box2.dae</uri>
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
       <!-- Back face -->
       <visual name="Back">
         <pose>0.14 0 0 0 0 0</pose> <!-- shift +Y -->
@@ -36,6 +46,17 @@
           <box>
             <size>0.14 0.14 0.14</size>
           </box>
+        </geometry>
+      </collision>
+
+      <collision name="Back_collision">
+        <pose>0.14 0 0 0 0 0</pose> <!-- shift +Y -->
+        <geometry>
+          <mesh>
+            <uri>meshes/Box2.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
         </geometry>
       </collision>
 
