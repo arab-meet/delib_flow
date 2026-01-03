@@ -146,7 +146,7 @@
 
     <!-- Models -->
     <model name='walls'>
-      <include> 
+      <include>
         <uri>model://walls</uri>
       </include>
     </model>
@@ -380,7 +380,7 @@
 
 
   <!-- Markers -->
-    
+
     <model name='Box1'>
       <include>
         <uri>model://Box1</uri>
