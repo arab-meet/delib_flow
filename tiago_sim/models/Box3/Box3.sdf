@@ -2,31 +2,53 @@
 
 <model name="Box3">
 
-  <static>true</static>
+  <static>false</static>
+
     <link name="cube_link">
 
       <!-- Front face -->
       <visual name="front">
-        <pose>0 0 0 0 0 -3.14</pose> <!-- shift +Y -->
+        <pose>0 0 0 0 0 -3.14</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box3.dae</uri>
+            <uri>meshes/Box3_mod.dae</uri>
             <scale>0.28 0.28 0.28</scale>
           </mesh>
         </geometry>
       </visual>
+
+      <collision name="front_collision">
+        <pose>0 0 0 0 0 -3.14</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/Box3_mod.dae</uri>
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </collision>
 
       <!-- Back face -->
       <visual name="Back">
-        <pose>0.14 0 0 0 0 0</pose> <!-- shift +Y -->
+        <pose>0.14 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box3.dae</uri>
+            <uri>meshes/Box3_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
         </geometry>
       </visual>
+
+      <collision name="Back_collision">
+        <pose>0.14 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/Box3_mod.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </collision>
 
       <!-- Top face -->
       <visual name="Top">
@@ -40,9 +62,8 @@
         </geometry>
       </visual>
 
-      <!-- bottom face -->
-      <visual name="bottom">
-        <pose>0 0 0 0 1.57 0</pose> <!-- shift +Y -->
+      <collision name="Top_collision">
+        <pose>0.0 0 0.14 0 1.57 0</pose>
         <geometry>
           <mesh>
             <uri>meshes/Box3.dae</uri>
@@ -50,32 +71,81 @@
             <scale>0.28 0.28 0.28</scale>
           </mesh>
         </geometry>
+      </collision>
+
+      <!-- bottom face -->
+      <!-- <visual name="bottom">
+        <pose>0 0 0 0 1.57 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/Box3_mod.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
       </visual>
+
+      <collision name="bottom_collision">
+        <pose>0 0 0 0 1.57 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/Box3_mod.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </collision> -->
 
       <!-- Right face -->
       <visual name="Right">
-        <pose>0.07 -0.07 0 0 0 4.71</pose> <!-- shift +Y -->
+        <pose>0.07 -0.07 0 0 0 4.71</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box3.dae</uri>
+            <uri>meshes/Box3_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
         </geometry>
       </visual>
+
+      <collision name="Right_collision">
+        <pose>0.07 -0.07 0 0 0 4.71</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/Box3_mod.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </collision>
 
       <!-- Left face -->
       <visual name="Left">
-        <pose>0.07 0.07 0 0 0 1.57</pose> <!-- shift +Y -->
+        <pose>0.07 0.07 0 0 0 1.57</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box3.dae</uri>
+            <uri>meshes/Box3_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
         </geometry>
       </visual>
 
+      <collision name="Left_collision">
+        <pose>0.07 0.07 0 0 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/Box3_mod.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+  <inertial>
+    <mass value="0.5"/>
+    <inertia ixx="0.001633333" ixy="0.0" ixz="0.0" iyy="0.001633333" iyz="0.0" izz="0.001633333"/>
+  </inertial>
 
   </link>
   </model>

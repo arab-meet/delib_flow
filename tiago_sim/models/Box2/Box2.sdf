@@ -1,28 +1,27 @@
 <?xml version="1.0" ?><sdf version="1.6">
 
 <model name="Box2">
-    <!-- <pose>0 0 0 0 0 0</pose>
-    <frame name='Drawer'/> -->
 
   <static>false</static>
+
     <link name="cube_link">
 
       <!-- Front face -->
       <visual name="front">
-        <pose>0 0 0 0 0 -3.14</pose> <!-- shift +Y -->
+        <pose>0 0 0 0 0 -3.14</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box2.dae</uri>
+            <uri>meshes/Box2_mod.dae</uri>
             <scale>0.28 0.28 0.28</scale>
           </mesh>
         </geometry>
       </visual>
 
       <collision name="front_collision">
-        <pose>0 0 0 0 0 -3.14</pose> <!-- shift +Y -->
+        <pose>0 0 0 0 0 -3.14</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box2.dae</uri>
+            <uri>meshes/Box2_mod.dae</uri>
             <scale>0.28 0.28 0.28</scale>
           </mesh>
         </geometry>
@@ -30,10 +29,10 @@
 
       <!-- Back face -->
       <visual name="Back">
-        <pose>0.14 0 0 0 0 0</pose> <!-- shift +Y -->
+        <pose>0.14 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box2.dae</uri>
+            <uri>meshes/Box2_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
@@ -41,10 +40,10 @@
       </visual>
 
       <collision name="Back_collision">
-        <pose>0.14 0 0 0 0 0</pose> <!-- shift +Y -->
+        <pose>0.14 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box2.dae</uri>
+            <uri>meshes/Box2_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
@@ -75,8 +74,8 @@
       </collision>
 
       <!-- bottom face -->
-      <visual name="bottom">
-        <pose>0 0 0 0 1.57 0</pose> <!-- shift +Y -->
+      <!-- <visual name="bottom">
+        <pose>0 0 0 0 1.57 0</pose>
         <geometry>
           <mesh>
             <uri>meshes/Box2.dae</uri>
@@ -87,7 +86,7 @@
       </visual>
 
       <collision name="bottom_collision">
-        <pose>0 0 0 0 1.57 0</pose> <!-- shift +Y -->
+        <pose>0 0 0 0 1.57 0</pose>
         <geometry>
           <mesh>
             <uri>meshes/Box2.dae</uri>
@@ -95,14 +94,14 @@
             <scale>0.28 0.28 0.28</scale>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
 
       <!-- Right face -->
       <visual name="Right">
-        <pose>0.07 -0.07 0 0 0 4.71</pose> <!-- shift +Y -->
+        <pose>0.07 -0.07 0 0 0 4.71</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box2.dae</uri>
+            <uri>meshes/Box2_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
@@ -110,10 +109,10 @@
       </visual>
 
       <collision name="Right_collision">
-        <pose>0.07 -0.07 0 0 0 4.71</pose> <!-- shift +Y -->
+        <pose>0.07 -0.07 0 0 0 4.71</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box2.dae</uri>
+            <uri>meshes/Box2_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
@@ -122,10 +121,10 @@
 
       <!-- Left face -->
       <visual name="Left">
-        <pose>0.07 0.07 0 0 0 1.57</pose> <!-- shift +Y -->
+        <pose>0.07 0.07 0 0 0 1.57</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box2.dae</uri>
+            <uri>meshes/Box2_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
@@ -133,10 +132,10 @@
       </visual>
 
       <collision name="Left_collision">
-        <pose>0.07 0.07 0 0 0 1.57</pose> <!-- shift +Y -->
+        <pose>0.07 0.07 0 0 0 1.57</pose>
         <geometry>
           <mesh>
-            <uri>meshes/Box2.dae</uri>
+            <uri>meshes/Box2_mod.dae</uri>
 
             <scale>0.28 0.28 0.28</scale>
           </mesh>
@@ -145,7 +144,7 @@
 
   <inertial>
     <mass value="0.5"/>
-    <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+    <inertia ixx="0.001633333" ixy="0.0" ixz="0.0" iyy="0.001633333" iyz="0.0" izz="0.001633333"/>
   </inertial>
 
   </link>
