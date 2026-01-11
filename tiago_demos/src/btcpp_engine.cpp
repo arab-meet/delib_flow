@@ -9,6 +9,9 @@
 #include "behaviortree_cpp/utils/shared_library.h"
 #include "behaviortree_cpp/xml_parsing.h"
 
+#include <behaviortree_cpp/loggers/bt_cout_logger.h>
+#include <behaviortree_cpp/loggers/groot2_publisher.h>
+
 #include "grab2_behavior_tree/plugins_list.hpp"
 #include "nav2_behavior_tree/plugins_list.hpp"
 #include "nav2_util/string_utils.hpp"
@@ -81,6 +84,8 @@ int main(int argc, char ** argv)
     }
   }
 
+  // Register Tiago BT Plugins
+  factory.registerFromPlugin(BT::SharedLibrary::getOSName("tiago_set_target_using_aruco_marker_bt_node"));
   // ------------------------------------------------------
   rclcpp::executors::SingleThreadedExecutor executor;
   executor.add_node(node);
@@ -101,11 +106,11 @@ int main(int argc, char ** argv)
   // Set common blackboard entries for Nav2 BT nodes
   global_blackboard->set("node", node);
   global_blackboard->set<std::chrono::milliseconds>("bt_loop_duration",
-    std::chrono::milliseconds(10));
+    std::chrono::milliseconds(500));
   global_blackboard->set<std::chrono::milliseconds>("server_timeout",
-    std::chrono::milliseconds(2000));  // 2 seconds for goal acknowledgment
+    std::chrono::milliseconds(5000));  // 5 seconds for goal acknowledgment
   global_blackboard->set<std::chrono::milliseconds>("wait_for_service_timeout",
-    std::chrono::milliseconds(3000));  // 3 seconds to find server
+    std::chrono::milliseconds(8000));  // 8 seconds to find server
 
   // Set custom blackboard entries
   global_blackboard->set<float>("battery_level", 100.0f);
@@ -115,10 +120,17 @@ int main(int argc, char ** argv)
 
   BT::Tree tree = factory.createTree("MainTree", global_blackboard);
 
+  // Loggers
+  // This will add console messages for each action and condition executed
+  BT::StdCoutLogger console_logger(tree);
+  console_logger.enableTransitionToIdle(false);
+
+  BT::Groot2Publisher groot2_publisher(tree, 5555);
+
   BT::NodeStatus status = BT::NodeStatus::RUNNING;
   while (rclcpp::ok() && status == BT::NodeStatus::RUNNING) {
     status = tree.tickOnce();
-    executor.spin_once(std::chrono::milliseconds(10));
+    executor.spin_once(std::chrono::milliseconds(500));
   }
 
   if (status == BT::NodeStatus::SUCCESS) {
