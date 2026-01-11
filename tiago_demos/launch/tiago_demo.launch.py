@@ -48,6 +48,7 @@ def generate_launch_description():
         executable='btcpp_engine',
         name='bt_executor',
         output='screen',
+        # arguments= ['--ros-args', '--log-level', 'debug'],
         parameters=[
             {
                 'use_sim_time': use_sim_time,

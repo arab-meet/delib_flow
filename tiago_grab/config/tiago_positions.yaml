@@ -43,6 +43,14 @@ trajectories:
         time_from_start: 2.0
       - positions: [0.0, 0.0]
         time_from_start: 4.0
+  head_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [0.0, -0.3]
+        time_from_start: 0.3
   # Torso
   torso_up:
     frame_id: ""
