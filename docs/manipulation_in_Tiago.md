@@ -146,7 +146,6 @@ home_pose:
 <FollowJointTrajectory />
 ```
 
-
 ## Execution Engine (`btcpp_executor`)
 
 The executor node:
@@ -162,9 +161,42 @@ The executor node:
 * `holding_object` : bool
 * Semantic poses loaded from YAML
 
+# Architecture (High-level )
+
+# Integration with Nav2
+
+* Nav2 plugins are loaded by `btcpp_executor`
+* Grab2 plugins are loaded **in the same factory**
+* They share:
+  * the same `node`
+  * the same Blackboard
+
+So you can safely do:
+
+```xml
+<NavigateToPose />
+<DetectObject />
+<ReachObject />
+```
+
+# How to use Grab2 with TIAGO
+
+1. Launch TIAGO robot / sim
+2. Launch perception (camera, ArUco, detector, etc)
+3. Launch `btcpp_executor`
+4. Pass XML tree path
+5. Make sure:
+
+* topics exist
+* frames are correct
+* YAML files are loaded
 
 
-To Do : 
+
+
+
+
+To Do :
 
 * refine
 * review
@@ -173,3 +205,5 @@ To Do :
 * Integration with Nav2
 * Common Pitfalls
 * Limitations
+* how to use grab2 with tiago (done)
+*
