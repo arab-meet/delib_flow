@@ -13,6 +13,12 @@ def generate_launch_description():
         description='Use simulation (Gazebo) clock if true',
     )
 
+    log_level_declaration = DeclareLaunchArgument(
+        'log_level',
+        default_value='info',
+        description='Log level for the behavior tree executor',
+    )
+
     behavior_tree_declaration = DeclareLaunchArgument(
         'tree',
         default_value='our_map_example.xml',
@@ -27,6 +33,7 @@ def generate_launch_description():
 
     # Launch configuration variables
     use_sim_time = LaunchConfiguration('use_sim_time')
+    log_level = LaunchConfiguration('log_level')
 
     behavior_tree_xml = PathJoinSubstitution(
         [
@@ -48,7 +55,7 @@ def generate_launch_description():
         executable='btcpp_engine',
         name='bt_executor',
         output='screen',
-        # arguments= ['--ros-args', '--log-level', 'debug'],
+        arguments=['--ros-args', '--log-level', log_level],
         parameters=[
             {
                 'use_sim_time': use_sim_time,
@@ -61,6 +68,7 @@ def generate_launch_description():
     return LaunchDescription(
         [
             use_sim_time_declaration,
+            log_level_declaration,
             behavior_tree_declaration,
             locations_declaration,
             bt_executor_node,
