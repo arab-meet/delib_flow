@@ -45,11 +45,22 @@ def generate_launch_description():
         )
     )
 
+    aruco_broadcaster_launch = IncludeLaunchDescription(
+        PathJoinSubstitution(
+            [
+                FindPackageShare('tiago_aruco_broadcast'),
+                'launch',
+                'aruco.launch.py',
+            ]
+        )
+    )
+
     return LaunchDescription(
         [
             sim_launch,
             nav2_launch,
             moveit2_launch,
             grab2_bt_grabber_launch,
+            aruco_broadcaster_launch,
         ]
     )
