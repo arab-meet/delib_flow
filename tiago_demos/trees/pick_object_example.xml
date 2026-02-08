@@ -1,16 +1,19 @@
 <root BTCPP_format="4">
   <BehaviorTree ID="MainTree">
-    <Sequence>
-      <Script code="head_action:='head_controller/follow_joint_trajectory'"/>
+      <Sequence>
+        <Script code=" head_action:='head_controller/follow_joint_trajectory'; arm_action:='arm_controller/follow_joint_trajectory'; gripper_action:='gripper_controller/follow_joint_trajectory'"/>
 
-      <!-- Move head -->
-      <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
-      <FollowJointTrajectory action_name="{head_action}" trajectory="{traj.head_down}"/>
+        <!-- Move head -->
+        <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
+        <FollowJointTrajectory action_name="{head_action}" trajectory="{traj.head_down}"/>
 
-      <!-- Pick Object -->
-      <SetTargetUsingArucoMarker name="GetArUcoTarget" target_frame="base_link" target_pose="{grab_goal}"/>
-      <ReachObject action_name="pick_object" name="PickObject" target_pose="{grab_goal}"/>
+        <!-- Move arm -->
+        <FollowJointTrajectory action_name="{arm_action}" trajectory="{traj.arm_ready_to_grab}"/>
 
-    </Sequence>
+        <!-- Pick Object -->
+        <SetTargetUsingTransform name="GetArUcoTarget" target_pose="{grab_goal}"/>
+        <ReachObject action_name="pick_object" name="PickObject" target_pose="{grab_goal}"/>
+
+      </Sequence>
   </BehaviorTree>
 </root>

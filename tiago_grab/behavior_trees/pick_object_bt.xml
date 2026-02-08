@@ -6,11 +6,11 @@
 
       <SaySomething name="Print message" message="Reaching object..."/>
 
-      <ComputeTopDownGrasp object_pose="{target_pose}" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
+      <ComputeTopDownGrasp object_pose="{target_pose}" grasp_offset="0.32" pregrasp_offset="0.05" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
 
+      <FollowJointTrajectory action_name="{gripper_controller_action}" name="Open Gripper" trajectory="{traj.grip_open}"/>
       <ComputePlanToTargetIK name="Plan to pre-grasp pose" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
       <FollowJointTrajectory action_name="{arm_controller_action}" name="Move to pre-grasp pose" trajectory="{trajectory_msg}"/>
-      <FollowJointTrajectory action_name="{gripper_controller_action}" name="Open Gripper" trajectory="{traj.grip_open}"/>
 
       <ComputePlanToTargetIK name="Plan to grasp pose" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/>
       <FollowJointTrajectory action_name="{arm_controller_action}" name="Move to grasp pose" trajectory="{trajectory_msg}"/>
@@ -20,7 +20,7 @@
 
       <SaySomething name="Print message" message="Retracting arm"/>
       <!-- TODO: We should set target joint configuration to the planner instead of interpolating directly -->
-      <FollowJointTrajectory action_name="{arm_controller_action}" name="Retract" trajectory="{traj.arm_home}"/>
+      <FollowJointTrajectory action_name="{arm_controller_action}" name="Retract" trajectory="{traj.arm_ready_to_grab}"/>
 
     </Sequence>
   </BehaviorTree>
