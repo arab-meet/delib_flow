@@ -384,14 +384,14 @@
     <model name='Box1'>
       <include>
         <uri>model://Box1</uri>
-        <pose>5.0 6.0 0.8 0.0 0.0 0.0</pose> <!--5 6.0  -1.8 -5.1 -->
+        <pose>5.0 6.0 0.8 0.0 0.0 0.0</pose>
       </include>
     </model>
 
     <model name='Box2'>
       <include>
-        <uri>model://Box2</uri>
-        <pose>6.2 -2.3 0.9 0.0 0.0 0.0</pose>
+        <uri>model://Box1</uri>
+        <pose>6.2 -2.3 2.5 0.0 0.0 0.0</pose>
       </include>
     </model>
 
