@@ -9,6 +9,7 @@
 #include "behaviortree_ros2/bt_topic_sub_node.hpp"
 #include "behaviortree_ros2/ros_node_params.hpp"
 
+#include "tf2/utils.hpp"
 #include "tf2/exceptions.hpp"
 #include "tf2_ros/buffer.hpp"
 #include "tf2_ros/transform_listener.hpp"
@@ -48,43 +49,46 @@ public:
     const std::shared_ptr<geometry_msgs::msg::PoseArray> & last_msg) override
   {
     RCLCPP_INFO(logger(), "[%s] onTick is invoked", name().c_str());
-    if (!last_msg) {
-      RCLCPP_WARN(logger(), "[%s] No Publisher on ArUco Poses topic", name().c_str());
-      return BT::NodeStatus::FAILURE;
+    if (last_msg) {
+
+      RCLCPP_INFO(logger(), "[%s] received %zu ArUco Markers", name().c_str(),
+                  last_msg->poses.size());
+
+      std::string target_frame;
+      double tf_timeout;
+
+      getInput("target_frame", target_frame);
+      getInput("tf_timeout", tf_timeout);
+
+      geometry_msgs::msg::PoseStamped target_pose;
+      geometry_msgs::msg::PoseStamped pose_in_camera_optical_frame;
+      pose_in_camera_optical_frame.header = last_msg->header;
+      pose_in_camera_optical_frame.pose = last_msg->poses.front();
+
+      try {
+        tf_buffer_->transform(pose_in_camera_optical_frame, target_pose,
+                              target_frame, tf2::durationFromSec(tf_timeout));
+      } catch (const tf2::TransformException & ex) {
+        RCLCPP_ERROR(logger(),
+                    "[%s] Could not transform ArUco marker into target frame %s",
+                    name().c_str(),
+                    target_frame.c_str());
+        return BT::NodeStatus::FAILURE;
+      }
+
+      // TODO(elsayed): Add some checks on the target pose, e.g. is it within reachability limits?
+
+      // TEST
+      target_pose.pose.position.z += 0.1;
+      tf2::Quaternion target_quat;
+      double yaw = tf2::getYaw(target_pose.pose.orientation);
+      target_quat.setRPY(0, M_PI/2, yaw);
+      target_pose.pose.orientation = tf2::toMsg(target_quat);
+
+      setOutput("target_pose", target_pose);
+      return BT::NodeStatus::SUCCESS;
     }
-
-    if (last_msg->poses.empty()) {
-      RCLCPP_WARN(logger(), "[%s]Received empty ArUco PoseArray", name().c_str());
-      return BT::NodeStatus::FAILURE;
-    }
-
-    RCLCPP_INFO(logger(), "[%s] received %zu ArUco Markers", name().c_str(),
-                last_msg->poses.size());
-
-    std::string target_frame;
-    double tf_timeout;
-
-    getInput("target_frame", target_frame);
-    getInput("tf_timeout", tf_timeout);
-
-    geometry_msgs::msg::PoseStamped target_pose;
-    geometry_msgs::msg::PoseStamped pose_in_camera_optical_frame;
-    pose_in_camera_optical_frame.header = last_msg->header;
-    pose_in_camera_optical_frame.pose = last_msg->poses.front();
-
-    try {
-      tf_buffer_->transform(pose_in_camera_optical_frame, target_pose,
-                            target_frame, tf2::durationFromSec(tf_timeout));
-    } catch (const tf2::TransformException & ex) {
-      RCLCPP_ERROR(logger(),
-                   "[%s] Could not transform ArUco marker into target frame %s",
-                   name().c_str(),
-                   target_frame.c_str());
-      return BT::NodeStatus::FAILURE;
-    }
-
-    setOutput("target_pose", target_pose);
-    return BT::NodeStatus::SUCCESS;
+    return BT::NodeStatus::FAILURE;
   }
 
 private:

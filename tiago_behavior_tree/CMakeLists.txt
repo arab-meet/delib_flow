@@ -23,9 +23,11 @@ find_package(tf2_geometry_msgs)
 set(CMAKE_CXX_STANDARD 17)
 
 add_library(tiago_set_target_using_aruco_marker_bt_node src/set_target_using_aruco_marker_bt_node.cpp)
+add_library(tiago_set_target_using_transform_bt_node src/set_target_using_transform.cpp)
 
 list(APPEND plugin_libs
   tiago_set_target_using_aruco_marker_bt_node
+  tiago_set_target_using_transform_bt_node
 )
 
 foreach(bt_plugin ${plugin_libs})
