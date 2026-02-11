@@ -35,16 +35,6 @@ def generate_launch_description():
         )
     )
 
-    grab2_bt_grabber_launch = IncludeLaunchDescription(
-        PathJoinSubstitution(
-            [
-                FindPackageShare('tiago_grab'),
-                'launch',
-                'grab2_grabbers.launch.py',
-            ]
-        )
-    )
-
     aruco_broadcaster_launch = IncludeLaunchDescription(
         PathJoinSubstitution(
             [
@@ -60,7 +50,6 @@ def generate_launch_description():
             sim_launch,
             nav2_launch,
             moveit2_launch,
-            grab2_bt_grabber_launch,
             aruco_broadcaster_launch,
         ]
     )

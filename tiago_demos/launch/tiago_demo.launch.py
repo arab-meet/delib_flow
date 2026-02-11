@@ -1,5 +1,5 @@
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
@@ -21,7 +21,7 @@ def generate_launch_description():
 
     behavior_tree_declaration = DeclareLaunchArgument(
         'tree',
-        default_value='our_map_example.xml',
+        default_value='pick_object_example.xml',
         description='Behavior Tree XML file to execute, Check trees directory for examples',
     )
 
@@ -50,6 +50,16 @@ def generate_launch_description():
         ]
     )
 
+    grab2_bt_grabber_launch = IncludeLaunchDescription(
+        PathJoinSubstitution(
+            [
+                FindPackageShare('tiago_grab'),
+                'launch',
+                'grab2_grabbers.launch.py',
+            ]
+        )
+    )
+
     bt_executor_node = Node(
         package='tiago_demos',
         executable='btcpp_engine',
@@ -71,6 +81,7 @@ def generate_launch_description():
             log_level_declaration,
             behavior_tree_declaration,
             locations_declaration,
+            # grab2_bt_grabber_launch,
             bt_executor_node,
         ]
     )

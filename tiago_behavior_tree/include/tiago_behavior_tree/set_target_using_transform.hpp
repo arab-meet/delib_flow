@@ -38,8 +38,7 @@ public:
                                  "Target frame to transform into"),
       BT::InputPort<double>("tf_timeout", 1.0, "Timeout for TF2 lookup"),
       BT::InputPort<double>("offset_z", 0.0, "Vertical offset to apply to the target pose"),
-      BT::OutputPort<geometry_msgs::msg::PoseStamped>("target_pose",
-                                                       "Transformed pose with adjustments")
+      BT::OutputPort<geometry_msgs::msg::PoseStamped>("target_pose", "Transformed pose with adjustments")
     };
   }
 
@@ -104,7 +103,7 @@ public:
     target_pose.pose.position.z += offset_z;  // Add vertical offset
     tf2::Quaternion target_quat;
     double yaw = tf2::getYaw(target_pose.pose.orientation);
-    target_quat.setRPY(0, M_PI / 2, yaw);
+    target_quat.setRPY(0, M_PI / 2, 0);
     target_pose.pose.orientation = tf2::toMsg(target_quat);
 
     setOutput("target_pose", target_pose);
