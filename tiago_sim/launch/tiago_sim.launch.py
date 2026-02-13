@@ -11,10 +11,10 @@ from launch.substitutions import LaunchConfiguration
 def generate_launch_description():
     tiago_gazebo_dir = get_package_share_directory('tiago_sim')
 
-    world = LaunchConfiguration('worlds', default='world')  # was test_world
+    world = LaunchConfiguration('worlds', default='mini_world')  # was test_world
     declare_world_cmd = DeclareLaunchArgument(
         'worlds',
-        default_value='test_world',
+        default_value='mini_world',
         description='World name',
     )
 
