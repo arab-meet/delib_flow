@@ -195,9 +195,15 @@
     <model name='table0'>
       <include>
         <uri>model://Table</uri>
-        <pose>2 0 0.0 0.0 0.0 -1.5707963267948966</pose>
+        <pose>1.0 0 0.0 0.0 0.0 -1.5707963267948966</pose>
+      </include>
+    </model>
+    <!-- box Model-->
+    <model name='Box'>
+      <include>
+        <uri>model://Box1</uri>
+        <pose>0.65 0 2.0 0.0 0.0 -1.5707963267948966</pose>
       </include>
     </model>
   </world>
 </sdf>
-
