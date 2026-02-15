@@ -5,52 +5,42 @@
         <Script code=" head_action:='head_controller/follow_joint_trajectory'; arm_action:='arm_controller/follow_joint_trajectory'; gripper_action:='gripper_controller/follow_joint_trajectory'; torso_action:='torso_controller/follow_joint_trajectory'"/>
         <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
 
-        <!-- Navigate (arm stays tucked so it doesn't block camera) -->
-        <NavigateToPose name="ToBedroom" goal="{loc.Bedroom}"/>
-
         <!-- Open gripper before searching -->
         <FollowJointTrajectory action_name="{gripper_action}" name="Open Gripper" trajectory="{traj.grip_open}"/>
 
-        <!-- Initial ArUco search from navigation waypoint (coarse detection) -->
+        <!-- Search for ArUco: sweep head through positions until marker is found -->
         <Fallback>
-          <!-- Position 1: center, slight tilt (front-facing marker) -->
           <Sequence>
             <FollowJointTrajectory action_name="{head_action}" name="Look center slight" trajectory="{traj.head_search_center_slight}"/>
             <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
           </Sequence>
-          <!-- Position 2: center, moderate down -->
           <Sequence>
             <FollowJointTrajectory action_name="{head_action}" name="Look center down" trajectory="{traj.head_search_center_down}"/>
             <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
           </Sequence>
-          <!-- Position 3: left, down -->
           <Sequence>
             <FollowJointTrajectory action_name="{head_action}" name="Look left down" trajectory="{traj.head_search_left_down}"/>
             <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
           </Sequence>
-          <!-- Position 4: right, down -->
           <Sequence>
             <FollowJointTrajectory action_name="{head_action}" name="Look right down" trajectory="{traj.head_search_right_down}"/>
             <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
           </Sequence>
-          <!-- Position 5: center, more down -->
           <Sequence>
             <FollowJointTrajectory action_name="{head_action}" name="Look center more down" trajectory="{traj.head_search_center_more_down}"/>
             <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
           </Sequence>
-          <!-- Position 6: left, more down -->
           <Sequence>
             <FollowJointTrajectory action_name="{head_action}" name="Look left more down" trajectory="{traj.head_search_left_more_down}"/>
             <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
           </Sequence>
-          <!-- Position 7: right, more down -->
           <Sequence>
             <FollowJointTrajectory action_name="{head_action}" name="Look right more down" trajectory="{traj.head_search_right_more_down}"/>
             <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
           </Sequence>
         </Fallback>
 
-        <!-- Approach: drive forward so the object is within arm reach but far enough to not hit the table -->
+        <!-- Approach: drive forward so the object is within arm reach -->
         <ComputeApproachPose object_pose="{grab_goal}" reach_distance="0.85" approach_distance="{approach_dist}"/>
         <DriveOnHeading name="ApproachObject" dist_to_travel="{approach_dist}" speed="0.25" time_allowance="20"/>
 
@@ -86,10 +76,10 @@
           </Sequence>
         </Fallback>
 
-        <!-- Raise torso before picking — gives the arm more workspace to reach above the table -->
+        <!-- Raise torso before picking -->
         <FollowJointTrajectory action_name="{torso_action}" name="Raise torso" trajectory="{traj.torso_up}"/>
 
-        <!-- ArUco pose captured — extend arm to pre-grasp position (joints away from limits for feasible MoveIt planning) -->
+        <!-- Extend arm to pre-grasp position (joints away from limits for feasible MoveIt planning) -->
         <FollowJointTrajectory action_name="{arm_action}" name="Arm pre-grasp" trajectory="{traj.arm_pre_grasp}"/>
 
         <!-- Pick Object -->

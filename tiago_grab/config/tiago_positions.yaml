@@ -26,6 +26,22 @@ trajectories:
     points:
       - positions: [0.14, 0.11, -3.21, 2.10, -0.20, -1.3, 0.49]
         time_from_start: 3.0
+  # Arm extended forward, all joints well away from limits.
+  # Based on TIAGo's official "unfold_arm" motion — ideal starting
+  # configuration for MoveIt planning (top-down grasp).
+  arm_pre_grasp:
+    frame_id: ""
+    joint_names:
+      - "arm_1_joint"
+      - "arm_2_joint"
+      - "arm_3_joint"
+      - "arm_4_joint"
+      - "arm_5_joint"
+      - "arm_6_joint"
+      - "arm_7_joint"
+    points:
+      - positions: [0.21, 0.35, -0.20, 0.80, -1.57, 1.37, 0.0]
+        time_from_start: 5.0
   # Gripper
   grip_open:
     frame_id: ""
@@ -74,6 +90,71 @@ trajectories:
     points:
       - positions: [0.0, -0.9]
         time_from_start: 0.3
+
+  # Head search positions for ArUco scanning (marker on front face of box)
+  # Tilt range: -0.2 (slight down) to -0.6 (moderate down)
+  head_search_center_slight:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [0.0, -0.2]
+        time_from_start: 1.0
+
+  head_search_center_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [0.0, -0.4]
+        time_from_start: 1.0
+
+  head_search_left_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [0.3, -0.3]
+        time_from_start: 1.0
+
+  head_search_right_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [-0.3, -0.3]
+        time_from_start: 1.0
+
+  head_search_center_more_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [0.0, -0.6]
+        time_from_start: 1.0
+
+  head_search_left_more_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [0.3, -0.6]
+        time_from_start: 1.0
+
+  head_search_right_more_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [-0.3, -0.6]
+        time_from_start: 1.0
 
   # Torso
   torso_up:

@@ -198,6 +198,12 @@
         <pose>2 0 0.0 0.0 0.0 -1.5707963267948966</pose>
       </include>
     </model>
+    <!-- Box with ArUco marker on table -->
+    <model name='Box1'>
+      <include>
+        <uri>model://Box1</uri>
+        <pose>2.0 0 0.82 0 1.57 0</pose>
+      </include>
+    </model>
   </world>
 </sdf>
-

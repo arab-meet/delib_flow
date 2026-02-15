@@ -134,7 +134,7 @@ def start_move_group(context, *args, **kwargs):
         package='grab2_planner',
         executable='grab2_planner_server',
         output='screen',
-        parameters=move_group_params + [{'planning_group': 'arm'}],
+        parameters=move_group_params + [{'planning_group': 'arm_torso'}],
     )
 
     return [run_move_group_node, grab2_planner_server_node]

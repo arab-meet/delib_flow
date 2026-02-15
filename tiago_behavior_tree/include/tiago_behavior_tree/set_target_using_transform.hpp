@@ -38,6 +38,7 @@ public:
                                  "Target frame to transform into"),
       BT::InputPort<double>("tf_timeout", 1.0, "Timeout for TF2 lookup"),
       BT::InputPort<double>("offset_z", 0.0, "Vertical offset to apply to the target pose"),
+      BT::InputPort<double>("buffer_size", 50.0, "TF buffer cache duration in seconds"),
       BT::OutputPort<geometry_msgs::msg::PoseStamped>("target_pose", "Transformed pose with adjustments")
     };
   }
@@ -51,7 +52,10 @@ public:
 
     // Initialize TF2 buffer and listener if not already done
     if (!tf_buffer_) {
-      tf_buffer_ = std::make_unique<tf2_ros::Buffer>(node_->get_clock());
+      double buffer_size = 50.0;
+      getInput("buffer_size", buffer_size);
+      tf_buffer_ = std::make_unique<tf2_ros::Buffer>(
+        node_->get_clock(), tf2::durationFromSec(buffer_size));
       tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
     }
 
@@ -102,16 +106,20 @@ public:
     // Apply transformations
     target_pose.pose.position.z += offset_z;  // Add vertical offset
     tf2::Quaternion target_quat;
-    double yaw = tf2::getYaw(target_pose.pose.orientation);
     target_quat.setRPY(0, M_PI / 2, 0);
     target_pose.pose.orientation = tf2::toMsg(target_quat);
 
     setOutput("target_pose", target_pose);
 
+    bool within_reach = target_pose.pose.position.x <= 0.65;
     RCLCPP_INFO(
       node_->get_logger(),
-      "[%s] Successfully transformed %s to %s",
-      name().c_str(), source_frame.c_str(), base_frame.c_str());
+      "[%s] Object in %s: (x=%.3f, y=%.3f, z=%.3f) %s",
+      name().c_str(), base_frame.c_str(),
+      target_pose.pose.position.x,
+      target_pose.pose.position.y,
+      target_pose.pose.position.z,
+      within_reach ? "-- WITHIN arm reach" : "-- WARNING: too far, move robot closer (need x < 0.65)");
 
     return BT::NodeStatus::SUCCESS;
   }

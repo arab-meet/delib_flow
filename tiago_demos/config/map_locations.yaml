@@ -11,10 +11,10 @@ Dining:
 Bedroom:
   frame_id: map
   pose:
-    x: 6.0
-    y: -2.57
+    x: 0.8
+    y: 0.0
     z: 0.0
-    yaw_deg: 135
+    yaw_deg: 0
 
 Kitchen:
   frame_id: map
