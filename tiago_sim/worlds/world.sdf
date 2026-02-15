@@ -390,7 +390,7 @@
 
     <model name='Box2'>
       <include>
-        <uri>model://Box3</uri>
+        <uri>model://Box1</uri>
         <pose>6.2 -2.3 2.5 0.0 0.0 0.0</pose>
       </include>
     </model>

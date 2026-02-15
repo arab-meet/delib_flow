@@ -13,6 +13,19 @@ trajectories:
     points:
       - positions: [0.5, -1.34, -0.48, 1.94, -1.49, 1.37, 1.57]
         time_from_start: 1.0
+  arm_ready_to_grab:
+    frame_id: ""
+    joint_names:
+      - "arm_1_joint"
+      - "arm_2_joint"
+      - "arm_3_joint"
+      - "arm_4_joint"
+      - "arm_5_joint"
+      - "arm_6_joint"
+      - "arm_7_joint"
+    points:
+      - positions: [0.14, 0.11, -3.21, 2.10, -0.20, -1.3, 0.49]
+        time_from_start: 3.0
   # Gripper
   grip_open:
     frame_id: ""
@@ -28,7 +41,7 @@ trajectories:
       - "gripper_right_finger_joint"
       - "gripper_left_finger_joint"
     points:
-      - positions: [0.0, 0.0]
+      - positions: [0.02, 0.02]
         time_from_start: 0.1
   # Head
   head_sweep:
@@ -43,13 +56,32 @@ trajectories:
         time_from_start: 2.0
       - positions: [0.0, 0.0]
         time_from_start: 4.0
+
+  head_slightly_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [0.0, -0.6]
+        time_from_start: 0.3
+
+  head_down:
+    frame_id: ""
+    joint_names:
+      - "head_1_joint"
+      - "head_2_joint"
+    points:
+      - positions: [0.0, -0.9]
+        time_from_start: 0.3
+
   # Torso
   torso_up:
     frame_id: ""
     joint_names:
       - "torso_lift_joint"
     points:
-      - positions: [0.3]
+      - positions: [0.28]
         time_from_start: 5.0
   torso_down:
     frame_id: ""
