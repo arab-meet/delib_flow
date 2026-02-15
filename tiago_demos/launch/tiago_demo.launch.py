@@ -21,7 +21,7 @@ def generate_launch_description():
 
     behavior_tree_declaration = DeclareLaunchArgument(
         'tree',
-        default_value='pick_object_example.xml',
+        default_value='pick_object_example',
         description='Behavior Tree XML file to execute, Check trees directory for examples',
     )
 
@@ -39,7 +39,7 @@ def generate_launch_description():
         [
             FindPackageShare('tiago_demos'),
             'trees',
-            [LaunchConfiguration('tree')],
+            [LaunchConfiguration('tree'), '.xml'],
         ]
     )
     locations_cfg = PathJoinSubstitution(

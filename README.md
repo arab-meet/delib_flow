@@ -5,57 +5,31 @@
 > [!WARNING]
 > This is an experimental, work-in-progress repository!
 
-## Tiago simulation Setup
+## Build
 
-1. Create a workspace
+```bash
+mkdir -p ~/bt_ws/src
+cd ~/bt_ws/src
+git clone https://github.com/arab-meet/delib_flow.git
+./setup_third_party_pkgs.sh
+cd ~/bt_ws
+colcon build --symlink-install
+```
 
-    ```bash
-    mkdir -p ~/bt_ws/src
-    ```
+## Start Demos
 
-2. Setup dependencies
+Bringup simulation, nav2 and moveit2
 
-    ```bash
-    cd ~/bt_ws/src
-    ./setup_third_party_pkgs.sh
-    ```
+```bash
+ros2 launch tiago_demos tiago_bringup.launch.py world:=minimal_world
+```
 
-3. Build workspace
+You can find worlds under `delib_flow/tiago_sim/worlds`
 
-    ```bash
-    cd ~/bt_ws
-    colcon build --symlink-install
-    ```
+Run demo
 
-4. Running simulation
+```bash
+ros2 launch tiago_demos tiago_demo.launch.py tree:=pick_object_example
+```
 
-    ```bash
-    ros2 launch tiago_sim tiago_sim.launch.py
-    ```
-
-5. Create a map
-
-    ```bash
-    ros2 launch tiago_slam tiago_slam_toolbox.launch.py
-    ```
-
-6. Start navigation (Nav2)
-
-    ```bash
-    ros2 launch tiago_nav tiago_nav2.launch.py
-
-7. Running aruco_detection ( and broadcasting )
-
-    ```bash
-    ros2 launch tiago_aruco_broadcast aruco.launch.py
-    ```
-
-8. YOLOv11 Test
-
-   ```bash
-   ros2 launch tiago_sim sim.launch.py
-   ```
-
-   ```bash
-   rviz2
-   ```
+You can find behavior trees under `delib_flow/tiago_demos/trees`
