@@ -1,10 +1,17 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
-from launch.substitutions import PathJoinSubstitution
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
+    world = LaunchConfiguration('world')
+    sim_world_declaration = DeclareLaunchArgument(
+        'world',
+        default_value='minimal_world',
+        description='Gazebo world file to load, check worlds directory for examples',
+    )
+
     sim_launch = IncludeLaunchDescription(
         PathJoinSubstitution(
             [
@@ -12,7 +19,8 @@ def generate_launch_description():
                 'launch',
                 'tiago_sim.launch.py',
             ]
-        )
+        ),
+        launch_arguments={'world': world}.items(),
     )
 
     nav2_launch = IncludeLaunchDescription(
@@ -47,6 +55,7 @@ def generate_launch_description():
 
     return LaunchDescription(
         [
+            sim_world_declaration,
             sim_launch,
             nav2_launch,
             moveit2_launch,

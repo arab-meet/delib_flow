@@ -194,8 +194,8 @@
     <!-- table Model  -->
     <model name='table0'>
       <include>
-        <uri>model://Table</uri>
-        <pose>2 0 0.0 0.0 0.0 -1.5707963267948966</pose>
+        <uri>model://table</uri>
+        <pose>1 0 0.0 0.0 0.0 -1.5707963267948966</pose>
       </include>
     </model>
   </world>
