@@ -1,0 +1,38 @@
+<root BTCPP_format="4">
+  <BehaviorTree ID="MainTree">
+    <RetryUntilSuccessful num_attempts="-1">
+      <SequenceWithMemory>
+        <Script code=" head_action:='head_controller/follow_joint_trajectory'; arm_action:='arm_controller/follow_joint_trajectory'; gripper_action:='gripper_controller/follow_joint_trajectory'; torso_action:='torso_controller/follow_joint_trajectory'"/>
+        <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
+
+        <!-- Move arm -->
+        <FollowJointTrajectory action_name="{arm_action}" trajectory="{traj.arm_ready_to_grab}"/>
+
+        <!-- Navigate -->
+        <!-- <NavigateToPose name="ToBedroom" goal="{loc.Bedroom}"/> -->
+
+        <!-- Move head -->
+        <FollowJointTrajectory action_name="{head_action}" trajectory="{traj.head_down}"/>
+
+        <!-- Pick Object -->
+        <FollowJointTrajectory action_name="{gripper_action}" name="Open Gripper" trajectory="{traj.grip_open}"/>
+        <Sequence>
+          <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
+          <ComputeTopDownGrasp object_pose="{grab_goal}" grasp_offset="0.32" pregrasp_offset="0.05" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
+
+          <ComputePlanToTargetIK name="Plan to pre-grasp pose" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
+          <FollowJointTrajectory action_name="{arm_action}" name="Move to pre-grasp pose" trajectory="{trajectory_msg}"/>
+
+          <ComputePlanToTargetIK name="Plan to grasp pose" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/>
+          <FollowJointTrajectory action_name="{arm_action}" name="Move to grasp pose" trajectory="{trajectory_msg}"/>
+        </Sequence>
+        <FollowJointTrajectory action_name="{gripper_action}" name="Close Gripper" trajectory="{traj.grip_close}"/>
+
+        <!-- Move torso -->
+        <FollowJointTrajectory action_name="{torso_action}" trajectory="{traj.torso_up}"/>
+        <FollowJointTrajectory action_name="{arm_action}" trajectory="{traj.arm_ready_to_grab}"/>
+
+      </SequenceWithMemory>
+    </RetryUntilSuccessful>
+  </BehaviorTree>
+</root>
