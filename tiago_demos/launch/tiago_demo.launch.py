@@ -81,7 +81,7 @@ def generate_launch_description():
             log_level_declaration,
             behavior_tree_declaration,
             locations_declaration,
-            # grab2_bt_grabber_launch,
+            grab2_bt_grabber_launch,
             bt_executor_node,
         ]
     )
