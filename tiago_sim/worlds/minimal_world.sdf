@@ -198,5 +198,12 @@
         <pose>1 0 0.0 0.0 0.0 -1.5707963267948966</pose>
       </include>
     </model>
+    <model name='Box1'>
+      <include>
+        <uri>model://Box1</uri>
+        <pose>0.75 0.0 1.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
   </world>
 </sdf>

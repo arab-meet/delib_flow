@@ -3,7 +3,7 @@
     <static>true</static>
     <link name="link">
       <collision name="surface">
-        <pose>0 0 1.0 0 0 0</pose>
+        <pose>0 0 0.60 0 0 0</pose>
         <geometry>
           <box>
             <size>1.5 0.8 0.03</size>
@@ -19,7 +19,7 @@
         </surface>
       </collision>
       <visual name="visual1">
-        <pose>0 0 1.0 0 0 0</pose>
+        <pose>0 0 0.60 0 0 0</pose>
         <geometry>
           <box>
             <size>1.5 0.8 0.03</size>
@@ -32,26 +32,26 @@
           <!-- PBR for Ignition, material scripts for gazebo classic-->
           <pbr>
             <metal>
-              <albedo_map>package://tiago_sim/models/Table/Table_Diffuse.jpg</albedo_map>
+              <albedo_map>Table_Diffuse.jpg</albedo_map>
             </metal>
           </pbr>
         </material>
       </visual>
       <collision name="front_left_leg">
-        <pose>0.68 0.38 0.5 0 0 0</pose>
+        <pose>0.68 0.38 0.30 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.02</radius>
-            <length>1.0</length>
+            <length>0.60</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="front_left_leg">
-        <pose>0.68 0.38 0.5 0 0 0</pose>
+        <pose>0.68 0.38 0.30 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.02</radius>
-            <length>1.0</length>
+            <length>0.60</length>
           </cylinder>
         </geometry>
         <material>
@@ -61,20 +61,20 @@
         </material>
       </visual>
       <collision name="front_right_leg">
-        <pose>0.68 -0.38 0.5 0 0 0</pose>
+        <pose>0.68 -0.38 0.30 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.02</radius>
-            <length>1.0</length>
+            <length>0.60</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="front_right_leg">
-        <pose>0.68 -0.38 0.5 0 0 0</pose>
+        <pose>0.68 -0.38 0.30 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.02</radius>
-            <length>1.0</length>
+            <length>0.60</length>
           </cylinder>
         </geometry>
         <material>
@@ -84,20 +84,20 @@
         </material>
       </visual>
       <collision name="back_right_leg">
-        <pose>-0.68 -0.38 0.5 0 0 0</pose>
+        <pose>-0.68 -0.38 0.30 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.02</radius>
-            <length>1.0</length>
+            <length>0.60</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="back_right_leg">
-        <pose>-0.68 -0.38 0.5 0 0 0</pose>
+        <pose>-0.68 -0.38 0.30 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.02</radius>
-            <length>1.0</length>
+            <length>0.60</length>
           </cylinder>
         </geometry>
         <material>
@@ -107,20 +107,20 @@
         </material>
       </visual>
       <collision name="back_left_leg">
-        <pose>-0.68 0.38 0.5 0 0 0</pose>
+        <pose>-0.68 0.38 0.30 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.02</radius>
-            <length>1.0</length>
+            <length>0.60</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="back_left_leg">
-        <pose>-0.68 0.38 0.5 0 0 0</pose>
+        <pose>-0.68 0.38 0.30 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.02</radius>
-            <length>1.0</length>
+            <length>0.60</length>
           </cylinder>
         </geometry>
         <material>
