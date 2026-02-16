@@ -1,0 +1,466 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found ament_cmake_cppcheck: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+-- Found ament_cmake_cpplint: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+-- Found ament_cmake_uncrustify: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found ament_cmake_flake8: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+-- Found ament_cmake_pep257: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+-- Configuring done (7.5s)
+-- Generating done (0.2s)
+-- Build files have been written to: /Bt/build/play_motion2_msgs
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  1%] Built target ament_cmake_python_copy_play_motion2_msgs
+running egg_info
+creating play_motion2_msgs.egg-info
+writing play_motion2_msgs.egg-info/PKG-INFO
+writing dependency_links to play_motion2_msgs.egg-info/dependency_links.txt
+writing top-level names to play_motion2_msgs.egg-info/top_level.txt
+writing manifest file 'play_motion2_msgs.egg-info/SOURCES.txt'
+reading manifest file 'play_motion2_msgs.egg-info/SOURCES.txt'
+writing manifest file 'play_motion2_msgs.egg-info/SOURCES.txt'
+[  1%] Built target ament_cmake_python_build_play_motion2_msgs_egg
+[  1%] Built target play_motion2_msgs__rosidl_generator_type_description
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  3%] Built target play_motion2_msgs__cpp
+[  4%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/action/detail/play_motion2__description.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/msg/detail/motion__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/msg/detail/motion__description.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/action/detail/play_motion2__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/msg/detail/motion__type_support.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/action/detail/play_motion2__type_support.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/add_motion__description.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/add_motion__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/add_motion__type_support.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/get_motion_info__description.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/get_motion_info__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/get_motion_info__type_support.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/is_motion_ready__description.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/is_motion_ready__functions.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/is_motion_ready__type_support.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/list_motions__description.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/list_motions__functions.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/list_motions__type_support.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/remove_motion__description.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/remove_motion__functions.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/remove_motion__type_support.c.o[0m
+[ 26%] [32m[1mLinking C shared library libplay_motion2_msgs__rosidl_generator_c.so[0m
+[ 26%] Built target play_motion2_msgs__rosidl_generator_c
+[ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 30%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/action/play_motion2__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/msg/motion__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/add_motion__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/action/play_motion2__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/msg/motion__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/add_motion__type_support.cpp.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/action/detail/play_motion2__type_support.c.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/get_motion_info__type_support.cpp.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/msg/detail/motion__type_support.c.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/is_motion_ready__type_support.cpp.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/add_motion__type_support.c.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/list_motions__type_support.cpp.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/get_motion_info__type_support.c.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/remove_motion__type_support.cpp.o[0m
+[ 48%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/is_motion_ready__type_support.c.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/get_motion_info__type_support.cpp.o[0m
+[ 51%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_c.so[0m
+[ 51%] Built target play_motion2_msgs__rosidl_typesupport_c
+[ 52%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/list_motions__type_support.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/remove_motion__type_support.c.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/is_motion_ready__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/action/detail/play_motion2__type_support.cpp.o[0m
+[ 56%] [32m[1mLinking C shared library libplay_motion2_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 56%] Built target play_motion2_msgs__rosidl_typesupport_introspection_c
+[ 57%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/list_motions__type_support.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/remove_motion__type_support.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/msg/detail/motion__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/add_motion__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/is_motion_ready__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/get_motion_info__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/action/detail/play_motion2__type_support_c.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/list_motions__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/msg/detail/motion__type_support_c.cpp.o[0m
+[ 67%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_cpp.so[0m
+[ 67%] Built target play_motion2_msgs__rosidl_typesupport_cpp
+[ 68%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/add_motion__type_support_c.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/action/detail/dds_fastrtps/play_motion2__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/remove_motion__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/is_motion_ready__type_support_c.cpp.o[0m
+[ 72%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 72%] Built target play_motion2_msgs__rosidl_typesupport_introspection_cpp
+[ 73%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/list_motions__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/list_motions__type_support_c.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/get_motion_info__type_support_c.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/remove_motion__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/remove_motion__type_support_c.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/is_motion_ready__type_support.cpp.o[0m
+[ 79%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 79%] Built target play_motion2_msgs__rosidl_typesupport_fastrtps_c
+[ 80%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/get_motion_info__type_support.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/add_motion__type_support.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/msg/detail/dds_fastrtps/motion__type_support.cpp.o[0m
+[ 84%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 84%] Built target play_motion2_msgs__rosidl_typesupport_fastrtps_cpp
+[ 84%] Built target play_motion2_msgs
+[ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 85%] Built target play_motion2_msgs__py
+[ 86%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/action/_play_motion2_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_remove_motion_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_list_motions_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_is_motion_ready_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_get_motion_info_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_add_motion_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/msg/_motion_s.c.o[0m
+[ 93%] [32m[1mLinking C shared library libplay_motion2_msgs__rosidl_generator_py.so[0m
+[ 93%] Built target play_motion2_msgs__rosidl_generator_py
+[ 94%] [32mBuilding C object CMakeFiles/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 95%] [32m[1mLinking C shared module rosidl_generator_py/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 95%] Built target play_motion2_msgs_s__rosidl_typesupport_fastrtps_c
+[ 96%] [32mBuilding C object CMakeFiles/play_motion2_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 97%] [32m[1mLinking C shared module rosidl_generator_py/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.so[0m
+[ 97%] Built target play_motion2_msgs_s__rosidl_typesupport_c
+[ 98%] [32mBuilding C object CMakeFiles/play_motion2_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[100%] Built target play_motion2_msgs_s__rosidl_typesupport_introspection_c
+-- Install configuration: ""
+-- Installing: /Bt/install/play_motion2_msgs/share/ament_index/resource_index/rosidl_interfaces/play_motion2_msgs
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2.json
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/msg/Motion.json
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion.json
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo.json
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady.json
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions.json
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion.json
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/play_motion2.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__functions.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__struct.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__description.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__functions.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__struct.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__functions.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__description.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__functions.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/motion.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/get_motion_info.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/remove_motion.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/add_motion.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/list_motions.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/is_motion_ready.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__struct.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__functions.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__description.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__struct.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__functions.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__description.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__struct.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__description.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__functions.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__functions.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__description.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__functions.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__functions.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__functions.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__struct.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__struct.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__functions.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__description.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__functions.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__functions.h
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/library_path.sh
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/library_path.dsv
+-- Installing: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_c.so" to ""
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_fastrtps_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_fastrtps_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_fastrtps_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_fastrtps_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_fastrtps_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_fastrtps_c.h
+-- Installing: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__traits.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__builder.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__struct.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/play_motion2.hpp
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/motion.hpp
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__struct.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__builder.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__traits.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/list_motions.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/remove_motion.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/get_motion_info.hpp
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__builder.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__builder.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__builder.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__builder.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__traits.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__struct.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__struct.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__struct.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__traits.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__struct.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__traits.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__traits.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__builder.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__struct.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__traits.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/is_motion_ready.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/add_motion.hpp
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/dds_fastrtps
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/dds_fastrtps
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/dds_fastrtps
+-- Installing: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_introspection_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_introspection_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_introspection_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_introspection_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_introspection_c.h
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.cpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.cpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+-- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.cpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.cpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.cpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.cpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.cpp
+-- Installing: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_cpp.so" to ""
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/pythonpath.sh
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/pythonpath.dsv
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info/top_level.txt
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info/PKG-INFO
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info/SOURCES.txt
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info/dependency_links.txt
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_c.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/__init__.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action/_play_motion2.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action/__init__.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action/_play_motion2_s.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.so
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg/__init__.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg/_motion.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg/_motion_s.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_get_motion_info.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_is_motion_ready_s.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_remove_motion_s.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/__init__.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_is_motion_ready.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_list_motions.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_get_motion_info_s.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_add_motion.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_list_motions_s.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_add_motion_s.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_remove_motion.py
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.so
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.so
+Listing '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/__init__.py'...
+Listing '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action/__init__.py'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action/_play_motion2.py'...
+Listing '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg/__init__.py'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg/_motion.py'...
+Listing '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/__init__.py'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_add_motion.py'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_get_motion_info.py'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_is_motion_ready.py'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_list_motions.py'...
+Compiling '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_remove_motion.py'...
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.so" to ""
+-- Installing: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_py.so" to ""
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2.idl
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/msg/Motion.idl
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion.idl
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo.idl
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady.idl
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions.idl
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion.idl
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2.action
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/msg/Motion.msg
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion.srv
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo.srv
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady.srv
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions.srv
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion.srv
+-- Installing: /Bt/install/play_motion2_msgs/share/ament_index/resource_index/package_run_dependencies/play_motion2_msgs
+-- Installing: /Bt/install/play_motion2_msgs/share/ament_index/resource_index/parent_prefix_path/play_motion2_msgs
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/path.sh
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/path.dsv
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.bash
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.sh
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.zsh
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.dsv
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/package.dsv
+-- Installing: /Bt/install/play_motion2_msgs/share/ament_index/resource_index/packages/play_motion2_msgs
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_pyExport.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake-extras.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgsConfig.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgsConfig-version.cmake
+-- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/package.xml

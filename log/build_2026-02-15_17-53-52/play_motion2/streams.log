@@ -1,0 +1,61 @@
+[0.050s] Invoking command in '/Bt/build/play_motion2': AMENT_PREFIX_PATH=/Bt/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/play_motion2_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/play_motion2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/play_motion2_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /Bt/build/play_motion2 -- -j8 -l8
+[0.405s] [  7%] Built target gtest_main
+[0.405s] [ 15%] Built target gtest
+[0.406s] [ 23%] Built target passthrough_controller_parameters
+[0.406s] [ 38%] Built target play_motion2
+[0.406s] [ 46%] Built target play_motion2_node_test
+[0.407s] [ 53%] Built target client
+[0.407s] [ 61%] Built target passthrough_controller
+[0.407s] [ 69%] Built target run_motion
+[0.407s] [ 76%] Built target play_motion2_node
+[0.407s] [ 84%] Built target rrbot_system
+[0.407s] [ 92%] Built target motion_loader_test
+[0.407s] [100%] Built target play_motion2_test
+[0.415s] Invoked command in '/Bt/build/play_motion2' returned '0': AMENT_PREFIX_PATH=/Bt/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/play_motion2_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/play_motion2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/play_motion2_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /Bt/build/play_motion2 -- -j8 -l8
+[0.415s] Invoking command in '/Bt/build/play_motion2': AMENT_PREFIX_PATH=/Bt/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/play_motion2_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/play_motion2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/play_motion2_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /Bt/build/play_motion2
+[0.430s] -- Install configuration: ""
+[0.430s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/test/rrbot/rrbot_system.xml
+[0.431s] -- Up-to-date: /Bt/install/play_motion2/include/play_motion2
+[0.431s] -- Up-to-date: /Bt/install/play_motion2/include/play_motion2/passthrough_controller_parameters.hpp
+[0.432s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/test/controllers/passthrough_controller.xml
+[0.433s] -- Up-to-date: /Bt/install/play_motion2/lib/libpassthrough_controller.so
+[0.433s] -- Up-to-date: /Bt/install/play_motion2/lib/play_motion2/play_motion2_node_test
+[0.433s] -- Up-to-date: /Bt/install/play_motion2/include
+[0.434s] -- Up-to-date: /Bt/install/play_motion2/include/play_motion2
+[0.435s] -- Up-to-date: /Bt/install/play_motion2/include/play_motion2/motion_loader.hpp
+[0.435s] -- Up-to-date: /Bt/install/play_motion2/include/play_motion2/types.hpp
+[0.435s] -- Up-to-date: /Bt/install/play_motion2/include/play_motion2/motion_planner.hpp
+[0.435s] -- Up-to-date: /Bt/install/play_motion2/include/play_motion2/play_motion2.hpp
+[0.436s] -- Up-to-date: /Bt/install/play_motion2/include/play_motion2/client.hpp
+[0.436s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/library_path.sh
+[0.436s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/library_path.dsv
+[0.436s] -- Up-to-date: /Bt/install/play_motion2/lib/libplay_motion2.so
+[0.436s] -- Up-to-date: /Bt/install/play_motion2/lib/libclient.a
+[0.436s] -- Up-to-date: /Bt/install/play_motion2/lib/librrbot_system.so
+[0.436s] -- Up-to-date: /Bt/install/play_motion2/lib/play_motion2/play_motion2_node
+[0.437s] -- Up-to-date: /Bt/install/play_motion2/lib/play_motion2/run_motion
+[0.437s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/config
+[0.437s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/config/motion_planner_config.yaml
+[0.437s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/launch
+[0.437s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/launch/play_motion2.launch.py
+[0.437s] -- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/package_run_dependencies/play_motion2
+[0.437s] -- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/parent_prefix_path/play_motion2
+[0.438s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/ament_prefix_path.sh
+[0.438s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/ament_prefix_path.dsv
+[0.438s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/path.sh
+[0.438s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/path.dsv
+[0.438s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/local_setup.bash
+[0.438s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/local_setup.sh
+[0.438s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/local_setup.zsh
+[0.439s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/local_setup.dsv
+[0.439s] -- Installing: /Bt/install/play_motion2/share/play_motion2/package.dsv
+[0.439s] -- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/packages/play_motion2
+[0.443s] -- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/play_motion2
+[0.443s] -- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/play_motion2
+[0.443s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.443s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.443s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_libraries-extras.cmake
+[0.444s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/play_motion2Config.cmake
+[0.444s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/play_motion2Config-version.cmake
+[0.444s] -- Up-to-date: /Bt/install/play_motion2/share/play_motion2/package.xml
+[0.483s] Invoked command in '/Bt/build/play_motion2' returned '0': AMENT_PREFIX_PATH=/Bt/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/play_motion2_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/play_motion2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/play_motion2_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /Bt/build/play_motion2

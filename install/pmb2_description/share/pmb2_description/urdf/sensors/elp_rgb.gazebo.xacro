@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!-- 
+  Copyright (c) 2024 PAL Robotics S.L. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="elp_sensor_rgb_camera_gazebo" params="name">
+    <gazebo reference="${name}_link">
+      <!-- RGB -->
+      <sensor type="depth" name="${name}_frame_sensor">
+        <update_rate>30.0</update_rate>
+        <camera>
+          <horizontal_fov>${90.0 * deg_to_rad}</horizontal_fov>
+          <image>
+            <format>R8G8B8</format>
+            <width>1280</width>
+            <height>720</height>
+          </image>
+          <clip>
+            <near>0.45</near>
+            <far>10.0</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+        <!-- <plugin name="${name}_frame_controller" filename="libgazebo_ros_camera.so">
+          <alwaysOn>true</alwaysOn>
+          <updateRate>0.0</updateRate>
+          <cameraName>${name}</cameraName>
+          <imageTopicName>rgb/image_raw</imageTopicName>
+          <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+          <frameName>${name}_link</frameName>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin> -->
+      </sensor>
+    </gazebo>
+  </xacro:macro>
+</robot>

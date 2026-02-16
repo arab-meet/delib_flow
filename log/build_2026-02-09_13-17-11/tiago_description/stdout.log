@@ -1,0 +1,155 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Bt/build/tiago_description
+Built target ament_cmake_python_copy_tiago_description
+running egg_info
+creating tiago_description.egg-info
+writing tiago_description.egg-info/PKG-INFO
+writing dependency_links to tiago_description.egg-info/dependency_links.txt
+writing top-level names to tiago_description.egg-info/top_level.txt
+writing manifest file 'tiago_description.egg-info/SOURCES.txt'
+reading manifest file 'tiago_description.egg-info/SOURCES.txt'
+writing manifest file 'tiago_description.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_tiago_description_egg
+-- Install configuration: ""
+-- Installing: /Bt/install/tiago_description/share/tiago_description/environment/pythonpath.sh
+-- Installing: /Bt/install/tiago_description/share/tiago_description/environment/pythonpath.dsv
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description-4.2.20-py3.12.egg-info
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description-4.2.20-py3.12.egg-info/top_level.txt
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description-4.2.20-py3.12.egg-info/PKG-INFO
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description-4.2.20-py3.12.egg-info/SOURCES.txt
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description-4.2.20-py3.12.egg-info/dependency_links.txt
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description/launch_arguments.py
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description/__init__.py
+-- Installing: /Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description/tiago_launch_utils.py
+Listing '/Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description'...
+Compiling '/Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description/__init__.py'...
+Compiling '/Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description/launch_arguments.py'...
+Compiling '/Bt/install/tiago_description/lib/python3.12/site-packages/tiago_description/tiago_launch_utils.py'...
+-- Installing: /Bt/install/tiago_description/share/tiago_description/launch
+-- Installing: /Bt/install/tiago_description/share/tiago_description/launch/robot_state_publisher.launch.py
+-- Installing: /Bt/install/tiago_description/share/tiago_description/launch/show.launch.py
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_6_collision-wrist-2017.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_3.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_5-wrist-2010.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_6-wrist-2017.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_4.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_2.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_1_color.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_4_specular.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_3_collision.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_4_collision.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_6_specular.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_6_color.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_4_color.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_3_color.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_2_specular.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_1_collision.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_6_collision-wrist-2010.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_5_collision-wrist-2010.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_1_specular.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_2_collision.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_3_normals.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_1.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_5-wrist-2017.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_4_collision.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_2_color.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_4_normals.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_6-wrist-2010.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_5_collision-wrist-2017.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_6_normals.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_1_normals.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_3_specular.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/arm/arm_2_normals.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/head
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/head/head_1.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/head/head_2_collision.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/head/head_2.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/head/head_1_collision.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/torso
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_neck.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/torso/torso_fix.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_without_arm.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_core.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_with_arm.stl
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_shoulder.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/sensors
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/sensors/xtion_pro_live
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/sensors/xtion_pro_live/xtion_pro_live.dae
+-- Installing: /Bt/install/tiago_description/share/tiago_description/meshes/sensors/xtion_pro_live/xtion_pro_live.png
+-- Installing: /Bt/install/tiago_description/share/tiago_description/robots
+-- Installing: /Bt/install/tiago_description/share/tiago_description/robots/tiago.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/ros2_control
+-- Installing: /Bt/install/tiago_description/share/tiago_description/ros2_control/transmissions.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/ros2_control/ros2_control.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/ros2_control/gazebo_controller_manager_cfg.yaml
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/end_effector
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/end_effector/end_effector.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/arm
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/arm/wrist.ros2_control.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/arm/arm.ros2_control.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/arm/wrist.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/arm/arm.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/head
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/head/head.ros2_control.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/head/head.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/torso
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/torso/torso.ros2_control.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/torso/torso.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/sensors
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/sensors/openni.gazebo.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/sensors/ftsensor.gazebo.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/sensors/ftsensor.ros2_control.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/sensors/orbbec_astra.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/sensors/xtion_pro_live.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/sensors/ftsensor.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/calibration
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/calibration/extrinsic_camera_calibration_constants.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/urdf/calibration/calibration_constants.urdf.xacro
+-- Installing: /Bt/install/tiago_description/share/tiago_description/config
+-- Installing: /Bt/install/tiago_description/share/tiago_description/config/urdf.rviz
+-- Installing: /Bt/install/tiago_description/share/tiago_description/config/tiago.rviz
+-- Installing: /Bt/install/tiago_description/share/tiago_description/config/tiago_configuration.yaml
+-- Installing: /Bt/install/tiago_description/share/ament_index/resource_index/package_run_dependencies/tiago_description
+-- Installing: /Bt/install/tiago_description/share/ament_index/resource_index/parent_prefix_path/tiago_description
+-- Installing: /Bt/install/tiago_description/share/tiago_description/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/tiago_description/share/tiago_description/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/tiago_description/share/tiago_description/environment/path.sh
+-- Installing: /Bt/install/tiago_description/share/tiago_description/environment/path.dsv
+-- Installing: /Bt/install/tiago_description/share/tiago_description/local_setup.bash
+-- Installing: /Bt/install/tiago_description/share/tiago_description/local_setup.sh
+-- Installing: /Bt/install/tiago_description/share/tiago_description/local_setup.zsh
+-- Installing: /Bt/install/tiago_description/share/tiago_description/local_setup.dsv
+-- Installing: /Bt/install/tiago_description/share/tiago_description/package.dsv
+-- Installing: /Bt/install/tiago_description/share/ament_index/resource_index/packages/tiago_description
+-- Installing: /Bt/install/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig.cmake
+-- Installing: /Bt/install/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig-version.cmake
+-- Installing: /Bt/install/tiago_description/share/tiago_description/package.xml

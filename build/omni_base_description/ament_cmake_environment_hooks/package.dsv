@@ -1,0 +1,4 @@
+source;share/omni_base_description/local_setup.bash
+source;share/omni_base_description/local_setup.dsv
+source;share/omni_base_description/local_setup.sh
+source;share/omni_base_description/local_setup.zsh

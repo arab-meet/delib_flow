@@ -1,0 +1,85 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "grab2_msgs/action/ReachObject_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "grab2_msgs/action/ReachObject_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "btcpp_ros2_interfaces/msg/NodeStatus",
+        "fields": [
+          {
+            "name": "status",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "grab2_msgs/action/ReachObject_Result",
+        "fields": [
+          {
+            "name": "node_status",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/msg/NodeStatus"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "error_message",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "grab2_msgs/action/ReachObject_GetResult_Response",
+      "hash_string": "RIHS01_02b1b60bafb24619b3807cd1168b9ca72a5335ca178d556fcdf5ede41b57daaa"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/msg/NodeStatus",
+      "hash_string": "RIHS01_1e7532580fcbed917d24505c580999050a56c20fcec7f77c228171864418c261"
+    },
+    {
+      "type_name": "grab2_msgs/action/ReachObject_Result",
+      "hash_string": "RIHS01_b35385d25688bc2582a2d4a239a1923926692219dbc639cc3234442280483230"
+    }
+  ]
+}

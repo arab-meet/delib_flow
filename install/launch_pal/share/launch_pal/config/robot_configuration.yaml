@@ -1,0 +1,39 @@
+robot_configuration:
+  wheel_model:
+    description: 'Wheel model.'
+  arm_type_right:
+    description: 'Arm type right.'
+  arm_type_left:
+    description: 'Arm type left.'
+  arm_type:
+    description: 'Arm type.'
+  laser_model:
+    description: 'Base laser model.'
+  has_courier_rgbd_sensors:
+    description: 'Whether the base has RGBD sensors or not.'
+  wrist_model_right:
+    description: 'Wrist model right arm.'
+  wrist_model_left:
+    description: 'Wrist model left arm.'
+  wrist_model:
+    description: 'Wrist model arm.'
+  end_effector_right:
+    description: 'End effector model right arm.'
+  end_effector_left:
+    description: 'End effector model left arm.'
+  end_effector:
+    description: 'End effector model.'
+  ft_sensor_right:
+    description: 'FT sensor model right arm.'
+  ft_sensor_left:
+    description: 'FT sensor model left arm.'
+  ft_sensor:
+    description: 'FT sensor model.'
+  has_screen:
+    description: 'Has screen at torso.'
+  base_type:
+    description: 'Base type.'
+  camera_model:
+    description: 'Camera model.'
+  robot_model:
+    description: 'Robot version model.'

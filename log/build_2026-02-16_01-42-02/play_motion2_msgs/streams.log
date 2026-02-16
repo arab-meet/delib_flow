@@ -1,0 +1,317 @@
+[0.061s] Invoking command in '/Bt/build/play_motion2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/play_motion2_msgs -- -j8 -l8
+[0.165s] [  1%] Built target play_motion2_msgs__rosidl_generator_type_description
+[0.168s] [  1%] Built target ament_cmake_python_copy_play_motion2_msgs
+[0.205s] [  2%] Built target play_motion2_msgs__cpp
+[0.216s] [ 26%] Built target play_motion2_msgs__rosidl_generator_c
+[0.306s] [ 36%] Built target play_motion2_msgs__rosidl_typesupport_fastrtps_c
+[0.317s] [ 45%] Built target play_motion2_msgs__rosidl_typesupport_fastrtps_cpp
+[0.318s] [ 55%] Built target play_motion2_msgs__rosidl_typesupport_cpp
+[0.326s] [ 64%] Built target play_motion2_msgs__rosidl_typesupport_introspection_c
+[0.336s] [ 84%] Built target play_motion2_msgs__rosidl_typesupport_c
+[0.337s] [ 84%] Built target play_motion2_msgs__rosidl_typesupport_introspection_cpp
+[0.374s] [ 84%] Built target play_motion2_msgs
+[0.420s] [ 85%] Built target play_motion2_msgs__py
+[0.481s] [ 93%] Built target play_motion2_msgs__rosidl_generator_py
+[0.564s] [ 95%] Built target play_motion2_msgs_s__rosidl_typesupport_introspection_c
+[0.565s] [ 97%] Built target play_motion2_msgs_s__rosidl_typesupport_c
+[0.571s] [100%] Built target play_motion2_msgs_s__rosidl_typesupport_fastrtps_c
+[0.729s] running egg_info
+[0.775s] writing play_motion2_msgs.egg-info/PKG-INFO
+[0.776s] writing dependency_links to play_motion2_msgs.egg-info/dependency_links.txt
+[0.776s] writing top-level names to play_motion2_msgs.egg-info/top_level.txt
+[0.890s] reading manifest file 'play_motion2_msgs.egg-info/SOURCES.txt'
+[0.891s] writing manifest file 'play_motion2_msgs.egg-info/SOURCES.txt'
+[0.921s] [100%] Built target ament_cmake_python_build_play_motion2_msgs_egg
+[1.043s] Invoked command in '/Bt/build/play_motion2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/play_motion2_msgs -- -j8 -l8
+[1.044s] Invoking command in '/Bt/build/play_motion2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/play_motion2_msgs
+[1.057s] -- Install configuration: ""
+[1.058s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/ament_index/resource_index/rosidl_interfaces/play_motion2_msgs
+[1.058s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2.json
+[1.059s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/msg/Motion.json
+[1.059s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion.json
+[1.059s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo.json
+[1.059s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady.json
+[1.060s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions.json
+[1.060s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion.json
+[1.066s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+[1.066s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+[1.066s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/play_motion2.h
+[1.066s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+[1.067s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__functions.h
+[1.067s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.h
+[1.067s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__struct.h
+[1.067s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.c
+[1.067s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__description.c
+[1.069s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__functions.c
+[1.069s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+[1.069s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.069s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+[1.070s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__struct.h
+[1.070s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.c
+[1.070s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__functions.h
+[1.071s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__description.c
+[1.072s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__functions.c
+[1.072s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.h
+[1.072s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/motion.h
+[1.072s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+[1.073s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/get_motion_info.h
+[1.073s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/remove_motion.h
+[1.073s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/add_motion.h
+[1.073s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/list_motions.h
+[1.074s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/is_motion_ready.h
+[1.074s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+[1.074s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.c
+[1.074s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__struct.h
+[1.074s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__functions.h
+[1.075s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__description.c
+[1.075s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.c
+[1.075s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__struct.h
+[1.075s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__functions.h
+[1.075s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.c
+[1.075s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.c
+[1.076s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__description.c
+[1.076s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.h
+[1.076s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__struct.h
+[1.077s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__description.c
+[1.078s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__functions.c
+[1.078s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__functions.c
+[1.079s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__description.c
+[1.079s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__functions.c
+[1.079s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.h
+[1.080s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.h
+[1.080s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__functions.c
+[1.080s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__functions.h
+[1.080s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.h
+[1.081s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__struct.h
+[1.081s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.c
+[1.081s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__struct.h
+[1.091s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__functions.h
+[1.091s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__description.c
+[1.091s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.h
+[1.091s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__functions.c
+[1.091s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__functions.h
+[1.091s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/library_path.sh
+[1.092s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/library_path.dsv
+[1.092s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_c.so
+[1.092s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+[1.095s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+[1.096s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+[1.096s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_fastrtps_c.h
+[1.096s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+[1.096s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+[1.096s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_fastrtps_c.h
+[1.096s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.096s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+[1.097s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+[1.097s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_fastrtps_c.h
+[1.097s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_fastrtps_c.h
+[1.097s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_fastrtps_c.h
+[1.097s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_fastrtps_c.h
+[1.097s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_fastrtps_c.h
+[1.097s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_c.so
+[1.104s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+[1.105s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+[1.105s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+[1.105s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__traits.hpp
+[1.105s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__builder.hpp
+[1.105s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.hpp
+[1.105s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__struct.hpp
+[1.105s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/play_motion2.hpp
+[1.106s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+[1.106s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/motion.hpp
+[1.106s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+[1.106s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.hpp
+[1.106s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__struct.hpp
+[1.106s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__builder.hpp
+[1.106s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__traits.hpp
+[1.107s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.107s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+[1.107s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/list_motions.hpp
+[1.107s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/remove_motion.hpp
+[1.107s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/get_motion_info.hpp
+[1.107s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+[1.107s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__builder.hpp
+[1.108s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.hpp
+[1.108s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.hpp
+[1.108s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__builder.hpp
+[1.108s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__builder.hpp
+[1.108s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__builder.hpp
+[1.108s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__traits.hpp
+[1.108s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__struct.hpp
+[1.109s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__struct.hpp
+[1.109s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.hpp
+[1.109s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__struct.hpp
+[1.109s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.hpp
+[1.109s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__traits.hpp
+[1.109s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__struct.hpp
+[1.109s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.hpp
+[1.109s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__traits.hpp
+[1.110s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__traits.hpp
+[1.110s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__builder.hpp
+[1.110s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__struct.hpp
+[1.110s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__traits.hpp
+[1.110s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/is_motion_ready.hpp
+[1.111s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/add_motion.hpp
+[1.111s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+[1.111s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+[1.111s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+[1.111s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_fastrtps_cpp.hpp
+[1.111s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/dds_fastrtps
+[1.111s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+[1.112s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+[1.112s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/dds_fastrtps
+[1.112s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_fastrtps_cpp.hpp
+[1.114s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.114s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+[1.114s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+[1.114s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_fastrtps_cpp.hpp
+[1.114s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_fastrtps_cpp.hpp
+[1.114s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_fastrtps_cpp.hpp
+[1.114s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_fastrtps_cpp.hpp
+[1.115s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_fastrtps_cpp.hpp
+[1.115s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/dds_fastrtps
+[1.116s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.116s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+[1.116s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+[1.116s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+[1.117s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.c
+[1.117s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_introspection_c.h
+[1.118s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+[1.118s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.119s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+[1.119s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.c
+[1.119s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_introspection_c.h
+[1.120s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+[1.120s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+[1.120s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.c
+[1.120s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_introspection_c.h
+[1.120s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.c
+[1.121s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.c
+[1.121s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_introspection_c.h
+[1.121s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.c
+[1.122s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_introspection_c.h
+[1.122s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_introspection_c.h
+[1.122s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_introspection_c.h
+[1.123s] -- Installing: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.c
+[1.123s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_c.so
+[1.123s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_c.so
+[1.124s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs
+[1.124s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action
+[1.124s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail
+[1.125s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.cpp
+[1.125s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_introspection_cpp.hpp
+[1.125s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg
+[1.126s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail
+[1.126s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.cpp
+[1.126s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_introspection_cpp.hpp
+[1.127s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv
+[1.127s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail
+[1.127s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_introspection_cpp.hpp
+[1.131s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.cpp
+[1.131s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.cpp
+[1.131s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_introspection_cpp.hpp
+[1.131s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_introspection_cpp.hpp
+[1.131s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.cpp
+[1.132s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_introspection_cpp.hpp
+[1.132s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.cpp
+[1.132s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_introspection_cpp.hpp
+[1.132s] -- Up-to-date: /Bt/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.cpp
+[1.132s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_cpp.so
+[1.133s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_cpp.so
+[1.134s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/pythonpath.sh
+[1.134s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/pythonpath.dsv
+[1.135s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info
+[1.135s] -- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info/top_level.txt
+[1.136s] -- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info/PKG-INFO
+[1.137s] -- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info/SOURCES.txt
+[1.137s] -- Installing: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs-1.5.1-py3.12.egg-info/dependency_links.txt
+[1.138s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs
+[1.138s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_c.c
+[1.138s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.138s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/__init__.py
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action/_play_motion2.py
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action/__init__.py
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action/_play_motion2_s.c
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.so
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg/__init__.py
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg/_motion.py
+[1.139s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg/_motion_s.c
+[1.140s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv
+[1.140s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_get_motion_info.py
+[1.140s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_is_motion_ready_s.c
+[1.140s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_remove_motion_s.c
+[1.140s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/__init__.py
+[1.140s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_is_motion_ready.py
+[1.140s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_list_motions.py
+[1.141s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_get_motion_info_s.c
+[1.141s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_add_motion.py
+[1.141s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_list_motions_s.c
+[1.141s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_add_motion_s.c
+[1.141s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv/_remove_motion.py
+[1.141s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.so
+[1.141s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.141s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.so
+[1.157s] Listing '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs'...
+[1.157s] Listing '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/action'...
+[1.157s] Listing '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/msg'...
+[1.157s] Listing '/Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/srv'...
+[1.252s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.so
+[1.252s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.so
+[1.252s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/python3.12/site-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.so
+[1.256s] -- Up-to-date: /Bt/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_py.so
+[1.256s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2.idl
+[1.257s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/msg/Motion.idl
+[1.257s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion.idl
+[1.257s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo.idl
+[1.257s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady.idl
+[1.257s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions.idl
+[1.257s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion.idl
+[1.257s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2.action
+[1.258s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/msg/Motion.msg
+[1.258s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion.srv
+[1.258s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo.srv
+[1.266s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady.srv
+[1.266s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions.srv
+[1.266s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion.srv
+[1.266s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/ament_index/resource_index/package_run_dependencies/play_motion2_msgs
+[1.266s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/ament_index/resource_index/parent_prefix_path/play_motion2_msgs
+[1.267s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/ament_prefix_path.sh
+[1.267s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/ament_prefix_path.dsv
+[1.267s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/path.sh
+[1.267s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/environment/path.dsv
+[1.267s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.bash
+[1.267s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.sh
+[1.267s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.zsh
+[1.267s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.dsv
+[1.268s] -- Installing: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/package.dsv
+[1.268s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/ament_index/resource_index/packages/play_motion2_msgs
+[1.268s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cExport.cmake
+[1.272s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.272s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.272s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.272s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cppExport.cmake
+[1.272s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.273s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.273s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.273s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.273s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cExport.cmake
+[1.273s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.273s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.274s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.274s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cppExport.cmake
+[1.274s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.274s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_pyExport.cmake
+[1.275s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.275s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake-extras.cmake
+[1.275s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.279s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.280s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.280s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.281s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.281s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.281s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgsConfig.cmake
+[1.282s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgsConfig-version.cmake
+[1.282s] -- Up-to-date: /Bt/install/play_motion2_msgs/share/play_motion2_msgs/package.xml
+[1.337s] Invoked command in '/Bt/build/play_motion2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/play_motion2_msgs

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "play_motion2_msgs/srv/GetMotionInfo_Request",
+      "fields": [
+        {
+          "name": "motion_key",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "play_motion2_msgs/srv/GetMotionInfo_Request",
+      "hash_string": "RIHS01_9cafc5949d98c1083521c806aded1facea2b3adc0b90c2fe1fbbe204e47159a0"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/Bt/install/launch_pal/share/launch_pal/package.sh"
+. "/Bt/install/pal_robotiq_description/share/pal_robotiq_description/package.sh"
+. "/Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.sh"
+. "/Bt/install/omni_base_description/share/omni_base_description/package.sh"
+. "/Bt/install/pal_gripper_description/share/pal_gripper_description/package.sh"
+. "/Bt/install/pal_hey5_description/share/pal_hey5_description/package.sh"
+. "/Bt/install/pmb2_description/share/pmb2_description/package.sh"

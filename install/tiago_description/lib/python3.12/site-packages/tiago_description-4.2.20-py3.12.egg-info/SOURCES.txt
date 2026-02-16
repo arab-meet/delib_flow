@@ -1,0 +1,8 @@
+setup.py
+tiago_description/__init__.py
+tiago_description/launch_arguments.py
+tiago_description/tiago_launch_utils.py
+tiago_description.egg-info/PKG-INFO
+tiago_description.egg-info/SOURCES.txt
+tiago_description.egg-info/dependency_links.txt
+tiago_description.egg-info/top_level.txt

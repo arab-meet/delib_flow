@@ -1,0 +1,5 @@
+gripper_right_current_limit_controller:
+  type: "pal_ros_controllers/CurrentLimitController"
+  actuators:
+    - gripper_right_left_finger_motor
+    - gripper_right_right_finger_motor

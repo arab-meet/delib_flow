@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "play_motion2_msgs/srv/RemoveMotion_Request",
+      "fields": [
+        {
+          "name": "motion_key",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "play_motion2_msgs/srv/RemoveMotion_Request",
+      "hash_string": "RIHS01_14f30762fc481c5b24e41107eb48672863959408b4cf395f9a230383ac1484f3"
+    }
+  ]
+}

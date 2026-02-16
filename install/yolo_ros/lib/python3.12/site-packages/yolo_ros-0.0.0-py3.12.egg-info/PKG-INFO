@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: yolo-ros
+Version: 0.0.0
+Summary: YOLO for ROS 2
+Maintainer: Miguel Ángel González Santamarta
+Maintainer-email: mgons@unileon.es
+License: GPL-3.0
+Provides-Extra: test

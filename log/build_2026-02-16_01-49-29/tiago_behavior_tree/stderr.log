@@ -1,0 +1,5 @@
+In file included from [01m[K/Bt/tiago_behavior_tree/src/set_target_using_transform.cpp:3[m[K:
+[01m[K/Bt/tiago_behavior_tree/include/tiago_behavior_tree/set_target_using_transform.hpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus tiago_behavior_tree::SetTargetUsingTransform::[01;32m[Ktick[m[K()[m[K’:
+[01m[K/Bt/tiago_behavior_tree/include/tiago_behavior_tree/set_target_using_transform.hpp:105:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  105 |     double [01;35m[Kyaw[m[K = tf2::getYaw(target_pose.pose.orientation);
+      |            [01;35m[K^~~[m[K

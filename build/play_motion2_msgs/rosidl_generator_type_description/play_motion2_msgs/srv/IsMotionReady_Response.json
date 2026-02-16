@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "play_motion2_msgs/srv/IsMotionReady_Response",
+      "fields": [
+        {
+          "name": "is_ready",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "play_motion2_msgs/srv/IsMotionReady_Response",
+      "hash_string": "RIHS01_1379611cb0bcd8016e36f06cc49a6002444610ee5981acc3886f46b33d69fd53"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+/Bt/install/pal_gripper/share/ament_index/resource_index/package_run_dependencies/pal_gripper
+/Bt/install/pal_gripper/share/ament_index/resource_index/parent_prefix_path/pal_gripper
+/Bt/install/pal_gripper/share/pal_gripper/environment/ament_prefix_path.sh
+/Bt/install/pal_gripper/share/pal_gripper/environment/ament_prefix_path.dsv
+/Bt/install/pal_gripper/share/pal_gripper/environment/path.sh
+/Bt/install/pal_gripper/share/pal_gripper/environment/path.dsv
+/Bt/install/pal_gripper/share/pal_gripper/local_setup.bash
+/Bt/install/pal_gripper/share/pal_gripper/local_setup.sh
+/Bt/install/pal_gripper/share/pal_gripper/local_setup.zsh
+/Bt/install/pal_gripper/share/pal_gripper/local_setup.dsv
+/Bt/install/pal_gripper/share/pal_gripper/package.dsv
+/Bt/install/pal_gripper/share/ament_index/resource_index/packages/pal_gripper
+/Bt/install/pal_gripper/share/pal_gripper/cmake/pal_gripperConfig.cmake
+/Bt/install/pal_gripper/share/pal_gripper/cmake/pal_gripperConfig-version.cmake
+/Bt/install/pal_gripper/share/pal_gripper/package.xml

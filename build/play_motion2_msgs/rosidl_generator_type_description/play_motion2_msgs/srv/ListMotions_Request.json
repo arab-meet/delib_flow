@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "play_motion2_msgs/srv/ListMotions_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "play_motion2_msgs/srv/ListMotions_Request",
+      "hash_string": "RIHS01_2bfb95ed7aa195b2985f6438e07fb7a4f8cd7f67621201e21ad23788232cd4c4"
+    }
+  ]
+}

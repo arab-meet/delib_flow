@@ -1,0 +1,79 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (3.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Bt/build/pal_maps
+-- Install configuration: ""
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/obstacle_avoidance_world
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/obstacle_avoidance_world/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/obstacle_avoidance_world/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office_7th_floor
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office_7th_floor/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office_7th_floor/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_85cm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_85cm/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_85cm/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/home
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/home/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/home/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_95cm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_95cm/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_95cm/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital_with_aruco
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital_with_aruco/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital_with_aruco/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_warehouse
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_warehouse/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_warehouse/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_110cm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_110cm/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_110cm/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/dynamic_obstacle_avoidance_world
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/dynamic_obstacle_avoidance_world/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/dynamic_obstacle_avoidance_world/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/roscon_es_25
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/roscon_es_25/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/roscon_es_25/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/willow_garage
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/willow_garage/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/willow_garage/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_office
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_office/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_office/map.pgm
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_house
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_house/map.yaml
+-- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_house/map.pgm
+-- Installing: /Bt/install/pal_maps/share/ament_index/resource_index/package_run_dependencies/pal_maps
+-- Installing: /Bt/install/pal_maps/share/ament_index/resource_index/parent_prefix_path/pal_maps
+-- Installing: /Bt/install/pal_maps/share/pal_maps/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/pal_maps/share/pal_maps/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/pal_maps/share/pal_maps/environment/path.sh
+-- Installing: /Bt/install/pal_maps/share/pal_maps/environment/path.dsv
+-- Installing: /Bt/install/pal_maps/share/pal_maps/local_setup.bash
+-- Installing: /Bt/install/pal_maps/share/pal_maps/local_setup.sh
+-- Installing: /Bt/install/pal_maps/share/pal_maps/local_setup.zsh
+-- Installing: /Bt/install/pal_maps/share/pal_maps/local_setup.dsv
+-- Installing: /Bt/install/pal_maps/share/pal_maps/package.dsv
+-- Installing: /Bt/install/pal_maps/share/ament_index/resource_index/packages/pal_maps
+-- Installing: /Bt/install/pal_maps/share/pal_maps/cmake/pal_mapsConfig.cmake
+-- Installing: /Bt/install/pal_maps/share/pal_maps/cmake/pal_mapsConfig-version.cmake
+-- Installing: /Bt/install/pal_maps/share/pal_maps/package.xml

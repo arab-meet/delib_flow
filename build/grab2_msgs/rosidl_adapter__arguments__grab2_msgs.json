@@ -1,0 +1,9 @@
+{
+  "package_name": "grab2_msgs",
+  "non_idl_tuples": [
+    "/Bt/ThirdParty/grab2/grab2_msgs:action/ComputePlanToTargetIK.action",
+    "/Bt/ThirdParty/grab2/grab2_msgs:action/ComputePlanThroughPoses.action",
+    "/Bt/ThirdParty/grab2/grab2_msgs:action/GetIsaacGrasp.action",
+    "/Bt/ThirdParty/grab2/grab2_msgs:action/ReachObject.action"
+  ]
+}

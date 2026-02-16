@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from play_motion2_msgs/srv/AddMotion.srv
+// generated code does not contain a copyright notice
+
+#include "play_motion2_msgs/msg/Motion.idl"
+
+module play_motion2_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Add a motion")
+    struct AddMotion_Request {
+      play_motion2_msgs::msg::Motion motion;
+
+      boolean overwrite;
+    };
+    struct AddMotion_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from play_motion2_msgs/msg/Motion.msg
+// generated code does not contain a copyright notice
+
+
+module play_motion2_msgs {
+  module msg {
+    struct Motion {
+      string key;
+
+      @verbatim (language="comment", text=
+        "meta")
+      string name;
+
+      string usage;
+
+      string description;
+
+      sequence<string> joints;
+
+      sequence<double> positions;
+
+      sequence<double> times_from_start;
+    };
+  };
+};

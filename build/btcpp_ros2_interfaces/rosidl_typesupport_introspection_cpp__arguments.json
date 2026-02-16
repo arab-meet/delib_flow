@@ -1,0 +1,43 @@
+{
+  "package_name": "btcpp_ros2_interfaces",
+  "output_dir": "/Bt/build/btcpp_ros2_interfaces/rosidl_typesupport_introspection_cpp/btcpp_ros2_interfaces",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/Bt/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:msg/NodeStatus.idl",
+    "/Bt/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:srv/GetTrees.idl",
+    "/Bt/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:action/ExecuteTree.idl",
+    "/Bt/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:action/Sleep.idl"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/Bt/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces/msg/NodeStatus.idl",
+    "/Bt/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces/srv/GetTrees.idl",
+    "/Bt/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces/action/ExecuteTree.idl",
+    "/Bt/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces/action/Sleep.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl"
+  ]
+}

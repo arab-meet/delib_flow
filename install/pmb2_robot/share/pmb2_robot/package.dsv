@@ -1,0 +1,8 @@
+source;share/pmb2_robot/hook/cmake_prefix_path.ps1
+source;share/pmb2_robot/hook/cmake_prefix_path.dsv
+source;share/pmb2_robot/hook/cmake_prefix_path.sh
+source;share/pmb2_robot/local_setup.bash
+source;share/pmb2_robot/local_setup.dsv
+source;share/pmb2_robot/local_setup.ps1
+source;share/pmb2_robot/local_setup.sh
+source;share/pmb2_robot/local_setup.zsh

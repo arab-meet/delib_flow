@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: launch-pal
+Version: 0.1.15
+Summary: Launch utilities needed by PAL Robotics software
+Maintainer: ['Jordan Palacios', 'Noel Jimenez']
+Maintainer-email: ['jordan.palacios@pal-robotics.com', 'noel.jimenez@pal-robotics.com']
+License: Apache License, Version 2.0
+License-File: LICENSE

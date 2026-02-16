@@ -1,0 +1,85 @@
+[0.251s] Invoking command in '/Bt/build/pal_maps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/pal_maps -DCMAKE_INSTALL_PREFIX=/Bt/install/pal_maps
+[3.735s] -- The C compiler identification is GNU 13.3.0
+[3.735s] -- The CXX compiler identification is GNU 13.3.0
+[3.735s] -- Detecting C compiler ABI info
+[3.735s] -- Detecting C compiler ABI info - done
+[3.735s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.736s] -- Detecting C compile features
+[3.736s] -- Detecting C compile features - done
+[3.736s] -- Detecting CXX compiler ABI info
+[3.736s] -- Detecting CXX compiler ABI info - done
+[3.737s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.737s] -- Detecting CXX compile features
+[3.737s] -- Detecting CXX compile features - done
+[3.737s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[3.737s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.737s] -- Configuring done (3.2s)
+[3.737s] -- Generating done (0.0s)
+[3.737s] -- Build files have been written to: /Bt/build/pal_maps
+[3.745s] Invoked command in '/Bt/build/pal_maps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/pal_maps -DCMAKE_INSTALL_PREFIX=/Bt/install/pal_maps
+[3.746s] Invoking command in '/Bt/build/pal_maps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/pal_maps -- -j8 -l8
+[3.794s] Invoked command in '/Bt/build/pal_maps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/pal_maps -- -j8 -l8
+[3.795s] Invoking command in '/Bt/build/pal_maps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/pal_maps
+[3.808s] -- Install configuration: ""
+[3.808s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps
+[3.808s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/obstacle_avoidance_world
+[3.808s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/obstacle_avoidance_world/map.yaml
+[3.854s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/obstacle_avoidance_world/map.pgm
+[3.860s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office_7th_floor
+[3.860s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office_7th_floor/map.yaml
+[3.877s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office_7th_floor/map.pgm
+[3.935s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_85cm
+[3.956s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_85cm/map.yaml
+[3.957s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_85cm/map.pgm
+[3.965s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/home
+[3.968s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/home/map.yaml
+[3.970s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/home/map.pgm
+[4.015s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office
+[4.018s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office/map.yaml
+[4.032s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/pal_office/map.pgm
+[4.079s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_95cm
+[4.079s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_95cm/map.yaml
+[4.083s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_95cm/map.pgm
+[4.091s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital_with_aruco
+[4.094s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital_with_aruco/map.yaml
+[4.094s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital_with_aruco/map.pgm
+[4.119s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_warehouse
+[4.119s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_warehouse/map.yaml
+[4.163s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_warehouse/map.pgm
+[4.568s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_110cm
+[4.569s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_110cm/map.yaml
+[4.580s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/corridor_110cm/map.pgm
+[4.582s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital
+[4.583s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital/map.yaml
+[4.590s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/hospital/map.pgm
+[4.602s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/dynamic_obstacle_avoidance_world
+[4.603s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/dynamic_obstacle_avoidance_world/map.yaml
+[4.603s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/dynamic_obstacle_avoidance_world/map.pgm
+[4.605s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/roscon_es_25
+[4.606s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/roscon_es_25/map.yaml
+[4.606s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/roscon_es_25/map.pgm
+[4.654s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/willow_garage
+[4.655s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/willow_garage/map.yaml
+[4.663s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/willow_garage/map.pgm
+[4.743s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_office
+[4.744s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_office/map.yaml
+[4.744s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_office/map.pgm
+[4.746s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_house
+[4.746s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_house/map.yaml
+[4.746s] -- Installing: /Bt/install/pal_maps/share/pal_maps/maps/small_house/map.pgm
+[4.795s] -- Installing: /Bt/install/pal_maps/share/ament_index/resource_index/package_run_dependencies/pal_maps
+[4.795s] -- Installing: /Bt/install/pal_maps/share/ament_index/resource_index/parent_prefix_path/pal_maps
+[4.795s] -- Installing: /Bt/install/pal_maps/share/pal_maps/environment/ament_prefix_path.sh
+[4.796s] -- Installing: /Bt/install/pal_maps/share/pal_maps/environment/ament_prefix_path.dsv
+[4.796s] -- Installing: /Bt/install/pal_maps/share/pal_maps/environment/path.sh
+[4.796s] -- Installing: /Bt/install/pal_maps/share/pal_maps/environment/path.dsv
+[4.798s] -- Installing: /Bt/install/pal_maps/share/pal_maps/local_setup.bash
+[4.798s] -- Installing: /Bt/install/pal_maps/share/pal_maps/local_setup.sh
+[4.799s] -- Installing: /Bt/install/pal_maps/share/pal_maps/local_setup.zsh
+[4.799s] -- Installing: /Bt/install/pal_maps/share/pal_maps/local_setup.dsv
+[4.799s] -- Installing: /Bt/install/pal_maps/share/pal_maps/package.dsv
+[4.799s] -- Installing: /Bt/install/pal_maps/share/ament_index/resource_index/packages/pal_maps
+[4.799s] -- Installing: /Bt/install/pal_maps/share/pal_maps/cmake/pal_mapsConfig.cmake
+[4.799s] -- Installing: /Bt/install/pal_maps/share/pal_maps/cmake/pal_mapsConfig-version.cmake
+[4.799s] -- Installing: /Bt/install/pal_maps/share/pal_maps/package.xml
+[4.803s] Invoked command in '/Bt/build/pal_maps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/pal_maps

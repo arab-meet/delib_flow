@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "play_motion2_msgs/srv/RemoveMotion_Response",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "play_motion2_msgs/srv/RemoveMotion_Response",
+      "hash_string": "RIHS01_68645a7b4353ca80d4f9313a6836fc2b9af858918427bbfce5e4fc9270a2573f"
+    }
+  ]
+}

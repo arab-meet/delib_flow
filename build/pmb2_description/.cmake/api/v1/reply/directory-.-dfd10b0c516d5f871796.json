@@ -1,0 +1,597 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ament_environment_hooks",
+			"_ament_cmake_python_register_environment_hook",
+			"ament_python_install_package",
+			"_ament_cmake_python_install_package",
+			"ament_auto_package",
+			"ament_index_register_resource",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"include",
+			"ament_execute_extensions",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package"
+		],
+		"files" : 
+		[
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_python/cmake/ament_cmake_python-extras.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/jazzy/share/ament_cmake_auto/cmake/ament_auto_package.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 38,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 36,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 39,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 157,
+				"parent" : 6
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 184,
+				"parent" : 6
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 194,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 124,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 124,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 124,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 124,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 124,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 124,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 124,
+				"parent" : 10
+			},
+			{
+				"command" : 10,
+				"file" : 4,
+				"line" : 132,
+				"parent" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 66,
+				"parent" : 18
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 19
+			},
+			{
+				"file" : 6,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 21
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 29,
+				"parent" : 22
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 23
+			},
+			{
+				"command" : 11,
+				"file" : 6,
+				"line" : 48,
+				"parent" : 21
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 43,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 26
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 19
+			},
+			{
+				"file" : 9,
+				"parent" : 28
+			},
+			{
+				"command" : 1,
+				"file" : 9,
+				"line" : 20,
+				"parent" : 29
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 30
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 30
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 30
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 30
+			},
+			{
+				"command" : 12,
+				"file" : 9,
+				"line" : 26,
+				"parent" : 29
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 107,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 120,
+				"parent" : 35
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 19
+			},
+			{
+				"file" : 12,
+				"parent" : 41
+			},
+			{
+				"command" : 13,
+				"file" : 12,
+				"line" : 16,
+				"parent" : 42
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 29,
+				"parent" : 43
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 44
+			},
+			{
+				"command" : 14,
+				"file" : 8,
+				"line" : 68,
+				"parent" : 18
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 150,
+				"parent" : 46
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 157,
+				"parent" : 46
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description/environment",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/pythonpath.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description/environment",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/pythonpath.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.12/site-packages/pmb2_description-5.0.26-py3.12.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "/Bt/build/pmb2_description/ament_cmake_python/pmb2_description/pmb2_description.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.12/site-packages/pmb2_description",
+			"paths" : 
+			[
+				{
+					"from" : "pmb2_description",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"rviz"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"launch"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"meshes"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"config"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"robots"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"ros2_control"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"urdf"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/pmb2_description"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/pmb2_description"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description/environment",
+			"paths" : 
+			[
+				"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 32,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description/environment",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 33,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description/environment",
+			"paths" : 
+			[
+				"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description/environment",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 36,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 37,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 39,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 40,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_index/share/ament_index/resource_index/packages/pmb2_description"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 47,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description/cmake",
+			"paths" : 
+			[
+				"/Bt/build/pmb2_description/ament_cmake_core/pmb2_descriptionConfig.cmake",
+				"/Bt/build/pmb2_description/ament_cmake_core/pmb2_descriptionConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 48,
+			"component" : "Unspecified",
+			"destination" : "share/pmb2_description",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

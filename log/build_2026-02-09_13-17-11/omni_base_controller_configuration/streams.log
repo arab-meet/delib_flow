@@ -1,0 +1,52 @@
+[0.257s] Invoking command in '/Bt/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/tiago_omni_base/omni_base_controller_configuration -DCMAKE_INSTALL_PREFIX=/Bt/install/omni_base_controller_configuration
+[0.417s] -- The C compiler identification is GNU 13.3.0
+[0.521s] -- The CXX compiler identification is GNU 13.3.0
+[0.548s] -- Detecting C compiler ABI info
+[0.693s] -- Detecting C compiler ABI info - done
+[0.714s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.714s] -- Detecting C compile features
+[0.715s] -- Detecting C compile features - done
+[0.728s] -- Detecting CXX compiler ABI info
+[0.881s] -- Detecting CXX compiler ABI info - done
+[0.892s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.892s] -- Detecting CXX compile features
+[0.893s] -- Detecting CXX compile features - done
+[1.927s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[2.634s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.394s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.653s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.690s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.690s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.693s] -- Added test 'lint_cmake' to check CMake code style
+[3.696s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.722s] -- Added test 'xmllint' to check XML markup files
+[3.736s] -- Configuring done (3.4s)
+[3.740s] -- Generating done (0.0s)
+[3.742s] -- Build files have been written to: /Bt/build/omni_base_controller_configuration
+[3.760s] Invoked command in '/Bt/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/tiago_omni_base/omni_base_controller_configuration -DCMAKE_INSTALL_PREFIX=/Bt/install/omni_base_controller_configuration
+[3.761s] Invoking command in '/Bt/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/omni_base_controller_configuration -- -j8 -l8
+[3.806s] Invoked command in '/Bt/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/omni_base_controller_configuration -- -j8 -l8
+[3.807s] Invoking command in '/Bt/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/omni_base_controller_configuration
+[3.818s] -- Install configuration: ""
+[3.818s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config
+[3.818s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/imu_sensor_broadcaster.yaml
+[3.836s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/mobile_base_controller.yaml
+[3.837s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/joint_state_broadcaster.yaml
+[3.837s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/launch
+[3.837s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/launch/default_controllers.launch.py
+[3.837s] -- Installing: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/package_run_dependencies/omni_base_controller_configuration
+[3.837s] -- Installing: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/parent_prefix_path/omni_base_controller_configuration
+[3.838s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/ament_prefix_path.sh
+[3.838s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/ament_prefix_path.dsv
+[3.838s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/path.sh
+[3.838s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/path.dsv
+[3.839s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.bash
+[3.839s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.sh
+[3.839s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.zsh
+[3.839s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.dsv
+[3.839s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.dsv
+[3.840s] -- Installing: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/packages/omni_base_controller_configuration
+[3.840s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/cmake/omni_base_controller_configurationConfig.cmake
+[3.840s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/cmake/omni_base_controller_configurationConfig-version.cmake
+[3.840s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.xml
+[3.843s] Invoked command in '/Bt/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/omni_base_controller_configuration

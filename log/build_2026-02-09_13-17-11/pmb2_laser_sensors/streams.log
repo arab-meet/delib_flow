@@ -1,0 +1,52 @@
+[0.051s] Invoking command in '/Bt/build/pmb2_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/pmb2_navigation/pmb2_laser_sensors -DCMAKE_INSTALL_PREFIX=/Bt/install/pmb2_laser_sensors
+[0.671s] -- The C compiler identification is GNU 13.3.0
+[0.671s] -- The CXX compiler identification is GNU 13.3.0
+[0.672s] -- Detecting C compiler ABI info
+[0.672s] -- Detecting C compiler ABI info - done
+[0.672s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.672s] -- Detecting C compile features
+[0.672s] -- Detecting C compile features - done
+[0.672s] -- Detecting CXX compiler ABI info
+[0.672s] -- Detecting CXX compiler ABI info - done
+[0.672s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.672s] -- Detecting CXX compile features
+[0.673s] -- Detecting CXX compile features - done
+[0.673s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.897s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.413s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.431s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.431s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.437s] -- Added test 'lint_cmake' to check CMake code style
+[1.437s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.442s] -- Added test 'xmllint' to check XML markup files
+[1.448s] -- Configuring done (1.4s)
+[1.453s] -- Generating done (0.0s)
+[1.456s] -- Build files have been written to: /Bt/build/pmb2_laser_sensors
+[1.465s] Invoked command in '/Bt/build/pmb2_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/pmb2_navigation/pmb2_laser_sensors -DCMAKE_INSTALL_PREFIX=/Bt/install/pmb2_laser_sensors
+[1.466s] Invoking command in '/Bt/build/pmb2_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/pmb2_laser_sensors -- -j8 -l8
+[2.434s] Invoked command in '/Bt/build/pmb2_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/pmb2_laser_sensors -- -j8 -l8
+[2.434s] Invoking command in '/Bt/build/pmb2_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/pmb2_laser_sensors
+[2.627s] -- Install configuration: ""
+[2.627s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/config
+[2.628s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/config/laser_analyzers.yaml
+[2.628s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/launch
+[2.628s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/launch/laser_hokuyo.launch.py
+[2.628s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/launch/laser_sim.launch.py
+[2.629s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/launch/laser_sick-561.launch.py
+[2.629s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/launch/laser_sick-571.launch.py
+[2.629s] -- Installing: /Bt/install/pmb2_laser_sensors/share/ament_index/resource_index/package_run_dependencies/pmb2_laser_sensors
+[2.629s] -- Installing: /Bt/install/pmb2_laser_sensors/share/ament_index/resource_index/parent_prefix_path/pmb2_laser_sensors
+[2.629s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/environment/ament_prefix_path.sh
+[2.629s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/environment/ament_prefix_path.dsv
+[2.629s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/environment/path.sh
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/environment/path.dsv
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/local_setup.bash
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/local_setup.sh
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/local_setup.zsh
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/local_setup.dsv
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/package.dsv
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/ament_index/resource_index/packages/pmb2_laser_sensors
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/cmake/pmb2_laser_sensorsConfig.cmake
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/cmake/pmb2_laser_sensorsConfig-version.cmake
+[2.630s] -- Installing: /Bt/install/pmb2_laser_sensors/share/pmb2_laser_sensors/package.xml
+[2.634s] Invoked command in '/Bt/build/pmb2_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/pmb2_laser_sensors

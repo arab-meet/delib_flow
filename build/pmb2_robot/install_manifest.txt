@@ -1,0 +1,15 @@
+/Bt/install/pmb2_robot/share/ament_index/resource_index/package_run_dependencies/pmb2_robot
+/Bt/install/pmb2_robot/share/ament_index/resource_index/parent_prefix_path/pmb2_robot
+/Bt/install/pmb2_robot/share/pmb2_robot/environment/ament_prefix_path.sh
+/Bt/install/pmb2_robot/share/pmb2_robot/environment/ament_prefix_path.dsv
+/Bt/install/pmb2_robot/share/pmb2_robot/environment/path.sh
+/Bt/install/pmb2_robot/share/pmb2_robot/environment/path.dsv
+/Bt/install/pmb2_robot/share/pmb2_robot/local_setup.bash
+/Bt/install/pmb2_robot/share/pmb2_robot/local_setup.sh
+/Bt/install/pmb2_robot/share/pmb2_robot/local_setup.zsh
+/Bt/install/pmb2_robot/share/pmb2_robot/local_setup.dsv
+/Bt/install/pmb2_robot/share/pmb2_robot/package.dsv
+/Bt/install/pmb2_robot/share/ament_index/resource_index/packages/pmb2_robot
+/Bt/install/pmb2_robot/share/pmb2_robot/cmake/pmb2_robotConfig.cmake
+/Bt/install/pmb2_robot/share/pmb2_robot/cmake/pmb2_robotConfig-version.cmake
+/Bt/install/pmb2_robot/share/pmb2_robot/package.xml

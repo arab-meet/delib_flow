@@ -1,0 +1,13 @@
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Point2D.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Vector2.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Pose2D.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/BoundingBox2D.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/BoundingBox3D.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Mask.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/KeyPoint2D.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/KeyPoint2DArray.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/KeyPoint3D.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/KeyPoint3DArray.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Detection.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/DetectionArray.idl
+/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:srv/SetClasses.idl

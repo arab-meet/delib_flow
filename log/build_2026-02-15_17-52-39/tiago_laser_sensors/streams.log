@@ -1,0 +1,27 @@
+[0.276s] Invoking command in '/Bt/build/tiago_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/tiago_laser_sensors -- -j8 -l8
+[0.692s] Invoked command in '/Bt/build/tiago_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/tiago_laser_sensors -- -j8 -l8
+[0.703s] Invoking command in '/Bt/build/tiago_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/tiago_laser_sensors
+[0.747s] -- Install configuration: ""
+[0.748s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params
+[0.779s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/omni_base_laser_pipeline_sim.yaml
+[0.780s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/pmb2_laser_pipeline_sim.yaml
+[0.781s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/omni_base_laser_pipeline.yaml
+[0.782s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/pmb2_laser_pipeline.yaml
+[0.784s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/pmb2_laser_pipeline_w_composition.yaml
+[0.784s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/omni_base_laser_pipeline_w_composition.yaml
+[0.784s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/ament_index/resource_index/package_run_dependencies/tiago_laser_sensors
+[0.785s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/ament_index/resource_index/parent_prefix_path/tiago_laser_sensors
+[0.785s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/ament_prefix_path.sh
+[0.785s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/ament_prefix_path.dsv
+[0.786s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/path.sh
+[0.786s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/path.dsv
+[0.787s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.bash
+[0.787s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.sh
+[0.787s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.zsh
+[0.788s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.dsv
+[0.789s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/package.dsv
+[0.791s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/ament_index/resource_index/packages/tiago_laser_sensors
+[0.792s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig.cmake
+[0.794s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig-version.cmake
+[0.795s] -- Up-to-date: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/package.xml
+[0.884s] Invoked command in '/Bt/build/tiago_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/tiago_laser_sensors

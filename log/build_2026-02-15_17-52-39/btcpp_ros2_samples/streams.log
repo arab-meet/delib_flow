@@ -1,0 +1,46 @@
+[0.119s] Invoking command in '/Bt/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/behaviortree_ros2/lib:/Bt/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /Bt/build/btcpp_ros2_samples -- -j8 -l8
+[0.606s] [ 11%] Built target sleep_plugin
+[0.609s] [ 22%] Built target sample_bt_executor
+[0.645s] [ 33%] Built target subscriber_test
+[0.648s] [ 44%] Built target bool_server
+[0.667s] [ 55%] Built target sleep_server
+[0.709s] [ 72%] Built target bool_client
+[0.763s] [ 88%] Built target sleep_client
+[0.789s] [100%] Built target sleep_client_dyn
+[0.900s] Invoked command in '/Bt/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/behaviortree_ros2/lib:/Bt/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /Bt/build/btcpp_ros2_samples -- -j8 -l8
+[0.905s] Invoking command in '/Bt/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/behaviortree_ros2/lib:/Bt/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /Bt/build/btcpp_ros2_samples
+[0.981s] -- Install configuration: ""
+[1.117s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_client
+[1.247s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_client_dyn
+[1.329s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_server
+[1.462s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/libsleep_plugin.so
+[1.546s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/subscriber_test
+[1.667s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sample_bt_executor
+[1.771s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/bool_client
+[1.822s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/bool_server
+[1.913s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/bt_plugins/libsleep_plugin.so
+[1.914s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples//behavior_trees
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples//behavior_trees/sleep_action.xml
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples//behavior_trees/cross_door.xml
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples//behavior_trees/door_closed.xml
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples//config
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples//config/sample_bt_executor.yaml
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples//launch
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples//launch/sample_bt_executor.launch.xml
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/ament_index/resource_index/package_run_dependencies/btcpp_ros2_samples
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/ament_index/resource_index/parent_prefix_path/btcpp_ros2_samples
+[2.003s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/environment/ament_prefix_path.sh
+[2.004s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/environment/ament_prefix_path.dsv
+[2.004s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/environment/path.sh
+[2.004s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/environment/path.dsv
+[2.004s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/local_setup.bash
+[2.004s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/local_setup.sh
+[2.004s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/local_setup.zsh
+[2.004s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/local_setup.dsv
+[2.004s] -- Installing: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.dsv
+[2.161s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/ament_index/resource_index/packages/btcpp_ros2_samples
+[2.162s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.162s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/cmake/btcpp_ros2_samplesConfig.cmake
+[2.162s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/cmake/btcpp_ros2_samplesConfig-version.cmake
+[2.162s] -- Up-to-date: /Bt/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.xml
+[2.168s] Invoked command in '/Bt/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/behaviortree_ros2/lib:/Bt/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /Bt/build/btcpp_ros2_samples

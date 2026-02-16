@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pmb2_2dnav</name>
+  <version>4.20.0</version>
+  <description>PMB2-specific launch files needed to run
+    navigation on the PMB2 robot.</description>
+  <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>
+  <maintainer email="noel.jimenez@pal-robotics.com">Noel Jimenez</maintainer>
+  <license>Apache License 2.0</license>
+  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
+
+  <url type="website">https://github.com/pal-robotics/pmb2_simulation</url>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_configuration_cmake</build_depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>diagnostic_aggregator</exec_depend>
+  <exec_depend>launch_pal</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>pal_maps</exec_depend>
+
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_amcl</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_behavior_tree</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_behaviors</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_bt_navigator</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_controller</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_dwb_controller</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_lifecycle_manager</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_map_server</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_mppi_controller</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_navfn_planner</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_planner</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_regulated_pure_pursuit_controller</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_rotation_shim_controller</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_rviz_plugins</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_smac_planner</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_smoother</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_velocity_smoother</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_waypoint_follower</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">slam_toolbox</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

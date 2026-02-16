@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a51ed1672385fa3cdcfe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "grab2_planner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "grab2_planner_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-grab2_planner_server-89ac10df019b5b6a0675.json",
+					"name" : "grab2_planner_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "grab2_planner_server_core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-grab2_planner_server_core-5ba59f552f9e1178b0e9.json",
+					"name" : "grab2_planner_server_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "grab2_planner_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-grab2_planner_uninstall-963d96cdaf48218877fa.json",
+					"name" : "grab2_planner_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b187ee730362bb787d0f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Bt/build/grab2_planner",
+		"source" : "/Bt/ThirdParty/grab2/grab2_planner"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

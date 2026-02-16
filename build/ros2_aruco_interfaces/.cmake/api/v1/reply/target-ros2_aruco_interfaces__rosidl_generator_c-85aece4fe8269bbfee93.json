@@ -1,0 +1,520 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libros2_aruco_interfaces__rosidl_generator_c.so"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"ament_execute_extensions",
+			"rosidl_generate_interfaces",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"find_package",
+			"add_dependencies",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/opt/ros/jazzy/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/jazzy/share/rcutils/cmake/rcutilsExport.cmake",
+			"/opt/ros/jazzy/share/rcutils/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/jazzy/share/rcutils/cmake/rcutilsConfig.cmake",
+			"/opt/ros/jazzy/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/jazzy/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake",
+			"/opt/ros/jazzy/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/jazzy/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake",
+			"/opt/ros/jazzy/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/jazzy/share/std_msgs/cmake/std_msgsConfig.cmake",
+			"/opt/ros/jazzy/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/jazzy/share/geometry_msgs/cmake/geometry_msgsConfig.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake",
+			"/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 280,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 143,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 200,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 165,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 165,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 165,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 170,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"file" : 14,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 14,
+				"line" : 41,
+				"parent" : 12
+			},
+			{
+				"file" : 13,
+				"parent" : 13
+			},
+			{
+				"command" : 7,
+				"file" : 13,
+				"line" : 21,
+				"parent" : 14
+			},
+			{
+				"file" : 12,
+				"parent" : 15
+			},
+			{
+				"command" : 1,
+				"file" : 12,
+				"line" : 41,
+				"parent" : 16
+			},
+			{
+				"file" : 11,
+				"parent" : 17
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 21,
+				"parent" : 18
+			},
+			{
+				"file" : 10,
+				"parent" : 19
+			},
+			{
+				"command" : 1,
+				"file" : 10,
+				"line" : 41,
+				"parent" : 20
+			},
+			{
+				"file" : 9,
+				"parent" : 21
+			},
+			{
+				"command" : 7,
+				"file" : 9,
+				"line" : 21,
+				"parent" : 22
+			},
+			{
+				"file" : 8,
+				"parent" : 23
+			},
+			{
+				"command" : 1,
+				"file" : 8,
+				"line" : 41,
+				"parent" : 24
+			},
+			{
+				"file" : 7,
+				"parent" : 25
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 26
+			},
+			{
+				"file" : 6,
+				"parent" : 27
+			},
+			{
+				"command" : 1,
+				"file" : 6,
+				"line" : 41,
+				"parent" : 28
+			},
+			{
+				"file" : 5,
+				"parent" : 29
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 9,
+				"parent" : 30
+			},
+			{
+				"file" : 4,
+				"parent" : 31
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 61,
+				"parent" : 32
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 174,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 152,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 17,
+				"parent" : 36
+			},
+			{
+				"command" : 7,
+				"file" : 17,
+				"line" : 21,
+				"parent" : 37
+			},
+			{
+				"file" : 16,
+				"parent" : 38
+			},
+			{
+				"command" : 1,
+				"file" : 16,
+				"line" : 41,
+				"parent" : 39
+			},
+			{
+				"file" : 15,
+				"parent" : 40
+			},
+			{
+				"command" : 9,
+				"file" : 15,
+				"line" : 25,
+				"parent" : 41
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 158,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=gnu11 -fPIC"
+				},
+				{
+					"backtrace" : 35,
+					"fragment" : "-Wall"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "ROSIDL_GENERATOR_C_BUILDING_DLL_ros2_aruco_interfaces"
+				},
+				{
+					"backtrace" : 42,
+					"define" : "ROS_PACKAGE_NAME=\"ros2_aruco_interfaces\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 43,
+					"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/opt/ros/jazzy/include/geometry_msgs"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/opt/ros/jazzy/include/std_msgs"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/opt/ros/jazzy/include/builtin_interfaces"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/opt/ros/jazzy/include/rosidl_runtime_c"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/opt/ros/jazzy/include/rcutils"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/opt/ros/jazzy/include/rosidl_typesupport_interface"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					35
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 34,
+			"id" : "ros2_aruco_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ros2_aruco_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/Bt/install/ros2_aruco_interfaces"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/opt/ros/jazzy/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/jazzy/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/jazzy/lib/librcutils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "ros2_aruco_interfaces__rosidl_generator_c",
+	"nameOnDisk" : "libros2_aruco_interfaces__rosidl_generator_c.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c/ros2_aruco_interfaces/msg/aruco_markers.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__description.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Bt/build/ros2_aruco_interfaces/rosidl_generator_c/ros2_aruco_interfaces/msg/aruco_markers.h.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

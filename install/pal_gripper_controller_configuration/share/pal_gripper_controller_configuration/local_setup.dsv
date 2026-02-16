@@ -1,0 +1,2 @@
+source;share/pal_gripper_controller_configuration/environment/ament_prefix_path.sh
+source;share/pal_gripper_controller_configuration/environment/path.sh

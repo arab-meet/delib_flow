@@ -1,0 +1,57 @@
+[ 15%] Built target play_motion2
+[ 23%] Built target gtest
+[ 30%] Built target client
+[ 38%] Built target gtest_main
+[ 46%] Built target rrbot_system
+[ 53%] Built target play_motion2_node_test
+[ 61%] Built target play_motion2_test
+[ 69%] Built target motion_loader_test
+[ 76%] Built target run_motion
+[ 84%] Built target play_motion2_node
+[ 92%] Built target passthrough_controller_parameters
+[100%] Built target passthrough_controller
+-- Install configuration: ""
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/test/rrbot/rrbot_system.xml
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2/passthrough_controller_parameters.hpp
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/test/controllers/passthrough_controller.xml
+-- Up-to-date: /Bt/install/play_motion2/lib/libpassthrough_controller.so
+-- Up-to-date: /Bt/install/play_motion2/lib/play_motion2/play_motion2_node_test
+-- Up-to-date: /Bt/install/play_motion2/include
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2/motion_loader.hpp
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2/types.hpp
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2/motion_planner.hpp
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2/play_motion2.hpp
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2/client.hpp
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/library_path.sh
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/library_path.dsv
+-- Up-to-date: /Bt/install/play_motion2/lib/libplay_motion2.so
+-- Up-to-date: /Bt/install/play_motion2/lib/libclient.a
+-- Up-to-date: /Bt/install/play_motion2/lib/librrbot_system.so
+-- Up-to-date: /Bt/install/play_motion2/lib/play_motion2/play_motion2_node
+-- Up-to-date: /Bt/install/play_motion2/lib/play_motion2/run_motion
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/config
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/config/motion_planner_config.yaml
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/launch
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/launch/play_motion2.launch.py
+-- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/package_run_dependencies/play_motion2
+-- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/parent_prefix_path/play_motion2
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/ament_prefix_path.sh
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/ament_prefix_path.dsv
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/path.sh
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/environment/path.dsv
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/local_setup.bash
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/local_setup.sh
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/local_setup.zsh
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/local_setup.dsv
+-- Installing: /Bt/install/play_motion2/share/play_motion2/package.dsv
+-- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/packages/play_motion2
+-- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/play_motion2
+-- Up-to-date: /Bt/install/play_motion2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/play_motion2
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/play_motion2Config.cmake
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/cmake/play_motion2Config-version.cmake
+-- Up-to-date: /Bt/install/play_motion2/share/play_motion2/package.xml

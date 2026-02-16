@@ -1,0 +1,43 @@
+running egg_info
+creating ../../../build/ros2_aruco/ros2_aruco.egg-info
+writing ../../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+writing dependency_links to ../../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+writing entry points to ../../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+writing requirements to ../../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+writing top-level names to ../../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+writing manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+reading manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+writing manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /Bt/build/ros2_aruco/build
+creating /Bt/build/ros2_aruco/build/lib
+creating /Bt/build/ros2_aruco/build/lib/ros2_aruco
+copying ros2_aruco/__init__.py -> /Bt/build/ros2_aruco/build/lib/ros2_aruco
+copying ros2_aruco/aruco_node.py -> /Bt/build/ros2_aruco/build/lib/ros2_aruco
+copying ros2_aruco/aruco_generate_marker.py -> /Bt/build/ros2_aruco/build/lib/ros2_aruco
+running install
+running install_lib
+creating /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco
+copying /Bt/build/ros2_aruco/build/lib/ros2_aruco/__init__.py -> /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco
+copying /Bt/build/ros2_aruco/build/lib/ros2_aruco/aruco_node.py -> /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco
+copying /Bt/build/ros2_aruco/build/lib/ros2_aruco/aruco_generate_marker.py -> /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco
+byte-compiling /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco/__init__.py to __init__.cpython-312.pyc
+byte-compiling /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco/aruco_node.py to aruco_node.cpython-312.pyc
+byte-compiling /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco/aruco_generate_marker.py to aruco_generate_marker.cpython-312.pyc
+running install_data
+creating /Bt/install/ros2_aruco/share/ament_index
+creating /Bt/install/ros2_aruco/share/ament_index/resource_index
+creating /Bt/install/ros2_aruco/share/ament_index/resource_index/packages
+copying resource/ros2_aruco -> /Bt/install/ros2_aruco/share/ament_index/resource_index/packages
+copying package.xml -> /Bt/install/ros2_aruco/share/ros2_aruco
+creating /Bt/install/ros2_aruco/share/ros2_aruco/launch
+copying launch/aruco_recognition.launch.py -> /Bt/install/ros2_aruco/share/ros2_aruco/launch
+creating /Bt/install/ros2_aruco/share/ros2_aruco/config
+copying config/aruco_parameters.yaml -> /Bt/install/ros2_aruco/share/ros2_aruco/config
+running install_egg_info
+Copying ../../../build/ros2_aruco/ros2_aruco.egg-info to /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco-0.1.0-py3.12.egg-info
+running install_scripts
+Installing aruco_generate_marker script to /Bt/install/ros2_aruco/lib/ros2_aruco
+Installing aruco_node script to /Bt/install/ros2_aruco/lib/ros2_aruco
+writing list of installed files to '/Bt/build/ros2_aruco/install.log'

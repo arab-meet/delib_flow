@@ -1,0 +1,49 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Bt/build/pmb2_2dnav
+-- Install configuration: ""
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/config
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/config/nav_public_sim.yaml
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/config/rviz
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/config/rviz/navigation.rviz
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/config/nav2_analyzers.yaml
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/launch
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/launch/slam.launch.py
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/launch/localization.launch.py
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/launch/navigation.launch.py
+-- Installing: /Bt/install/pmb2_2dnav/share/ament_index/resource_index/package_run_dependencies/pmb2_2dnav
+-- Installing: /Bt/install/pmb2_2dnav/share/ament_index/resource_index/parent_prefix_path/pmb2_2dnav
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/environment/path.sh
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/environment/path.dsv
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/local_setup.bash
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/local_setup.sh
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/local_setup.zsh
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/local_setup.dsv
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/package.dsv
+-- Installing: /Bt/install/pmb2_2dnav/share/ament_index/resource_index/packages/pmb2_2dnav
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/cmake/pmb2_2dnavConfig.cmake
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/cmake/pmb2_2dnavConfig-version.cmake
+-- Installing: /Bt/install/pmb2_2dnav/share/pmb2_2dnav/package.xml

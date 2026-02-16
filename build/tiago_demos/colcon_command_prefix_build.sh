@@ -1,0 +1,10 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.sh"
+. "/Bt/install/tiago_nav/share/tiago_nav/package.sh"
+. "/Bt/install/behaviortree_ros2/share/behaviortree_ros2/package.sh"
+. "/Bt/install/grab2_msgs/share/grab2_msgs/package.sh"
+. "/Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/package.sh"
+. "/Bt/install/grab2_ros_common/share/grab2_ros_common/package.sh"
+. "/Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/package.sh"
+. "/Bt/install/grab2_planner/share/grab2_planner/package.sh"
+. "/Bt/install/tiago_grab/share/tiago_grab/package.sh"

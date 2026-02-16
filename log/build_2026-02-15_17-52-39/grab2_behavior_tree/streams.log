@@ -1,0 +1,73 @@
+[0.044s] Invoking command in '/Bt/build/grab2_behavior_tree': AMENT_PREFIX_PATH=/Bt/install/grab2_msgs:/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/grab2_msgs:/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/grab2_msgs/lib:/Bt/install/behaviortree_ros2/lib:/Bt/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/grab2_msgs/lib/python3.12/site-packages:/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /Bt/build/grab2_behavior_tree -- -j8 -l8
+[1.112s] [ 11%] Built target grab2_get_grasp_hardcoded_bt_node
+[1.123s] [ 33%] Built target grab2_compute_plan_to_target_ik_bt_node
+[1.124s] [ 33%] Built target grab2_follow_joint_trajectory_bt_node
+[1.132s] [ 44%] Built target grab2_reach_object_bt_node
+[1.140s] [ 55%] Built target grab2_get_trajectory_from_yaml_bt_node
+[1.195s] [ 66%] Built target grab2_compute_top_down_grasp_bt_node
+[1.241s] [ 77%] Built target grab2_grip_bt_node
+[1.336s] [ 88%] Built target grab2_detect_object_bt_node
+[1.349s] [100%] Built target grab2_engine
+[1.914s] Invoked command in '/Bt/build/grab2_behavior_tree' returned '0': AMENT_PREFIX_PATH=/Bt/install/grab2_msgs:/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/grab2_msgs:/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/grab2_msgs/lib:/Bt/install/behaviortree_ros2/lib:/Bt/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/grab2_msgs/lib/python3.12/site-packages:/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /Bt/build/grab2_behavior_tree -- -j8 -l8
+[1.928s] Invoking command in '/Bt/build/grab2_behavior_tree': AMENT_PREFIX_PATH=/Bt/install/grab2_msgs:/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/grab2_msgs:/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/grab2_msgs/lib:/Bt/install/behaviortree_ros2/lib:/Bt/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/grab2_msgs/lib/python3.12/site-packages:/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /Bt/build/grab2_behavior_tree
+[1.946s] -- Install configuration: ""
+[2.007s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_detect_object_bt_node.so
+[2.030s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_get_trajectory_from_yaml_bt_node.so
+[2.175s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_get_grasp_hardcoded_bt_node.so
+[2.289s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_compute_top_down_grasp_bt_node.so
+[2.377s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_compute_plan_to_target_ik_bt_node.so
+[2.519s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_follow_joint_trajectory_bt_node.so
+[2.638s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_grip_bt_node.so
+[2.927s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_reach_object_bt_node.so
+[2.995s] -- Up-to-date: /Bt/install/grab2_behavior_tree/lib/grab2_behavior_tree/grab2_engine
+[3.032s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_detect_object_bt_node.so
+[3.063s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_get_trajectory_from_yaml_bt_node.so
+[3.139s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_get_grasp_hardcoded_bt_node.so
+[3.213s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_compute_top_down_grasp_bt_node.so
+[3.361s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_compute_plan_to_target_ik_bt_node.so
+[3.501s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_follow_joint_trajectory_bt_node.so
+[3.581s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_grip_bt_node.so
+[3.654s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_reach_object_bt_node.so
+[3.654s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins_list.hpp
+[3.654s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree
+[3.655s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree
+[3.655s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/utils.hpp
+[3.656s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins
+[3.656s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action
+[3.656s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/compute_plan_to_target_ik.hpp
+[3.656s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/get_trajectory_from_yaml.hpp
+[3.656s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/get_grasp_hardcoded.hpp
+[3.656s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/detect_object.hpp
+[3.656s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/reach_object.hpp
+[3.656s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/follow_joint_trajectory.hpp
+[3.657s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/compute_top_down_grasp.hpp
+[3.657s] -- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/grip.hpp
+[3.657s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees
+[3.677s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/collect_toys.xml
+[3.677s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/collect_cubes.xml
+[3.677s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/stack_cubes.xml
+[3.677s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/bt_groot2.btproj
+[3.678s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/target_ik_demo.xml
+[3.678s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/lookaround_demo.xml
+[3.678s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/launch
+[3.719s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/launch/bt_demo.launch.py
+[3.719s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/launch/grab2_engine.launch.py
+[3.719s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/config
+[3.725s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/config/panda_joint_trajectories.yaml
+[3.726s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/ament_index/resource_index/package_run_dependencies/grab2_behavior_tree
+[3.727s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/ament_index/resource_index/parent_prefix_path/grab2_behavior_tree
+[3.727s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/environment/ament_prefix_path.sh
+[3.727s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/environment/ament_prefix_path.dsv
+[3.727s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/environment/path.sh
+[3.727s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/environment/path.dsv
+[3.728s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/local_setup.bash
+[3.728s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/local_setup.sh
+[3.728s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/local_setup.zsh
+[3.728s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/local_setup.dsv
+[3.728s] -- Installing: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/package.dsv
+[3.779s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/ament_index/resource_index/packages/grab2_behavior_tree
+[3.780s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.780s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/cmake/grab2_behavior_treeConfig.cmake
+[3.781s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/cmake/grab2_behavior_treeConfig-version.cmake
+[3.781s] -- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/package.xml
+[3.796s] Invoked command in '/Bt/build/grab2_behavior_tree' returned '0': AMENT_PREFIX_PATH=/Bt/install/grab2_msgs:/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/grab2_msgs:/Bt/install/behaviortree_ros2:/Bt/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/Bt/install/grab2_msgs/lib:/Bt/install/behaviortree_ros2/lib:/Bt/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/install/grab2_msgs/lib/python3.12/site-packages:/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /Bt/build/grab2_behavior_tree

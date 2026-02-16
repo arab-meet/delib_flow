@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pmb2_rgbd_sensors</name>
+  <version>4.20.0</version>
+  <description>pmb2-specific RGBD sensors module and params files.</description>
+  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
+  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_configuration_cmake</build_depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>diagnostic_updater</exec_depend>
+
+  <exec_depend condition="$PAL_DISTRO >= alum">depth_image_proc</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">openni2_camera</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">realsense2_camera</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">realsense_camera_cfg</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">structure_camera_cfg</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pcl_ros</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_pcl</exec_depend>  
+  
+  <exec_depend>launch_pal</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>rclcpp_components</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

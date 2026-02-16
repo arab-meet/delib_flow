@@ -1,0 +1,18 @@
+running egg_info
+writing ../../build/launch_pal/launch_pal.egg-info/PKG-INFO
+writing dependency_links to ../../build/launch_pal/launch_pal.egg-info/dependency_links.txt
+writing requirements to ../../build/launch_pal/launch_pal.egg-info/requires.txt
+writing top-level names to ../../build/launch_pal/launch_pal.egg-info/top_level.txt
+reading manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal-0.1.15-py3.12.egg-info' (and everything under it)
+Copying ../../build/launch_pal/launch_pal.egg-info to /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal-0.1.15-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/Bt/build/launch_pal/install.log'

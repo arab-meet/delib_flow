@@ -1,0 +1,4 @@
+Invoking command in '/Bt/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/yolo_msgs -- -j8 -l8
+Invoked command in '/Bt/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/yolo_msgs -- -j8 -l8
+Invoking command in '/Bt/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/yolo_msgs
+Invoked command in '/Bt/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/yolo_msgs

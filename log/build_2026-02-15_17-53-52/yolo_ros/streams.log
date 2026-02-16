@@ -1,0 +1,24 @@
+[1.482s] Invoking command in '/Bt/ThirdParty/yolo_ros/yolo_ros': AMENT_PREFIX_PATH=/Bt/install/yolo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/yolo_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/Bt/install/yolo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Bt/install/yolo_ros/lib/python3.12/site-packages:/Bt/install/yolo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/yolo_ros build --build-base /Bt/build/yolo_ros/build install --record /Bt/build/yolo_ros/install.log --single-version-externally-managed install_data
+[2.011s] running egg_info
+[2.050s] writing ../../../build/yolo_ros/yolo_ros.egg-info/PKG-INFO
+[2.050s] writing dependency_links to ../../../build/yolo_ros/yolo_ros.egg-info/dependency_links.txt
+[2.051s] writing entry points to ../../../build/yolo_ros/yolo_ros.egg-info/entry_points.txt
+[2.051s] writing requirements to ../../../build/yolo_ros/yolo_ros.egg-info/requires.txt
+[2.051s] writing top-level names to ../../../build/yolo_ros/yolo_ros.egg-info/top_level.txt
+[2.132s] reading manifest file '../../../build/yolo_ros/yolo_ros.egg-info/SOURCES.txt'
+[2.133s] writing manifest file '../../../build/yolo_ros/yolo_ros.egg-info/SOURCES.txt'
+[2.133s] running build
+[2.133s] running build_py
+[2.134s] running install
+[2.145s] running install_lib
+[2.181s] running install_data
+[2.181s] running install_egg_info
+[2.209s] removing '/Bt/install/yolo_ros/lib/python3.12/site-packages/yolo_ros-0.0.0-py3.12.egg-info' (and everything under it)
+[2.209s] Copying ../../../build/yolo_ros/yolo_ros.egg-info to /Bt/install/yolo_ros/lib/python3.12/site-packages/yolo_ros-0.0.0-py3.12.egg-info
+[2.210s] running install_scripts
+[2.371s] Installing debug_node script to /Bt/install/yolo_ros/lib/yolo_ros
+[2.371s] Installing detect_3d_node script to /Bt/install/yolo_ros/lib/yolo_ros
+[2.371s] Installing tracking_node script to /Bt/install/yolo_ros/lib/yolo_ros
+[2.371s] Installing yolo_node script to /Bt/install/yolo_ros/lib/yolo_ros
+[2.371s] writing list of installed files to '/Bt/build/yolo_ros/install.log'
+[2.429s] Invoked command in '/Bt/ThirdParty/yolo_ros/yolo_ros' returned '0': AMENT_PREFIX_PATH=/Bt/install/yolo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/yolo_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/Bt/install/yolo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/Bt/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Bt/install/yolo_ros/lib/python3.12/site-packages:/Bt/install/yolo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/yolo_ros build --build-base /Bt/build/yolo_ros/build install --record /Bt/build/yolo_ros/install.log --single-version-externally-managed install_data

@@ -1,0 +1,26 @@
+{
+  "package_name": "grab2_msgs",
+  "output_dir": "/Bt/build/grab2_msgs/rosidl_generator_type_description/grab2_msgs",
+  "idl_tuples": [
+    "/Bt/build/grab2_msgs/rosidl_adapter/grab2_msgs:action/ComputePlanToTargetIK.idl",
+    "/Bt/build/grab2_msgs/rosidl_adapter/grab2_msgs:action/ComputePlanThroughPoses.idl",
+    "/Bt/build/grab2_msgs/rosidl_adapter/grab2_msgs:action/GetIsaacGrasp.idl",
+    "/Bt/build/grab2_msgs/rosidl_adapter/grab2_msgs:action/ReachObject.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "control_msgs:/opt/ros/jazzy/share/control_msgs",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "sensor_msgs:/opt/ros/jazzy/share/sensor_msgs",
+    "trajectory_msgs:/opt/ros/jazzy/share/trajectory_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "moveit_msgs:/opt/ros/jazzy/share/moveit_msgs",
+    "shape_msgs:/opt/ros/jazzy/share/shape_msgs",
+    "object_recognition_msgs:/opt/ros/jazzy/share/object_recognition_msgs",
+    "octomap_msgs:/opt/ros/jazzy/share/octomap_msgs",
+    "btcpp_ros2_interfaces:/Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

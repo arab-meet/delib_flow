@@ -1,0 +1,36 @@
+[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/play_motion2` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+In file included from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:25[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2/play_motion2.cpp:18[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | a message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+
+In file included from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:25[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2/motion_planner.cpp:18[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | a message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+
+[01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2/motion_planner.cpp:[m[K In constructor ‘[01m[Kplay_motion2::MotionPlanner::[01;32m[KMotionPlanner[m[K(rclcpp_lifecycle::LifecycleNode::SharedPtr)[m[K’:
+[01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2/motion_planner.cpp:78:67:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktypename rclcpp::Client<ServiceT>::SharedPtr rclcpp_lifecycle::LifecycleNode::[01;32m[Kcreate_client[m[K(const std::string&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr) [35m[K[with ServiceT = controller_manager_msgs::srv::ListControllers; typename rclcpp::Client<ServiceT>::SharedPtr = std::shared_ptr<rclcpp::Client<controller_manager_msgs::srv::ListControllers> >; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::CallbackGroup::SharedPtr = std::shared_ptr<rclcpp::CallbackGroup>][m[K[m[K’ is deprecated: use rclcpp::QoS instead of rmw_qos_profile_t [[01;35m[K-Wdeprecated-declarations[m[K]
+   78 |   list_controllers_client_ = [01;35m[Knode_->create_client<ListControllers>([m[K
+      |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   79 | [01;35m[K    "/controller_manager/list_controllers", rmw_qos_profile_default, motion_planner_cb_group_)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp:1126[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:29[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node_impl.hpp:125:1:[m[K [01;36m[Knote: [m[Kdeclared here
+  125 | [01;36m[KLifecycleNode[m[K::create_client(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:25[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/play_motion2.hpp:24[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2_main.cpp:16[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                             [01;36m[K^[m[K
+In file included from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:25[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/play_motion2.hpp:24[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/test/play_motion2_test.cpp:22[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                             [01;36m[K^[m[K

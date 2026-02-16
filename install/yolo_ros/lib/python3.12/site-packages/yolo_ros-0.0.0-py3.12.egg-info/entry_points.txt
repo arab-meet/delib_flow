@@ -1,0 +1,5 @@
+[console_scripts]
+debug_node = yolo_ros.debug_node:main
+detect_3d_node = yolo_ros.detect_3d_node:main
+tracking_node = yolo_ros.tracking_node:main
+yolo_node = yolo_ros.yolo_node:main

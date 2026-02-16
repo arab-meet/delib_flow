@@ -1,0 +1,2 @@
+source;share/tiago_controller_configuration/environment/ament_prefix_path.sh
+source;share/tiago_controller_configuration/environment/path.sh

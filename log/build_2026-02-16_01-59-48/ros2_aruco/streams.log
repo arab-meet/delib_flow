@@ -1,0 +1,22 @@
+[2.834s] Invoking command in '/Bt/ThirdParty/ros2_aruco/ros2_aruco': PYTHONPATH=/Bt/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Bt/install/ros2_aruco/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /Bt/build/ros2_aruco/build install --record /Bt/build/ros2_aruco/install.log --single-version-externally-managed install_data
+[3.875s] running egg_info
+[3.918s] writing ../../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+[3.919s] writing dependency_links to ../../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+[3.919s] writing entry points to ../../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+[3.919s] writing requirements to ../../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+[3.919s] writing top-level names to ../../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+[4.051s] reading manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[4.052s] writing manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[4.060s] running build
+[4.060s] running build_py
+[4.060s] running install
+[4.060s] running install_lib
+[4.140s] running install_data
+[4.140s] running install_egg_info
+[4.194s] removing '/Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco-0.1.0-py3.12.egg-info' (and everything under it)
+[4.194s] Copying ../../../build/ros2_aruco/ros2_aruco.egg-info to /Bt/install/ros2_aruco/lib/python3.12/site-packages/ros2_aruco-0.1.0-py3.12.egg-info
+[4.204s] running install_scripts
+[4.546s] Installing aruco_generate_marker script to /Bt/install/ros2_aruco/lib/ros2_aruco
+[4.547s] Installing aruco_node script to /Bt/install/ros2_aruco/lib/ros2_aruco
+[4.547s] writing list of installed files to '/Bt/build/ros2_aruco/install.log'
+[4.735s] Invoked command in '/Bt/ThirdParty/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/Bt/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Bt/install/ros2_aruco/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /Bt/build/ros2_aruco/build install --record /Bt/build/ros2_aruco/install.log --single-version-externally-managed install_data

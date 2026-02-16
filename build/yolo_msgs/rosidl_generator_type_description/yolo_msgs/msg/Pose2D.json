@@ -1,0 +1,66 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "yolo_msgs/msg/Pose2D",
+      "fields": [
+        {
+          "name": "position",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "yolo_msgs/msg/Point2D"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "theta",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "yolo_msgs/msg/Point2D",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "yolo_msgs/msg/Pose2D",
+      "hash_string": "RIHS01_a43cf2c8223859910b22df97624bc9ccc861b35062a4e5313c03baa4939ae4e8"
+    },
+    {
+      "type_name": "yolo_msgs/msg/Point2D",
+      "hash_string": "RIHS01_624bc0edc3213f5e4b5ff765296c3844061c675d4d6122bce855cb7be3ba3d9c"
+    }
+  ]
+}

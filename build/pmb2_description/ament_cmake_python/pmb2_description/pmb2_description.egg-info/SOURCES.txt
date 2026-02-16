@@ -1,0 +1,7 @@
+setup.py
+pmb2_description/__init__.py
+pmb2_description/launch_arguments.py
+pmb2_description.egg-info/PKG-INFO
+pmb2_description.egg-info/SOURCES.txt
+pmb2_description.egg-info/dependency_links.txt
+pmb2_description.egg-info/top_level.txt

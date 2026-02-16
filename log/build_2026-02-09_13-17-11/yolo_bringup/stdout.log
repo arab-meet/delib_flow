@@ -1,0 +1,43 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Bt/build/yolo_bringup
+-- Install configuration: ""
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yolov5.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yolov9.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yolo.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yoloe.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yolov12.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yolo-world.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yolov8.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yolov10.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup//launch/yolov11.launch.py
+-- Installing: /Bt/install/yolo_bringup/share/ament_index/resource_index/package_run_dependencies/yolo_bringup
+-- Installing: /Bt/install/yolo_bringup/share/ament_index/resource_index/parent_prefix_path/yolo_bringup
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/environment/path.sh
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/environment/path.dsv
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/local_setup.bash
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/local_setup.sh
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/local_setup.zsh
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/local_setup.dsv
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/package.dsv
+-- Installing: /Bt/install/yolo_bringup/share/ament_index/resource_index/packages/yolo_bringup
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/cmake/yolo_bringupConfig.cmake
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/cmake/yolo_bringupConfig-version.cmake
+-- Installing: /Bt/install/yolo_bringup/share/yolo_bringup/package.xml

@@ -1,0 +1,7 @@
+# Get the information of a motion
+
+string motion_key
+
+---
+
+play_motion2_msgs/Motion motion

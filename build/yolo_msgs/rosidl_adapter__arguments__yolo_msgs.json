@@ -1,0 +1,18 @@
+{
+  "package_name": "yolo_msgs",
+  "non_idl_tuples": [
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/Point2D.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/Vector2.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/Pose2D.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/BoundingBox2D.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/BoundingBox3D.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/Mask.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/KeyPoint2D.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/KeyPoint2DArray.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/KeyPoint3D.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/KeyPoint3DArray.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/Detection.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:msg/DetectionArray.msg",
+    "/Bt/ThirdParty/yolo_ros/yolo_msgs:srv/SetClasses.srv"
+  ]
+}

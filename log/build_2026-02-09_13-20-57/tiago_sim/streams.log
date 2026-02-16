@@ -1,0 +1,568 @@
+[0.187s] Invoking command in '/Bt/build/tiago_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/tiago_sim -- -j8 -l8
+[0.323s] Invoked command in '/Bt/build/tiago_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/tiago_sim -- -j8 -l8
+[0.324s] Invoking command in '/Bt/build/tiago_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/tiago_sim
+[0.339s] -- Install configuration: ""
+[0.339s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/config
+[0.362s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/config/battery_bridge.yaml
+[0.362s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/config/gazebo_params.yaml
+[0.364s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/launch
+[0.385s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/launch/tiago_pal_sim.launch.py
+[0.385s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/launch/br2_gazebo.launch.py
+[0.385s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/launch/tiago_sim.launch.py
+[0.386s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/launch/tiago_yolo.launch.py
+[0.386s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models
+[0.386s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table
+[0.392s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/model.config
+[0.392s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/thumbnails
+[0.393s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/thumbnails/DiningTable.png
+[0.393s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/meshes
+[0.393s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/meshes/diningtable.dae
+[0.393s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/model.sdf
+[0.393s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/materials
+[0.394s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/materials/textures
+[0.394s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/materials/textures/Wood_Normal.png
+[0.394s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/materials/textures/Wood_Roughness.png
+[0.394s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Table/materials/textures/Wood_Albedo.png
+[0.394s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom
+[0.408s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink
+[0.418s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/model.config
+[0.419s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/thumbnails
+[0.427s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/thumbnails/3.png
+[0.427s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/thumbnails/5.png
+[0.428s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/thumbnails/4.png
+[0.428s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/thumbnails/2.png
+[0.428s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/thumbnails/1.png
+[0.428s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/meshes
+[0.428s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/meshes/BathroomSink_Metal.png
+[0.428s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/meshes/BathroomSink_Col.obj
+[0.428s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/meshes/BathroomSink.mtl
+[0.429s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/meshes/BathroomSink_Col.mtl
+[0.429s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/meshes/BathroomSink.obj
+[0.429s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/meshes/BathroomSink_Rough.png
+[0.429s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/meshes/BathroomSink_Diffuse.png
+[0.429s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/BathroomSink/model.sdf
+[0.429s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub
+[0.438s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/model.config
+[0.438s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/thumbnails
+[0.439s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/thumbnails/Bathtub.png
+[0.439s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/meshes
+[0.439s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/meshes/bathtub.dae
+[0.439s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/model.sdf
+[0.439s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/materials
+[0.441s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/materials/textures
+[0.442s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/materials/textures/Bathtub_Normal.png
+[0.442s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/materials/textures/Bathtub_Roughness.jpg
+[0.442s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/materials/textures/Bathtub_Albedo.jpg
+[0.442s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathroom/Bathtub/materials/textures/Bathtub_Metalness.jpg
+[0.442s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive
+[0.462s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/material
+[0.462s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/material/textures
+[0.463s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/material/textures/tv_65in_maldives_909x541.jpg
+[0.463s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/material/script
+[0.463s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/material/script/tv_emissive.material
+[0.463s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/model.config
+[0.464s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/thumbnails
+[0.464s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/thumbnails/1.png
+[0.464s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/tv_65in_emissive/model.sdf
+[0.465s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/desk
+[0.468s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/desk/model.config
+[0.468s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/desk/model.sdf
+[0.468s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven
+[0.472s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/model.config
+[0.472s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/thumbnails
+[0.481s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/thumbnails/Oven.png
+[0.481s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/meshes
+[0.482s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/meshes/oven.dae
+[0.482s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/model.sdf
+[0.482s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/materials
+[0.482s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/materials/textures
+[0.489s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/materials/textures/Oven_Roughness.png
+[0.489s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/materials/textures/Oven_Albedo.png
+[0.490s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/materials/textures/Glass.png
+[0.490s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/materials/textures/Oven_Normal.png
+[0.491s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Oven/materials/textures/Oven_Metalness.png
+[0.491s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed
+[0.492s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/model.config
+[0.492s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/thumbnails
+[0.513s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/thumbnails/Bed.png
+[0.513s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/meshes
+[0.513s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/meshes/bed.dae
+[0.513s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/model.sdf
+[0.513s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/materials
+[0.526s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/materials/textures
+[0.526s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/materials/textures/Bed_Albedo.png
+[0.527s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/materials/textures/Bed_Normal.png
+[0.527s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bed/materials/textures/Bed_Roughness.png
+[0.527s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower
+[0.527s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/model.config
+[0.527s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/thumbnails
+[0.527s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/thumbnails/3.png
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/thumbnails/5.png
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/thumbnails/4.png
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/thumbnails/2.png
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/thumbnails/1.png
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/meshes
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/meshes/Shower.mtl
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/meshes/Shower.obj
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/meshes/ShowerDiffuse.png
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Shower/model.sdf
+[0.528s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue
+[0.538s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/model.config
+[0.538s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails
+[0.539s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/3.png
+[0.539s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/5.png
+[0.539s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/4.png
+[0.539s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/meta
+[0.551s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/meta/3.png
+[0.552s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/meta/5.png
+[0.552s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/meta/4.png
+[0.552s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/meta/2.png
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/meta/1.png
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/2.png
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/thumbnails/1.png
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/meshes
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/meshes/OfficeChairBlue.png
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/meshes/OfficeChairBlue_Col.obj
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/meshes/OfficeChairBlue.obj
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/meshes/OfficeChairBlue.mtl
+[0.553s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/meshes/OfficeChairBlue_Col.mtl
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/OfficeChairBlue/model.sdf
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/model.config
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/thumbnails
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/thumbnails/3.png
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/thumbnails/5.png
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/thumbnails/4.png
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/thumbnails/2.png
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/thumbnails/1.png
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/meshes
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/meshes/LampAndStand.obj
+[0.554s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/meshes/LampAndStand_Col.obj
+[0.555s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/meshes/LampAndStand.mtl
+[0.555s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/meshes/LampAndStand_Diffuse.png
+[0.555s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/meshes/LampAndStand_Col.mtl
+[0.555s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/LampAndStand/model.sdf
+[0.555s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer
+[0.555s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/model.config
+[0.555s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/thumbnails
+[0.566s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/thumbnails/3.png
+[0.567s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/thumbnails/5.png
+[0.567s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/thumbnails/4.png
+[0.567s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/thumbnails/2.png
+[0.567s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/thumbnails/1.png
+[0.567s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/meshes
+[0.568s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/meshes/Drawer.png
+[0.568s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/meshes/Drawer.mtl
+[0.568s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/meshes/Drawer.obj
+[0.568s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/meshes/Drawer_Col.obj
+[0.568s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Drawer/model.sdf
+[0.569s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin
+[0.572s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/model.config
+[0.573s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/thumbnails
+[0.573s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/thumbnails/3.png
+[0.573s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/thumbnails/5.png
+[0.573s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/thumbnails/4.png
+[0.574s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/thumbnails/2.png
+[0.574s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/thumbnails/1.png
+[0.574s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/meshes
+[0.574s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/meshes/TrashBin.mtl
+[0.574s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/meshes/TrashBin_Diffuse.png
+[0.574s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/meshes/TrashBin.obj
+[0.574s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TrashBin/model.sdf
+[0.575s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black
+[0.575s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/model.config
+[0.575s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/thumbnails
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/thumbnails/2.jpg
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/thumbnails/4.jpg
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/thumbnails/3.jpg
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/thumbnails/0.jpg
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/thumbnails/1.jpg
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/meshes
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/meshes/model.mtl
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/meshes/model.obj
+[0.580s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/model.sdf
+[0.581s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/metadata.pbtxt
+[0.581s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/materials
+[0.597s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/materials/textures
+[0.597s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Calphalon_Kitchen_Essentials_12_Cast_Iron_Fry_Pan_Black/materials/textures/texture.png
+[0.597s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/charger
+[0.615s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/charger/model.config
+[0.615s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/charger/model.sdf
+[0.615s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa
+[0.639s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/model.config
+[0.640s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/thumbnails
+[0.679s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/thumbnails/3.png
+[0.679s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/thumbnails/5.png
+[0.679s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/thumbnails/4.png
+[0.680s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/thumbnails/2.png
+[0.680s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/thumbnails/1.png
+[0.680s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/meshes
+[0.705s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/meshes/minisofa.obj
+[0.705s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/meshes/MiniSofa_Diffuse.png
+[0.705s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/meshes/minisofa.mtl
+[0.705s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/MiniSofa/model.sdf
+[0.705s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator
+[0.706s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/model.config
+[0.706s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/thumbnails
+[0.706s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/thumbnails/Fridge.png
+[0.706s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/meshes
+[0.706s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/meshes/fridge.dae
+[0.706s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/model.sdf
+[0.706s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/materials
+[0.729s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/materials/textures
+[0.741s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/materials/textures/Fridge_Roughness.jpg
+[0.741s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/materials/textures/Fridge_Albedo.jpg
+[0.741s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/materials/textures/Fridge_Metalness.jpg
+[0.741s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Refrigerator/materials/textures/Fridge_Normal.png
+[0.741s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop
+[0.757s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/model.config
+[0.757s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/thumbnails
+[0.758s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/thumbnails/3.png
+[0.758s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/thumbnails/5.png
+[0.758s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/thumbnails/4.png
+[0.758s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/thumbnails/2.png
+[0.759s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/thumbnails/1.png
+[0.759s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/meshes
+[0.759s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/meshes/KitchenCountertop.obj
+[0.760s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/meshes/KitchenCountertop_Diffuse.png
+[0.760s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/meshes/KitchenCountertop.mtl
+[0.761s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/KitchenCountertop/model.sdf
+[0.761s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk
+[0.774s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/model.config
+[0.774s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/thumbnails
+[0.775s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/thumbnails/Desk.png
+[0.775s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/meshes
+[0.775s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/meshes/desk.dae
+[0.775s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/model.sdf
+[0.776s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/materials
+[0.784s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/materials/textures
+[0.793s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/materials/textures/Desk_Albedo.png
+[0.794s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/materials/textures/Desk_Normal.png
+[0.794s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Desk/materials/textures/Desk_Roughness.png
+[0.794s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet
+[0.795s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/model.config
+[0.795s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/thumbnails
+[0.812s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/thumbnails/Toilet.png
+[0.812s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/meshes
+[0.832s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/meshes/toilet.dae
+[0.832s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/model.sdf
+[0.832s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/materials
+[0.842s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/materials/textures
+[0.844s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/materials/textures/Toilet_Metalness.png
+[0.844s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/materials/textures/Toilet_Normal.png
+[0.845s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/materials/textures/Toilet_Roughness.png
+[0.845s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Standard Toilet/materials/textures/Toilet_Albedo.png
+[0.845s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can
+[0.845s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/model.config
+[0.845s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails
+[0.864s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/3.png
+[0.865s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/5.png
+[0.865s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/4.png
+[0.865s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/2.png
+[0.865s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/thumbnails/1.png
+[0.865s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/meshes
+[0.865s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/meshes/trash_can.dae
+[0.866s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/first_2015_trash_can/model.sdf
+[0.866s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2
+[0.866s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/model.config
+[0.866s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/thumbnails
+[0.866s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/thumbnails/3.png
+[0.866s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/thumbnails/5.png
+[0.867s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/thumbnails/4.png
+[0.867s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/thumbnails/2.png
+[0.867s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/thumbnails/1.png
+[0.867s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/meshes
+[0.867s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/meshes/BedsideTable2_Col.obj
+[0.867s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/meshes/BedsideTable2.png
+[0.868s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/meshes/BedsideTable2.obj
+[0.868s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/meshes/BedsideTable2.mtl
+[0.868s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/meshes/BedsideTable2_Col.mtl
+[0.868s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BedsideTable2/model.sdf
+[0.868s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa
+[0.868s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/model.config
+[0.868s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/thumbnails
+[0.869s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/thumbnails/3.png
+[0.869s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/thumbnails/5.png
+[0.869s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/thumbnails/4.png
+[0.869s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/thumbnails/2.png
+[0.869s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/thumbnails/1.png
+[0.869s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/meshes
+[0.869s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/meshes/Sofa.obj
+[0.870s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/meshes/SofaDiffuse.png
+[0.870s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/meshes/Sofa.mtl
+[0.870s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Sofa/model.sdf
+[0.870s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1
+[0.899s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/model.config
+[0.899s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/meshes
+[0.916s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/meshes/Box1.png
+[0.916s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/meshes/Black.png
+[0.916s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/meshes/Box1.dae
+[0.917s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/meshes/Box1_mod.dae
+[0.917s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/Box1.sdf
+[0.917s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/materials
+[0.924s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/materials/textures
+[0.937s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box1/materials/textures/Box1.png
+[0.938s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair
+[0.961s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/model.config
+[0.962s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/thumbnails
+[0.962s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/thumbnails/DiningChair.png
+[0.962s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/meshes
+[0.963s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/meshes/diningchair.dae
+[0.963s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/model.sdf
+[0.963s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/materials
+[0.963s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/materials/textures
+[0.963s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/materials/textures/DiningChair_Normal.jpg
+[0.964s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/materials/textures/DiningChair_Roughness.jpg
+[0.964s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Dining Chair/materials/textures/DiningChair_Albedo.jpg
+[0.964s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed
+[0.964s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/model.config
+[0.964s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/thumbnails
+[0.964s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/thumbnails/3.png
+[0.965s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/thumbnails/5.png
+[0.965s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/thumbnails/4.png
+[0.965s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/thumbnails/2.png
+[0.965s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/thumbnails/1.png
+[0.965s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/meshes
+[0.966s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/meshes/bed.png
+[0.966s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/meshes/bed.mtl
+[0.966s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/meshes/bed.obj
+[0.966s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/NormalBed/model.sdf
+[0.966s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m
+[0.979s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/material
+[0.979s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/material/textures
+[0.987s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/material/textures/rug_ivory_469x588.png
+[0.988s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/material/script
+[0.988s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/material/script/rug_ivory_2m.material
+[0.989s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/model.config
+[0.989s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/thumbnails
+[0.989s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/thumbnails/1.png
+[0.989s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/rug_ivory_2m/model.sdf
+[0.990s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf
+[0.990s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/model.config
+[0.990s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/thumbnails
+[0.991s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/thumbnails/3.png
+[0.991s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/thumbnails/5.png
+[0.991s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/thumbnails/4.png
+[0.991s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/thumbnails/2.png
+[0.991s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/thumbnails/1.png
+[0.991s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/meshes
+[0.992s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/meshes/SquareShelf_Diffuse.png
+[0.992s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/meshes/SquareShelf_Col.mtl
+[0.992s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/meshes/SquareShelf.obj
+[0.992s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/meshes/SquareShelf.mtl
+[0.992s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/meshes/SquareShelf_Col.obj
+[0.992s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/SquareShelf/model.sdf
+[0.992s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3
+[1.015s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/Box3.sdf
+[1.015s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/model.config
+[1.015s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/meshes
+[1.039s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/meshes/Box3.png
+[1.039s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/meshes/Box3.dae
+[1.040s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/meshes/Black.png
+[1.040s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/meshes/Box3_mod.dae
+[1.041s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/materials
+[1.055s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/materials/textures
+[1.068s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box3/materials/textures/Box3.png
+[1.068s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/walls
+[1.078s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/walls/model.config
+[1.079s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/walls/model.sdf
+[1.081s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink
+[1.110s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/model.config
+[1.112s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/thumbnails
+[1.112s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/thumbnails/3.png
+[1.113s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/thumbnails/5.png
+[1.115s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/thumbnails/4.png
+[1.117s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/thumbnails/2.png
+[1.117s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/thumbnails/1.png
+[1.117s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/meshes
+[1.118s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/meshes/BathroomSink_Metal.png
+[1.118s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/meshes/BathroomSink_Col.obj
+[1.119s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/meshes/BathroomSink.mtl
+[1.119s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/meshes/BathroomSink_Col.mtl
+[1.119s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/meshes/BathroomSink.obj
+[1.120s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/meshes/BathroomSink_Rough.png
+[1.120s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/meshes/BathroomSink_Diffuse.png
+[1.120s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/BathroomSink/model.sdf
+[1.120s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge
+[1.121s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/model.config
+[1.121s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/thumbnails
+[1.121s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/thumbnails/3.png
+[1.121s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/thumbnails/5.png
+[1.122s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/thumbnails/4.png
+[1.122s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/thumbnails/2.png
+[1.122s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/thumbnails/1.png
+[1.123s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/meshes
+[1.123s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/meshes/Fridge.mtl
+[1.123s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/meshes/Fridge_Col.obj
+[1.124s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/meshes/Fridge_Diffuse.png
+[1.124s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/meshes/Fridge_Col.mtl
+[1.125s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/meshes/Fridge.obj
+[1.125s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Fridge/model.sdf
+[1.125s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/table
+[1.126s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/table/model.config
+[1.126s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/table/model.sdf
+[1.126s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/counter
+[1.126s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/counter/model.config
+[1.126s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/counter/model.sdf
+[1.127s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair
+[1.127s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/model.config
+[1.127s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/thumbnails
+[1.127s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/thumbnails/OfficeChair.png
+[1.127s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/meshes
+[1.127s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/meshes/officechair.dae
+[1.128s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/model.sdf
+[1.128s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/materials
+[1.128s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/materials/textures
+[1.128s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/materials/textures/OfficeChair_Normal.png
+[1.128s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/materials/textures/OfficeChair_Albedo.png
+[1.128s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/materials/textures/OfficeChair_Roughness.png
+[1.129s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Office Chair/materials/textures/OfficeChair_Metalness.png
+[1.129s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2
+[1.139s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/model.config
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/meshes
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/meshes/Black.png
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/meshes/Box2_mod.dae
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/meshes/Box2.dae
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/meshes/Box2.png
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/Box2.sdf
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/materials
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/materials/textures
+[1.140s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Box2/materials/textures/Box2.png
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/model.config
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/thumbnails
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/thumbnails/3.png
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/thumbnails/5.png
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/thumbnails/4.png
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/thumbnails/2.png
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/thumbnails/1.png
+[1.141s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/meshes
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/meshes/coffee_maker.mtl
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/meshes/coffee_maker.obj
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/model.sdf
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/materials
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/materials/textures
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Coffee Maker/materials/textures/coffee_maker.png
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model.config
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model-1_4.sdf
+[1.142s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails
+[1.155s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/3.png
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/5.png
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/4.png
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/2.png
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/thumbnails/1.png
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/meshes
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/meshes/coke_can.dae
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model-1_2.sdf
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model.sdf
+[1.156s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/materials
+[1.171s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/materials/textures
+[1.181s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/materials/textures/coke_can.png
+[1.181s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/coke_can/model-1_3.sdf
+[1.181s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/water
+[1.183s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/water/model.config
+[1.183s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/water/model.sdf
+[1.183s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1
+[1.183s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/model.config
+[1.183s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/thumbnails
+[1.183s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/thumbnails/3.png
+[1.184s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/thumbnails/5.png
+[1.184s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/thumbnails/4.png
+[1.184s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/thumbnails/2.png
+[1.184s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/thumbnails/1.png
+[1.184s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes
+[1.184s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes/FoodCourtTable1_Col.mtl
+[1.184s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes/FoodCourtTable1.obj
+[1.185s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes/FoodCourtTable1_Col.obj
+[1.185s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes/FoodCourtTable1.mtl
+[1.185s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes/FoodCourtTable1_Metal.png
+[1.185s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes/FoodCourtTable1_Rough.png
+[1.185s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes/FoodCourtTable1_Diffuse.png
+[1.185s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/meshes/FoodCourtTable1_Normal.png
+[1.186s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/FoodCourtTable1/model.sdf
+[1.186s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/toilet_paper
+[1.186s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/toilet_paper/model.config
+[1.186s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/toilet_paper/thumbnails
+[1.186s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/toilet_paper/thumbnails/1.png
+[1.186s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/toilet_paper/model.sdf
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/model.config
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/thumbnails
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/thumbnails/Bathtub.png
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/meshes
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/meshes/bathtub.dae
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/model.sdf
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/materials
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/materials/textures
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/materials/textures/Bathtub_Normal.png
+[1.187s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/materials/textures/Bathtub_Roughness.jpg
+[1.188s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/materials/textures/Bathtub_Albedo.jpg
+[1.188s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Bathtub/materials/textures/Bathtub_Metalness.jpg
+[1.188s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet
+[1.188s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/model.config
+[1.188s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/thumbnails
+[1.188s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/thumbnails/3.png
+[1.188s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/thumbnails/5.png
+[1.188s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/thumbnails/4.png
+[1.189s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/thumbnails/2.png
+[1.189s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/thumbnails/1.png
+[1.189s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/meshes
+[1.189s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/meshes/toilet.mtl
+[1.189s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/meshes/toilet.obj
+[1.189s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/Toilet/model.sdf
+[1.189s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/apple
+[1.189s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/apple/model.config
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/apple/model.sdf
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/model.config
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/thumbnails
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/thumbnails/3.png
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/thumbnails/5.png
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/thumbnails/4.png
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/thumbnails/2.png
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/thumbnails/1.png
+[1.190s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/meshes
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/meshes/WhiteCabinet.obj
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/meshes/WhiteCabinet.mtl
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/meshes/WhiteCabinet.png
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/WhiteCabinet/model.sdf
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/model.config
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/thumbnails
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/thumbnails/3.png
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/thumbnails/5.png
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/thumbnails/4.png
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/thumbnails/2.png
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/thumbnails/1.png
+[1.191s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/meshes
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/meshes/TVStand.mtl
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/meshes/TVStand_Diffuse.png
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/meshes/TVStand_Col.mtl
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/meshes/TVStand_Col.obj
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/meshes/TVStand.obj
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/TVStand/model.sdf
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/banana
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/banana/model.config
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/models/banana/model.sdf
+[1.192s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/worlds
+[1.222s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/worlds/test_world.sdf
+[1.223s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/worlds/world.sdf
+[1.223s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/scripts
+[1.240s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/scripts/fetch_models.sh
+[1.240s] -- Up-to-date: /Bt/install/tiago_sim/share/ament_index/resource_index/package_run_dependencies/tiago_sim
+[1.240s] -- Up-to-date: /Bt/install/tiago_sim/share/ament_index/resource_index/parent_prefix_path/tiago_sim
+[1.241s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/environment/ament_prefix_path.sh
+[1.241s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/environment/ament_prefix_path.dsv
+[1.241s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/environment/path.sh
+[1.241s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/environment/path.dsv
+[1.241s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/local_setup.bash
+[1.241s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/local_setup.sh
+[1.241s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/local_setup.zsh
+[1.241s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/local_setup.dsv
+[1.241s] -- Installing: /Bt/install/tiago_sim/share/tiago_sim/package.dsv
+[1.270s] -- Up-to-date: /Bt/install/tiago_sim/share/ament_index/resource_index/packages/tiago_sim
+[1.270s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/cmake/tiago_simConfig.cmake
+[1.270s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/cmake/tiago_simConfig-version.cmake
+[1.270s] -- Up-to-date: /Bt/install/tiago_sim/share/tiago_sim/package.xml
+[1.590s] Invoked command in '/Bt/build/tiago_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/tiago_sim

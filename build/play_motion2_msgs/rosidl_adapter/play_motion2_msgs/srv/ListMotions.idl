@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from play_motion2_msgs/srv/ListMotions.srv
+// generated code does not contain a copyright notice
+
+
+module play_motion2_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Show the list of motions availables")
+    struct ListMotions_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct ListMotions_Response {
+      sequence<string> motion_keys;
+    };
+  };
+};

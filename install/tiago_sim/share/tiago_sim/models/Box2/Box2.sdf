@@ -1,0 +1,48 @@
+<?xml version="1.0" ?><sdf version="1.6">
+
+<model name="Box2">
+
+  <static>false</static>
+
+    <link name="Aruco_box">
+
+    <!-- Box -->
+      <visual name="Box">
+        <pose>0.0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14 0.14 0.14</size>
+          </box>
+        </geometry>
+      </visual>
+
+      <collision name="Box_collision">
+        <pose>0.0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14 0.14 0.14</size>
+          </box>
+        </geometry>
+      </collision>
+
+    <!-- Top aruco face -->
+      <visual name="Top">
+        <pose>-0.07 0 0.07 0 1.57 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/Box2.dae</uri>
+
+            <scale>0.28 0.28 0.28</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+  <inertial>
+    <mass value="0.5"/>
+    <inertia ixx="0.001633333" ixy="0.0" ixz="0.0" iyy="0.001633333" iyz="0.0" izz="0.001633333"/>
+  </inertial>
+
+  </link>
+  </model>
+
+</sdf>

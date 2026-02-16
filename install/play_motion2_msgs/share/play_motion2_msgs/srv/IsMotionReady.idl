@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from play_motion2_msgs/srv/IsMotionReady.srv
+// generated code does not contain a copyright notice
+
+
+module play_motion2_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Shows whether the motion be can executed")
+    struct IsMotionReady_Request {
+      string motion_key;
+    };
+    struct IsMotionReady_Response {
+      boolean is_ready;
+    };
+  };
+};

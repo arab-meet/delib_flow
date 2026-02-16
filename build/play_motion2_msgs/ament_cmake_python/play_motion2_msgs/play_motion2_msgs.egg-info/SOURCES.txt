@@ -1,0 +1,16 @@
+setup.py
+play_motion2_msgs/__init__.py
+play_motion2_msgs.egg-info/PKG-INFO
+play_motion2_msgs.egg-info/SOURCES.txt
+play_motion2_msgs.egg-info/dependency_links.txt
+play_motion2_msgs.egg-info/top_level.txt
+play_motion2_msgs/action/__init__.py
+play_motion2_msgs/action/_play_motion2.py
+play_motion2_msgs/msg/__init__.py
+play_motion2_msgs/msg/_motion.py
+play_motion2_msgs/srv/__init__.py
+play_motion2_msgs/srv/_add_motion.py
+play_motion2_msgs/srv/_get_motion_info.py
+play_motion2_msgs/srv/_is_motion_ready.py
+play_motion2_msgs/srv/_list_motions.py
+play_motion2_msgs/srv/_remove_motion.py

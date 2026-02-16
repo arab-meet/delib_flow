@@ -1,0 +1,2 @@
+source;share/pal_urdf_utils/environment/ament_prefix_path.sh
+source;share/pal_urdf_utils/environment/path.sh

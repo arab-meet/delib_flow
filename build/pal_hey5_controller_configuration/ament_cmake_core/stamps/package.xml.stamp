@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pal_hey5_controller_configuration</name>
+  <version>4.1.0</version>
+  <description>The pal_hey5_controller_configuration package</description>
+  <maintainer email="aina.irisarri@pal-robotics.com">Aina Irisarri</maintainer>
+  <author email="aina.irisarri@pal-robotics.com">Aina Irisarri</author>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

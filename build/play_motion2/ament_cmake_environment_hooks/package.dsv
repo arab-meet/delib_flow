@@ -1,0 +1,4 @@
+source;share/play_motion2/local_setup.bash
+source;share/play_motion2/local_setup.dsv
+source;share/play_motion2/local_setup.sh
+source;share/play_motion2/local_setup.zsh

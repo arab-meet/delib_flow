@@ -1,0 +1,39 @@
+[ 50%] Built target tiago_set_target_using_aruco_marker_bt_node
+[ 75%] [32mBuilding CXX object CMakeFiles/tiago_set_target_using_transform_bt_node.dir/src/set_target_using_transform.cpp.o[0m
+In file included from [01m[K/Bt/tiago_behavior_tree/src/set_target_using_transform.cpp:3[m[K:
+[01m[K/Bt/tiago_behavior_tree/include/tiago_behavior_tree/set_target_using_transform.hpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus tiago_behavior_tree::SetTargetUsingTransform::[01;32m[Ktick[m[K()[m[K’:
+[01m[K/Bt/tiago_behavior_tree/include/tiago_behavior_tree/set_target_using_transform.hpp:105:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  105 |     double [01;35m[Kyaw[m[K = tf2::getYaw(target_pose.pose.orientation);
+      |            [01;35m[K^~~[m[K
+[100%] [32m[1mLinking CXX shared library libtiago_set_target_using_transform_bt_node.so[0m
+[100%] Built target tiago_set_target_using_transform_bt_node
+-- Install configuration: ""
+-- Up-to-date: /Bt/install/tiago_behavior_tree/include/tiago_behavior_tree
+-- Up-to-date: /Bt/install/tiago_behavior_tree/include/tiago_behavior_tree/tiago_behavior_tree
+-- Installing: /Bt/install/tiago_behavior_tree/include/tiago_behavior_tree/tiago_behavior_tree/set_target_using_transform.hpp
+-- Up-to-date: /Bt/install/tiago_behavior_tree/include/tiago_behavior_tree/tiago_behavior_tree/set_target_using_aruco_marker_bt_node.hpp
+-- Up-to-date: /Bt/install/tiago_behavior_tree/lib/libtiago_set_target_using_aruco_marker_bt_node.so
+-- Installing: /Bt/install/tiago_behavior_tree/lib/libtiago_set_target_using_transform_bt_node.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/tiago_behavior_tree/lib/libtiago_set_target_using_transform_bt_node.so" to ""
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/bt_plugins/libtiago_set_target_using_aruco_marker_bt_node.so
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/bt_plugins/libtiago_set_target_using_transform_bt_node.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/bt_plugins/libtiago_set_target_using_transform_bt_node.so" to ""
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/ament_index/resource_index/package_run_dependencies/tiago_behavior_tree
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/ament_index/resource_index/parent_prefix_path/tiago_behavior_tree
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/environment/ament_prefix_path.sh
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/environment/ament_prefix_path.dsv
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/environment/path.sh
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/environment/path.dsv
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/local_setup.bash
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/local_setup.sh
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/local_setup.zsh
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/local_setup.dsv
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/package.dsv
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/ament_index/resource_index/packages/tiago_behavior_tree
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/export_tiago_behavior_treeExport.cmake
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/export_tiago_behavior_treeExport-noconfig.cmake
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/tiago_behavior_treeConfig.cmake
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/tiago_behavior_treeConfig-version.cmake
+-- Up-to-date: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/package.xml

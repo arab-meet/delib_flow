@@ -1,0 +1,66 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "play_motion2_msgs/action/PlayMotion2_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "play_motion2_msgs/action/PlayMotion2_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "play_motion2_msgs/action/PlayMotion2_Result",
+        "fields": [
+          {
+            "name": "success",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "error",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "play_motion2_msgs/action/PlayMotion2_GetResult_Response",
+      "hash_string": "RIHS01_343e532f60dbbb3e0eb4bf25ff71cef32f5596092494cb7862a5d5c8d67e9442"
+    },
+    {
+      "type_name": "play_motion2_msgs/action/PlayMotion2_Result",
+      "hash_string": "RIHS01_9d60acd365808ea808a5ff94987c0218736df360d203531da0bea9f037f2c6f6"
+    }
+  ]
+}

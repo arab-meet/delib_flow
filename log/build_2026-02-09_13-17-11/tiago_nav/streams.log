@@ -1,0 +1,60 @@
+[0.016s] Invoking command in '/Bt/build/tiago_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/tiago_nav -DCMAKE_INSTALL_PREFIX=/Bt/install/tiago_nav
+[0.689s] -- The C compiler identification is GNU 13.3.0
+[0.689s] -- The CXX compiler identification is GNU 13.3.0
+[0.689s] -- Detecting C compiler ABI info
+[0.689s] -- Detecting C compiler ABI info - done
+[0.689s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.690s] -- Detecting C compile features
+[0.690s] -- Detecting C compile features - done
+[0.690s] -- Detecting CXX compiler ABI info
+[0.690s] -- Detecting CXX compiler ABI info - done
+[0.690s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.690s] -- Detecting CXX compile features
+[0.690s] -- Detecting CXX compile features - done
+[0.691s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.949s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.221s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.430s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.430s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.433s] -- Added test 'lint_cmake' to check CMake code style
+[1.435s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.440s] -- Added test 'xmllint' to check XML markup files
+[1.445s] -- Configuring done (1.4s)
+[1.450s] -- Generating done (0.0s)
+[1.453s] -- Build files have been written to: /Bt/build/tiago_nav
+[1.472s] Invoked command in '/Bt/build/tiago_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/tiago_nav -DCMAKE_INSTALL_PREFIX=/Bt/install/tiago_nav
+[1.473s] Invoking command in '/Bt/build/tiago_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/tiago_nav -- -j8 -l8
+[1.564s] Invoked command in '/Bt/build/tiago_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/tiago_nav -- -j8 -l8
+[1.565s] Invoking command in '/Bt/build/tiago_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/tiago_nav
+[1.650s] -- Install configuration: ""
+[1.650s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/launch
+[1.650s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/launch/tiago_nav2.launch.py
+[1.650s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/config
+[1.650s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/config/bt_navigator.yaml
+[1.650s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/config/nova_carter_docking.yaml
+[1.651s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/config/recovery.yaml
+[1.651s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/config/tiago_amcl.yaml
+[1.651s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/config/controller.yaml
+[1.651s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/config/planner_server.yaml
+[1.651s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/config/dock_database.yaml
+[1.651s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/maps
+[1.651s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/maps/map.yaml
+[1.651s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/maps/map.pgm
+[1.718s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/rviz
+[1.718s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/rviz/tiago_nav.rviz
+[1.719s] -- Installing: /Bt/install/tiago_nav/share/ament_index/resource_index/package_run_dependencies/tiago_nav
+[1.719s] -- Installing: /Bt/install/tiago_nav/share/ament_index/resource_index/parent_prefix_path/tiago_nav
+[1.719s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/environment/ament_prefix_path.sh
+[1.719s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/environment/ament_prefix_path.dsv
+[1.720s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/environment/path.sh
+[1.720s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/environment/path.dsv
+[1.720s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/local_setup.bash
+[1.720s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/local_setup.sh
+[1.720s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/local_setup.zsh
+[1.750s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/local_setup.dsv
+[1.751s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/package.dsv
+[1.751s] -- Installing: /Bt/install/tiago_nav/share/ament_index/resource_index/packages/tiago_nav
+[1.751s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/cmake/tiago_navConfig.cmake
+[1.773s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/cmake/tiago_navConfig-version.cmake
+[1.773s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/package.xml
+[1.776s] Invoked command in '/Bt/build/tiago_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/tiago_nav

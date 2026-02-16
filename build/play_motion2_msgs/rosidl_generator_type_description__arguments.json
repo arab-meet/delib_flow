@@ -1,0 +1,19 @@
+{
+  "package_name": "play_motion2_msgs",
+  "output_dir": "/Bt/build/play_motion2_msgs/rosidl_generator_type_description/play_motion2_msgs",
+  "idl_tuples": [
+    "/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:action/PlayMotion2.idl",
+    "/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:msg/Motion.idl",
+    "/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/AddMotion.idl",
+    "/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/GetMotionInfo.idl",
+    "/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/IsMotionReady.idl",
+    "/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/ListMotions.idl",
+    "/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/RemoveMotion.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

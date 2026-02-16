@@ -1,0 +1,8 @@
+source;share/grab2_bt_grabber/hook/cmake_prefix_path.ps1
+source;share/grab2_bt_grabber/hook/cmake_prefix_path.dsv
+source;share/grab2_bt_grabber/hook/cmake_prefix_path.sh
+source;share/grab2_bt_grabber/local_setup.bash
+source;share/grab2_bt_grabber/local_setup.dsv
+source;share/grab2_bt_grabber/local_setup.ps1
+source;share/grab2_bt_grabber/local_setup.sh
+source;share/grab2_bt_grabber/local_setup.zsh

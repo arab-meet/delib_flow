@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from play_motion2_msgs/srv/GetMotionInfo.srv
+// generated code does not contain a copyright notice
+
+#include "play_motion2_msgs/msg/Motion.idl"
+
+module play_motion2_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Get the information of a motion")
+    struct GetMotionInfo_Request {
+      string motion_key;
+    };
+    struct GetMotionInfo_Response {
+      play_motion2_msgs::msg::Motion motion;
+    };
+  };
+};

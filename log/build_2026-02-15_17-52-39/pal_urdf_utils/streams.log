@@ -1,0 +1,24 @@
+[0.712s] Invoking command in '/Bt/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/pal_urdf_utils -- -j8 -l8
+[4.833s] Invoked command in '/Bt/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/pal_urdf_utils -- -j8 -l8
+[4.866s] Invoking command in '/Bt/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/pal_urdf_utils
+[4.892s] -- Install configuration: ""
+[4.892s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf
+[4.946s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/deg_to_rad.urdf.xacro
+[4.946s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/pi.urdf.xacro
+[4.947s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/materials.urdf.xacro
+[4.947s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/package_run_dependencies/pal_urdf_utils
+[4.947s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/parent_prefix_path/pal_urdf_utils
+[4.948s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.sh
+[4.949s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.dsv
+[4.949s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.sh
+[4.950s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.dsv
+[4.950s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.bash
+[4.950s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.sh
+[4.951s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.zsh
+[4.951s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.dsv
+[4.951s] -- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.dsv
+[4.956s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/packages/pal_urdf_utils
+[4.956s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig.cmake
+[4.957s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig-version.cmake
+[4.957s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.xml
+[5.651s] Invoked command in '/Bt/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/pal_urdf_utils

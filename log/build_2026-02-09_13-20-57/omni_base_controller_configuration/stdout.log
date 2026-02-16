@@ -1,0 +1,22 @@
+-- Install configuration: ""
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/imu_sensor_broadcaster.yaml
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/mobile_base_controller.yaml
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/joint_state_broadcaster.yaml
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/launch
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/launch/default_controllers.launch.py
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/package_run_dependencies/omni_base_controller_configuration
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/parent_prefix_path/omni_base_controller_configuration
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/ament_prefix_path.sh
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/ament_prefix_path.dsv
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/path.sh
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/path.dsv
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.bash
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.sh
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.zsh
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.dsv
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.dsv
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/packages/omni_base_controller_configuration
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/cmake/omni_base_controller_configurationConfig.cmake
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/cmake/omni_base_controller_configurationConfig-version.cmake
+-- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.xml

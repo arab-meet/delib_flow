@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="side" default=""/>
+  <arg name="suffix" value="$(eval ('' if side == '' else '_' + side))"/>
+  <node name="gripper$(arg suffix)_controllers_spawner"
+        pkg="controller_manager" type="spawner" output="screen"
+        args="--timeout 120
+              gripper$(arg suffix)_controller" />
+  <include file="$(find pal_gripper_controller_configuration)/launch/current_limit_controllers.launch">
+    <arg name="suffix" value="$(arg suffix)"/>
+  </include>
+  <!-- fake parallel gripper controller to expose only one joint to open and close -->
+  <include file="$(find pal_parallel_gripper_wrapper)/launch/parallel_gripper.launch">
+    <arg name="suffix" value="$(arg suffix)"/>
+  </include>
+</launch>
+

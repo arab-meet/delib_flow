@@ -1,0 +1,15 @@
+/pmb2_laser_sensors/add_analyzer_node:
+  ros__parameters:
+    path: Diagnostics
+    navigation:
+      type: 'diagnostic_aggregator/AnalyzerGroup'
+      path: Navigation
+      analyzers:
+        laser:
+          type: diagnostic_aggregator/GenericAnalyzer
+          path: Laser
+          contains: [
+            'laser: /scan_raw topic status',
+            'laser: Hardware Status',
+            'laser: Laser Scan topic status',
+          ]

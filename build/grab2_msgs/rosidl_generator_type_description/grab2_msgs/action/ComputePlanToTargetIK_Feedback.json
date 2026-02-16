@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "grab2_msgs/action/ComputePlanToTargetIK_Feedback",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "grab2_msgs/action/ComputePlanToTargetIK_Feedback",
+      "hash_string": "RIHS01_b3e21d20fefb1dbc6bbce4af70410a6126864fcf32afff5b7984c28e7d37f88b"
+    }
+  ]
+}

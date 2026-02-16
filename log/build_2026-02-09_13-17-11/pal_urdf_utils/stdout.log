@@ -1,0 +1,41 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (3.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Bt/build/pal_urdf_utils
+-- Install configuration: ""
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/deg_to_rad.urdf.xacro
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/pi.urdf.xacro
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/materials.urdf.xacro
+-- Installing: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/package_run_dependencies/pal_urdf_utils
+-- Installing: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/parent_prefix_path/pal_urdf_utils
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.sh
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.dsv
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.bash
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.sh
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.zsh
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.dsv
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.dsv
+-- Installing: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/packages/pal_urdf_utils
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig.cmake
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig-version.cmake
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.xml

@@ -1,0 +1,522 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep",
+      "fields": [
+        {
+          "name": "goal",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_Goal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_Result"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_Feedback"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "send_goal_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "get_result_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback_message",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_FeedbackMessage"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_Feedback",
+        "fields": [
+          {
+            "name": "cycle",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_FeedbackMessage",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "feedback",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_Feedback"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Response",
+        "fields": [
+          {
+            "name": "status",
+            "type": {
+              "type_id": 2,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "result",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_Result"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_Goal",
+        "fields": [
+          {
+            "name": "msec_timeout",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_Result",
+        "fields": [
+          {
+            "name": "done",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "goal",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "btcpp_ros2_interfaces/action/Sleep_Goal"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Response",
+        "fields": [
+          {
+            "name": "accepted",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "builtin_interfaces/msg/Time",
+        "fields": [
+          {
+            "name": "sec",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "nanosec",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "service_msgs/msg/ServiceEventInfo",
+        "fields": [
+          {
+            "name": "event_type",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "client_gid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sequence_number",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "unique_identifier_msgs/msg/UUID",
+        "fields": [
+          {
+            "name": "uuid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep",
+      "hash_string": "RIHS01_ca568a22908593bff1b06e9635aa505137bb557da9ee8d4bb624221f5648faa5"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_Feedback",
+      "hash_string": "RIHS01_aab54dd86168c8ce880293eecd0f106368cab913191a57347261ec72ff505398"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_FeedbackMessage",
+      "hash_string": "RIHS01_c93e0da21b6d032b9bd07b53fa2409fc26da1c7cbf78128423adee009597f33b"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult",
+      "hash_string": "RIHS01_f4ffc52f8d277d1759237816351b6b215a7ece45798afb46dbde2a0c4264fba6"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Event",
+      "hash_string": "RIHS01_892a1d34bc58bfd7c9871692d889af83a02adc40b8e97de47b0c0a7aa34a6c29"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Request",
+      "hash_string": "RIHS01_bae2f6f187fe9d8da9f6b41377efc97d1a8738140a73cdc693a53b54d5edeced"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_GetResult_Response",
+      "hash_string": "RIHS01_3fe81e42e64021c213dadc8cd32721f8abf040d6dd30b391f978b404ffaa672e"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_Goal",
+      "hash_string": "RIHS01_0f7c7d0a2e56211e9e94175af7837b40d31ac8cdcfcfe8b23e88bccab9aed11c"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_Result",
+      "hash_string": "RIHS01_dbaefa42bfe94027dfc25373b04174a1e55ff3f5fe163e48879194480c397d25"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal",
+      "hash_string": "RIHS01_b274c50d5232df8ebbc0ae2906ebc0c4534fb05bc88442e27c315bdd937e8f6d"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Event",
+      "hash_string": "RIHS01_a3c184fd594e152038e9e68ec8e006aaa4303b88660d5a75971fd5aba71803fc"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Request",
+      "hash_string": "RIHS01_705fe7888c09b2f45e7f61196522e8d6be3cbbaeb4048f4406a12d0c62b70841"
+    },
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_SendGoal_Response",
+      "hash_string": "RIHS01_a6bea6e4b5bd88155c1fcca7dab0a9e363bba97895a6da61bf96c02d8370e2cc"
+    },
+    {
+      "type_name": "builtin_interfaces/msg/Time",
+      "hash_string": "RIHS01_b106235e25a4c5ed35098aa0a61a3ee9c9b18d197f398b0e4206cea9acf9c197"
+    },
+    {
+      "type_name": "service_msgs/msg/ServiceEventInfo",
+      "hash_string": "RIHS01_41bcbbe07a75c9b52bc96bfd5c24d7f0fc0a08c0cb7921b3373c5732345a6f45"
+    },
+    {
+      "type_name": "unique_identifier_msgs/msg/UUID",
+      "hash_string": "RIHS01_1b8e8aca958cbea28fe6ef60bf6c19b683c97a9ef60bb34752067d0f2f7ab437"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+/pmb2_rgbd_sensors/add_analyzer_node:
+  ros__parameters:
+    path: Diagnostics
+    hardware:
+      type: 'diagnostic_aggregator/AnalyzerGroup'
+      path: Hardware
+      analyzers:
+        cameras:
+          type: diagnostic_aggregator/GenericAnalyzer
+          path: Cameras
+          contains: [ '_camera' ]

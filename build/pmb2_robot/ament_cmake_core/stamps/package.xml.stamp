@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pmb2_robot</name>
+  <version>5.0.26</version>
+  <description>PMB2 robot description and launch files</description>
+  <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>
+  <maintainer email="noel.jimenez@pal-robotics.com">Noel Jimenez</maintainer>
+  <license>Apache License 2.0</license>
+  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
+
+  <url type="website">https://github.com/pal-robotics/pmb2_simulation</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>pmb2_description</exec_depend>
+  <exec_depend>pmb2_bringup</exec_depend>
+  <exec_depend>pmb2_controller_configuration</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

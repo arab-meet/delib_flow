@@ -1,0 +1,93 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Found ament_index_cpp: 1.8.1 (/opt/ros/jazzy/share/ament_index_cpp/cmake)
+-- Found grab2_msgs: 0.0.0 (/Bt/install/grab2_msgs/share/grab2_msgs/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found behaviortree_cpp: 4.7.1 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)
+-- Found behaviortree_ros2: 0.3.0 (/Bt/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found grab2_ros_common: 0.0.0 (/Bt/install/grab2_ros_common/share/grab2_ros_common/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Bt/ThirdParty/grab2/grab2_bt_grabber/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (7.5s)
+-- Generating done (0.3s)
+-- Build files have been written to: /Bt/build/grab2_bt_grabber
+[ 25%] [32mBuilding CXX object CMakeFiles/reach_object.dir/src/grabbers/reach_object.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libreach_object.a[0m
+[ 50%] Built target reach_object
+[ 75%] [32mBuilding CXX object CMakeFiles/bt_engine.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable bt_engine[0m
+[100%] Built target bt_engine
+-- Install configuration: ""
+-- Installing: /Bt/install/grab2_bt_grabber/lib/libreach_object.a
+-- Installing: /Bt/install/grab2_bt_grabber/lib/grab2_bt_grabber/bt_engine
+-- Set non-toolchain portion of runtime path of "/Bt/install/grab2_bt_grabber/lib/grab2_bt_grabber/bt_engine" to ""
+-- Installing: /Bt/install/grab2_bt_grabber/include/grab2_bt_grabber
+-- Installing: /Bt/install/grab2_bt_grabber/include/grab2_bt_grabber/grab2_bt_grabber
+-- Installing: /Bt/install/grab2_bt_grabber/include/grab2_bt_grabber/grab2_bt_grabber/grabbers
+-- Installing: /Bt/install/grab2_bt_grabber/include/grab2_bt_grabber/grab2_bt_grabber/grabbers/reach_object.hpp
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/launch
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/launch/reach_object_server.launch.py
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/config
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/config/reach_object.yaml
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/behavior_trees
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/behavior_trees/reach_object.xml
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/environment/library_path.sh
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/environment/library_path.dsv
+-- Installing: /Bt/install/grab2_bt_grabber/share/ament_index/resource_index/package_run_dependencies/grab2_bt_grabber
+-- Installing: /Bt/install/grab2_bt_grabber/share/ament_index/resource_index/parent_prefix_path/grab2_bt_grabber
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/environment/path.sh
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/environment/path.dsv
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/local_setup.bash
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/local_setup.sh
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/local_setup.zsh
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/local_setup.dsv
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/package.dsv
+-- Installing: /Bt/install/grab2_bt_grabber/share/ament_index/resource_index/packages/grab2_bt_grabber
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/cmake/export_grab2_bt_grabberExport.cmake
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/cmake/export_grab2_bt_grabberExport-noconfig.cmake
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/cmake/grab2_bt_grabberConfig.cmake
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/cmake/grab2_bt_grabberConfig-version.cmake
+-- Installing: /Bt/install/grab2_bt_grabber/share/grab2_bt_grabber/package.xml

@@ -1,0 +1,80 @@
+[3.225s] Invoking command in '/Bt/ThirdParty/launch_pal': PYTHONPATH=/Bt/build/launch_pal/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Bt/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_pal build --build-base /Bt/build/launch_pal/build install --record /Bt/build/launch_pal/install.log --single-version-externally-managed install_data
+[3.781s] running egg_info
+[3.781s] creating ../../build/launch_pal/launch_pal.egg-info
+[3.781s] writing ../../build/launch_pal/launch_pal.egg-info/PKG-INFO
+[3.781s] writing dependency_links to ../../build/launch_pal/launch_pal.egg-info/dependency_links.txt
+[3.781s] writing requirements to ../../build/launch_pal/launch_pal.egg-info/requires.txt
+[3.781s] writing top-level names to ../../build/launch_pal/launch_pal.egg-info/top_level.txt
+[3.782s] writing manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+[3.782s] reading manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+[3.782s] adding license file 'LICENSE'
+[3.782s] writing manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+[3.782s] running build
+[3.782s] running build_py
+[3.782s] creating /Bt/build/launch_pal/build
+[3.782s] creating /Bt/build/launch_pal/build/lib
+[3.782s] creating /Bt/build/launch_pal/build/lib/launch_pal
+[3.782s] copying launch_pal/robot_utils.py -> /Bt/build/launch_pal/build/lib/launch_pal
+[3.782s] copying launch_pal/param_utils.py -> /Bt/build/launch_pal/build/lib/launch_pal
+[3.782s] copying launch_pal/arg_utils.py -> /Bt/build/launch_pal/build/lib/launch_pal
+[3.783s] copying launch_pal/__init__.py -> /Bt/build/launch_pal/build/lib/launch_pal
+[3.783s] copying launch_pal/pal_parameters.py -> /Bt/build/launch_pal/build/lib/launch_pal
+[3.783s] copying launch_pal/include_utils.py -> /Bt/build/launch_pal/build/lib/launch_pal
+[3.783s] copying launch_pal/composition_utils.py -> /Bt/build/launch_pal/build/lib/launch_pal
+[3.783s] creating /Bt/build/launch_pal/build/lib/launch_pal/substitutions
+[3.783s] copying launch_pal/substitutions/__init__.py -> /Bt/build/launch_pal/build/lib/launch_pal/substitutions
+[3.783s] copying launch_pal/substitutions/load_file.py -> /Bt/build/launch_pal/build/lib/launch_pal/substitutions
+[3.783s] creating /Bt/build/launch_pal/build/lib/launch_pal/robot_arguments
+[3.783s] copying launch_pal/robot_arguments/common.py -> /Bt/build/launch_pal/build/lib/launch_pal/robot_arguments
+[3.783s] copying launch_pal/robot_arguments/__init__.py -> /Bt/build/launch_pal/build/lib/launch_pal/robot_arguments
+[3.783s] copying launch_pal/robot_arguments/robot.py -> /Bt/build/launch_pal/build/lib/launch_pal/robot_arguments
+[3.783s] creating /Bt/build/launch_pal/build/lib/launch_pal/actions
+[3.783s] copying launch_pal/actions/__init__.py -> /Bt/build/launch_pal/build/lib/launch_pal/actions
+[3.784s] copying launch_pal/actions/check_public_sim.py -> /Bt/build/launch_pal/build/lib/launch_pal/actions
+[3.784s] running install
+[3.784s] running install_lib
+[3.784s] creating /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal
+[3.784s] copying /Bt/build/launch_pal/build/lib/launch_pal/robot_utils.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal
+[3.784s] creating /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/substitutions
+[3.784s] copying /Bt/build/launch_pal/build/lib/launch_pal/substitutions/__init__.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/substitutions
+[3.784s] copying /Bt/build/launch_pal/build/lib/launch_pal/substitutions/load_file.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/substitutions
+[3.784s] copying /Bt/build/launch_pal/build/lib/launch_pal/param_utils.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal
+[3.784s] copying /Bt/build/launch_pal/build/lib/launch_pal/arg_utils.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal
+[3.784s] copying /Bt/build/launch_pal/build/lib/launch_pal/__init__.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal
+[3.784s] copying /Bt/build/launch_pal/build/lib/launch_pal/pal_parameters.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal
+[3.785s] creating /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/robot_arguments
+[3.785s] copying /Bt/build/launch_pal/build/lib/launch_pal/robot_arguments/common.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/robot_arguments
+[3.785s] copying /Bt/build/launch_pal/build/lib/launch_pal/robot_arguments/__init__.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/robot_arguments
+[3.785s] copying /Bt/build/launch_pal/build/lib/launch_pal/robot_arguments/robot.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/robot_arguments
+[3.785s] creating /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/actions
+[3.785s] copying /Bt/build/launch_pal/build/lib/launch_pal/actions/__init__.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/actions
+[3.785s] copying /Bt/build/launch_pal/build/lib/launch_pal/actions/check_public_sim.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/actions
+[3.785s] copying /Bt/build/launch_pal/build/lib/launch_pal/include_utils.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal
+[3.785s] copying /Bt/build/launch_pal/build/lib/launch_pal/composition_utils.py -> /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal
+[3.785s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/robot_utils.py to robot_utils.cpython-312.pyc
+[3.785s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/substitutions/__init__.py to __init__.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/substitutions/load_file.py to load_file.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/param_utils.py to param_utils.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/arg_utils.py to arg_utils.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/__init__.py to __init__.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/pal_parameters.py to pal_parameters.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/robot_arguments/common.py to common.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/robot_arguments/__init__.py to __init__.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/robot_arguments/robot.py to robot.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/actions/__init__.py to __init__.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/actions/check_public_sim.py to check_public_sim.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/include_utils.py to include_utils.cpython-312.pyc
+[3.786s] byte-compiling /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal/composition_utils.py to composition_utils.cpython-312.pyc
+[3.786s] running install_data
+[3.787s] creating /Bt/install/launch_pal/share/ament_index
+[3.787s] creating /Bt/install/launch_pal/share/ament_index/resource_index
+[3.787s] creating /Bt/install/launch_pal/share/ament_index/resource_index/packages
+[3.787s] copying resource/launch_pal -> /Bt/install/launch_pal/share/ament_index/resource_index/packages
+[3.787s] copying package.xml -> /Bt/install/launch_pal/share/launch_pal
+[3.787s] creating /Bt/install/launch_pal/share/launch_pal/config
+[3.787s] copying config/robot_configuration.yaml -> /Bt/install/launch_pal/share/launch_pal/config
+[3.787s] running install_egg_info
+[3.787s] Copying ../../build/launch_pal/launch_pal.egg-info to /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal-0.1.15-py3.12.egg-info
+[3.787s] running install_scripts
+[3.918s] writing list of installed files to '/Bt/build/launch_pal/install.log'
+[4.080s] Invoked command in '/Bt/ThirdParty/launch_pal' returned '0': PYTHONPATH=/Bt/build/launch_pal/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Bt/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_pal build --build-base /Bt/build/launch_pal/build install --record /Bt/build/launch_pal/install.log --single-version-externally-managed install_data

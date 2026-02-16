@@ -1,0 +1,4 @@
+source;share/pal_gripper_controller_configuration/local_setup.bash
+source;share/pal_gripper_controller_configuration/local_setup.dsv
+source;share/pal_gripper_controller_configuration/local_setup.sh
+source;share/pal_gripper_controller_configuration/local_setup.zsh

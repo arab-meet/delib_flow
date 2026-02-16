@@ -1,0 +1,11 @@
+source;share/pmb2_description/hook/cmake_prefix_path.ps1
+source;share/pmb2_description/hook/cmake_prefix_path.dsv
+source;share/pmb2_description/hook/cmake_prefix_path.sh
+source;share/pmb2_description/hook/pythonpath.ps1
+source;share/pmb2_description/hook/pythonpath.dsv
+source;share/pmb2_description/hook/pythonpath.sh
+source;share/pmb2_description/local_setup.bash
+source;share/pmb2_description/local_setup.dsv
+source;share/pmb2_description/local_setup.ps1
+source;share/pmb2_description/local_setup.sh
+source;share/pmb2_description/local_setup.zsh

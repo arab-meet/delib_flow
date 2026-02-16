@@ -1,0 +1,17 @@
+[ 50%] Built target tiago_set_target_using_aruco_marker_bt_node
+[ 75%] [32mBuilding CXX object CMakeFiles/tiago_set_target_using_transform_bt_node.dir/src/set_target_using_transform.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/Bt/tiago_behavior_tree/include/tiago_behavior_tree/set_target_using_transform.hpp:9[m[K,
+                 from [01m[K/Bt/tiago_behavior_tree/src/set_target_using_transform.cpp:3[m[K:
+[01m[K/Bt/tiago_behavior_tree/include/tiago_behavior_tree/set_target_using_transform.hpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus tiago_behavior_tree::SetTargetUsingTransform::[01;32m[Ktick[m[K()[m[K’:
+[01m[K/Bt/tiago_behavior_tree/include/tiago_behavior_tree/set_target_using_transform.hpp:118:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_pose[m[K’ was not declared in this scope
+  118 |   [01;31m[Kobject_pose[m[K.pose.position.x,
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/Bt/tiago_behavior_tree/include/tiago_behavior_tree/set_target_using_transform.hpp:105:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  105 |     double [01;35m[Kyaw[m[K = tf2::getYaw(target_pose.pose.orientation);
+      |            [01;35m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/tiago_set_target_using_transform_bt_node.dir/build.make:76: CMakeFiles/tiago_set_target_using_transform_bt_node.dir/src/set_target_using_transform.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tiago_set_target_using_transform_bt_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

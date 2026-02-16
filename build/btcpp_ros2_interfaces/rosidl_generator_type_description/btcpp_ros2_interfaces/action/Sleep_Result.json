@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_Result",
+      "fields": [
+        {
+          "name": "done",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "btcpp_ros2_interfaces/action/Sleep_Result",
+      "hash_string": "RIHS01_dbaefa42bfe94027dfc25373b04174a1e55ff3f5fe163e48879194480c397d25"
+    }
+  ]
+}

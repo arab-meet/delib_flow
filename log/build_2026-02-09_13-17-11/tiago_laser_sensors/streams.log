@@ -1,0 +1,49 @@
+[0.105s] Invoking command in '/Bt/build/tiago_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/tiago_navigation/tiago_laser_sensors -DCMAKE_INSTALL_PREFIX=/Bt/install/tiago_laser_sensors
+[0.237s] -- The C compiler identification is GNU 13.3.0
+[0.394s] -- The CXX compiler identification is GNU 13.3.0
+[0.413s] -- Detecting C compiler ABI info
+[0.648s] -- Detecting C compiler ABI info - done
+[0.665s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.665s] -- Detecting C compile features
+[0.665s] -- Detecting C compile features - done
+[0.674s] -- Detecting CXX compiler ABI info
+[0.785s] -- Detecting CXX compiler ABI info - done
+[0.797s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.798s] -- Detecting CXX compile features
+[0.798s] -- Detecting CXX compile features - done
+[0.807s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[1.118s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.644s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.689s] -- Added test 'lint_cmake' to check CMake code style
+[1.694s] -- Added test 'xmllint' to check XML markup files
+[1.700s] -- Configuring done (1.6s)
+[1.705s] -- Generating done (0.0s)
+[1.707s] -- Build files have been written to: /Bt/build/tiago_laser_sensors
+[1.714s] Invoked command in '/Bt/build/tiago_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/tiago_navigation/tiago_laser_sensors -DCMAKE_INSTALL_PREFIX=/Bt/install/tiago_laser_sensors
+[1.717s] Invoking command in '/Bt/build/tiago_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/tiago_laser_sensors -- -j8 -l8
+[1.776s] Invoked command in '/Bt/build/tiago_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/tiago_laser_sensors -- -j8 -l8
+[1.780s] Invoking command in '/Bt/build/tiago_laser_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/tiago_laser_sensors
+[1.782s] -- Install configuration: ""
+[1.783s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params
+[1.783s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/omni_base_laser_pipeline_sim.yaml
+[1.786s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/pmb2_laser_pipeline_sim.yaml
+[1.786s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/omni_base_laser_pipeline.yaml
+[1.786s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/pmb2_laser_pipeline.yaml
+[1.786s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/pmb2_laser_pipeline_w_composition.yaml
+[1.786s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/params/omni_base_laser_pipeline_w_composition.yaml
+[1.787s] -- Installing: /Bt/install/tiago_laser_sensors/share/ament_index/resource_index/package_run_dependencies/tiago_laser_sensors
+[1.787s] -- Installing: /Bt/install/tiago_laser_sensors/share/ament_index/resource_index/parent_prefix_path/tiago_laser_sensors
+[1.787s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/ament_prefix_path.sh
+[1.787s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/ament_prefix_path.dsv
+[1.788s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/path.sh
+[1.789s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/path.dsv
+[1.789s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.bash
+[1.789s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.sh
+[1.790s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.zsh
+[1.790s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.dsv
+[1.790s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/package.dsv
+[1.790s] -- Installing: /Bt/install/tiago_laser_sensors/share/ament_index/resource_index/packages/tiago_laser_sensors
+[1.790s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig.cmake
+[1.790s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig-version.cmake
+[1.791s] -- Installing: /Bt/install/tiago_laser_sensors/share/tiago_laser_sensors/package.xml
+[1.830s] Invoked command in '/Bt/build/tiago_laser_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/tiago_laser_sensors

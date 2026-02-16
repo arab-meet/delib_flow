@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "play_motion2_msgs__py",
+		"source" : "/Bt/build/play_motion2_msgs/play_motion2_msgs__py"
+	}
+}

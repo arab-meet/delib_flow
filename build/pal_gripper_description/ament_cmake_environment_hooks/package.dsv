@@ -1,0 +1,4 @@
+source;share/pal_gripper_description/local_setup.bash
+source;share/pal_gripper_description/local_setup.dsv
+source;share/pal_gripper_description/local_setup.sh
+source;share/pal_gripper_description/local_setup.zsh

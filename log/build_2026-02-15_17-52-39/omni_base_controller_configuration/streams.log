@@ -1,0 +1,26 @@
+[0.665s] Invoking command in '/Bt/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/omni_base_controller_configuration -- -j8 -l8
+[4.441s] Invoked command in '/Bt/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/omni_base_controller_configuration -- -j8 -l8
+[4.496s] Invoking command in '/Bt/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/omni_base_controller_configuration
+[4.610s] -- Install configuration: ""
+[4.656s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config
+[4.675s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/imu_sensor_broadcaster.yaml
+[4.675s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/mobile_base_controller.yaml
+[4.675s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/joint_state_broadcaster.yaml
+[4.676s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/launch
+[4.679s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/launch/default_controllers.launch.py
+[4.680s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/package_run_dependencies/omni_base_controller_configuration
+[4.680s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/parent_prefix_path/omni_base_controller_configuration
+[4.680s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/ament_prefix_path.sh
+[4.681s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/ament_prefix_path.dsv
+[4.681s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/path.sh
+[4.681s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/path.dsv
+[4.682s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.bash
+[4.682s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.sh
+[4.682s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.zsh
+[4.683s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.dsv
+[4.683s] -- Installing: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.dsv
+[4.686s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/ament_index/resource_index/packages/omni_base_controller_configuration
+[4.687s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/cmake/omni_base_controller_configurationConfig.cmake
+[4.687s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/cmake/omni_base_controller_configurationConfig-version.cmake
+[4.687s] -- Up-to-date: /Bt/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.xml
+[4.851s] Invoked command in '/Bt/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/omni_base_controller_configuration

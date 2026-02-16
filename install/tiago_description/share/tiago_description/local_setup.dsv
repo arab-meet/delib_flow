@@ -1,0 +1,3 @@
+source;share/tiago_description/environment/ament_prefix_path.sh
+source;share/tiago_description/environment/path.sh
+source;share/tiago_description/environment/pythonpath.sh

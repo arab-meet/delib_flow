@@ -1,0 +1,12 @@
+{
+  "package_name": "play_motion2_msgs",
+  "non_idl_tuples": [
+    "/Bt/ThirdParty/play_motion2/play_motion2_msgs:action/PlayMotion2.action",
+    "/Bt/ThirdParty/play_motion2/play_motion2_msgs:msg/Motion.msg",
+    "/Bt/ThirdParty/play_motion2/play_motion2_msgs:srv/AddMotion.srv",
+    "/Bt/ThirdParty/play_motion2/play_motion2_msgs:srv/GetMotionInfo.srv",
+    "/Bt/ThirdParty/play_motion2/play_motion2_msgs:srv/IsMotionReady.srv",
+    "/Bt/ThirdParty/play_motion2/play_motion2_msgs:srv/ListMotions.srv",
+    "/Bt/ThirdParty/play_motion2/play_motion2_msgs:srv/RemoveMotion.srv"
+  ]
+}

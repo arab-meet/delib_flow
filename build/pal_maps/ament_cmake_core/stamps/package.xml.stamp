@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pal_maps</name>
+  <version>0.5.0</version>
+  <description>Public Maps used for the Navigation of PAL Robotics robots.</description>
+  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
+  <license>Apache License 2.0</license>
+  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
+
+  <url type="website">https://github.com/pal-robotics</url>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

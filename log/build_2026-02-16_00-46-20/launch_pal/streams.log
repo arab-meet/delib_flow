@@ -1,0 +1,20 @@
+[1.684s] Invoking command in '/Bt/ThirdParty/launch_pal': PYTHONPATH=/Bt/build/launch_pal/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Bt/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_pal build --build-base /Bt/build/launch_pal/build install --record /Bt/build/launch_pal/install.log --single-version-externally-managed install_data
+[2.105s] running egg_info
+[2.146s] writing ../../build/launch_pal/launch_pal.egg-info/PKG-INFO
+[2.146s] writing dependency_links to ../../build/launch_pal/launch_pal.egg-info/dependency_links.txt
+[2.146s] writing requirements to ../../build/launch_pal/launch_pal.egg-info/requires.txt
+[2.146s] writing top-level names to ../../build/launch_pal/launch_pal.egg-info/top_level.txt
+[2.228s] reading manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+[2.229s] adding license file 'LICENSE'
+[2.231s] writing manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+[2.231s] running build
+[2.233s] running build_py
+[2.234s] running install
+[2.245s] running install_lib
+[2.292s] running install_data
+[2.293s] running install_egg_info
+[2.341s] removing '/Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal-0.1.15-py3.12.egg-info' (and everything under it)
+[2.341s] Copying ../../build/launch_pal/launch_pal.egg-info to /Bt/install/launch_pal/lib/python3.12/site-packages/launch_pal-0.1.15-py3.12.egg-info
+[2.343s] running install_scripts
+[2.660s] writing list of installed files to '/Bt/build/launch_pal/install.log'
+[2.756s] Invoked command in '/Bt/ThirdParty/launch_pal' returned '0': PYTHONPATH=/Bt/build/launch_pal/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Bt/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_pal build --build-base /Bt/build/launch_pal/build install --record /Bt/build/launch_pal/install.log --single-version-externally-managed install_data

@@ -1,0 +1,178 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_lifecycle: 28.1.12 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Found Threads: TRUE  
+[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/play_motion2` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /Bt/ThirdParty/play_motion2/play_motion2/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (6.9s)
+-- Generating done (0.9s)
+-- Build files have been written to: /Bt/build/play_motion2
+[  3%] [32mBuilding CXX object CMakeFiles/play_motion2.dir/src/play_motion2/motion_loader.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/play_motion2.dir/src/play_motion2/play_motion2.cpp.o[0m
+In file included from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:25[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2/play_motion2.cpp:18[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | a message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+
+[ 11%] [32mBuilding CXX object CMakeFiles/play_motion2.dir/src/play_motion2/motion_planner.cpp.o[0m
+In file included from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:25[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2/motion_planner.cpp:18[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | a message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+
+[01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2/motion_planner.cpp:[m[K In constructor ‘[01m[Kplay_motion2::MotionPlanner::[01;32m[KMotionPlanner[m[K(rclcpp_lifecycle::LifecycleNode::SharedPtr)[m[K’:
+[01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2/motion_planner.cpp:78:67:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktypename rclcpp::Client<ServiceT>::SharedPtr rclcpp_lifecycle::LifecycleNode::[01;32m[Kcreate_client[m[K(const std::string&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr) [35m[K[with ServiceT = controller_manager_msgs::srv::ListControllers; typename rclcpp::Client<ServiceT>::SharedPtr = std::shared_ptr<rclcpp::Client<controller_manager_msgs::srv::ListControllers> >; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::CallbackGroup::SharedPtr = std::shared_ptr<rclcpp::CallbackGroup>][m[K[m[K’ is deprecated: use rclcpp::QoS instead of rmw_qos_profile_t [[01;35m[K-Wdeprecated-declarations[m[K]
+   78 |   list_controllers_client_ = [01;35m[Knode_->create_client<ListControllers>([m[K
+      |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   79 | [01;35m[K    "/controller_manager/list_controllers", rmw_qos_profile_default, motion_planner_cb_group_)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp:1126[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:29[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node_impl.hpp:125:1:[m[K [01;36m[Knote: [m[Kdeclared here
+  125 | [01;36m[KLifecycleNode[m[K::create_client(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[ 15%] [32m[1mLinking CXX shared library libplay_motion2.so[0m
+[ 15%] Built target play_motion2
+[ 19%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 23%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 23%] Built target gtest
+[ 26%] [32mBuilding CXX object CMakeFiles/client.dir/src/play_motion2/client.cpp.o[0m
+[ 30%] [32m[1mLinking CXX static library libclient.a[0m
+[ 30%] Built target client
+[ 42%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/play_motion2_node.dir/src/play_motion2_main.cpp.o[0m
+[ 42%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /Bt/build/play_motion2/include/play_motion2/passthrough_controller_parameters.hpp /Bt/ThirdParty/play_motion2/play_motion2/test/controllers/src/passthrough_controller_parameters.yaml `[0m
+[ 46%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 46%] Built target gtest_main
+[ 50%] [32mBuilding CXX object CMakeFiles/run_motion.dir/src/run_motion.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/rrbot_system.dir/test/rrbot/rrbot_system.cpp.o[0m
+[ 57%] [34m[1mCreating deprecated header file /Bt/build/play_motion2/include/passthrough_controller_parameters.hpp[0m
+[ 57%] Built target passthrough_controller_parameters
+In file included from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:25[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/play_motion2.hpp:24[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/src/play_motion2_main.cpp:16[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                             [01;36m[K^[m[K
+[ 61%] [32m[1mLinking CXX executable run_motion[0m
+[ 61%] Built target run_motion
+[ 65%] [32m[1mLinking CXX shared library librrbot_system.so[0m
+[ 65%] Built target rrbot_system
+[ 69%] [32mBuilding CXX object CMakeFiles/passthrough_controller.dir/test/controllers/src/passthrough_controller.cpp.o[0m
+[ 73%] [32m[1mLinking CXX executable play_motion2_node[0m
+[ 73%] Built target play_motion2_node
+[ 76%] [32mBuilding CXX object CMakeFiles/play_motion2_test.dir/test/play_motion2_test.cpp.o[0m
+In file included from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/motion_planner.hpp:25[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/include/play_motion2/play_motion2.hpp:24[m[K,
+                 from [01m[K/Bt/ThirdParty/play_motion2/play_motion2/test/play_motion2_test.cpp:22[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                             [01;36m[K^[m[K
+[ 80%] [32m[1mLinking CXX shared library libpassthrough_controller.so[0m
+[ 80%] Built target passthrough_controller
+[ 84%] [32mBuilding CXX object CMakeFiles/play_motion2_node_test.dir/test/play_motion2_node_test.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/motion_loader_test.dir/test/motion_loader_test.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable play_motion2_test[0m
+[ 92%] Built target play_motion2_test
+[ 96%] [32m[1mLinking CXX executable motion_loader_test[0m
+[ 96%] Built target motion_loader_test
+[100%] [32m[1mLinking CXX executable play_motion2_node_test[0m
+[100%] Built target play_motion2_node_test
+-- Install configuration: ""
+-- Installing: /Bt/install/play_motion2/share/play_motion2/test/rrbot/rrbot_system.xml
+-- Installing: /Bt/install/play_motion2/include/play_motion2
+-- Installing: /Bt/install/play_motion2/include/play_motion2/passthrough_controller_parameters.hpp
+-- Installing: /Bt/install/play_motion2/share/play_motion2/test/controllers/passthrough_controller.xml
+-- Installing: /Bt/install/play_motion2/lib/libpassthrough_controller.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2/lib/libpassthrough_controller.so" to ""
+-- Installing: /Bt/install/play_motion2/lib/play_motion2/play_motion2_node_test
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2/lib/play_motion2/play_motion2_node_test" to ""
+-- Up-to-date: /Bt/install/play_motion2/include
+-- Up-to-date: /Bt/install/play_motion2/include/play_motion2
+-- Installing: /Bt/install/play_motion2/include/play_motion2/motion_loader.hpp
+-- Installing: /Bt/install/play_motion2/include/play_motion2/types.hpp
+-- Installing: /Bt/install/play_motion2/include/play_motion2/motion_planner.hpp
+-- Installing: /Bt/install/play_motion2/include/play_motion2/play_motion2.hpp
+-- Installing: /Bt/install/play_motion2/include/play_motion2/client.hpp
+-- Installing: /Bt/install/play_motion2/share/play_motion2/environment/library_path.sh
+-- Installing: /Bt/install/play_motion2/share/play_motion2/environment/library_path.dsv
+-- Installing: /Bt/install/play_motion2/lib/libplay_motion2.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2/lib/libplay_motion2.so" to ""
+-- Installing: /Bt/install/play_motion2/lib/libclient.a
+-- Installing: /Bt/install/play_motion2/lib/librrbot_system.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2/lib/librrbot_system.so" to ""
+-- Installing: /Bt/install/play_motion2/lib/play_motion2/play_motion2_node
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2/lib/play_motion2/play_motion2_node" to ""
+-- Installing: /Bt/install/play_motion2/lib/play_motion2/run_motion
+-- Set non-toolchain portion of runtime path of "/Bt/install/play_motion2/lib/play_motion2/run_motion" to ""
+-- Installing: /Bt/install/play_motion2/share/play_motion2/config
+-- Installing: /Bt/install/play_motion2/share/play_motion2/config/motion_planner_config.yaml
+-- Installing: /Bt/install/play_motion2/share/play_motion2/launch
+-- Installing: /Bt/install/play_motion2/share/play_motion2/launch/play_motion2.launch.py
+-- Installing: /Bt/install/play_motion2/share/ament_index/resource_index/package_run_dependencies/play_motion2
+-- Installing: /Bt/install/play_motion2/share/ament_index/resource_index/parent_prefix_path/play_motion2
+-- Installing: /Bt/install/play_motion2/share/play_motion2/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/play_motion2/share/play_motion2/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/play_motion2/share/play_motion2/environment/path.sh
+-- Installing: /Bt/install/play_motion2/share/play_motion2/environment/path.dsv
+-- Installing: /Bt/install/play_motion2/share/play_motion2/local_setup.bash
+-- Installing: /Bt/install/play_motion2/share/play_motion2/local_setup.sh
+-- Installing: /Bt/install/play_motion2/share/play_motion2/local_setup.zsh
+-- Installing: /Bt/install/play_motion2/share/play_motion2/local_setup.dsv
+-- Installing: /Bt/install/play_motion2/share/play_motion2/package.dsv
+-- Installing: /Bt/install/play_motion2/share/ament_index/resource_index/packages/play_motion2
+-- Installing: /Bt/install/play_motion2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/play_motion2
+-- Installing: /Bt/install/play_motion2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/play_motion2
+-- Installing: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /Bt/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /Bt/install/play_motion2/share/play_motion2/cmake/play_motion2Config.cmake
+-- Installing: /Bt/install/play_motion2/share/play_motion2/cmake/play_motion2Config-version.cmake
+-- Installing: /Bt/install/play_motion2/share/play_motion2/package.xml

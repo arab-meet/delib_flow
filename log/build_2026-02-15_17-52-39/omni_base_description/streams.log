@@ -1,0 +1,92 @@
+[0.627s] Invoking command in '/Bt/build/omni_base_description': AMENT_PREFIX_PATH=/Bt/install/pal_urdf_utils:/Bt/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/pal_urdf_utils:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy PYTHONPATH=/Bt/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /Bt/build/omni_base_description -- -j8 -l8
+[0.960s] Built target ament_cmake_python_copy_omni_base_description
+[1.267s] running egg_info
+[1.292s] writing omni_base_description.egg-info/PKG-INFO
+[1.292s] writing dependency_links to omni_base_description.egg-info/dependency_links.txt
+[1.293s] writing top-level names to omni_base_description.egg-info/top_level.txt
+[1.366s] reading manifest file 'omni_base_description.egg-info/SOURCES.txt'
+[1.594s] writing manifest file 'omni_base_description.egg-info/SOURCES.txt'
+[1.626s] Built target ament_cmake_python_build_omni_base_description_egg
+[1.637s] Invoked command in '/Bt/build/omni_base_description' returned '0': AMENT_PREFIX_PATH=/Bt/install/pal_urdf_utils:/Bt/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/pal_urdf_utils:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy PYTHONPATH=/Bt/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /Bt/build/omni_base_description -- -j8 -l8
+[1.661s] Invoking command in '/Bt/build/omni_base_description': AMENT_PREFIX_PATH=/Bt/install/pal_urdf_utils:/Bt/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/pal_urdf_utils:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy PYTHONPATH=/Bt/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /Bt/build/omni_base_description
+[1.687s] -- Install configuration: ""
+[1.687s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/pythonpath.sh
+[1.687s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/pythonpath.dsv
+[1.687s] -- Up-to-date: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info
+[1.687s] -- Installing: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info/top_level.txt
+[1.688s] -- Installing: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info/PKG-INFO
+[1.688s] -- Installing: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info/SOURCES.txt
+[1.688s] -- Installing: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info/dependency_links.txt
+[1.688s] -- Up-to-date: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description
+[1.689s] -- Up-to-date: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description/launch_arguments.py
+[1.689s] -- Up-to-date: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description/__init__.py
+[1.838s] Listing '/Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description'...
+[1.843s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/rviz
+[1.896s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/rviz/omni_base.rviz
+[1.896s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/launch
+[1.896s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/launch/robot_state_publisher.launch.py
+[1.896s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/launch/show.launch.py
+[1.897s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes
+[1.897s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on
+[1.904s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on/cameras_add_on.stl
+[1.905s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/base
+[1.915s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/base/base_dock_link.stl
+[1.916s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/base/base_antena_link.stl
+[1.916s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/base/base_link.stl
+[1.916s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/sensors
+[1.916s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/sensors/hokuyo_urg_04lx_ug01.stl
+[1.916s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/sensors/sick_tim551.stl
+[1.916s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/wheels
+[1.916s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_rear_link.stl
+[1.916s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_front_link.stl
+[1.917s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/wheels/wheel_link.stl
+[1.917s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/config
+[1.926s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/config/omni_base_configuration.yaml
+[1.926s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/robots
+[1.941s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/robots/omni_base.urdf.xacro
+[1.941s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/ros2_control
+[1.980s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/ros2_control/ros2_control.urdf.xacro
+[1.980s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[1.980s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf
+[1.987s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on
+[1.987s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/base_omni_base_calib.urdf.xacro
+[1.987s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/cameras_add_on.urdf.xacro
+[1.988s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/objects
+[1.988s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/objects/antenna.urdf.xacro
+[1.988s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/base
+[1.988s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/base/base.urdf.xacro
+[1.988s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/base/base_sensors.urdf.xacro
+[1.988s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/base/base.gazebo.xacro
+[1.989s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors
+[1.989s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim561_laser.gazebo.xacro
+[1.989s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/hokuyo_urg_04lx_ug01_laser.gazebo.xacro
+[1.989s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim551_laser.urdf.xacro
+[1.989s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/hokuyo_urg_04lx_ug01_laser.urdf.xacro
+[1.989s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/imu.urdf.xacro
+[1.990s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/imu.gazebo.xacro
+[1.990s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sensors.ros2_control.xacro
+[1.990s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim571_laser.urdf.xacro
+[1.990s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/courier.urdf.xacro
+[1.990s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim551_laser.gazebo.xacro
+[1.990s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim571_laser.gazebo.xacro
+[1.990s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim561_laser.urdf.xacro
+[1.991s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/wheels
+[1.996s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.ros2_control.xacro
+[1.996s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.urdf.xacro
+[1.996s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.gazebo.xacro
+[1.996s] -- Up-to-date: /Bt/install/omni_base_description/share/ament_index/resource_index/package_run_dependencies/omni_base_description
+[1.996s] -- Up-to-date: /Bt/install/omni_base_description/share/ament_index/resource_index/parent_prefix_path/omni_base_description
+[1.997s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.sh
+[1.997s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.dsv
+[1.997s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/path.sh
+[1.997s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/path.dsv
+[1.997s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/local_setup.bash
+[1.997s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/local_setup.sh
+[1.997s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/local_setup.zsh
+[1.997s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/local_setup.dsv
+[1.997s] -- Installing: /Bt/install/omni_base_description/share/omni_base_description/package.dsv
+[2.000s] -- Up-to-date: /Bt/install/omni_base_description/share/ament_index/resource_index/packages/omni_base_description
+[2.001s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig.cmake
+[2.001s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig-version.cmake
+[2.001s] -- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/package.xml
+[2.021s] Invoked command in '/Bt/build/omni_base_description' returned '0': AMENT_PREFIX_PATH=/Bt/install/pal_urdf_utils:/Bt/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/pal_urdf_utils:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy PYTHONPATH=/Bt/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /Bt/build/omni_base_description

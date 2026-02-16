@@ -1,0 +1,11 @@
+/pmb2_2dnav/add_analyzer_node:
+  ros__parameters:
+    path: Diagnostics
+    navigation:
+      type: 'diagnostic_aggregator/AnalyzerGroup'
+      path: Navigation
+      analyzers:
+        nav2:
+          type: diagnostic_aggregator/GenericAnalyzer
+          path: Nav2
+          contains: [ "Nav2 Health"]

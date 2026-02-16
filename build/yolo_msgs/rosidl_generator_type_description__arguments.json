@@ -1,0 +1,25 @@
+{
+  "package_name": "yolo_msgs",
+  "output_dir": "/Bt/build/yolo_msgs/rosidl_generator_type_description/yolo_msgs",
+  "idl_tuples": [
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Point2D.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Vector2.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Pose2D.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/BoundingBox2D.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/BoundingBox3D.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Mask.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/KeyPoint2D.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/KeyPoint2DArray.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/KeyPoint3D.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/KeyPoint3DArray.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/Detection.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:msg/DetectionArray.idl",
+    "/Bt/build/yolo_msgs/rosidl_adapter/yolo_msgs:srv/SetClasses.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

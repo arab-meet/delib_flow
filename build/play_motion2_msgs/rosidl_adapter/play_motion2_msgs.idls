@@ -1,0 +1,7 @@
+/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:action/PlayMotion2.idl
+/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:msg/Motion.idl
+/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/AddMotion.idl
+/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/GetMotionInfo.idl
+/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/IsMotionReady.idl
+/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/ListMotions.idl
+/Bt/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/RemoveMotion.idl

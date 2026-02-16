@@ -1,0 +1,34 @@
+[0.117s] Invoking command in '/Bt/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/pal_gripper_controller_configuration -- -j8 -l8
+[4.799s] Invoked command in '/Bt/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/pal_gripper_controller_configuration -- -j8 -l8
+[4.809s] Invoking command in '/Bt/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/pal_gripper_controller_configuration
+[4.846s] -- Install configuration: ""
+[4.846s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config
+[4.869s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/gripper_controller.yaml
+[4.869s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers_left.yaml
+[4.869s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/gazebo_controller_manager_cfg.yaml
+[4.870s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers_right.yaml
+[4.870s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/joint_trajectory_controllers.yaml
+[4.870s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/joint_state_broadcaster.yaml
+[4.871s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/pids.yaml
+[4.871s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers.yaml
+[4.871s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch
+[4.875s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/pal_gripper_controller.launch.py
+[4.876s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/joint_state_broadcaster.launch.py
+[4.876s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/gripper_controller.launch
+[4.877s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/current_limit_controllers.launch
+[4.877s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/ament_index/resource_index/package_run_dependencies/pal_gripper_controller_configuration
+[4.877s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/ament_index/resource_index/parent_prefix_path/pal_gripper_controller_configuration
+[4.878s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/ament_prefix_path.sh
+[4.878s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/ament_prefix_path.dsv
+[4.878s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/path.sh
+[4.879s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/path.dsv
+[4.879s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.bash
+[4.879s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.sh
+[4.879s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.zsh
+[4.880s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.dsv
+[4.880s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.dsv
+[4.885s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/ament_index/resource_index/packages/pal_gripper_controller_configuration
+[4.886s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/cmake/pal_gripper_controller_configurationConfig.cmake
+[4.887s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/cmake/pal_gripper_controller_configurationConfig-version.cmake
+[4.887s] -- Up-to-date: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.xml
+[5.680s] Invoked command in '/Bt/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/pal_gripper_controller_configuration

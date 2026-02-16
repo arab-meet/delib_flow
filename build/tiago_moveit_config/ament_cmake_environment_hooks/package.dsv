@@ -1,0 +1,4 @@
+source;share/tiago_moveit_config/local_setup.bash
+source;share/tiago_moveit_config/local_setup.dsv
+source;share/tiago_moveit_config/local_setup.sh
+source;share/tiago_moveit_config/local_setup.zsh

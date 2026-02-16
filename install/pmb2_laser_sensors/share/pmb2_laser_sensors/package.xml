@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pmb2_laser_sensors</name>
+  <version>4.20.0</version>
+  <description>Launch files and scripts needed to bring up the ROS nodes of a PMB2 robot.</description>
+  <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>
+  <license>Apache License 2.0</license>
+  <author email="noel.jimenez@pal-robotics.com">Noel Jimenez</author>
+  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
+
+  <url type="website">https://github.com/pal-robotics/pmb2_simulation</url>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_configuration_cmake</build_depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>diagnostic_aggregator</exec_depend>
+
+  <exec_depend condition="$PAL_DISTRO >= alum">dlo_ros</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">ira_laser_tools</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">nav2_lifecycle_manager</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_laser_filters</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">rclcpp_components</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">sick_laser_cfg</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">hokuyo_laser_cfg</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">sick_tim</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">urg_node</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

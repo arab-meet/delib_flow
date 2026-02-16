@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from yolo_msgs/srv/SetClasses.srv
+// generated code does not contain a copyright notice
+
+
+module yolo_msgs {
+  module srv {
+    struct SetClasses_Request {
+      sequence<string> classes;
+    };
+    struct SetClasses_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

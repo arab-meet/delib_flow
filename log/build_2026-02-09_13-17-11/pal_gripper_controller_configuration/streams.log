@@ -1,0 +1,60 @@
+[0.254s] Invoking command in '/Bt/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/pal_gripper/pal_gripper_controller_configuration -DCMAKE_INSTALL_PREFIX=/Bt/install/pal_gripper_controller_configuration
+[0.411s] -- The C compiler identification is GNU 13.3.0
+[0.519s] -- The CXX compiler identification is GNU 13.3.0
+[0.543s] -- Detecting C compiler ABI info
+[0.686s] -- Detecting C compiler ABI info - done
+[0.711s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.711s] -- Detecting C compile features
+[0.712s] -- Detecting C compile features - done
+[0.723s] -- Detecting CXX compiler ABI info
+[0.855s] -- Detecting CXX compiler ABI info - done
+[0.867s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.868s] -- Detecting CXX compile features
+[0.868s] -- Detecting CXX compile features - done
+[1.921s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[2.640s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.301s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.648s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.685s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.685s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.688s] -- Added test 'lint_cmake' to check CMake code style
+[3.691s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.730s] -- Added test 'xmllint' to check XML markup files
+[3.731s] -- Configuring done (3.4s)
+[3.735s] -- Generating done (0.0s)
+[3.737s] -- Build files have been written to: /Bt/build/pal_gripper_controller_configuration
+[3.746s] Invoked command in '/Bt/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake /Bt/ThirdParty/pal_gripper/pal_gripper_controller_configuration -DCMAKE_INSTALL_PREFIX=/Bt/install/pal_gripper_controller_configuration
+[3.753s] Invoking command in '/Bt/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/pal_gripper_controller_configuration -- -j8 -l8
+[3.786s] Invoked command in '/Bt/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/pal_gripper_controller_configuration -- -j8 -l8
+[3.800s] Invoking command in '/Bt/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/pal_gripper_controller_configuration
+[3.809s] -- Install configuration: ""
+[3.809s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config
+[3.809s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/gripper_controller.yaml
+[3.854s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers_left.yaml
+[3.858s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/gazebo_controller_manager_cfg.yaml
+[3.858s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers_right.yaml
+[3.858s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/joint_trajectory_controllers.yaml
+[3.863s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/joint_state_broadcaster.yaml
+[3.868s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/pids.yaml
+[3.869s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers.yaml
+[3.885s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch
+[3.885s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/pal_gripper_controller.launch.py
+[3.886s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/joint_state_broadcaster.launch.py
+[3.886s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/gripper_controller.launch
+[3.886s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/current_limit_controllers.launch
+[3.886s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/ament_index/resource_index/package_run_dependencies/pal_gripper_controller_configuration
+[3.887s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/ament_index/resource_index/parent_prefix_path/pal_gripper_controller_configuration
+[3.887s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/ament_prefix_path.sh
+[3.887s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/ament_prefix_path.dsv
+[3.887s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/path.sh
+[3.887s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/path.dsv
+[3.888s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.bash
+[3.888s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.sh
+[3.888s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.zsh
+[3.888s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.dsv
+[3.888s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.dsv
+[3.888s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/ament_index/resource_index/packages/pal_gripper_controller_configuration
+[3.889s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/cmake/pal_gripper_controller_configurationConfig.cmake
+[3.889s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/cmake/pal_gripper_controller_configurationConfig-version.cmake
+[3.889s] -- Installing: /Bt/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.xml
+[3.892s] Invoked command in '/Bt/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/pal_gripper_controller_configuration

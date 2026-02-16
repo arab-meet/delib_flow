@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="tiago" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/tiago_omni_no-ee.srdf.xacro" />
+  <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/custom.srdf.xacro" />
+    <disable_collisions link1="arm_4_link" link2="base_antenna_right_link" reason="Never"/>
+</robot>

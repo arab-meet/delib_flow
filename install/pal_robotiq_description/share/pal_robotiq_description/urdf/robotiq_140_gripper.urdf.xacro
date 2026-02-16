@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find pal_robotiq_description)/urdf/robotiq.transmission.xacro" />
+   <xacro:include filename="$(find pal_robotiq_description)/urdf/grasping_frames.xacro" />
+  <xacro:property name="finger_joint_damping" value="0.0025"/>
+  <xacro:property name="finger_joint_friction" value="0.0"/>
+
+  <!-- Add a grasp hack that attach the object when grasped by the gripper to prevent it from falling -->
+  <xacro:macro name="gazebo_gripper_grasp" params="name name_prefix_left name_prefix_right parent_joint">
+    <gazebo>
+      <gripper name="${name}">
+        <grasp_check>
+          <attach_steps>3</attach_steps>
+          <detach_steps>1</detach_steps>    <!-- should not change otherwise the object will be attached to the gripper too much time -->
+          <min_contact_count>3</min_contact_count>
+        </grasp_check>
+        <gripper_link>${name_prefix_left}</gripper_link>
+        <gripper_link>${name_prefix_right}</gripper_link>
+        <palm_link>${parent_joint}</palm_link>
+      </gripper>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:macro name="outer_knuckle" params="prefix fingerprefix stroke">
+    <link name="${prefix}${fingerprefix}_outer_knuckle">
+      <inertial>
+        <origin xyz="-0.000200000000003065 0.0199435877845359 0.0292245259211331" rpy="0 0 0" />
+        <mass value="0.00853198276973456" />
+        <inertia
+            ixx="2.89328108496468E-06" ixy="-1.57935047237397E-19" ixz="-1.93980378593255E-19"
+            iyy="1.86719750325683E-06" iyz="-1.21858577871576E-06" izz="1.21905238907251E-06" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/visual/robotiq_${stroke}_outer_knuckle.stl" />
+        </geometry>
+        <material name="">
+          <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/collision/robotiq_${stroke}_outer_knuckle.stl" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="outer_finger" params="prefix fingerprefix stroke">
+    <link name="${prefix}${fingerprefix}_outer_finger">
+      <inertial>
+        <origin xyz="0.00030115855001899 0.0373907951953854 -0.0208027427000385" rpy="0 0 0" />
+        <mass value="0.022614240507152" />
+        <inertia
+            ixx="1.52518312458174E-05" ixy="9.76583423954399E-10" ixz="-5.43838577022588E-10"
+            iyy="6.17694243867776E-06" iyz="6.78636130740228E-06" izz="1.16494917907219E-05" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/visual/robotiq_${stroke}_outer_finger.stl" />
+        </geometry>
+        <material name="">
+          <color rgba="0.1 0.1 0.1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/collision/robotiq_${stroke}_outer_finger.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <gazebo reference="${prefix}${fingerprefix}_outer_finger">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:macro name="inner_knuckle" params="prefix fingerprefix stroke">
+    <link name="${prefix}${fingerprefix}_inner_knuckle">
+      <inertial>
+        <origin xyz="0.000123011831763771 0.0507850843201817 0.00103968640075166" rpy="0 0 0" />
+        <mass value="0.0271177346495152" />
+        <inertia
+            ixx="2.61910379223783E-05" ixy="-2.43616858946494E-07" ixz="-6.37789906117123E-09"
+            iyy="2.8270243746167E-06" iyz="-5.37200748039765E-07" izz="2.83695868220296E-05" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/visual/robotiq_${stroke}_inner_knuckle.stl" />
+        </geometry>
+        <material name="">
+          <color rgba="0.1 0.1 0.1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/collision/robotiq_${stroke}_inner_knuckle.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <gazebo reference="${prefix}${fingerprefix}_inner_knuckle">
+      <kp>1000000.0</kp>
+      <kd>100.0</kd>
+      <mu1>Inf</mu1>
+      <mu2>Inf</mu2>
+      <fdir1>0 0 0</fdir1>
+      <maxVel>0.0</maxVel>
+      <minDepth>0.01</minDepth>
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:macro name="inner_finger" params="prefix fingerprefix stroke">
+    <link name="${prefix}${fingerprefix}_inner_finger">
+      <inertial>
+        <origin xyz="0.000299999999999317 0.0160078233491243 -0.0136945669206257" rpy="0 0 0" />
+        <mass value="0.0104003125914103" />
+        <inertia
+            ixx="2.71909453810972E-06" ixy="1.35402465472579E-21" ixz="-7.1817349065269E-22"
+            iyy="7.69100314106116E-07" iyz="6.74715432769696E-07" izz="2.30315190420171E-06" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/visual/robotiq_${stroke}_inner_finger.stl" />
+        </geometry>
+        <material name="">
+          <color rgba="0.1 0.1 0.1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/collision/robotiq_${stroke}_inner_finger.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <gazebo reference="${prefix}${fingerprefix}_inner_finger">
+      <collision name="${prefix}${fingerprefix}_inner_finger">
+        <surface>
+          <friction>
+            <torsional>
+              <coefficient>1000.0</coefficient>
+              <use_patch_radius>true</use_patch_radius>
+              <patch_radius>0.1</patch_radius>
+            </torsional>
+          </friction>
+          <contact>
+            <poissons_ratio>1.0</poissons_ratio>
+            <elastic_modulus>Inf</elastic_modulus>
+          </contact>
+        </surface>
+      </collision>
+      <mu1>Inf</mu1>
+      <mu2>Inf</mu2>
+      <maxVel>0.0</maxVel>
+      <kp>Inf</kp>
+      <kd>100.0</kd>
+      <fdir1>1 0 0</fdir1>
+      <maxVel>0.0</maxVel>
+      <minDepth>0.01</minDepth>
+      <maxContacts>10</maxContacts>
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- Finger pad link, the default are the "big pads" with rubber-->
+  <xacro:macro name="inner_finger_pad" params="prefix fingerprefix">
+    <link name="${prefix}${fingerprefix}_inner_finger_pad">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="0.027 0.065 0.0075"/>
+        </geometry>
+        <material name="">
+          <color rgba="0.9 0.9 0.9 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+           <box size="0.03 0.07 0.0075"/>
+        </geometry>
+        <material name="">
+          <color rgba="0.9 0.0 0.0 1" />
+        </material>
+      </collision>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="outer_finger_joint" params="prefix fingerprefix">
+    <joint name="${prefix}${fingerprefix}_outer_finger_joint" type="fixed">
+      <origin xyz="0 0.01821998610742 0.0260018192872234" rpy="0 0 0" />
+      <parent link="${prefix}${fingerprefix}_outer_knuckle" />
+      <child link="${prefix}${fingerprefix}_outer_finger" />
+      <axis xyz="1 0 0" />
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="inner_knuckle_joint" params="prefix fingerprefix reflect">
+    <joint name="${prefix}${fingerprefix}_inner_knuckle_joint" type="revolute">
+      <origin xyz="0 ${reflect * -0.0127} 0.06142" rpy="${pi / 2 + .725} 0 ${(reflect - 1) * pi / 2}" />
+      <parent link="${prefix}base_link" />
+      <child link="${prefix}${fingerprefix}_inner_knuckle" />
+      <axis xyz="1 0 0" />
+      <limit lower="-0.8757" upper="0.8757" velocity="2" effort="0.12" />
+      <mimic joint="${prefix}finger_joint" multiplier="-1" offset="0" />
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="inner_finger_joint" params="prefix fingerprefix">
+    <joint name="${prefix}${fingerprefix}_inner_finger_joint" type="revolute">
+      <origin xyz="0 0.0817554015893473 -0.0282203446692936" rpy="-0.725 0 0" />
+      <parent link="${prefix}${fingerprefix}_outer_finger" />
+      <child link="${prefix}${fingerprefix}_inner_finger" />
+      <axis xyz="1 0 0" />
+      <limit lower="-0.8757" upper="0.8757" velocity="2" effort="0.12" />
+      <mimic joint="${prefix}finger_joint" multiplier="1" offset="0" />
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="inner_finger_pad_joint" params="prefix fingerprefix">
+    <joint name="${prefix}${fingerprefix}_inner_finger_pad_joint" type="fixed">
+      <origin xyz="0 0.0457554015893473 -0.0272203446692936" rpy="0 0 0" />
+      <parent link="${prefix}${fingerprefix}_inner_finger" />
+      <child link="${prefix}${fingerprefix}_inner_finger_pad" />
+      <axis xyz="0 0 1" />
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="base_link" params="prefix">
+    <link name="${prefix}base_link">
+      <inertial>
+        <origin xyz="8.625E-08 -4.6583E-06 0.03145" rpy="0 0 0" />
+        <mass value="0.22652" />
+        <inertia ixx="0.00020005" ixy="-4.2442E-10" ixz="-2.9069E-10" iyy="0.00017832" iyz="-3.4402E-08" izz="0.00013478" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/visual/robotiq_base_link.stl" />
+        </geometry>
+        <material name="">
+          <color rgba="0.1 0.1 0.1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find pal_robotiq_description)/meshes/collision/robotiq_base_link.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <gazebo reference="${prefix}base_link">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:macro name="pal_robotiq_coupling_link" params="prefix">
+    <link name="${prefix}coupler_link">
+      <visual>
+          <origin xyz="0 0 0.0" rpy="3.1416 0 0" />
+          <geometry>
+              <mesh filename="file://$(find pal_robotiq_description)/meshes/visual/pal_robotiq_coupling.stl"/>
+          </geometry>
+          <material name="">
+            <color rgba="0 0 0 1"/>
+          </material>
+      </visual>
+      <collision>
+          <origin xyz="0 0 0.0" rpy="3.1416 0 0" />
+          <geometry>
+              <mesh filename="file://$(find pal_robotiq_description)/meshes/visual/pal_robotiq_coupling.stl"/>
+          </geometry>
+      </collision>
+      <inertial>
+          <mass value="0.2" />
+          <origin xyz="0.0 0.0 -0.01" />
+          <inertia ixx = "0.000001" ixy = "0.000000" ixz = "0.000000"
+                   iyx = "0.000000" iyy = "0.000001" iyz = "0.000000"
+                   izx = "0.000000" izy = "0.000000" izz = "0.000001" />
+      </inertial>
+    </link>
+    <gazebo reference="${prefix}coupler_link">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:macro name="pal_robotiq_coupling_joint" params="prefix parent *origin">
+    <joint name="${prefix}coupler_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${prefix}coupler_link"/>
+      <xacro:insert_block name="origin"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="robotiq_base_joint" params="prefix">
+    <joint name="${prefix}base_joint" type="fixed">
+      <parent link="${prefix}coupler_link"/>
+      <child link="${prefix}base_link"/>
+      <origin xyz="0 0 0.02754" rpy="0 0 0"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="finger_joints" params="prefix fingerprefix reflect">
+    <xacro:outer_finger_joint prefix="${prefix}" fingerprefix="${fingerprefix}"/>
+    <xacro:inner_knuckle_joint prefix="${prefix}" fingerprefix="${fingerprefix}" reflect="${reflect}"/>
+    <xacro:inner_finger_joint prefix="${prefix}" fingerprefix="${fingerprefix}"/>
+    <xacro:inner_finger_pad_joint prefix="${prefix}" fingerprefix="${fingerprefix}"/>
+  </xacro:macro>
+
+  <xacro:macro name="finger_links" params="prefix fingerprefix stroke">
+    <xacro:outer_knuckle prefix="${prefix}" fingerprefix="${fingerprefix}" stroke="${stroke}"/>
+    <xacro:outer_finger prefix="${prefix}" fingerprefix="${fingerprefix}" stroke="${stroke}"/>
+    <xacro:inner_finger prefix="${prefix}" fingerprefix="${fingerprefix}" stroke="${stroke}"/>
+    <xacro:inner_finger_pad prefix="${prefix}" fingerprefix="${fingerprefix}"/>
+    <xacro:inner_knuckle prefix="${prefix}" fingerprefix="${fingerprefix}" stroke="${stroke}"/>
+  </xacro:macro>
+
+  <xacro:macro name="finger_joint" params="prefix">
+    <joint name="${prefix}finger_joint" type="revolute">
+      <origin xyz="0 -0.030601 0.054905" rpy="${pi / 2 + .725} 0 0" />
+      <parent link="${prefix}base_link" />
+      <child link="${prefix}left_outer_knuckle" />
+      <axis xyz="-1 0 0" />
+      <limit lower="0" upper="0.7" velocity="2" effort="0.12" />
+      <dynamics damping="0.03"/>
+    </joint>
+    <gazebo reference="${prefix}finger_joint">
+      <implicitSpringDamper>1</implicitSpringDamper>
+      <provideFeedback>1</provideFeedback>
+    </gazebo>
+    <xacro:finger_joints prefix="${prefix}" fingerprefix="left" reflect="1.0"/>
+  </xacro:macro>
+
+  <xacro:macro name="right_outer_knuckle_joint" params="prefix">
+    <joint name="${prefix}right_outer_knuckle_joint" type="revolute">
+      <origin xyz="0 0.030601 0.054905" rpy="${pi / 2 + .725} 0 ${pi}" />
+      <parent link="${prefix}base_link" />
+      <child link="${prefix}right_outer_knuckle" />
+      <axis xyz="1 0 0" />
+      <limit lower="-0.725" upper="0.725" velocity="2" effort="0.12" />
+    <mimic joint="${prefix}finger_joint" multiplier="-1" offset="0" />
+    </joint>
+    <xacro:finger_joints prefix="${prefix}" fingerprefix="right" reflect="-1.0"/>
+  </xacro:macro>
+
+  <xacro:macro name="robotiq_140_gripper" params="prefix parent *origin">
+    <xacro:base_link prefix="${prefix}"/>
+    
+    <xacro:pal_robotiq_grasping_frames prefix="${prefix}" xyz="0 0 0.14"/>
+
+    <xacro:pal_robotiq_coupling_link prefix="${prefix}"/>
+    <xacro:finger_links prefix="${prefix}" fingerprefix="left" stroke="140"/>
+    <xacro:finger_links prefix="${prefix}" fingerprefix="right" stroke="140"/>
+    <xacro:robotiq_base_joint prefix="${prefix}" />
+    <xacro:pal_robotiq_coupling_joint prefix="${prefix}" parent="${parent}">
+      <xacro:insert_block name="origin" />
+    </xacro:pal_robotiq_coupling_joint>
+    <xacro:finger_joint prefix="${prefix}"/>
+    <xacro:right_outer_knuckle_joint prefix="${prefix}"/>
+    <!--This xacro is used to be able to grasp object in simulmation more robustly, it could cause segfault at grasping time -->
+    <xacro:gazebo_gripper_grasp name="${prefix}grasp" name_prefix_left="${prefix}left_inner_finger" name_prefix_right="${prefix}right_inner_finger" parent_joint="${parent}"/>
+  </xacro:macro>
+</robot>

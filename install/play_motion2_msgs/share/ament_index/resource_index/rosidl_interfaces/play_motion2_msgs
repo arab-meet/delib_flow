@@ -1,0 +1,14 @@
+action/PlayMotion2.action
+action/PlayMotion2.idl
+msg/Motion.idl
+msg/Motion.msg
+srv/AddMotion.idl
+srv/AddMotion.srv
+srv/GetMotionInfo.idl
+srv/GetMotionInfo.srv
+srv/IsMotionReady.idl
+srv/IsMotionReady.srv
+srv/ListMotions.idl
+srv/ListMotions.srv
+srv/RemoveMotion.idl
+srv/RemoveMotion.srv

@@ -1,0 +1,10 @@
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/uninstall.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/tiago_aruco_broadcast_uninstall.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/aruco_broadcast.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/test.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/edit_cache.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/rebuild_cache.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/list_install_components.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/install.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/install/local.dir
+/Bt/build/tiago_aruco_broadcast/CMakeFiles/install/strip.dir

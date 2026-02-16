@@ -1,0 +1,248 @@
+[0.501s] Invoking command in '/Bt/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/btcpp_ros2_interfaces -- -j8 -l8
+[0.667s] [  1%] Built target btcpp_ros2_interfaces__rosidl_generator_type_description
+[0.731s] [  1%] Built target ament_cmake_python_copy_btcpp_ros2_interfaces
+[0.790s] [ 23%] Built target btcpp_ros2_interfaces__rosidl_generator_c
+[1.284s] running egg_info
+[1.343s] writing btcpp_ros2_interfaces.egg-info/PKG-INFO
+[1.343s] writing dependency_links to btcpp_ros2_interfaces.egg-info/dependency_links.txt
+[1.344s] writing top-level names to btcpp_ros2_interfaces.egg-info/top_level.txt
+[1.477s] reading manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'
+[1.478s] writing manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'
+[1.579s] [ 23%] Built target ament_cmake_python_build_btcpp_ros2_interfaces_egg
+[1.671s] [ 32%] Built target btcpp_ros2_interfaces__rosidl_typesupport_c
+[1.748s] [ 42%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_c
+[1.830s] [ 51%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c
+[1.874s] [ 53%] Built target btcpp_ros2_interfaces__cpp
+[1.921s] [ 62%] Built target btcpp_ros2_interfaces__rosidl_typesupport_cpp
+[1.997s] [ 71%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp
+[2.052s] [ 81%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.093s] [ 81%] Built target btcpp_ros2_interfaces
+[2.168s] [ 82%] Built target btcpp_ros2_interfaces__py
+[2.222s] [ 90%] Built target btcpp_ros2_interfaces__rosidl_generator_py
+[2.309s] [ 93%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c
+[2.400s] [ 96%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_c
+[2.492s] [100%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c
+[2.678s] Invoked command in '/Bt/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --build /Bt/build/btcpp_ros2_interfaces -- -j8 -l8
+[2.678s] Invoking command in '/Bt/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/btcpp_ros2_interfaces
+[2.807s] -- Install configuration: ""
+[2.808s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/ament_index/resource_index/rosidl_interfaces/btcpp_ros2_interfaces
+[2.808s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.json
+[2.808s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/srv/GetTrees.json
+[2.808s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.json
+[2.811s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.json
+[2.811s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.811s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.812s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/execute_tree.h
+[2.812s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/sleep.h
+[2.812s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.812s] -- Installing: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.c
+[2.812s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__functions.c
+[2.812s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__functions.c
+[2.812s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__struct.h
+[2.813s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.h
+[2.813s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__struct.h
+[2.813s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.h
+[2.813s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__functions.h
+[2.813s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__description.c
+[2.813s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__description.c
+[2.813s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__functions.h
+[2.813s] -- Installing: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.c
+[2.814s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.814s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.814s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/node_status.h
+[2.814s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.814s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__struct.h
+[2.814s] -- Installing: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.c
+[2.814s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__functions.h
+[2.814s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.h
+[2.814s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__description.c
+[2.815s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__functions.c
+[2.815s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv
+[2.815s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/get_trees.h
+[2.815s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail
+[2.820s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__functions.h
+[2.820s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__functions.c
+[2.820s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__struct.h
+[2.820s] -- Installing: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__type_support.c
+[2.821s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__type_support.h
+[2.821s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__description.c
+[2.821s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/library_path.sh
+[2.821s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/library_path.dsv
+[2.821s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_generator_c.so
+[2.821s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.822s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.822s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.822s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_fastrtps_c.h
+[2.822s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_fastrtps_c.h
+[2.822s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.822s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.822s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_fastrtps_c.h
+[2.823s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.823s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv
+[2.823s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail
+[2.823s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__rosidl_typesupport_fastrtps_c.h
+[2.827s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.827s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.827s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.828s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.828s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_introspection_c.h
+[2.828s] -- Installing: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.c
+[2.828s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_introspection_c.h
+[2.828s] -- Installing: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.c
+[2.828s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.828s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.828s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.829s] -- Installing: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.c
+[2.829s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_introspection_c.h
+[2.829s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv
+[2.829s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail
+[2.829s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__rosidl_typesupport_introspection_c.h
+[2.829s] -- Installing: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__type_support.c
+[2.829s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_introspection_c.so
+[2.829s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_c.so
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/sleep.hpp
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/execute_tree.hpp
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__traits.hpp
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__struct.hpp
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__builder.hpp
+[2.830s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__traits.hpp
+[2.831s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__struct.hpp
+[2.831s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.hpp
+[2.831s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.hpp
+[2.833s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__builder.hpp
+[2.834s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.834s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/node_status.hpp
+[2.834s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.834s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__builder.hpp
+[2.834s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.hpp
+[2.834s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__traits.hpp
+[2.834s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__struct.hpp
+[2.834s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.836s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv
+[2.836s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/get_trees.hpp
+[2.837s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail
+[2.837s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__traits.hpp
+[2.837s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__builder.hpp
+[2.837s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__type_support.hpp
+[2.838s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__struct.hpp
+[2.838s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.838s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.838s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.838s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_fastrtps_cpp.hpp
+[2.838s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/dds_fastrtps
+[2.838s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_fastrtps_cpp.hpp
+[2.838s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.839s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.839s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.839s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/dds_fastrtps
+[2.840s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.841s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv
+[2.841s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail
+[2.841s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__rosidl_typesupport_fastrtps_cpp.hpp
+[2.842s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/dds_fastrtps
+[2.842s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.842s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.842s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.842s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.843s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_introspection_cpp.hpp
+[2.843s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_introspection_cpp.hpp
+[2.843s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.cpp
+[2.843s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.cpp
+[2.843s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.843s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.843s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.cpp
+[2.843s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_introspection_cpp.hpp
+[2.844s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv
+[2.844s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail
+[2.844s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__rosidl_typesupport_introspection_cpp.hpp
+[2.844s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__type_support.cpp
+[2.844s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.844s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_cpp.so
+[2.844s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/pythonpath.sh
+[2.844s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/pythonpath.dsv
+[2.845s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info
+[2.845s] -- Installing: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info/top_level.txt
+[2.845s] -- Installing: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info/PKG-INFO
+[2.848s] -- Installing: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info/SOURCES.txt
+[2.848s] -- Installing: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info/dependency_links.txt
+[2.849s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces
+[2.849s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.849s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_c.c
+[2.849s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.849s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/__init__.py
+[2.849s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c.so
+[2.849s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_c.so
+[2.850s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action
+[2.850s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/__init__.py
+[2.850s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_execute_tree.py
+[2.851s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_sleep_s.c
+[2.852s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_execute_tree_s.c
+[2.852s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_sleep.py
+[2.852s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg
+[2.852s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/_node_status.py
+[2.852s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/__init__.py
+[2.852s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/_node_status_s.c
+[2.852s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/srv
+[2.853s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/srv/_get_trees_s.c
+[2.853s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/srv/__init__.py
+[2.853s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/srv/_get_trees.py
+[2.856s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[2.867s] Listing '/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces'...
+[2.867s] Listing '/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action'...
+[2.867s] Listing '/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg'...
+[2.867s] Listing '/Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/srv'...
+[2.867s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[2.868s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c.so
+[2.883s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_c.so
+[2.884s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_generator_py.so
+[2.884s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.idl
+[2.884s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/srv/GetTrees.idl
+[2.893s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.idl
+[2.893s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.idl
+[2.893s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.msg
+[2.894s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/srv/GetTrees.srv
+[2.894s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.action
+[2.894s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.action
+[2.894s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/ament_index/resource_index/package_run_dependencies/btcpp_ros2_interfaces
+[2.894s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/ament_index/resource_index/parent_prefix_path/btcpp_ros2_interfaces
+[2.894s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/ament_prefix_path.sh
+[2.895s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/ament_prefix_path.dsv
+[2.895s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/path.sh
+[2.895s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/path.dsv
+[2.895s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.bash
+[2.895s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.sh
+[2.895s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.zsh
+[2.895s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.dsv
+[2.896s] -- Installing: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv
+[2.896s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/ament_index/resource_index/packages/btcpp_ros2_interfaces
+[2.896s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_cExport.cmake
+[2.896s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.896s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.896s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.896s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.896s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.897s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_cExport.cmake
+[2.897s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.897s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_cppExport.cmake
+[2.897s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.902s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.902s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.902s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.902s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_cppExport.cmake
+[2.903s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.903s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_pyExport.cmake
+[2.903s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.903s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.903s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.903s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.903s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.904s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.905s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.905s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.905s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfacesConfig.cmake
+[2.905s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfacesConfig-version.cmake
+[2.906s] -- Up-to-date: /Bt/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.xml
+[2.908s] Invoked command in '/Bt/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner /usr/bin/cmake --install /Bt/build/btcpp_ros2_interfaces

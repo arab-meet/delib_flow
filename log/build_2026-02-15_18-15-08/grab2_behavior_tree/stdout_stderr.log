@@ -1,0 +1,69 @@
+[ 11%] Built target grab2_get_grasp_hardcoded_bt_node
+[ 22%] Built target grab2_reach_object_bt_node
+[ 44%] Built target grab2_compute_top_down_grasp_bt_node
+[ 44%] Built target grab2_detect_object_bt_node
+[ 55%] Built target grab2_get_trajectory_from_yaml_bt_node
+[ 66%] Built target grab2_grip_bt_node
+[ 77%] Built target grab2_compute_plan_to_target_ik_bt_node
+[ 88%] Built target grab2_follow_joint_trajectory_bt_node
+[100%] Built target grab2_engine
+-- Install configuration: ""
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_detect_object_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_get_trajectory_from_yaml_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_get_grasp_hardcoded_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_compute_top_down_grasp_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_compute_plan_to_target_ik_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_follow_joint_trajectory_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_grip_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/libgrab2_reach_object_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/lib/grab2_behavior_tree/grab2_engine
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_detect_object_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_get_trajectory_from_yaml_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_get_grasp_hardcoded_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_compute_top_down_grasp_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_compute_plan_to_target_ik_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_follow_joint_trajectory_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_grip_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/bt_plugins/libgrab2_reach_object_bt_node.so
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins_list.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/utils.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/compute_plan_to_target_ik.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/get_trajectory_from_yaml.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/get_grasp_hardcoded.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/detect_object.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/reach_object.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/follow_joint_trajectory.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/compute_top_down_grasp.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/include/grab2_behavior_tree/grab2_behavior_tree/plugins/action/grip.hpp
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/collect_toys.xml
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/collect_cubes.xml
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/stack_cubes.xml
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/bt_groot2.btproj
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/target_ik_demo.xml
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/behavior_trees/lookaround_demo.xml
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/launch
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/launch/bt_demo.launch.py
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/launch/grab2_engine.launch.py
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/config
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/config/panda_joint_trajectories.yaml
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/ament_index/resource_index/package_run_dependencies/grab2_behavior_tree
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/ament_index/resource_index/parent_prefix_path/grab2_behavior_tree
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/environment/ament_prefix_path.sh
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/environment/ament_prefix_path.dsv
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/environment/path.sh
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/environment/path.dsv
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/local_setup.bash
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/local_setup.sh
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/local_setup.zsh
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/local_setup.dsv
+-- Installing: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/package.dsv
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/ament_index/resource_index/packages/grab2_behavior_tree
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/cmake/grab2_behavior_treeConfig.cmake
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/cmake/grab2_behavior_treeConfig-version.cmake
+-- Up-to-date: /Bt/install/grab2_behavior_tree/share/grab2_behavior_tree/package.xml

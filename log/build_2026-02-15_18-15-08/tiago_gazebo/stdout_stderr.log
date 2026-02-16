@@ -1,0 +1,24 @@
+[ 66%] Built target gtest
+[ 66%] Built target gtest_main
+[100%] Built target tuck_arm_test
+-- Install configuration: ""
+-- Up-to-date: /Bt/install/tiago_gazebo/lib/tiago_gazebo/tuck_arm.py
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/test/tuck_arm_test
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/launch
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/launch/tiago_gazebo.launch.py
+-- Installing: /Bt/install/tiago_gazebo/share/tiago_gazebo/launch/robot_spawn.launch.py
+-- Up-to-date: /Bt/install/tiago_gazebo/share/ament_index/resource_index/package_run_dependencies/tiago_gazebo
+-- Up-to-date: /Bt/install/tiago_gazebo/share/ament_index/resource_index/parent_prefix_path/tiago_gazebo
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/environment/ament_prefix_path.sh
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/environment/ament_prefix_path.dsv
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/environment/path.sh
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/environment/path.dsv
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/local_setup.bash
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/local_setup.sh
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/local_setup.zsh
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/local_setup.dsv
+-- Installing: /Bt/install/tiago_gazebo/share/tiago_gazebo/package.dsv
+-- Up-to-date: /Bt/install/tiago_gazebo/share/ament_index/resource_index/packages/tiago_gazebo
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/cmake/tiago_gazeboConfig.cmake
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/cmake/tiago_gazeboConfig-version.cmake
+-- Up-to-date: /Bt/install/tiago_gazebo/share/tiago_gazebo/package.xml

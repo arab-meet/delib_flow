@@ -1,0 +1,38 @@
+[0.133s] Invoking command in '/Bt/build/tiago_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/tiago_nav -- -j8 -l8
+[1.025s] Invoked command in '/Bt/build/tiago_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/tiago_nav -- -j8 -l8
+[1.026s] Invoking command in '/Bt/build/tiago_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/tiago_nav
+[1.069s] -- Install configuration: ""
+[1.069s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/launch
+[1.069s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/launch/tiago_nav2.launch.py
+[1.069s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/config
+[1.069s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/config/bt_navigator.yaml
+[1.069s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/config/nova_carter_docking.yaml
+[1.070s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/config/recovery.yaml
+[1.070s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/config/tiago_amcl.yaml
+[1.070s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/config/controller.yaml
+[1.070s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/config/planner_server.yaml
+[1.070s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/config/dock_database.yaml
+[1.070s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/maps
+[1.070s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/maps/draft_map
+[1.070s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/maps/draft_map/map.yaml
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/maps/draft_map/map.pgm
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/maps/map.yaml
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/maps/map.pgm
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/rviz
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/rviz/tiago_nav.rviz
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/ament_index/resource_index/package_run_dependencies/tiago_nav
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/ament_index/resource_index/parent_prefix_path/tiago_nav
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/environment/ament_prefix_path.sh
+[1.072s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/environment/ament_prefix_path.dsv
+[1.073s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/environment/path.sh
+[1.073s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/environment/path.dsv
+[1.073s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/local_setup.bash
+[1.073s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/local_setup.sh
+[1.073s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/local_setup.zsh
+[1.073s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/local_setup.dsv
+[1.073s] -- Installing: /Bt/install/tiago_nav/share/tiago_nav/package.dsv
+[1.074s] -- Up-to-date: /Bt/install/tiago_nav/share/ament_index/resource_index/packages/tiago_nav
+[1.074s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/cmake/tiago_navConfig.cmake
+[1.074s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/cmake/tiago_navConfig-version.cmake
+[1.074s] -- Up-to-date: /Bt/install/tiago_nav/share/tiago_nav/package.xml
+[1.074s] Invoked command in '/Bt/build/tiago_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/tiago_nav

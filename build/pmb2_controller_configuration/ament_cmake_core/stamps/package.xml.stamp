@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pmb2_controller_configuration</name>
+  <version>5.0.26</version>
+  <description>Launch files and scripts needed to configure
+    the controllers of the PMB2 robot.</description>
+  <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>
+  <maintainer email="noel.jimenez@pal-robotics.com">Noel Jimenez</maintainer>
+  <license>Apache License 2.0</license>
+  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
+
+  <url type="website">https://github.com/pal-robotics/pmb2_simulation</url>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>diff_drive_controller</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_pal</exec_depend>
+  <exec_depend>imu_sensor_broadcaster</exec_depend>
+  <exec_depend>ros2controlcli</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

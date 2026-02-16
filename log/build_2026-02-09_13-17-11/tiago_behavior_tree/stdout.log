@@ -1,0 +1,87 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found vision_msgs: 4.1.1 (/opt/ros/jazzy/share/vision_msgs/cmake)
+-- Found trajectory_msgs: 5.3.6 (/opt/ros/jazzy/share/trajectory_msgs/cmake)
+-- Found behaviortree_cpp: 4.7.1 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)
+-- Found behaviortree_ros2: 0.3.0 (/Bt/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+-- Found tf2: 0.36.14 (/opt/ros/jazzy/share/tf2/cmake)
+-- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.36.14 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Bt/tiago_behavior_tree/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Bt/build/tiago_behavior_tree
+[ 25%] [32mBuilding CXX object CMakeFiles/tiago_set_target_using_aruco_marker_bt_node.dir/src/set_target_using_aruco_marker_bt_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tiago_set_target_using_transform_bt_node.dir/src/set_target_using_transform.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libtiago_set_target_using_transform_bt_node.so[0m
+[ 75%] Built target tiago_set_target_using_transform_bt_node
+[100%] [32m[1mLinking CXX shared library libtiago_set_target_using_aruco_marker_bt_node.so[0m
+[100%] Built target tiago_set_target_using_aruco_marker_bt_node
+-- Install configuration: ""
+-- Installing: /Bt/install/tiago_behavior_tree/include/tiago_behavior_tree
+-- Installing: /Bt/install/tiago_behavior_tree/include/tiago_behavior_tree/tiago_behavior_tree
+-- Installing: /Bt/install/tiago_behavior_tree/include/tiago_behavior_tree/tiago_behavior_tree/set_target_using_transform.hpp
+-- Installing: /Bt/install/tiago_behavior_tree/include/tiago_behavior_tree/tiago_behavior_tree/set_target_using_aruco_marker_bt_node.hpp
+-- Installing: /Bt/install/tiago_behavior_tree/lib/libtiago_set_target_using_aruco_marker_bt_node.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/tiago_behavior_tree/lib/libtiago_set_target_using_aruco_marker_bt_node.so" to ""
+-- Installing: /Bt/install/tiago_behavior_tree/lib/libtiago_set_target_using_transform_bt_node.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/tiago_behavior_tree/lib/libtiago_set_target_using_transform_bt_node.so" to ""
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/bt_plugins/libtiago_set_target_using_aruco_marker_bt_node.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/bt_plugins/libtiago_set_target_using_aruco_marker_bt_node.so" to ""
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/bt_plugins/libtiago_set_target_using_transform_bt_node.so
+-- Set non-toolchain portion of runtime path of "/Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/bt_plugins/libtiago_set_target_using_transform_bt_node.so" to ""
+-- Installing: /Bt/install/tiago_behavior_tree/share/ament_index/resource_index/package_run_dependencies/tiago_behavior_tree
+-- Installing: /Bt/install/tiago_behavior_tree/share/ament_index/resource_index/parent_prefix_path/tiago_behavior_tree
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/environment/ament_prefix_path.sh
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/environment/ament_prefix_path.dsv
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/environment/path.sh
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/environment/path.dsv
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/local_setup.bash
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/local_setup.sh
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/local_setup.zsh
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/local_setup.dsv
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/package.dsv
+-- Installing: /Bt/install/tiago_behavior_tree/share/ament_index/resource_index/packages/tiago_behavior_tree
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/export_tiago_behavior_treeExport.cmake
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/export_tiago_behavior_treeExport-noconfig.cmake
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/tiago_behavior_treeConfig.cmake
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/cmake/tiago_behavior_treeConfig-version.cmake
+-- Installing: /Bt/install/tiago_behavior_tree/share/tiago_behavior_tree/package.xml

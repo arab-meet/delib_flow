@@ -1,0 +1,583 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "yolo_msgs/msg/Detection",
+      "fields": [
+        {
+          "name": "class_id",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "class_name",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "score",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "id",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "bbox",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "yolo_msgs/msg/BoundingBox2D"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "bbox3d",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "yolo_msgs/msg/BoundingBox3D"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "mask",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "yolo_msgs/msg/Mask"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "keypoints",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "yolo_msgs/msg/KeyPoint2DArray"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "keypoints3d",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "yolo_msgs/msg/KeyPoint3DArray"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "geometry_msgs/msg/Point",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "geometry_msgs/msg/Pose",
+        "fields": [
+          {
+            "name": "position",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "geometry_msgs/msg/Point"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "orientation",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "geometry_msgs/msg/Quaternion"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "geometry_msgs/msg/Quaternion",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": "0.0"
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": "0.0"
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": "0.0"
+          },
+          {
+            "name": "w",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": "1.0"
+          }
+        ]
+      },
+      {
+        "type_name": "geometry_msgs/msg/Vector3",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/BoundingBox2D",
+        "fields": [
+          {
+            "name": "center",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "yolo_msgs/msg/Pose2D"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "size",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "yolo_msgs/msg/Vector2"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/BoundingBox3D",
+        "fields": [
+          {
+            "name": "center",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "geometry_msgs/msg/Pose"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "size",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "geometry_msgs/msg/Vector3"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "frame_id",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/KeyPoint2D",
+        "fields": [
+          {
+            "name": "id",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "point",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "yolo_msgs/msg/Point2D"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "score",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/KeyPoint2DArray",
+        "fields": [
+          {
+            "name": "data",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "yolo_msgs/msg/KeyPoint2D"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/KeyPoint3D",
+        "fields": [
+          {
+            "name": "id",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "point",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "geometry_msgs/msg/Point"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "score",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/KeyPoint3DArray",
+        "fields": [
+          {
+            "name": "data",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "yolo_msgs/msg/KeyPoint3D"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "frame_id",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/Mask",
+        "fields": [
+          {
+            "name": "height",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "width",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "data",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "yolo_msgs/msg/Point2D"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/Point2D",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/Pose2D",
+        "fields": [
+          {
+            "name": "position",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "yolo_msgs/msg/Point2D"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "theta",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "yolo_msgs/msg/Vector2",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "yolo_msgs/msg/Detection",
+      "hash_string": "RIHS01_303e881e77fbe95c37cef2bdc8c047eee9051f22e4f7189f64bd029bfaedfca8"
+    },
+    {
+      "type_name": "geometry_msgs/msg/Point",
+      "hash_string": "RIHS01_6963084842a9b04494d6b2941d11444708d892da2f4b09843b9c43f42a7f6881"
+    },
+    {
+      "type_name": "geometry_msgs/msg/Pose",
+      "hash_string": "RIHS01_d501954e9476cea2996984e812054b68026ae0bfae789d9a10b23daf35cc90fa"
+    },
+    {
+      "type_name": "geometry_msgs/msg/Quaternion",
+      "hash_string": "RIHS01_8a765f66778c8ff7c8ab94afcc590a2ed5325a1d9a076ffff38fbce36f458684"
+    },
+    {
+      "type_name": "geometry_msgs/msg/Vector3",
+      "hash_string": "RIHS01_cc12fe83e4c02719f1ce8070bfd14aecd40f75a96696a67a2a1f37f7dbb0765d"
+    },
+    {
+      "type_name": "yolo_msgs/msg/BoundingBox2D",
+      "hash_string": "RIHS01_7f1dea863510b827213cc407565a686ab8bd16709b7ce85c1a3e49d4df0d4e49"
+    },
+    {
+      "type_name": "yolo_msgs/msg/BoundingBox3D",
+      "hash_string": "RIHS01_b623c1b57c578eb79c6cdffd87e896dedbbde7a0bd1c00b543ae5988d4ab088c"
+    },
+    {
+      "type_name": "yolo_msgs/msg/KeyPoint2D",
+      "hash_string": "RIHS01_3854cfc0eee2c99b65982511d6bdb386c4e93f619c10ed81f2b85f5e1f313373"
+    },
+    {
+      "type_name": "yolo_msgs/msg/KeyPoint2DArray",
+      "hash_string": "RIHS01_d31285362cdab7224e2aa97f15492aeaec62855c185a0c2d7e0983926c2bf907"
+    },
+    {
+      "type_name": "yolo_msgs/msg/KeyPoint3D",
+      "hash_string": "RIHS01_e38fe46754b90861ff48e008565de418abcf0bc6df44e5ba1474aa8cdb37bbac"
+    },
+    {
+      "type_name": "yolo_msgs/msg/KeyPoint3DArray",
+      "hash_string": "RIHS01_d7bcc5d56a1fba893eb1ed1cc58c2241b74c1343196c4958fd4a34b65fbec679"
+    },
+    {
+      "type_name": "yolo_msgs/msg/Mask",
+      "hash_string": "RIHS01_c7d21e5f0b2309ded987b4d33e9bcb52a46ffa2ad43e88961e7f568394e8f598"
+    },
+    {
+      "type_name": "yolo_msgs/msg/Point2D",
+      "hash_string": "RIHS01_624bc0edc3213f5e4b5ff765296c3844061c675d4d6122bce855cb7be3ba3d9c"
+    },
+    {
+      "type_name": "yolo_msgs/msg/Pose2D",
+      "hash_string": "RIHS01_a43cf2c8223859910b22df97624bc9ccc861b35062a4e5313c03baa4939ae4e8"
+    },
+    {
+      "type_name": "yolo_msgs/msg/Vector2",
+      "hash_string": "RIHS01_cdbd299950b0716905ad2c1335fe1e3627163ccc25091a15ad2a9e862cb0e863"
+    }
+  ]
+}

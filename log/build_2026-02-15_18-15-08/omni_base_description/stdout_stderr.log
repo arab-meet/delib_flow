@@ -1,0 +1,88 @@
+Built target ament_cmake_python_copy_omni_base_description
+running egg_info
+writing omni_base_description.egg-info/PKG-INFO
+writing dependency_links to omni_base_description.egg-info/dependency_links.txt
+writing top-level names to omni_base_description.egg-info/top_level.txt
+reading manifest file 'omni_base_description.egg-info/SOURCES.txt'
+writing manifest file 'omni_base_description.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_omni_base_description_egg
+-- Install configuration: ""
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/pythonpath.sh
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/pythonpath.dsv
+-- Up-to-date: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info
+-- Installing: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info/top_level.txt
+-- Installing: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info/PKG-INFO
+-- Installing: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info/SOURCES.txt
+-- Installing: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description-2.0.19-py3.12.egg-info/dependency_links.txt
+-- Up-to-date: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description
+-- Up-to-date: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description/launch_arguments.py
+-- Up-to-date: /Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description/__init__.py
+Listing '/Bt/install/omni_base_description/lib/python3.12/site-packages/omni_base_description'...
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/rviz
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/rviz/omni_base.rviz
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/launch
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/launch/robot_state_publisher.launch.py
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/launch/show.launch.py
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on/cameras_add_on.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/base
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/base/base_dock_link.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/base/base_antena_link.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/base/base_link.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/sensors
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/sensors/hokuyo_urg_04lx_ug01.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/sensors/sick_tim551.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/wheels
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_rear_link.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_front_link.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/meshes/wheels/wheel_link.stl
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/config
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/config/omni_base_configuration.yaml
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/robots
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/robots/omni_base.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/ros2_control
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/ros2_control/ros2_control.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/ros2_control/gazebo_controller_manager_cfg.yaml
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/base_omni_base_calib.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/cameras_add_on.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/objects
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/objects/antenna.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/base
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/base/base.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/base/base_sensors.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/base/base.gazebo.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim561_laser.gazebo.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/hokuyo_urg_04lx_ug01_laser.gazebo.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim551_laser.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/hokuyo_urg_04lx_ug01_laser.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/imu.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/imu.gazebo.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sensors.ros2_control.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim571_laser.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/courier.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim551_laser.gazebo.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim571_laser.gazebo.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/sensors/sick_tim561_laser.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/wheels
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.ros2_control.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.urdf.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.gazebo.xacro
+-- Up-to-date: /Bt/install/omni_base_description/share/ament_index/resource_index/package_run_dependencies/omni_base_description
+-- Up-to-date: /Bt/install/omni_base_description/share/ament_index/resource_index/parent_prefix_path/omni_base_description
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.sh
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/path.sh
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/environment/path.dsv
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/local_setup.bash
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/local_setup.sh
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/local_setup.zsh
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/local_setup.dsv
+-- Installing: /Bt/install/omni_base_description/share/omni_base_description/package.dsv
+-- Up-to-date: /Bt/install/omni_base_description/share/ament_index/resource_index/packages/omni_base_description
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig.cmake
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig-version.cmake
+-- Up-to-date: /Bt/install/omni_base_description/share/omni_base_description/package.xml

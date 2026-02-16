@@ -1,0 +1,1 @@
+#pragma message("#include \"passthrough_controller_parameters.hpp\" is deprecated. Use #include <play_motion2/passthrough_controller_parameters.hpp> instead.")

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "btcpp_ros2_interfaces/srv/GetTrees_Response",
+      "fields": [
+        {
+          "name": "tree_ids",
+          "type": {
+            "type_id": 161,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "btcpp_ros2_interfaces/srv/GetTrees_Response",
+      "hash_string": "RIHS01_49c683a4512f2b398a1ae5d6ab9a3204c3164af90ef8574719c4dd1281287f00"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+source;share/pal_urdf_utils/local_setup.bash
+source;share/pal_urdf_utils/local_setup.dsv
+source;share/pal_urdf_utils/local_setup.sh
+source;share/pal_urdf_utils/local_setup.zsh

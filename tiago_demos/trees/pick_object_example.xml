@@ -8,8 +8,6 @@
         <!-- Move arm -->
         <FollowJointTrajectory action_name="{arm_action}" trajectory="{traj.arm_ready_to_grab}"/>
 
-        <!-- Navigate -->
-        <NavigateToPose name="ToBedroom" goal="{loc.Bedroom}"/>
 
         <!-- Move head -->
         <FollowJointTrajectory action_name="{head_action}" trajectory="{traj.head_down}"/>
@@ -19,6 +17,8 @@
         <Sequence>
           <SetTargetUsingTransform name="GetArUcoTarget" offset_z="0.0" target_pose="{grab_goal}"/>
           <ComputeTopDownGrasp object_pose="{grab_goal}" grasp_offset="0.32" pregrasp_offset="0.05" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
+          <!-- <Script code="log(grab_goal);"/> -->
+
 
           <ComputePlanToTargetIK name="Plan to pre-grasp pose" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
           <FollowJointTrajectory action_name="{arm_action}" name="Move to pre-grasp pose" trajectory="{trajectory_msg}"/>
@@ -27,10 +27,41 @@
           <FollowJointTrajectory action_name="{arm_action}" name="Move to grasp pose" trajectory="{trajectory_msg}"/>
         </Sequence>
         <FollowJointTrajectory action_name="{gripper_action}" name="Close Gripper" trajectory="{traj.grip_close}"/>
+        <Wait wait_duration="4.0"/>
+
 
         <!-- Move torso -->
-        <FollowJointTrajectory action_name="{torso_action}" trajectory="{traj.torso_up}"/>
+        <!-- <FollowJointTrajectory action_name="{torso_action}" trajectory="{traj.torso_up}"/>
+        <FollowJointTrajectory action_name="{arm_action}" trajectory="{traj.arm_ready_to_grab}"/> -->
+
+        <!-- ================= Compute place pose using Script ================= -->
+<!-- <Script code="place_goal:=grab_goal"/> -->
+<SetBlackboard 
+    output_key="place_goal" 
+    value="frame_id: base_link, pose: {position: {x: 0.687, y: 0.0, z: 0.37}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}"
+/>
+      <ComputeTopDownGrasp object_pose="{place_goal}" grasp_offset="0.32" pregrasp_offset="0.05" pregrasp="{place_pregrasp}" grasp="{place_pose}"/>
+
+<!-- Plan to pre-place -->
+    <ComputePlanToTargetIK name="Plan to pre-place" target_ik="{place_pregrasp}" trajectory="{trajectory_msg}"/>
+
+    <FollowJointTrajectory action_name="{arm_action}" name="Move to pre-place" trajectory="{trajectory_msg}"/>
+
+<!-- Move down to place -->
+    <ComputePlanToTargetIK name="Plan to place" target_ik="{place_pose}" trajectory="{trajectory_msg}"/>
+
+    <FollowJointTrajectory action_name="{arm_action}" name="Move to place" trajectory="{trajectory_msg}"/>
+
+<!-- Open gripper -->
+<FollowJointTrajectory action_name="{gripper_action}" name="Open after place" trajectory="{traj.grip_open}"/>
+
+<!-- Retreat -->
+<ComputePlanToTargetIK name="Plan retreat" target_ik="{place_pregrasp}" trajectory="{trajectory_msg}"/>
+
+<FollowJointTrajectory action_name="{arm_action}" name="Retreat after place" trajectory="{trajectory_msg}"/>
+
         <FollowJointTrajectory action_name="{arm_action}" trajectory="{traj.arm_ready_to_grab}"/>
+
 
       </SequenceWithMemory>
     </RetryUntilSuccessful>

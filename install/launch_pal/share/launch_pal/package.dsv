@@ -1,0 +1,6 @@
+source;share/launch_pal/hook/pythonpath.ps1
+source;share/launch_pal/hook/pythonpath.dsv
+source;share/launch_pal/hook/pythonpath.sh
+source;share/launch_pal/hook/ament_prefix_path.ps1
+source;share/launch_pal/hook/ament_prefix_path.dsv
+source;share/launch_pal/hook/ament_prefix_path.sh

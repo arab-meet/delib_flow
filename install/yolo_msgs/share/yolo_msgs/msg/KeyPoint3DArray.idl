@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from yolo_msgs/msg/KeyPoint3DArray.msg
+// generated code does not contain a copyright notice
+
+#include "yolo_msgs/msg/KeyPoint3D.idl"
+
+module yolo_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "represents all the keypoints for human pose estimation in meters")
+    struct KeyPoint3DArray {
+      sequence<yolo_msgs::msg::KeyPoint3D> data;
+
+      @verbatim (language="comment", text=
+        "frame reference")
+      string frame_id;
+    };
+  };
+};

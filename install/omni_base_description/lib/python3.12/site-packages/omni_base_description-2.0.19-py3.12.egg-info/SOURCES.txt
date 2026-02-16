@@ -1,0 +1,7 @@
+setup.py
+omni_base_description/__init__.py
+omni_base_description/launch_arguments.py
+omni_base_description.egg-info/PKG-INFO
+omni_base_description.egg-info/SOURCES.txt
+omni_base_description.egg-info/dependency_links.txt
+omni_base_description.egg-info/top_level.txt

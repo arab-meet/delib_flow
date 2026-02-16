@@ -1,0 +1,12 @@
+{
+  "package_name": "ros2_aruco_interfaces",
+  "output_dir": "/Bt/build/ros2_aruco_interfaces/rosidl_generator_type_description/ros2_aruco_interfaces",
+  "idl_tuples": [
+    "/Bt/build/ros2_aruco_interfaces/rosidl_adapter/ros2_aruco_interfaces:msg/ArucoMarkers.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

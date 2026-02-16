@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/deg_to_rad.urdf.xacro
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/pi.urdf.xacro
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/materials.urdf.xacro
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/package_run_dependencies/pal_urdf_utils
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/parent_prefix_path/pal_urdf_utils
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.sh
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.dsv
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.sh
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.dsv
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.bash
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.sh
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.zsh
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.dsv
+-- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.dsv
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/packages/pal_urdf_utils
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig.cmake
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig-version.cmake
+-- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.xml

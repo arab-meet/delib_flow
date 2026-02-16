@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!-- 
+  Copyright (c) 2024 PAL Robotics S.L. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="structure_sensor_rgbd_camera_gazebo" params="name">
+    <gazebo reference="${name}_link">
+      <!-- IR + depth -->
+      <sensor type="depth" name="${name}_frame_sensor">
+        <always_on>true</always_on>
+        <update_rate>6.0</update_rate>
+        <camera>
+          <horizontal_fov>${58.0 * deg_to_rad}</horizontal_fov>
+          <image>
+            <format>R8G8B8</format>
+            <width>320</width>
+            <height>240</height>
+          </image>
+          <clip>
+            <near>0.45</near>
+            <far>10.0</far>
+          </clip>
+        </camera>
+        <plugin name="${name}_frame_controller" filename="libgazebo_ros_openni_kinect.so">
+          <alwaysOn>true</alwaysOn>
+          <updateRate>6.0</updateRate>
+          <cameraName>${name}</cameraName>
+          <imageTopicName>ir/image_raw</imageTopicName>
+          <cameraInfoTopicName>ir/camera_info</cameraInfoTopicName>
+          <depthImageTopicName>depth/image_raw</depthImageTopicName>
+          <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+          <pointCloudTopicName>depth/points</pointCloudTopicName>
+          <frameName>${name}_optical_frame</frameName>
+          <pointCloudCutoff>0.45</pointCloudCutoff>
+          <rangeMax>10.0</rangeMax>
+          <distortionK1>0.00000001</distortionK1>
+          <distortionK2>0.00000001</distortionK2>
+          <distortionK3>0.00000001</distortionK3>
+          <distortionT1>0.00000001</distortionT1>
+          <distortionT2>0.00000001</distortionT2>
+        </plugin>
+      </sensor>
+
+      <!-- RGB -->
+      <sensor type="depth" name="${name}_frame_sensor">
+        <always_on>true</always_on>
+        <update_rate>6.0</update_rate>
+        <camera>
+          <horizontal_fov>${58.0 * deg_to_rad}</horizontal_fov>
+          <image>
+            <format>R8G8B8</format>
+            <width>320</width>
+            <height>240</height>
+          </image>
+          <clip>
+            <near>0.45</near>
+            <far>10.0</far>
+          </clip>
+        </camera>
+        <plugin name="${name}_frame_controller" filename="libgazebo_ros_openni_kinect.so">
+          <alwaysOn>true</alwaysOn>
+          <updateRate>6.0</updateRate>
+          <cameraName>${name}</cameraName>
+          <imageTopicName>rgb/image_raw</imageTopicName>
+          <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+          <pointCloudTopicName>rgb/points</pointCloudTopicName>
+          <frameName>${name}_optical_frame</frameName>
+          <pointCloudCutoff>0.45</pointCloudCutoff>
+          <rangeMax>10.0</rangeMax>
+          <distortionK1>0.00000001</distortionK1>
+          <distortionK2>0.00000001</distortionK2>
+          <distortionK3>0.00000001</distortionK3>
+          <distortionT1>0.00000001</distortionT1>
+          <distortionT2>0.00000001</distortionT2>
+        </plugin>
+      </sensor>
+    </gazebo>
+  </xacro:macro>
+</robot>

@@ -1,0 +1,39 @@
+[0.093s] Invoking command in '/Bt/build/pal_gripper_description': AMENT_PREFIX_PATH=/Bt/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/pal_urdf_utils:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/pal_gripper_description -- -j8 -l8
+[0.152s] Invoked command in '/Bt/build/pal_gripper_description' returned '0': AMENT_PREFIX_PATH=/Bt/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/pal_urdf_utils:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/pal_gripper_description -- -j8 -l8
+[0.154s] Invoking command in '/Bt/build/pal_gripper_description': AMENT_PREFIX_PATH=/Bt/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/pal_urdf_utils:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/pal_gripper_description
+[0.170s] -- Install configuration: ""
+[0.171s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/gazebo
+[0.171s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/gazebo/gazebo.urdf.xacro
+[0.171s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/meshes
+[0.172s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_link_collision.stl
+[0.172s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_finger_link_collision.stl
+[0.172s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_link.stl
+[0.172s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_finger_link.stl
+[0.172s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/robots
+[0.174s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/robots/upload.launch
+[0.174s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/robots/upload_gripper.launch
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/robots/gripper_test.urdf.xacro
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/urdf
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.gazebo.xacro
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.urdf.xacro
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.transmission.xacro
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.ros2_control.xacro
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/ros2_control
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/ros2_control/ros2_control.urdf.xacro
+[0.175s] -- Up-to-date: /Bt/install/pal_gripper_description/share/ament_index/resource_index/package_run_dependencies/pal_gripper_description
+[0.176s] -- Up-to-date: /Bt/install/pal_gripper_description/share/ament_index/resource_index/parent_prefix_path/pal_gripper_description
+[0.176s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/environment/ament_prefix_path.sh
+[0.176s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/environment/ament_prefix_path.dsv
+[0.176s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/environment/path.sh
+[0.176s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/environment/path.dsv
+[0.176s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/local_setup.bash
+[0.176s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/local_setup.sh
+[0.176s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/local_setup.zsh
+[0.177s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/local_setup.dsv
+[0.177s] -- Installing: /Bt/install/pal_gripper_description/share/pal_gripper_description/package.dsv
+[0.189s] -- Up-to-date: /Bt/install/pal_gripper_description/share/ament_index/resource_index/packages/pal_gripper_description
+[0.190s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.190s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/cmake/pal_gripper_descriptionConfig.cmake
+[0.190s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/cmake/pal_gripper_descriptionConfig-version.cmake
+[0.190s] -- Up-to-date: /Bt/install/pal_gripper_description/share/pal_gripper_description/package.xml
+[0.201s] Invoked command in '/Bt/build/pal_gripper_description' returned '0': AMENT_PREFIX_PATH=/Bt/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Bt/install/pal_urdf_utils:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/pal_gripper_description

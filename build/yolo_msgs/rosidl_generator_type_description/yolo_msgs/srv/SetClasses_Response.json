@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "yolo_msgs/srv/SetClasses_Response",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "yolo_msgs/srv/SetClasses_Response",
+      "hash_string": "RIHS01_121bc944c8248c86af806cd403f5a733b7cc42a097aab2ffbce12822e9616378"
+    }
+  ]
+}

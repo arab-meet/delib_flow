@@ -1,0 +1,22 @@
+[100%] Built target aruco_broadcast
+-- Install configuration: ""
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/lib/tiago_aruco_broadcast/aruco_broadcast
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast//config
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast//config/aruco_params.yaml
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast//launch
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast//launch/aruco.launch.py
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/ament_index/resource_index/package_run_dependencies/tiago_aruco_broadcast
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/ament_index/resource_index/parent_prefix_path/tiago_aruco_broadcast
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/environment/ament_prefix_path.sh
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/environment/ament_prefix_path.dsv
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/environment/path.sh
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/environment/path.dsv
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/local_setup.bash
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/local_setup.sh
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/local_setup.zsh
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/local_setup.dsv
+-- Installing: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/package.dsv
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/ament_index/resource_index/packages/tiago_aruco_broadcast
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/cmake/tiago_aruco_broadcastConfig.cmake
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/cmake/tiago_aruco_broadcastConfig-version.cmake
+-- Up-to-date: /Bt/install/tiago_aruco_broadcast/share/tiago_aruco_broadcast/package.xml

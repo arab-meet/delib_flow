@@ -1,0 +1,4 @@
+source;share/tiago_controller_configuration/local_setup.bash
+source;share/tiago_controller_configuration/local_setup.dsv
+source;share/tiago_controller_configuration/local_setup.sh
+source;share/tiago_controller_configuration/local_setup.zsh

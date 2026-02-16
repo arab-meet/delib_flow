@@ -1,0 +1,24 @@
+[0.668s] Invoking command in '/Bt/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/pal_urdf_utils -- -j8 -l8
+[0.797s] Invoked command in '/Bt/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --build /Bt/build/pal_urdf_utils -- -j8 -l8
+[0.831s] Invoking command in '/Bt/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/pal_urdf_utils
+[0.871s] -- Install configuration: ""
+[0.871s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf
+[0.871s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/deg_to_rad.urdf.xacro
+[0.871s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/pi.urdf.xacro
+[0.876s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/urdf/materials.urdf.xacro
+[0.876s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/package_run_dependencies/pal_urdf_utils
+[0.879s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/parent_prefix_path/pal_urdf_utils
+[0.880s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.sh
+[0.885s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.dsv
+[0.885s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.sh
+[0.885s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.dsv
+[0.885s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.bash
+[0.885s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.sh
+[0.885s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.zsh
+[0.885s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.dsv
+[0.886s] -- Installing: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.dsv
+[0.886s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/ament_index/resource_index/packages/pal_urdf_utils
+[0.886s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig.cmake
+[0.886s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig-version.cmake
+[0.886s] -- Up-to-date: /Bt/install/pal_urdf_utils/share/pal_urdf_utils/package.xml
+[0.890s] Invoked command in '/Bt/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Bt/install/yolo_ros:/Bt/install/ros2_aruco:/Bt/install/launch_pal:/Bt/install/grab2_curobo_planner:/opt/ros/jazzy /usr/bin/cmake --install /Bt/build/pal_urdf_utils
