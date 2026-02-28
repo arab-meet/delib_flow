@@ -8,7 +8,7 @@ def generate_launch_description():
     world = LaunchConfiguration('world')
     sim_world_declaration = DeclareLaunchArgument(
         'world',
-        default_value='minimal_world',
+        default_value='world',
         description='Gazebo world file to load, check worlds directory for examples',
     )
 
@@ -57,8 +57,8 @@ def generate_launch_description():
         [
             sim_world_declaration,
             sim_launch,
-            nav2_launch,
-            moveit2_launch,
-            aruco_broadcaster_launch,
+            # nav2_launch,
+            # moveit2_launch,
+            # aruco_broadcaster_launch,
         ]
     )
