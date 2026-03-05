@@ -21,7 +21,7 @@ def generate_launch_description():
 
     behavior_tree_declaration = DeclareLaunchArgument(
         'tree',
-        default_value='pick_object_example',
+        default_value='tiago_demo_v1',
         description='Behavior Tree XML file to execute, Check trees directory for examples',
     )
 

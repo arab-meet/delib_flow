@@ -57,8 +57,8 @@ def generate_launch_description():
         [
             sim_world_declaration,
             sim_launch,
-            # nav2_launch,
-            # moveit2_launch,
-            # aruco_broadcaster_launch,
+            nav2_launch,
+            moveit2_launch,
+            aruco_broadcaster_launch,
         ]
     )
