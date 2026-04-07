@@ -29,7 +29,7 @@ def generate_launch_description():
         get_package_share_directory('tiago_nav'), 'config', 'tiago_amcl.yaml'
     )
     map_file = os.path.join(
-        get_package_share_directory('tiago_nav'), 'maps', 'map.yaml'
+        get_package_share_directory('tiago_nav'), 'maps', 'new_map.yaml'
     )
     rviz_file = os.path.join(
         get_package_share_directory('tiago_nav'), 'rviz', 'tiago_nav.rviz'

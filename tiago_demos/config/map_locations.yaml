@@ -11,26 +11,34 @@ Dining:
 Bedroom:
   frame_id: map
   pose:
-    x: 6.0
-    y: -2.57
+    x: -8.165594100952148      #  -2.94
+    y: 6.901485919952393       #  -1.75
     z: 0.0
-    yaw_deg: 135
+    yaw_deg: -180              # -180
 
 Kitchen:
   frame_id: map
   pose:
-    x: -2.94
-    y: -1.75
+    x: 8.247424125671387       # 6.0
+    y: 6.594869613647461       # -2.57
+    z: 0.0
+    yaw_deg: 0.0               # 135
+
+Home:
+  frame_id: map
+  pose:
+    x: 0.0
+    y: 0.0
     z: 0.0
     yaw_deg: 0
 
 Trash:
   frame_id: map
   pose:
-    x: -1.70
-    y: -5.5
+    x: 0.0                   # -1.70
+    y: 0.0                   # -5.5
     z: 0.0
-    yaw_deg: 90
+    yaw_deg: 0               # 90
 
 Closet:
   frame_id: map
