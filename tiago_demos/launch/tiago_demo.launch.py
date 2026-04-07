@@ -21,7 +21,7 @@ def generate_launch_description():
 
     behavior_tree_declaration = DeclareLaunchArgument(
         'tree',
-        default_value='pick_object_example',
+        default_value='pick_and_place_object_example',
         description='Behavior Tree XML file to execute, Check trees directory for examples',
     )
 

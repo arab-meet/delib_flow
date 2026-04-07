@@ -154,16 +154,16 @@
     <model name='Box1'>
       <include>
         <uri>model://Box1</uri>
-        <pose>4 0.0 0.0 0.0 0.0 0.0</pose>
+        <pose>8.7 7.0 0.8 0.0 0.0 0.1</pose>
       </include>
     </model>
 
-    <!-- <model name='charger'>
+    <model name='Box2'>
       <include>
-        <uri>model://charger</uri>
-        <pose>0.0 -2.5 0.0 0.0 0.0 1.5707963267948966</pose>
+        <uri>model://Box2</uri>
+        <pose>-8.367965507507324 7.052602767944336 0.62 0.0 0.0 0.1</pose>
       </include>
-    </model> -->
+    </model>
 
     <model name='table0'>
       <include>

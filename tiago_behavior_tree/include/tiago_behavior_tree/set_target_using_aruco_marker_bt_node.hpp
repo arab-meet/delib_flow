@@ -40,7 +40,7 @@ public:
     return {
       BT::InputPort<std::string>("target_frame", "base_link",
                                    "Frame to transform detected markers into"),
-      BT::InputPort<double>("tf_timeout", 1.0, "Timeout for Tf2"),
+      BT::InputPort<double>("tf_timeout", 5.0, "Timeout for Tf2"),
       BT::OutputPort<geometry_msgs::msg::PoseStamped>(
             "target_pose", "Detected Aruco marker stamped pose")};
   }

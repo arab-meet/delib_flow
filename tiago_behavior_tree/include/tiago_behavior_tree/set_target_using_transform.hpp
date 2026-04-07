@@ -36,7 +36,7 @@ public:
                                  "Source frame to transform from"),
       BT::InputPort<std::string>("base_frame", "base_link",
                                  "Target frame to transform into"),
-      BT::InputPort<double>("tf_timeout", 1.0, "Timeout for TF2 lookup"),
+      BT::InputPort<double>("tf_timeout", 5.0, "Timeout for TF2 lookup"),
       BT::InputPort<double>("offset_z", 0.0, "Vertical offset to apply to the target pose"),
       BT::OutputPort<geometry_msgs::msg::PoseStamped>("target_pose", "Transformed pose with adjustments")
     };
