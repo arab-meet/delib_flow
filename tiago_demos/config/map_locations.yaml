@@ -24,8 +24,6 @@ Kitchen:
     z: 0.0
     yaw_deg: 0.0               # 135
 
-
-
 Home:
   frame_id: map
   pose:

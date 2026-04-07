@@ -29,7 +29,7 @@
           <ComputePlanToTargetIK name="Plan to grasp pose" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/>
           <FollowJointTrajectory action_name="{arm_action}" name="Move to grasp pose" trajectory="{trajectory_msg}"/>
         </Sequence>
-        <FollowJointTrajectory action_name="{gripper_action}" name="Close Gripper" trajectory="{traj.grip_close}"/>        
+        <FollowJointTrajectory action_name="{gripper_action}" name="Close Gripper" trajectory="{traj.grip_close}"/>
 
         <!-- Preparing to Move-->
         <FollowJointTrajectory action_name="{arm_action}" trajectory="{traj.arm_ready_to_grab}"/>
