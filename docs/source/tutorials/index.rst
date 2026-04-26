@@ -1,36 +1,35 @@
-.. _demos:
+.. _tutorials:
 
-Demos
-#####
+Tutorials
+#########
 
-We are happy to present deliberation demos.
+These tutorials go a bit deeper into individual subsystems. They are useful once you have
+already run the walkthroughs and want to understand more about how navigation, manipulation,
+or custom behavior trees work under the hood.
 
-We provide BehaviorTrees demos powered by `nav2 <https://github.com/ros-navigation/navigation2>`_  for navigation and `grab2 <https://github.com/elsayedelsheikh/grab2>`_ for manipulation.
+Supported ROS 2 distributions
+-------------------------------
 
-Setup
-------
+* ROS 2 **Jazzy**
+* ROS 2 **Kilted**
 
-+-----------+--------+
-| Component | Type   |
-+-----------+--------+
-| Robot     | Tiago  |
-+-----------+--------+
-| Simulator | Gazebo |
-+-----------+--------+
+.. list-table::
+   :widths: 30 30
+   :header-rows: 1
 
-Supported ROS distributions
-============================
+   * - Component
+     - Description
+   * - Robot
+     - TiAGo
+   * - Simulator
+     - Gazebo Harmonic
 
-* ROS 2 humble
-* ROS 2 jazzy
-
-
-General Tutorials
------------------
+Tutorials
+---------
 
 .. toctree::
     :maxdepth: 1
 
     docs/navigation
     docs/manipulation
-    docs/behavior
+    docs/custom_behavior_trees
