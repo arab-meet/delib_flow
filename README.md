@@ -11,15 +11,17 @@ A behavior tree framework for the TiAGo robot, built on top of
 [Grab2](https://github.com/elsayedelsheikh/grab2) for manipulation.
 
 > [!WARNING]
-> This is an experimental, work-in-progress repository. Things may break or change quickly.
+> This is an experimental, work-in-progress repository.
+> Things may break or change quickly.
 
-> **Full documentation:** [delib-flow.readthedocs.io](https://delib-flow.readthedocs.io/en/latest/)
+**Full documentation:**
+[delib-flow.readthedocs.io](https://delib-flow.readthedocs.io/en/latest/)
 
 ---
 
 ## Quick Start
 
-**1. Clone and build**
+### 1. Clone and build
 
 ```bash
 mkdir -p ~/bt_ws/src
@@ -32,13 +34,13 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-**2. Launch the simulation**
+### 2. Launch the simulation
 
 ```bash
 ros2 launch tiago_demos tiago_bringup.launch.py
 ```
 
-**3. Run a demo**
+### 3. Run a demo
 
 ```bash
 ros2 launch tiago_demos tiago_demo.launch.py tree:=our_map_example
@@ -60,10 +62,15 @@ For a full walkthrough, available worlds, and all launch arguments, see the
 
 ## Contributing
 
-Contributions are welcome! Whether it's a bug fix, a new behavior tree node, improved documentation, or a demo, we'd love to have your help.
+Contributions are welcome! Whether it's a bug fix, a new behavior tree node,
+improved documentation, or a demo, we'd love to have your help.
 
 - **Bug reports & feature requests:** Open an [issue](https://github.com/arab-meet/delib_flow/issues)
-- **Pull requests:** Fork the repo, create a branch, and submit a PR against `main`
-- **Documentation:** Improvements to the [docs](https://delib-flow.readthedocs.io/en/latest/) are just as valuable as code changes
+- **Pull requests:** Fork the repo, create a branch, and submit a PR against
+  `main`
+- **Documentation:** Improvements to the
+  [docs](https://delib-flow.readthedocs.io/en/latest/) are just as valuable
+  as code changes
 
-Please make sure your changes pass CI before submitting. If you're unsure where to start, feel free to open an issue and ask.
+Please make sure your changes pass CI before submitting. If you're unsure
+where to start, feel free to open an issue and ask.
