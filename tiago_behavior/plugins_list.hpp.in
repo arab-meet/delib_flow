@@ -1,0 +1,12 @@
+#ifndef TIAGO_BEHAVIOR__PLUGINS_LIST_HPP_
+#define TIAGO_BEHAVIOR__PLUGINS_LIST_HPP_
+
+namespace tiago
+{
+namespace details
+{
+constexpr char BT_BUILTIN_PLUGINS[] = "@PLUGIN_LIST@";
+}
+}
+
+#endif  // TIAGO_BEHAVIOR__PLUGINS_LIST_HPP_
