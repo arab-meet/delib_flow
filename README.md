@@ -55,3 +55,15 @@ For a full walkthrough, available worlds, and all launch arguments, see the
 |---|---|---|
 | ROS 2 Jazzy | 24.04 | Supported |
 | ROS 2 Kilted | 24.04 | Supported |
+
+---
+
+## Contributing
+
+Contributions are welcome! Whether it's a bug fix, a new behavior tree node, improved documentation, or a demo, we'd love to have your help.
+
+- **Bug reports & feature requests:** Open an [issue](https://github.com/arab-meet/delib_flow/issues)
+- **Pull requests:** Fork the repo, create a branch, and submit a PR against `main`
+- **Documentation:** Improvements to the [docs](https://delib-flow.readthedocs.io/en/latest/) are just as valuable as code changes
+
+Please make sure your changes pass CI before submitting. If you're unsure where to start, feel free to open an issue and ask.
