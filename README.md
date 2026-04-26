@@ -10,6 +10,9 @@ A behavior tree framework for the TiAGo robot, built on top of
 [Nav2](https://github.com/ros-navigation/navigation2) for navigation, and
 [Grab2](https://github.com/elsayedelsheikh/grab2) for manipulation.
 
+> [!WARNING]
+> This is an experimental, work-in-progress repository. Things may break or change quickly.
+
 > **Full documentation:** [delib-flow.readthedocs.io](https://delib-flow.readthedocs.io/en/latest/)
 
 ---
