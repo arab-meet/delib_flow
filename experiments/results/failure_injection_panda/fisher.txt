@@ -1,0 +1,14 @@
+fault | A | B | A success | B success | Fisher p (two-sided, uncorrected)
+---|---|---|---|---|---
+none | no_recovery | hierarchical | 20/20 | 20/20 | 1
+none | no_recovery | flat_retry | 20/20 | 20/20 | 1
+none | flat_retry | hierarchical | 20/20 | 20/20 | 1
+none | flat_retry9 | hierarchical | 20/20 | 20/20 | 1
+planning | no_recovery | hierarchical | 3/20 | 19/20 | 4.06e-07
+planning | no_recovery | flat_retry | 3/20 | 7/20 | 0.273
+planning | flat_retry | hierarchical | 7/20 | 19/20 | 0.000137
+planning | flat_retry9 | hierarchical | 11/20 | 19/20 | 0.00836
+grasp | no_recovery | hierarchical | 8/20 | 17/20 | 0.00791
+grasp | no_recovery | flat_retry | 8/20 | 17/20 | 0.00791
+grasp | flat_retry | hierarchical | 17/20 | 17/20 | 1
+grasp | flat_retry9 | hierarchical | 20/20 | 17/20 | 0.231
