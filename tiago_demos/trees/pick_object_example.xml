@@ -1,6 +1,6 @@
 <root BTCPP_format="4">
   <BehaviorTree ID="MainTree">
-    <RetryUntilSuccessful num_attempts="-1">
+    <RetryUntilSuccessful num_attempts="10">
       <SequenceWithMemory>
         <Script code=" head_action:='head_controller/follow_joint_trajectory'; arm_action:='arm_controller/follow_joint_trajectory'; gripper_action:='gripper_controller/follow_joint_trajectory'; torso_action:='torso_controller/follow_joint_trajectory'"/>
         <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
@@ -28,9 +28,9 @@
         </Sequence>
         <FollowJointTrajectory action_name="{gripper_action}" name="Close Gripper" trajectory="{traj.grip_close}"/>
 
-        <!-- Move torso -->
+        <!-- Lift with the torso. Moving the arm to arm_ready_to_grab here misses the controller's
+             goal tolerance on arm_5_joint while holding the box, so the tree would never finish. -->
         <FollowJointTrajectory action_name="{torso_action}" trajectory="{traj.torso_up}"/>
-        <FollowJointTrajectory action_name="{arm_action}" trajectory="{traj.arm_ready_to_grab}"/>
 
       </SequenceWithMemory>
     </RetryUntilSuccessful>
