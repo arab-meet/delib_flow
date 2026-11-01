@@ -22,7 +22,7 @@ and calls ``rosdep install`` to grab any missing system packages.
 .. code-block:: bash
 
    cd ~/bt_ws/src/delib_flow
-   ./setup_third_party_pkgs.sh
+   ./setup_thirdparty.sh
 
 This will clone around 25 packages (TiAGo description, Nav2 configs, MoveIt2 configs,
 Grab2, YOLO ROS, BehaviorTree.ROS2, and the gripper packages). It takes a while the
