@@ -1,0 +1,42 @@
+TIAGo leaves 12 control {'Sequence': 1}
+Panda leaves 9 control {'Sequence': 1}
+
+TIAGo:
+  GetTrajectoryFromYAML    GetTrajectoryFromYAML
+  SaySomething             Print message
+  ComputeTopDownGrasp      ComputeTopDownGrasp
+  FollowJointTrajectory    Open Gripper
+  ComputePlanToTargetIK    Plan to pre-grasp pose
+  FollowJointTrajectory    Move to pre-grasp pose
+  ComputePlanToTargetIK    Plan to grasp pose
+  FollowJointTrajectory    Move to grasp pose
+  FollowJointTrajectory    Close Gripper
+  SaySomething             Print message
+  SaySomething             Print message
+  FollowJointTrajectory    Retract
+
+Panda:
+  SaySomething             Print message
+  ComputeTopDownGrasp      ComputeTopDownGrasp
+  ComputePlanToTargetIK    Plan to pre-grasp pose
+  FollowJointTrajectory    Move to pre-grasp pose
+  Grip                     Open Gripper
+  ComputePlanToTargetIK    Plan to grasp pose
+  FollowJointTrajectory    Move to grasp pose
+  Grip                     Close Gripper
+  SaySomething             Print message
+
+Leaf types in order, Panda -> TIAGo:
+  insert   [] -> ['GetTrajectoryFromYAML']
+  equal    ['Print message', 'ComputeTopDownGrasp'] -> ['Print message', 'ComputeTopDownGrasp']
+  insert   [] -> ['Open Gripper']
+  equal    ['Plan to pre-grasp pose', 'Move to pre-grasp pose'] -> ['Plan to pre-grasp pose', 'Move to pre-grasp pose']
+  delete   ['Open Gripper'] -> []
+  equal    ['Plan to grasp pose', 'Move to grasp pose'] -> ['Plan to grasp pose', 'Move to grasp pose']
+  replace  ['Close Gripper'] -> ['Close Gripper']
+  equal    ['Print message'] -> ['Print message']
+  insert   [] -> ['Print message', 'Retract']
+
+Panda to TIAGo: 7/9 Panda leaves reused in order (78%), 2 changed or removed, 5 added on TIAGo.
+TIAGo to Panda: 7/12 TIAGo leaves reused in order (58%).
+Leaf node types shared: ['ComputePlanToTargetIK', 'ComputeTopDownGrasp', 'FollowJointTrajectory', 'SaySomething']; TIAGo only: ['GetTrajectoryFromYAML']; Panda only: ['Grip']

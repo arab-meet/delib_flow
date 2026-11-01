@@ -1,0 +1,35 @@
+TIAGo: outer retry 3, 2 plans retried, 11 leaves
+  FollowJointTrajectory    OpenGripper
+  Wait                     Wait
+  SetTargetUsingTransform  Perceive
+  ComputeTopDownGrasp      ComputeGrasp
+  ComputePlanToTargetIK    PlanPregrasp
+  FollowJointTrajectory    MovePregrasp
+  ComputePlanToTargetIK    PlanGrasp
+  FollowJointTrajectory    MoveGrasp
+  FollowJointTrajectory    CloseGripper
+  Wait                     Wait
+  CheckGraspFromFingers    VerifyGrasp
+Panda: outer retry 3, 3 plans retried, 11 leaves
+  FollowJointTrajectory    OpenGripper
+  Sleep                    Sleep
+  ComputeTopDownGrasp      ComputeGrasp
+  ComputePlanToTargetIK    PlanPregrasp
+  FollowJointTrajectory    MovePregrasp
+  ComputePlanToTargetIK    PlanGrasp
+  FollowJointTrajectory    MoveGrasp
+  ComputePlanToTargetIK    PlanLift
+  FollowJointTrajectory    CloseGripper
+  Sleep                    Sleep
+  CheckGraspFromFingers    VerifyGrasp
+
+Panda -> TIAGo:
+  equal    ['OpenGripper'] -> ['OpenGripper']
+  replace  ['Sleep'] -> ['Wait', 'Perceive']
+  equal    ['ComputeGrasp', 'PlanPregrasp', 'MovePregrasp', 'PlanGrasp', 'MoveGrasp'] -> ['ComputeGrasp', 'PlanPregrasp', 'MovePregrasp', 'PlanGrasp', 'MoveGrasp']
+  delete   ['PlanLift'] -> []
+  equal    ['CloseGripper'] -> ['CloseGripper']
+  replace  ['Sleep'] -> ['Wait']
+  equal    ['VerifyGrasp'] -> ['VerifyGrasp']
+
+8/11 Panda leaves (73%), 8/11 TIAGo leaves (73%) reused in order.

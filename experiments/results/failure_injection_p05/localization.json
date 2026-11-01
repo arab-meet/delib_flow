@@ -1,0 +1,210 @@
+{
+ "api/grasp": {
+  "failed": 13,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 10,
+  "right_stage": 10,
+  "reports": {
+   "check_grasp": 10,
+   "pick_object": 3
+  }
+ },
+ "api/nav": {
+  "failed": 16,
+  "silent": 0,
+  "median_candidates": 1.0,
+  "last_injected": 14,
+  "right_stage": 14,
+  "reports": {
+   "navigate_away": 12,
+   "pick_object": 2,
+   "navigate_table": 2
+  }
+ },
+ "api/none": {
+  "failed": 1,
+  "silent": 0,
+  "median_candidates": 8,
+  "last_injected": 0,
+  "right_stage": 0,
+  "reports": {
+   "pick_object": 1
+  }
+ },
+ "api/planning": {
+  "failed": 14,
+  "silent": 0,
+  "median_candidates": 8.0,
+  "last_injected": 14,
+  "right_stage": 14,
+  "reports": {
+   "pick_object": 14
+  }
+ },
+ "flat_retry/grasp": {
+  "failed": 5,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 4,
+  "right_stage": 4,
+  "reports": {
+   "VerifyGrasp": 4,
+   "MoveGrasp": 1
+  }
+ },
+ "flat_retry/nav": {
+  "failed": 10,
+  "silent": 0,
+  "median_candidates": 1.0,
+  "last_injected": 10,
+  "right_stage": 10,
+  "reports": {
+   "ToAway": 6,
+   "ToTable": 4
+  }
+ },
+ "flat_retry/planning": {
+  "failed": 10,
+  "silent": 0,
+  "median_candidates": 1.0,
+  "last_injected": 9,
+  "right_stage": 9,
+  "reports": {
+   "PlanPregrasp": 6,
+   "PlanGrasp": 4
+  }
+ },
+ "flat_retry9/nav": {
+  "failed": 5,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 4,
+  "right_stage": 4,
+  "reports": {
+   "ToAway": 5
+  }
+ },
+ "flat_retry9/planning": {
+  "failed": 4,
+  "silent": 0,
+  "median_candidates": 1.0,
+  "last_injected": 4,
+  "right_stage": 4,
+  "reports": {
+   "PlanPregrasp": 4
+  }
+ },
+ "hierarchical/grasp": {
+  "failed": 5,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 3,
+  "right_stage": 0,
+  "reports": {
+   "Perceive": 5
+  }
+ },
+ "hierarchical/nav": {
+  "failed": 5,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 4,
+  "right_stage": 4,
+  "reports": {
+   "ToAway": 3,
+   "VerifyGrasp": 1,
+   "ToTable": 1
+  }
+ },
+ "hierarchical/planning": {
+  "failed": 3,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 1,
+  "right_stage": 0,
+  "reports": {
+   "Perceive": 2,
+   "Wait": 1
+  }
+ },
+ "hierarchical_clear/grasp": {
+  "failed": 3,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 3,
+  "right_stage": 3,
+  "reports": {
+   "VerifyGrasp": 3
+  }
+ },
+ "hierarchical_clear/nav": {
+  "failed": 5,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 4,
+  "right_stage": 4,
+  "reports": {
+   "ToAway": 3,
+   "Perceive": 1,
+   "ToTable": 1
+  }
+ },
+ "hierarchical_clear/none": {
+  "failed": 1,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 0,
+  "right_stage": 0,
+  "reports": {
+   "Perceive": 1
+  }
+ },
+ "no_recovery/grasp": {
+  "failed": 13,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 12,
+  "right_stage": 12,
+  "reports": {
+   "VerifyGrasp": 12,
+   "Perceive": 1
+  }
+ },
+ "no_recovery/nav": {
+  "failed": 16,
+  "silent": 0,
+  "median_candidates": 1.0,
+  "last_injected": 14,
+  "right_stage": 14,
+  "reports": {
+   "ToAway": 12,
+   "MoveGrasp": 2,
+   "ToTable": 2
+  }
+ },
+ "no_recovery/none": {
+  "failed": 3,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 0,
+  "right_stage": 0,
+  "reports": {
+   "Perceive": 2,
+   "MoveGrasp": 1
+  }
+ },
+ "no_recovery/planning": {
+  "failed": 15,
+  "silent": 0,
+  "median_candidates": 1,
+  "last_injected": 13,
+  "right_stage": 13,
+  "reports": {
+   "PlanPregrasp": 11,
+   "PlanGrasp": 2,
+   "MoveGrasp": 1,
+   "Perceive": 1
+  }
+ }
+}

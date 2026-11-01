@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" main_tree_to_execute="PickObject">
+  <!-- The monolithic action for the API-driven baseline: tiago_grab's pick_object_bt.xml, with its
+       planner and gripper routed through the fault injector and no retract. -->
+  <BehaviorTree ID="PickObject">
+    <Sequence>
+      <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
+      <ComputeTopDownGrasp object_pose="{target_pose}" grasp_offset="0.32" pregrasp_offset="0.05" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
+      <FollowJointTrajectory action_name="/fi/gripper" name="OpenGripper" trajectory="{traj.grip_open}"/>
+      <ComputePlanToTargetIK name="PlanPregrasp" action_name="/fi/compute_plan_to_target_ik" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{arm_controller_action}" name="MovePregrasp" trajectory="{trajectory_msg}"/>
+      <ComputePlanToTargetIK name="PlanGrasp" action_name="/fi/compute_plan_to_target_ik" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{arm_controller_action}" name="MoveGrasp" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="/fi/gripper" name="CloseGripper" trajectory="{traj.grip_close}"/>
+    </Sequence>
+  </BehaviorTree>
+</root>

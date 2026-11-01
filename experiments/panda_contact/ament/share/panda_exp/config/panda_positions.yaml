@@ -1,0 +1,31 @@
+trajectories:
+  arm_ready_to_grab:
+    frame_id: ""
+    joint_names:
+      - "panda_joint1"
+      - "panda_joint2"
+      - "panda_joint3"
+      - "panda_joint4"
+      - "panda_joint5"
+      - "panda_joint6"
+      - "panda_joint7"
+    points:
+      - positions: [0.0, -0.785, 0.0, -2.356, 0.0, 1.571, 0.785]
+        time_from_start: 3.0
+  # Same finger positions as TIAGo's grip_open and grip_close
+  grip_open:
+    frame_id: ""
+    joint_names:
+      - "panda_finger_joint1"
+      - "panda_finger_joint2"
+    points:
+      - positions: [0.04, 0.04]
+        time_from_start: 1.0
+  grip_close:
+    frame_id: ""
+    joint_names:
+      - "panda_finger_joint1"
+      - "panda_finger_joint2"
+    points:
+      - positions: [0.02, 0.02]
+        time_from_start: 1.0

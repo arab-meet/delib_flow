@@ -1,0 +1,16 @@
+fault | variant | valid n | success (Gazebo) | 95% CI | BT says success | mean injected | mean leaf failures | mean restarts | mean recovery s | mean wall s (all) | mean wall s (success)
+---|---|---|---|---|---|---|---|---|---|---|---
+grasp | flat_retry | 20 | 17/20 (85%) | 64-95% | 17 | 0.95 | 0.95 | 0.80 | 16.1 | 30 | 28
+grasp | flat_retry9 | 20 | 20/20 (100%) | 84-100% | 20 | 1.20 | 1.20 | 1.20 | 32.2 | 37 | 37
+grasp | hierarchical | 20 | 17/20 (85%) | 64-95% | 17 | 0.95 | 0.95 | 0.00 | 12.3 | 28 | 26
+grasp | no_recovery | 20 | 8/20 (40%) | 22-61% | 8 | 0.55 | 0.60 | 0.00 | - | 17 | 20
+none | flat_retry | 20 | 20/20 (100%) | 84-100% | 20 | 0.00 | 0.00 | 0.00 | - | 19 | 19
+none | flat_retry9 | 20 | 20/20 (100%) | 84-100% | 20 | 0.00 | 0.00 | 0.00 | - | 20 | 20
+none | hierarchical | 20 | 20/20 (100%) | 84-100% | 20 | 0.00 | 0.00 | 0.00 | - | 19 | 19
+none | no_recovery | 20 | 20/20 (100%) | 84-100% | 20 | 0.00 | 0.00 | 0.00 | - | 19 | 19
+planning | flat_retry | 20 | 7/20 (35%) | 18-57% | 7 | 2.25 | 2.25 | 1.60 | 8.9 | 30 | 28
+planning | flat_retry9 | 20 | 11/20 (55%) | 34-74% | 11 | 5.20 | 5.30 | 4.85 | 15.8 | 65 | 42
+planning | hierarchical | 20 | 19/20 (95%) | 76-99% | 19 | 3.85 | 3.90 | 0.00 | 5.4 | 31 | 29
+planning | no_recovery | 20 | 3/20 (15%) | 5-36% | 3 | 0.85 | 0.85 | 0.00 | - | 13 | 19
+
+Leaf failures by node: {'PlanPregrasp': 131, 'VerifyGrasp': 76, 'PlanGrasp': 57, 'PlanLift': 55, 'ArmReady': 1}

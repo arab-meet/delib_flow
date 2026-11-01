@@ -1,0 +1,26 @@
+fault | variant | valid n | success (Gazebo) | 95% CI | BT says success | mean injected | mean leaf failures | mean restarts | mean recovery s | mean wall s (all) | mean wall s (success)
+---|---|---|---|---|---|---|---|---|---|---|---
+grasp | api | 20 | 7/20 (35%) | 18-57% | 7 | 0.50 | 0.00 | 0.00 | - | 57 | 60
+grasp | flat_retry | 20 | 15/20 (75%) | 53-89% | 15 | 0.85 | 1.20 | 0.95 | 40.0 | 89 | 76
+grasp | hierarchical | 20 | 15/20 (75%) | 53-89% | 15 | 0.70 | 1.15 | 0.00 | 6.5 | 57 | 57
+grasp | hierarchical_clear | 20 | 17/20 (85%) | 64-95% | 17 | 0.95 | 1.00 | 0.00 | 23.1 | 75 | 72
+grasp | no_recovery | 20 | 7/20 (35%) | 18-57% | 7 | 0.60 | 0.65 | 0.00 | - | 47 | 50
+nav | api | 20 | 4/20 (20%) | 8-42% | 4 | 0.70 | 0.00 | 0.00 | - | 31 | 64
+nav | flat_retry | 20 | 10/20 (50%) | 30-70% | 10 | 1.70 | 1.85 | 1.35 | 18.7 | 52 | 60
+nav | flat_retry9 | 20 | 15/20 (75%) | 53-89% | 15 | 2.90 | 3.05 | 2.80 | 26.8 | 85 | 76
+nav | hierarchical | 20 | 15/20 (75%) | 53-89% | 15 | 1.35 | 1.50 | 0.00 | 14.0 | 59 | 66
+nav | hierarchical_clear | 20 | 15/20 (75%) | 53-89% | 15 | 1.35 | 1.50 | 0.00 | 11.8 | 54 | 62
+nav | no_recovery | 20 | 4/20 (20%) | 8-42% | 4 | 0.70 | 0.80 | 0.00 | - | 24 | 52
+none | api | 20 | 19/20 (95%) | 76-99% | 19 | 0.00 | 0.00 | 0.00 | - | 57 | 57
+none | flat_retry | 20 | 20/20 (100%) | 84-100% | 20 | 0.00 | 0.00 | 0.00 | - | 51 | 51
+none | hierarchical | 20 | 20/20 (100%) | 84-100% | 20 | 0.00 | 0.00 | 0.00 | - | 58 | 58
+none | hierarchical_clear | 20 | 19/20 (95%) | 76-99% | 19 | 0.00 | 0.35 | 0.00 | 26.8 | 69 | 69
+none | no_recovery | 20 | 17/20 (85%) | 64-95% | 17 | 0.00 | 0.15 | 0.00 | - | 49 | 52
+planning | api | 20 | 6/20 (30%) | 15-52% | 6 | 0.70 | 0.00 | 0.00 | - | 47 | 57
+planning | flat_retry | 20 | 10/20 (50%) | 30-70% | 10 | 1.60 | 1.75 | 1.25 | 33.8 | 92 | 71
+planning | flat_retry9 | 20 | 16/20 (80%) | 58-92% | 16 | 2.90 | 3.10 | 2.90 | 72.3 | 176 | 131
+planning | hierarchical | 20 | 17/20 (85%) | 64-95% | 17 | 1.95 | 2.45 | 0.00 | 3.0 | 67 | 69
+planning | hierarchical_clear | 20 | 20/20 (100%) | 84-100% | 20 | 2.25 | 2.40 | 0.00 | 9.0 | 69 | 69
+planning | no_recovery | 20 | 5/20 (25%) | 11-47% | 5 | 0.65 | 0.75 | 0.00 | - | 40 | 50
+
+Leaf failures by node: {'PlanPregrasp': 138, 'ToAway': 120, 'VerifyGrasp': 64, 'PlanGrasp': 54, 'ToTable': 47, 'MoveGrasp': 24, 'Perceive': 22, 'Wait': 3, 'MovePregrasp': 1}

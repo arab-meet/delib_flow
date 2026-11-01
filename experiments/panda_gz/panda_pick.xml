@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" main_tree_to_execute="Reach">
+  <!-- Grab2's reach_object.xml, with the grasp height set for a table-top cube, the gripper opened before the approach and a retreat added. -->
+  <BehaviorTree ID="Reach">
+    <Sequence>
+      <SaySomething name="Print message" message="Reaching object..."/>
+      <ComputeTopDownGrasp object_pose="{target_pose}" grasp_offset="0.105" pregrasp_offset="0.08" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
+      <Grip action_name="{gripper_controller_action}" name="Open Gripper" pose="0.04"/>
+      <ComputePlanToTargetIK name="Plan to pre-grasp pose" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{arm_controller_action}" name="Move to pre-grasp pose" trajectory="{trajectory_msg}"/>
+      <ComputePlanToTargetIK name="Plan to grasp pose" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{arm_controller_action}" name="Move to grasp pose" trajectory="{trajectory_msg}"/>
+      <Grip action_name="{gripper_controller_action}" name="Close Gripper" pose="0.02"/>
+      <ComputePlanToTargetIK name="Plan retreat" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{arm_controller_action}" name="Retreat" trajectory="{trajectory_msg}"/>
+      <SaySomething name="Print message" message="Object Reached"/>
+    </Sequence>
+  </BehaviorTree>
+</root>

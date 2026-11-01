@@ -1,0 +1,7 @@
+# Experiment waypoints in minimal_world (box on the table at x=0.75, robot spawns at the origin).
+Away:
+  frame_id: map
+  pose: {x: -1.0, y: 1.0, z: 0.0, yaw_deg: 90}
+AtTable:
+  frame_id: map
+  pose: {x: 0.0, y: 0.0, z: 0.0, yaw_deg: 0}

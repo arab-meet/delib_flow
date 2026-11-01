@@ -1,0 +1,14 @@
+Counted trials: 240. Excluded: 0.
+1. No injection, at least 18 of 20: hierarchical 20, no_recovery 20: True
+2. Tree count within 1 of ground truth in every condition: largest gap 0: True. Trials that disagree: []
+3. At most 10% excluded: 0.0%: True
+
+Failures with no injected fault to explain them:
+  flat_retry9__planning__011: 9 leaf failures, 7 injected: ['PlanPregrasp', 'PlanLift', 'PlanLift', 'VerifyGrasp', 'PlanPregrasp', 'PlanPregrasp', 'PlanPregrasp', 'PlanLift', 'VerifyGrasp']
+  hierarchical__planning__019: 8 leaf failures, 7 injected: ['VerifyGrasp', 'PlanGrasp', 'PlanLift', 'PlanLift', 'PlanLift', 'PlanPregrasp', 'PlanPregrasp', 'PlanPregrasp']
+  no_recovery__grasp__004: 1 leaf failures, 0 injected: ['ArmReady']
+
+planning goals under planning faults: 243 of 478 injected
+grasp goals under grasp faults: 73 of 135 injected
+Gripper closings with no injected fault: 185, of which verification failed: 3
+Sideways cube movement in successful trials: mean 4.9 mm, max 9.9 mm
