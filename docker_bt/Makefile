@@ -1,52 +1,22 @@
 .PHONY: build run bash stop clean
 
-# Docker image and container names
-IMAGE_NAME=bt_ros2_jazzy
-IMAGE_TAG=latest
-CONTAINER_NAME=bt_ros2_jazzy_container
+IMAGE=delibflow-ws:jazzy
+CONTAINER=delibflow-dev
 
-# GitHub credentials (can be overridden via environment variables)
-GIT_USER ?=
-GIT_TOKEN ?=
-
-# Default target
-all: build
-
-# Build the Docker image
+# Build the dependency image from the repository root
 build:
-	docker build \
-		--build-arg GIT_USER=$(GIT_USER) \
-		--build-arg GIT_TOKEN=$(GIT_TOKEN) \
-		-t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile .
+	docker build -f Dockerfile -t $(IMAGE) ..
 
-# Run the container interactively
+# Start an interactive container with this repository mounted
 run:
-	@if [ -z "$(shell docker ps -aq -f name=$(CONTAINER_NAME))" ]; then \
-		./run_container.sh; \
-	else \
-		echo "Container $(CONTAINER_NAME) already exists. Use 'make bash' to attach or 'make stop' to remove it first."; \
-	fi
+	./run_container.sh
 
-# Attach to running container or start a new one
+# Open another shell in the running container
 bash:
-	@if [ -n "$(shell docker ps -q -f name=$(CONTAINER_NAME))" ]; then \
-		docker exec -it $(CONTAINER_NAME) /bin/bash; \
-	elif [ -n "$(shell docker ps -aq -f name=$(CONTAINER_NAME))" ]; then \
-		docker start $(CONTAINER_NAME) && docker exec -it $(CONTAINER_NAME) /bin/bash; \
-	else \
-		./run_container.sh; \
-	fi
+	docker exec -it -u $$(id -u) -e HOME=/home/bt_user $(CONTAINER) bash
 
-# Stop and remove the container
 stop:
-	@if [ -n "$(shell docker ps -q -f name=$(CONTAINER_NAME))" ]; then \
-		docker stop $(CONTAINER_NAME); \
-	fi
-	@if [ -n "$(shell docker ps -aq -f name=$(CONTAINER_NAME))" ]; then \
-		docker rm $(CONTAINER_NAME); \
-	fi
+	docker stop $(CONTAINER)
 
-# Clean up Docker image and containers
-clean: stop
-	docker rmi $(IMAGE_NAME):$(IMAGE_TAG) || true
-	docker system prune -f
+clean:
+	docker rmi $(IMAGE)

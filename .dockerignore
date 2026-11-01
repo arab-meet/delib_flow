@@ -1,0 +1,7 @@
+.git
+docs
+ThirdParty/*
+!ThirdParty/ThirdParty.template.repos
+tiago_sim/models
+tiago_sim/worlds
+tiago_nav/maps
