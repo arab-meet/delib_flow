@@ -31,7 +31,7 @@ def generate_launch_description():
     amcl_yaml = os.path.join(
         get_package_share_directory('tiago_nav'), 'config', 'tiago_amcl.yaml'
     )
-    map_file = os.path.join(
+    default_map = os.path.join(
         get_package_share_directory('tiago_nav'), 'maps', 'map.yaml'
     )
     rviz_file = os.path.join(
@@ -40,6 +40,11 @@ def generate_launch_description():
     # Define the RViz node
     return LaunchDescription(
         [
+            DeclareLaunchArgument(
+                'map',
+                default_value=default_map,
+                description='Full path to the map YAML the map server loads',
+            ),
             DeclareLaunchArgument(
                 'use_rviz',
                 default_value='True',
@@ -50,7 +55,10 @@ def generate_launch_description():
                 executable='map_server',
                 name='map_server',
                 output='screen',
-                parameters=[{'use_sim_time': True}, {'yaml_filename': map_file}],
+                parameters=[
+                    {'use_sim_time': True},
+                    {'yaml_filename': LaunchConfiguration('map')},
+                ],
             ),
             Node(
                 package='nav2_amcl',

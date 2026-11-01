@@ -8,23 +8,21 @@ inverse kinematics planning, and actual arm execution to pick up an object.
 Before you start
 -----------------
 
-Make sure the full stack is running with the ``world`` world (the full home environment),
-since the behavior tree navigates to the **Bedroom** waypoint:
+Bring up the stack in the default ``minimal_world``, where a box with an ArUco marker
+sits on a table in front of the robot:
 
 .. code-block:: bash
 
-   ros2 launch tiago_demos tiago_bringup.launch.py world:=world
+   ros2 launch tiago_demos tiago_bringup.launch.py
 
-You will also need an ArUco marker placed somewhere TiAGo can see from the Bedroom
-location. Check out :doc:`../../usage/docs/perception/aruco` for details on the marker
-setup.
+Check out :doc:`../../usage/docs/perception/aruco` for details on the marker setup.
 
 Running the demo
 -----------------
 
 .. code-block:: bash
 
-   ros2 launch tiago_demos tiago_demo.launch.py tree:=pick_object_example
+   ros2 launch tiago_demos tiago_demo.launch.py tree:=pick_object_example locations:=minimal_world_locations.yaml
 
 What happens step by step
 --------------------------
@@ -35,8 +33,8 @@ Once launched, the behavior tree runs through this sequence:
    and torso. Also loads the pre-defined joint trajectories from the ``tiago_grab``
    package.
 2. **Arm ready** - Moves the arm to a safe tucked position before navigating.
-3. **Navigate to Bedroom** - Uses Nav2 to drive to the Bedroom waypoint defined in
-   ``map_locations.yaml``.
+3. **Navigate to Bedroom** - Uses Nav2 to drive to the Bedroom waypoint, which in
+   ``minimal_world_locations.yaml`` is the spot facing the table.
 4. **Head down** - Points the head downward so the camera can see objects on a surface.
 5. **Gripper open** - Opens the gripper in preparation for grasping.
 6. **ArUco detection** - Reads the ArUco marker transform and computes the grasp target
@@ -45,11 +43,10 @@ Once launched, the behavior tree runs through this sequence:
    above the object.
 8. **Grasp motion** - Plans and executes the final downward motion to the object.
 9. **Gripper close** - Closes the gripper to secure the object.
-10. **Recover** - Raises the torso and moves the arm back to the ready position with
-    the object in hand.
+10. **Lift** - Raises the torso with the object in hand.
 
 The whole tree is wrapped in a ``RetryUntilSuccessful`` node, so if anything fails
-(for example, the marker is not detected yet) it will keep trying.
+(for example, the marker is not detected yet) it tries again, up to 10 attempts.
 
 Monitoring with Groot2
 -----------------------
@@ -61,18 +58,18 @@ The BT executor publishes real-time tree state on port 5555. If you have
 Tweaking the demo
 ------------------
 
-The predefined locations are in ``tiago_demos/config/map_locations.yaml``. The Bedroom
-entry looks like this:
+The locations for this demo are in ``tiago_demos/config/minimal_world_locations.yaml``.
+The Bedroom entry looks like this:
 
 .. code-block:: yaml
 
    Bedroom:
      frame_id: map
      pose:
-       x: 6.0
-       y: -2.57
+       x: 0.0
+       y: 0.0
        z: 0.0
-       yaw_deg: 135.0
+       yaw_deg: 0
 
 Edit the coordinates to match your world setup, then relaunch the demo. No rebuild needed
 since the config is installed with symlinks.

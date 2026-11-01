@@ -1,0 +1,25 @@
+# Waypoints for the default world, minimal_world, with the names the example trees use.
+# Bedroom is the spot facing the table, so pick_object_example finds the box from there.
+Bedroom:
+  frame_id: map
+  pose:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    yaw_deg: 0
+
+Office:
+  frame_id: map
+  pose:
+    x: -1.0
+    y: 1.0
+    z: 0.0
+    yaw_deg: 90
+
+Trash:
+  frame_id: map
+  pose:
+    x: -1.0
+    y: -1.0
+    z: 0.0
+    yaw_deg: -90

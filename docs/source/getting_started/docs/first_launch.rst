@@ -24,11 +24,13 @@ Once the bringup is ready, launch one of the included demos:
 
 .. code-block:: bash
 
-   ros2 launch tiago_demos tiago_demo.launch.py tree:=our_map_example
+   ros2 launch tiago_demos tiago_demo.launch.py tree:=our_map_example locations:=minimal_world_locations.yaml
 
 You should see TiAGo navigate to the Office location, do a head sweep, move its torso
 up and down, and then head over to the Trash location. That is the ``our_map_example``
-behavior tree running end to end.
+behavior tree running end to end. The ``locations`` argument matters: the default
+``map_locations.yaml`` has waypoints for the larger ``world``, which lie off the map of
+the default ``minimal_world``.
 
 What's next?
 ------------

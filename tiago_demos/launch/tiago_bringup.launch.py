@@ -23,6 +23,22 @@ def generate_launch_description():
         description='Run without the Gazebo GUI client and RViz, for machines with no display',
     )
 
+    # maps/map.yaml covers minimal_world; maps/draft_map/map.yaml covers world
+    nav_map = LaunchConfiguration('map')
+    nav_map_declaration = DeclareLaunchArgument(
+        'map',
+        default_value=PathJoinSubstitution(
+            [
+                FindPackageShare('tiago_nav'),
+                'maps',
+                PythonExpression(
+                    ["'draft_map/map.yaml' if '", world, "' == 'world' else 'map.yaml'"]
+                ),
+            ]
+        ),
+        description='Map YAML for Nav2. By default, the map that matches the world',
+    )
+
     sim_launch = IncludeLaunchDescription(
         PathJoinSubstitution(
             [
@@ -74,6 +90,7 @@ def generate_launch_description():
         [
             sim_world_declaration,
             headless_declaration,
+            nav_map_declaration,
             sim_launch,
             nav2_launch,
             moveit2_launch,
