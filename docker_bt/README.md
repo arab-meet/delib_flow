@@ -19,7 +19,8 @@ make build
 Import the third-party packages on the host first, since the repository is mounted:
 
 ```bash
-sed "s/\$ROS_DISTRO/jazzy/g" ThirdParty/ThirdParty.template.repos > ThirdParty/ThirdParty.repos
+sed "s/\$ROS_DISTRO/jazzy/g" ThirdParty/ThirdParty.template.repos \
+  > ThirdParty/ThirdParty.repos
 vcs import . < ThirdParty/ThirdParty.repos
 ```
 
@@ -34,7 +35,8 @@ Then, from `docker_bt/`:
 Terminal 1:
 
 ```bash
-./run_container.sh bash -c "source /bt_ws/install/setup.bash && ros2 launch tiago_demos tiago_bringup.launch.py headless:=True"
+./run_container.sh bash -c "source /bt_ws/install/setup.bash && \
+  ros2 launch tiago_demos tiago_bringup.launch.py headless:=True"
 ```
 
 Terminal 2, about a minute later, once the controllers are active:
