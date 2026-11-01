@@ -14,6 +14,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(vision_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(behaviortree_cpp)
 find_package(behaviortree_ros2)
 find_package(tf2)
@@ -24,10 +25,12 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_library(tiago_set_target_using_aruco_marker_bt_node src/set_target_using_aruco_marker_bt_node.cpp)
 add_library(tiago_set_target_using_transform_bt_node src/set_target_using_transform.cpp)
+add_library(tiago_check_grasp_from_fingers_bt_node src/check_grasp_from_fingers.cpp)
 
 list(APPEND plugin_libs
   tiago_set_target_using_aruco_marker_bt_node
   tiago_set_target_using_transform_bt_node
+  tiago_check_grasp_from_fingers_bt_node
 )
 
 foreach(bt_plugin ${plugin_libs})
@@ -47,6 +50,7 @@ foreach(bt_plugin ${plugin_libs})
     ${nav_msgs_TARGETS}
     ${vision_msgs_TARGETS}
     ${trajectory_msgs_TARGETS}
+    ${sensor_msgs_TARGETS}
     ${tf2_geometry_msgs_TARGETS}
   )
 endforeach()

@@ -87,6 +87,7 @@ int main(int argc, char ** argv)
   // Register Tiago BT Plugins
   factory.registerFromPlugin(BT::SharedLibrary::getOSName("tiago_set_target_using_aruco_marker_bt_node"));
   factory.registerFromPlugin(BT::SharedLibrary::getOSName("tiago_set_target_using_transform_bt_node"));
+  factory.registerFromPlugin(BT::SharedLibrary::getOSName("tiago_check_grasp_from_fingers_bt_node"));
   // ------------------------------------------------------
   rclcpp::executors::SingleThreadedExecutor executor;
   executor.add_node(node);
