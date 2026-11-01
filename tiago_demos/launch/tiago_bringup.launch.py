@@ -1,6 +1,10 @@
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+from launch.substitutions import (
+    LaunchConfiguration,
+    PathJoinSubstitution,
+    PythonExpression,
+)
 from launch_ros.substitutions import FindPackageShare
 
 
@@ -12,6 +16,13 @@ def generate_launch_description():
         description='Gazebo world file to load, check worlds directory for examples',
     )
 
+    headless = LaunchConfiguration('headless')
+    headless_declaration = DeclareLaunchArgument(
+        'headless',
+        default_value='False',
+        description='Run without the Gazebo GUI client and RViz, for machines with no display',
+    )
+
     sim_launch = IncludeLaunchDescription(
         PathJoinSubstitution(
             [
@@ -20,7 +31,12 @@ def generate_launch_description():
                 'tiago_sim.launch.py',
             ]
         ),
-        launch_arguments={'world': world}.items(),
+        # tiago_moveit2.launch.py below starts move_group, so PAL's must stay off
+        launch_arguments={
+            'world': world,
+            'headless': headless,
+            'moveit': 'False',
+        }.items(),
     )
 
     nav2_launch = IncludeLaunchDescription(
@@ -30,7 +46,8 @@ def generate_launch_description():
                 'launch',
                 'tiago_nav2.launch.py',
             ]
-        )
+        ),
+        launch_arguments={'use_rviz': PythonExpression(['not ', headless])}.items(),
     )
 
     moveit2_launch = IncludeLaunchDescription(
@@ -56,6 +73,7 @@ def generate_launch_description():
     return LaunchDescription(
         [
             sim_world_declaration,
+            headless_declaration,
             sim_launch,
             nav2_launch,
             moveit2_launch,

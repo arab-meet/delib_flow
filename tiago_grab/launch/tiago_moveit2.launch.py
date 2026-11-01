@@ -130,7 +130,8 @@ def start_move_group(context, *args, **kwargs):
     )
 
     grab2_planner_server_node = Node(
-        name='planner_server',
+        # Nav2 already owns the name planner_server
+        name='grab2_planner_server',
         package='grab2_planner',
         executable='grab2_planner_server',
         output='screen',
