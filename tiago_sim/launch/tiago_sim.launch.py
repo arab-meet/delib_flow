@@ -18,6 +18,20 @@ def generate_launch_description():
         description='Gazebo world file to load, check worlds directory for examples',
     )
 
+    headless = LaunchConfiguration('headless')
+    declare_headless_cmd = DeclareLaunchArgument(
+        'headless',
+        default_value='False',
+        description='Run the Gazebo server with EGL rendering and no GUI client',
+    )
+
+    moveit = LaunchConfiguration('moveit')
+    declare_moveit_cmd = DeclareLaunchArgument(
+        'moveit',
+        default_value='True',
+        description='Start PAL move_group with the simulation',
+    )
+
     tiago_sim_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(tiago_gazebo_dir, 'launch', 'tiago_pal_sim.launch.py')
@@ -25,11 +39,15 @@ def generate_launch_description():
         launch_arguments={
             'world_name': world,
             'is_public_sim': 'True',
+            'headless': headless,
+            'moveit': moveit,
         }.items(),
     )
 
     ld = LaunchDescription()
     ld.add_action(tiago_sim_cmd)
     ld.add_action(declare_world_cmd)
+    ld.add_action(declare_headless_cmd)
+    ld.add_action(declare_moveit_cmd)
 
     return ld

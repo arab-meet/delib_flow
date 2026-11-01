@@ -53,6 +53,11 @@ class LaunchArguments(LaunchArgumentsBase):
     namespace: DeclareLaunchArgument = CommonArgs.namespace
     tuck_arm: DeclareLaunchArgument = CommonArgs.tuck_arm
     is_public_sim: DeclareLaunchArgument = CommonArgs.is_public_sim
+    headless: DeclareLaunchArgument = DeclareLaunchArgument(
+        'headless',
+        default_value='False',
+        description='Run the Gazebo server with EGL rendering and no GUI client',
+    )
 
 
 def generate_launch_description():
@@ -98,6 +103,7 @@ def declare_actions(
         env_vars=[gz_model_path_env_var],
         launch_arguments={
             'world_name': launch_args.world_name,
+            'headless': launch_args.headless,
             'model_paths': packages,
             'resource_paths': packages,
         },
