@@ -63,7 +63,10 @@ def generate_launch_description():
                 'tiago_nav2.launch.py',
             ]
         ),
-        launch_arguments={'use_rviz': PythonExpression(['not ', headless])}.items(),
+        launch_arguments={
+            'use_rviz': PythonExpression(['not ', headless]),
+            'map': nav_map,
+        }.items(),
     )
 
     moveit2_launch = IncludeLaunchDescription(
