@@ -129,9 +129,14 @@ int main(int argc, char ** argv)
   BT::Groot2Publisher groot2_publisher(tree, 5555);
 
   BT::NodeStatus status = BT::NodeStatus::RUNNING;
+  // Tick well above the 20 Hz action feedback rate of the joint trajectory controllers.
+  // rclcpp_action handles feedback before goal responses and BT action nodes only spin
+  // their callback group when ticked, so slow ticks starve the goal response and turn
+  // long trajectories into SEND_GOAL_TIMEOUT failures.
   while (rclcpp::ok() && status == BT::NodeStatus::RUNNING) {
     status = tree.tickOnce();
-    executor.spin_once(std::chrono::milliseconds(500));
+    executor.spin_some();
+    tree.sleep(std::chrono::milliseconds(10));
   }
 
   if (status == BT::NodeStatus::SUCCESS) {
