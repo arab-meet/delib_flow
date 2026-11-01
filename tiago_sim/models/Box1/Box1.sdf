@@ -42,8 +42,8 @@
       </visual>
 
   <inertial>
-    <mass value="0.5"/>
-    <inertia ixx="0.001633333" ixy="0.0" ixz="0.0" iyy="0.001633333" iyz="0.0" izz="0.001633333"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.0000417" ixy="0.0" ixz="0.0" iyy="0.0000417" iyz="0.0" izz="0.0000417"/>
   </inertial>
 
   </link>
