@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Summarise failure-injection trials. usage: analyze.py <results dir> [--z-lift 0.10]
+"""Summarise failure-injection trials. usage: analyze.py <results dir> [--z-lift 0.10] [--z0 0.64]
 Success is ground truth from Gazebo: the box link rose at least z-lift above its start height.
 """
 import collections
@@ -32,7 +32,7 @@ def wilson(k, n, z=1.96):
     return (max(0.0, c - h), min(1.0, c + h))
 
 
-def load(tdir, zlift):
+def load(tdir, zlift, z0_nominal=0.64):
     t = json.load(open(f'{tdir}/trial.json'))
     log = (
         open(f'{tdir}/engine.log', errors='replace').read()
@@ -42,7 +42,10 @@ def load(tdir, zlift):
     z0 = float(t['box0'].split()[2]) if t['box0'].strip() else None
     z1 = float(t['box1'].split()[2]) if t['box1'].strip() else None
     t['valid'] = (
-        bool(t['ready']) and z0 is not None and z1 is not None and abs(z0 - 0.64) < 0.03
+        bool(t['ready'])
+        and z0 is not None
+        and z1 is not None
+        and abs(z0 - z0_nominal) < 0.03
     )
     t['truth'] = t['valid'] and z1 - z0 >= zlift
     t['bt_ok'] = 'Mission completed' in log
@@ -85,13 +88,14 @@ def main():
         if '--z-lift' in sys.argv
         else 0.10
     )
+    z0 = float(sys.argv[sys.argv.index('--z0') + 1]) if '--z0' in sys.argv else 0.64
     cells = collections.defaultdict(list)
     bad = []
     for d in sorted(glob.glob(f'{root}/*/')):
         if not os.path.exists(d + 'trial.json'):
             bad.append((d, 'no trial.json'))
             continue
-        t = load(d.rstrip('/'), zlift)
+        t = load(d.rstrip('/'), zlift, z0)
         if t['valid']:
             cells[(t['fault'], t['variant'])].append(t)
         else:

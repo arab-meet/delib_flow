@@ -18,11 +18,13 @@ ap.add_argument('--slots', type=int, default=3)
 ap.add_argument('--p', type=float, default=0.5)
 ap.add_argument('--tag', required=True)
 ap.add_argument('--slot-base', type=int, default=0)
+ap.add_argument('--trial', default='trial.sh', help='trial script under experiments/')
+ap.add_argument('--seed-base', type=int, default=0)
 a = ap.parse_args()
 
 q = queue.Queue()
 for variant, fault, seed in itertools.product(
-    a.variants.split(','), a.faults.split(','), range(a.n)
+    a.variants.split(','), a.faults.split(','), range(a.seed_base, a.seed_base + a.n)
 ):
     tid = f'{variant}__{fault}__{seed:03d}'
     if not os.path.exists(f'{HOME}/bt_ws/experiments/results/{a.tag}/{tid}/trial.json'):
@@ -70,6 +72,8 @@ def worker(slot):
             'ROS_LOG_DIR=/tmp/roslog',
             '-e',
             'PYTHONUNBUFFERED=1',
+            '-e',
+            f"PROBE={os.environ.get('PROBE', '')}",
             '-v',
             f'{HOME}/bt_ws/src:/bt_ws/src',
             '-v',
@@ -79,7 +83,7 @@ def worker(slot):
             '-v',
             f'{HOME}/bt_ws/experiments:/bt_ws/experiments',
             'delibflow-ws:jazzy',
-            '/bt_ws/experiments/trial.sh',
+            f'/bt_ws/experiments/{a.trial}',
             variant,
             fault,
             str(a.p),

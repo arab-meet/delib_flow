@@ -1,0 +1,21 @@
+<root BTCPP_format="4">
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <Script code=" arm_action:='panda_arm_controller/follow_joint_trajectory'; gripper_action:='/fi/gripper'; plan_action:='/fi/compute_plan_to_target_ik'"/>
+      <GetTrajectoryFromYAML package_name="panda_exp" config_file="panda_positions.yaml"/>
+      <FollowJointTrajectory action_name="{arm_action}" name="ArmReady" trajectory="{traj.arm_ready_to_grab}"/>
+      <FollowJointTrajectory action_name="{gripper_action}" name="OpenGripper" trajectory="{traj.grip_open}"/>
+      <Sleep msec="2000"/>
+      <ComputeTopDownGrasp name="ComputeGrasp" object_pose="{loc.Cube}" grasp_offset="0.105" pregrasp_offset="0.14" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
+      <ComputePlanToTargetIK name="PlanPregrasp" action_name="{plan_action}" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{arm_action}" name="MovePregrasp" trajectory="{trajectory_msg}"/>
+      <ComputePlanToTargetIK name="PlanGrasp" action_name="{plan_action}" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/>
+      <FollowJointTrajectory action_name="{arm_action}" name="MoveGrasp" trajectory="{trajectory_msg}"/>
+      <ComputePlanToTargetIK name="PlanLift" action_name="{plan_action}" target_ik="{pregrasp_pose}" trajectory="{lift_traj}"/>
+      <FollowJointTrajectory action_name="{gripper_action}" name="CloseGripper" trajectory="{traj.grip_close}"/>
+      <Sleep msec="1000"/>
+      <CheckGraspFromFingers name="VerifyGrasp" min_gap="0.046" max_gap="0.072"/>
+      <FollowJointTrajectory action_name="{arm_action}" name="Lift" trajectory="{lift_traj}"/>
+    </Sequence>
+  </BehaviorTree>
+</root>
