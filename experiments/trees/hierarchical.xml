@@ -1,0 +1,48 @@
+<root BTCPP_format="4">
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <Script code=" head_action:='head_controller/follow_joint_trajectory'; arm_action:='arm_controller/follow_joint_trajectory'; gripper_action:='/fi/gripper'; torso_action:='torso_controller/follow_joint_trajectory'; plan_action:='/fi/compute_plan_to_target_ik'"/>
+      <GetTrajectoryFromYAML package_name="tiago_grab" config_file="tiago_positions.yaml"/>
+      <FollowJointTrajectory action_name="{arm_action}" name="ArmReady" trajectory="{traj.arm_ready_to_grab}"/>
+      <SubTree ID="Navigate" _autoremap="true"/>
+      <FollowJointTrajectory action_name="{head_action}" name="HeadDown" trajectory="{traj.head_down}"/>
+      <SubTree ID="Pick" _autoremap="true"/>
+      <FollowJointTrajectory action_name="{torso_action}" name="TorsoUp" trajectory="{traj.torso_up}"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="Navigate">
+    <Sequence>
+        <RetryUntilSuccessful num_attempts="3">
+          <Fallback>
+            <NavigateToPose name="ToAway" goal="{loc.Away}" server_name="/fi/navigate_to_pose"/>
+            <ForceFailure><Wait wait_duration="1.0"/></ForceFailure>
+          </Fallback>
+        </RetryUntilSuccessful>
+        <RetryUntilSuccessful num_attempts="3">
+          <Fallback>
+            <NavigateToPose name="ToTable" goal="{loc.AtTable}" server_name="/fi/navigate_to_pose"/>
+            <ForceFailure><Wait wait_duration="1.0"/></ForceFailure>
+          </Fallback>
+        </RetryUntilSuccessful>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="Pick">
+    <RetryUntilSuccessful num_attempts="3">
+      <Sequence>
+        <FollowJointTrajectory action_name="{gripper_action}" name="OpenGripper" trajectory="{traj.grip_open}"/>
+        <Wait wait_duration="2.0"/>
+        <SetTargetUsingTransform name="Perceive" offset_z="0.0" target_pose="{grab_goal}"/>
+        <ComputeTopDownGrasp name="ComputeGrasp" object_pose="{grab_goal}" grasp_offset="0.32" pregrasp_offset="0.05" pregrasp="{pregrasp_pose}" grasp="{grasp_pose}"/>
+        <RetryUntilSuccessful num_attempts="3"><ComputePlanToTargetIK name="PlanPregrasp" action_name="{plan_action}" target_ik="{pregrasp_pose}" trajectory="{trajectory_msg}"/></RetryUntilSuccessful>
+        <FollowJointTrajectory action_name="{arm_action}" name="MovePregrasp" trajectory="{trajectory_msg}"/>
+        <RetryUntilSuccessful num_attempts="3"><ComputePlanToTargetIK name="PlanGrasp" action_name="{plan_action}" target_ik="{grasp_pose}" trajectory="{trajectory_msg}"/></RetryUntilSuccessful>
+        <FollowJointTrajectory action_name="{arm_action}" name="MoveGrasp" trajectory="{trajectory_msg}"/>
+        <FollowJointTrajectory action_name="{gripper_action}" name="CloseGripper" trajectory="{traj.grip_close}"/>
+        <Wait wait_duration="1.0"/>
+        <CheckGraspFromFingers name="VerifyGrasp" min_gap="0.046" max_gap="0.072"/>
+      </Sequence>
+    </RetryUntilSuccessful>
+  </BehaviorTree>
+</root>

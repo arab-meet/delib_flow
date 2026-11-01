@@ -1,0 +1,18 @@
+=== battery 0.9
+[main_bt-1] [ERROR]  [main_bt]: DockAndRecharge: Action server with name 'dock_robot' is not reachable.
+[main_bt-1] [ERROR]  [main_bt]: UndockRobot: Action server with name 'undock_robot' is not reachable.
+[main_bt-1] [INFO]  [main_bt]: CheckBattery started, waiting for data...
+[main_bt-1] [INFO]  [main_bt]: Battery = 0.90% (Threshold = 50.00%)
+[main_bt-1] [WARN]  [main_bt]: Battery low!
+[main_bt-1] [INFO]  [main_bt]: Sending dock goal: [home_dock]
+[main_bt-1] [ERROR]  [main_bt]: DockAndRecharge failed with error: SERVER_UNREACHABLE
+[INFO] [main_bt-1]: process has finished cleanly [pid 60]
+=== battery 0.3
+[main_bt-1] [ERROR]  [main_bt]: DockAndRecharge: Action server with name 'dock_robot' is not reachable.
+[main_bt-1] [ERROR]  [main_bt]: UndockRobot: Action server with name 'undock_robot' is not reachable.
+[main_bt-1] [INFO]  [main_bt]: CheckBattery started, waiting for data...
+[main_bt-1] [INFO]  [main_bt]: Battery = 0.30% (Threshold = 50.00%)
+[main_bt-1] [WARN]  [main_bt]: Battery low!
+[main_bt-1] [INFO]  [main_bt]: Sending dock goal: [home_dock]
+[main_bt-1] [ERROR]  [main_bt]: DockAndRecharge failed with error: SERVER_UNREACHABLE
+[INFO] [main_bt-1]: process has finished cleanly [pid 115]

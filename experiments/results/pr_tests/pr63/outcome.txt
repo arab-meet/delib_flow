@@ -1,0 +1,24 @@
+[1793555503.687]: Open Gripper              RUNNING -> SUCCESS
+[1793555515.719]: FollowJointTrajectory     RUNNING -> SUCCESS
+[1793555570.883]: ToBedroom                 RUNNING -> SUCCESS
+[1793555571.213]: FollowJointTrajectory     RUNNING -> SUCCESS
+[1793555571.758]: Plan to pre-grasp pose    RUNNING -> SUCCESS
+[1793555592.632]: Move to pre-grasp pose    RUNNING -> SUCCESS
+[1793555592.686]: Plan to grasp pose        RUNNING -> SUCCESS
+[1793555596.005]: Move to grasp pose        RUNNING -> SUCCESS
+[1793555596.005]: Sequence                  RUNNING -> SUCCESS
+[1793555596.073]: Close Gripper             RUNNING -> SUCCESS
+[1793555612.344]: FollowJointTrajectory     RUNNING -> SUCCESS
+[1793555612.857]: FollowJointTrajectory     RUNNING -> SUCCESS
+[1793555732.619]: ToKitchen                 RUNNING -> SUCCESS
+[1793555733.233]: FollowJointTrajectory     RUNNING -> SUCCESS
+[1793555734.082]: FollowJointTrajectory     RUNNING -> SUCCESS
+[1793555734.145]: Plan to pre-grasp pose    RUNNING -> SUCCESS
+[1793555768.968]: Move to pre-grasp pose    RUNNING -> SUCCESS
+[1793555769.032]: Open Gripper              RUNNING -> SUCCESS
+[1793555769.032]: Sequence                  RUNNING -> SUCCESS
+[1793555788.147]: FollowJointTrajectory     RUNNING -> SUCCESS
+[1793555879.011]: ToHome                    RUNNING -> SUCCESS
+[1793555879.011]: SequenceWithMemory        RUNNING -> SUCCESS
+[1793555879.011]: RetryUntilSuccessful      RUNNING -> SUCCESS
+[INFO] [1793555879.010735309] [bt_executor]: Mission completed successfully!
