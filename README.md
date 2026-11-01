@@ -23,8 +23,9 @@ A behavior tree framework for the TiAGo robot, built on top of
 
 ### 1. Clone and build
 
-The setup script imports the third-party packages, then runs `rosdep install`, which
-needs `sudo`. No `sudo`? Use the [Docker setup](docker_bt/README.md) instead.
+The setup script imports the third-party packages, then runs `rosdep install`,
+which needs `sudo`. No `sudo`? Use the [Docker setup](docker_bt/README.md)
+instead.
 
 ```bash
 mkdir -p ~/bt_ws/src
@@ -43,9 +44,9 @@ source install/setup.bash
 ros2 launch tiago_demos tiago_bringup.launch.py
 ```
 
-This loads `minimal_world`, a walled room with a table and an ArUco box in front of the
-robot. Wait until the controllers are active. On a machine with no display, add
-`headless:=True`, which skips the Gazebo client and RViz.
+This loads `minimal_world`, a walled room with a table and an ArUco box in front
+of the robot. Wait until the controllers are active. On a machine with no
+display, add `headless:=True`, which skips the Gazebo client and RViz.
 
 ### 3. Run a demo
 
@@ -53,8 +54,8 @@ robot. Wait until the controllers are active. On a machine with no display, add
 ros2 launch tiago_demos tiago_demo.launch.py tree:=pick_object_in_place
 ```
 
-This needs no navigation. TiAGo looks down, finds the ArUco box, plans with Grab2
-and MoveIt 2, grasps the box and lifts it with the torso.
+This needs no navigation. TiAGo looks down, finds the ArUco box, plans with
+Grab2 and MoveIt 2, grasps the box and lifts it with the torso.
 
 For a full walkthrough, available worlds, and all launch arguments, see the
 [documentation](https://delib-flow.readthedocs.io/en/latest/).
