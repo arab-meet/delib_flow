@@ -2,6 +2,9 @@ import os
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument
+from launch.conditions import IfCondition
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
@@ -28,7 +31,7 @@ def generate_launch_description():
     amcl_yaml = os.path.join(
         get_package_share_directory('tiago_nav'), 'config', 'tiago_amcl.yaml'
     )
-    map_file = os.path.join(
+    default_map = os.path.join(
         get_package_share_directory('tiago_nav'), 'maps', 'map.yaml'
     )
     rviz_file = os.path.join(
@@ -37,12 +40,25 @@ def generate_launch_description():
     # Define the RViz node
     return LaunchDescription(
         [
+            DeclareLaunchArgument(
+                'map',
+                default_value=default_map,
+                description='Full path to the map YAML the map server loads',
+            ),
+            DeclareLaunchArgument(
+                'use_rviz',
+                default_value='True',
+                description='Start RViz alongside Nav2',
+            ),
             Node(
                 package='nav2_map_server',
                 executable='map_server',
                 name='map_server',
                 output='screen',
-                parameters=[{'use_sim_time': True}, {'yaml_filename': map_file}],
+                parameters=[
+                    {'use_sim_time': True},
+                    {'yaml_filename': LaunchConfiguration('map')},
+                ],
             ),
             Node(
                 package='nav2_amcl',
@@ -113,6 +129,7 @@ def generate_launch_description():
                 package='rviz2',
                 executable='rviz2',
                 name='rviz2',
+                condition=IfCondition(LaunchConfiguration('use_rviz')),
                 arguments=['-d', rviz_file],
                 parameters=[{'use_sim_time': True}],
                 output='screen',

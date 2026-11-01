@@ -9,57 +9,58 @@ complexity of manipulation.
 Before you start
 -----------------
 
-Bring up the stack. Either the ``test_world`` or the full ``world`` works here:
+Bring up the stack in the default ``minimal_world``:
 
 .. code-block:: bash
 
-   ros2 launch tiago_demos tiago_bringup.launch.py world:=world
+   ros2 launch tiago_demos tiago_bringup.launch.py
 
 Running the demo
 -----------------
 
 .. code-block:: bash
 
-   ros2 launch tiago_demos tiago_demo.launch.py tree:=our_map_example
+   ros2 launch tiago_demos tiago_demo.launch.py tree:=our_map_example locations:=minimal_world_locations.yaml
 
 What happens step by step
 --------------------------
 
 1. **Setup** - Initializes the controller names for the head and torso, and loads the
    joint trajectory definitions.
-2. **Navigate to Office** - Drives to the Office waypoint (-8.25, -7.0 on the map,
-   facing 180 degrees).
+2. **Navigate to Office** - Drives to the Office waypoint (-1.0, 1.0 on the map,
+   facing 90 degrees).
 3. **Head sweep** - Executes a head sweep motion, like TiAGo is scanning the area.
 4. **Torso up** - Raises the torso to its upper position.
 5. **Torso down** - Lowers the torso back down.
-6. **Navigate to Trash** - Drives to the Trash waypoint (-1.70, -5.5 on the map).
+6. **Navigate to Trash** - Drives to the Trash waypoint (-1.0, -1.0 on the map).
 
 The whole sequence runs once and exits (no retry loop, unlike the pick demo).
 
 Predefined waypoints
 ---------------------
 
-Both locations used in this demo come from ``tiago_demos/config/map_locations.yaml``:
+Both locations used in this demo come from
+``tiago_demos/config/minimal_world_locations.yaml``:
 
 .. code-block:: yaml
 
    Office:
      frame_id: map
      pose:
-       x: -8.25
-       y: -7.0
+       x: -1.0
+       y: 1.0
        z: 0.0
-       yaw_deg: 180.0
+       yaw_deg: 90
 
    Trash:
      frame_id: map
      pose:
-       x: -1.70
-       y: -5.5
+       x: -1.0
+       y: -1.0
        z: 0.0
-       yaw_deg: 90.0
+       yaw_deg: -90
 
-All six predefined waypoints in the config file are:
+The default ``map_locations.yaml`` holds waypoints for the larger ``world``:
 
 .. list-table::
    :widths: 20 15 15 15

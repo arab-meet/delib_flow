@@ -32,6 +32,10 @@ Launch arguments
    * - ``world``
      - ``minimal_world``
      - Gazebo world to load. See :doc:`../../simulation/docs/worlds` for the full list.
+   * - ``map``
+     - The map that matches ``world``
+     - Full path to the map YAML for Nav2. ``world`` gets ``maps/draft_map/map.yaml``, any
+       other world gets ``maps/map.yaml``.
 
 What gets launched
 ------------------

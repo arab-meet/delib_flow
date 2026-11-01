@@ -20,9 +20,9 @@ Available worlds
 minimal_world (default)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-A bare-bones world with just a ground plane. It loads fast, which makes it perfect for
-quickly iterating on behavior tree logic when you do not need any obstacles or objects
-around.
+A small walled room with a table and a box carrying an ArUco marker. It loads fast and
+Nav2 loads ``tiago_nav/maps/map.yaml``, which matches it. The example behavior trees run
+here with ``locations:=minimal_world_locations.yaml``.
 
 .. code-block:: bash
 
@@ -32,7 +32,7 @@ Use this when:
 
 * You are writing or debugging a new behavior tree
 * You want the simulation to start as fast as possible
-* Navigation or manipulation details do not matter yet
+* You want to run the pick and navigation demos
 
 test_world
 ~~~~~~~~~~
@@ -56,7 +56,12 @@ world
 A full home environment with multiple rooms: a bathroom (toilet, sink, bathtub), a
 kitchen, a bedroom, shelves, cabinets, and a bedside table. This is the richest world
 and is used by the prebuilt ``map_locations.yaml`` config with all its predefined
-waypoints (Dining, Bedroom, Kitchen, Trash, Closet, Office).
+waypoints (Dining, Bedroom, Kitchen, Trash, Closet, Office). Nav2 loads
+``tiago_nav/maps/draft_map/map.yaml``, which predates some of the furniture.
+
+The example trees do not finish here yet. In a test run, Nav2 found no path to Office and
+the camera did not find the marker from Bedroom. On the draft map, Kitchen and Closet sit
+in unknown space and Trash is cut off from the start position.
 
 .. code-block:: bash
 
@@ -64,7 +69,6 @@ waypoints (Dining, Bedroom, Kitchen, Trash, Closet, Office).
 
 Use this when:
 
-* You are running the included demo behavior trees as intended
 * You want to test navigation across long distances and multiple rooms
 
 World assets

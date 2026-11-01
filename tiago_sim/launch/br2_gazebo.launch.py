@@ -32,6 +32,7 @@ def start_gzserver(context, *args, **kwargs):
 
     world_name = LaunchConfiguration('world_name').perform(context)
     world = os.path.join(pkg_path, 'worlds', world_name + '.sdf')
+    headless = LaunchConfiguration('headless').perform(context).lower() == 'true'
 
     # Command to start the gazebo server.
     gazebo_server_cmd_line = ['gz', 'sim', world, '-r', '-s']
@@ -54,7 +55,9 @@ def start_gzserver(context, *args, **kwargs):
                 get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py'
             )
         ),
-        launch_arguments={'gz_args': ['-r -s ', world]}.items(),
+        launch_arguments={
+            'gz_args': ['-r -s ', '--headless-rendering ' if headless else '', world]
+        }.items(),
     )
 
     start_gazebo_client_cmd = IncludeLaunchDescription(
@@ -66,6 +69,8 @@ def start_gzserver(context, *args, **kwargs):
         launch_arguments={'gz_args': [' -g ']}.items(),
     )
 
+    if headless:
+        return [start_gazebo_server_cmd]
     return [start_gazebo_server_cmd, start_gazebo_client_cmd]
 
 
@@ -91,6 +96,11 @@ def generate_launch_description():
         default_value='',
         description='Specify world name, we will convert to full path',
     )
+    declare_headless = DeclareLaunchArgument(
+        'headless',
+        default_value='False',
+        description='Run the Gazebo server with EGL rendering and no GUI client',
+    )
     declare_debug = DeclareLaunchArgument(
         'debug',
         default_value='False',
@@ -104,6 +114,7 @@ def generate_launch_description():
 
     ld = LaunchDescription()
     ld.add_action(SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', model_path))
+    ld.add_action(declare_headless)
     ld.add_action(declare_debug)
     ld.add_action(declare_world_name)
     ld.add_action(SetEnvironmentVariable('GZ_SIM_MODEL_PATH', model_path))
