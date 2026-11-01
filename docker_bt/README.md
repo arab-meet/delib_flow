@@ -1,8 +1,8 @@
 # Docker setup for DelibFlow
 
-`delibflow-ws:jazzy` holds ROS 2 Jazzy, Gazebo Harmonic, Nav2, MoveIt 2 and every
-rosdep DelibFlow's packages need. The repository itself is mounted at run time, so
-building the image needs no GitHub credentials.
+`delibflow-ws:jazzy` holds ROS 2 Jazzy, Gazebo Harmonic, Nav2, MoveIt 2 and
+every rosdep DelibFlow's packages need. The repository itself is mounted at run
+time, so building the image needs no GitHub credentials.
 
 This is the easiest way to build on a machine where you cannot install system
 packages: a native build needs `sudo` for `rosdep install`.
@@ -16,7 +16,8 @@ make build
 
 ## Build the workspace
 
-Import the third-party packages on the host first, since the repository is mounted:
+Import the third-party packages on the host first, since the repository is
+mounted:
 
 ```bash
 sed "s/\$ROS_DISTRO/jazzy/g" ThirdParty/ThirdParty.template.repos \
@@ -42,13 +43,14 @@ Terminal 1:
 Terminal 2, about a minute later, once the controllers are active:
 
 ```bash
-docker exec -it -u $(id -u) -e HOME=/home/bt_user delibflow-dev bash
+docker exec -it -u $(id -u) -e HOME=/home/bt_user \
+  delibflow-dev bash
 source /bt_ws/install/setup.bash
 ros2 launch tiago_demos tiago_demo.launch.py
 ```
 
-Use `docker exec -u $(id -u)` as shown. A shell running as a different user cannot see
-ROS nodes properly, because Fast DDS shared memory is per user.
+Use `docker exec -u $(id -u)` as shown. A shell running as a different user
+cannot see ROS nodes properly, because Fast DDS shared memory is per user.
 
 ## Commands
 
